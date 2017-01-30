@@ -1,3 +1,5 @@
+require_relative 'base'
+
 module Toccatore
   class OrcidUpdate < Base
     def source_id
@@ -8,23 +10,10 @@ module Toccatore
       "nameIdentifier:ORCID\\:*"
     end
 
-    def cron_line
-      ENV['ORCID_UPDATE_CRON_LINE'] || "40 20 * * *"
-    end
-
-    def push_url
-      "#{ENV['VOLPINO_URL']}/claims"
-    end
-
-    def access_token
-      ENV['VOLPINO_TOKEN']
-    end
-
     def parse_data(result, options={})
-      result = { error: "No hash returned." } unless result.is_a?(Hash)
-      return [result] if result[:error]
+      return result.body.fetch("errors") if result.body.fetch("errors", nil).present?
 
-      items = result.fetch("data", {}).fetch('response', {}).fetch('docs', nil)
+      items = result.body.fetch("data", {}).fetch('response', {}).fetch('docs', nil)
 
       Array(items).reduce([]) do |sum, item|
         doi = item.fetch("doi")
@@ -41,7 +30,8 @@ module Toccatore
 
             sum << { "orcid" => orcid,
                      "doi" => doi,
-                     "source_id" => source_id }
+                     "source_id" => source_id,
+                     "claim_action"=>"create" }
           end
           sum
         end
@@ -50,12 +40,16 @@ module Toccatore
 
     # push to Volpino API if no error and we have collected works
     def push_data(items, options={})
+      push_url = (options[:push_url].presence || "https://profiles.datacite.org/api") + "/claims"
+      access_token = options[:access_token]
+
       return [] if items.empty?
+      return [OpenStruct.new(body: { "errors" => [{ "title" => "Access token missing" }] })] if access_token.blank?
 
       Array(items).map do |item|
-        Maremma.post push_url, data: { "claim" => item }.to_json,
+        Maremma.post(push_url, data: { "claim" => item }.to_json,
                                token: access_token,
-                               content_type: 'json'
+                               content_type: 'json')
       end
     end
   end

@@ -2,40 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: http://search.datacite.org/api?fl=doi,creator,title,publisher,publicationYear,resourceTypeGeneral,datacentre_symbol,relatedIdentifier,nameIdentifier,xml,minted,updated&fq=updated:%5B2015-04-07T00:00:00Z%20TO%202015-04-08T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=nameIdentifier:ORCID%5C:*&rows=0&start=0&wt=json
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-  response:
-    status:
-      code: 301
-      message: ''
-    headers:
-      Server:
-      - openresty/1.11.2.1
-      Date:
-      - Sun, 29 Jan 2017 19:55:07 GMT
-      Content-Type:
-      - text/html
-      Content-Length:
-      - '191'
-      Connection:
-      - keep-alive
-      Location:
-      - https://search.datacite.org/api?fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CrelatedIdentifier%2CnameIdentifier%2Cxml%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&q=nameIdentifier%3AORCID%5C%3A%2A&rows=0&start=0&wt=json
-    body:
-      encoding: UTF-8
-      string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
-        bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>openresty/1.11.2.1</center>\r\n</body>\r\n</html>\r\n"
-    http_version: 
-  recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
-- request:
-    method: get
     uri: https://search.datacite.org/api?fl=doi,creator,title,publisher,publicationYear,resourceTypeGeneral,datacentre_symbol,relatedIdentifier,nameIdentifier,xml,minted,updated&fq=updated:%5B2015-04-07T00:00:00Z%20TO%202015-04-08T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=nameIdentifier:ORCID%5C:*&rows=0&start=0&wt=json
     body:
       encoding: US-ASCII
@@ -53,7 +19,7 @@ http_interactions:
       Server:
       - openresty/1.11.2.1
       Date:
-      - Sun, 29 Jan 2017 19:55:07 GMT
+      - Sun, 29 Jan 2017 23:12:05 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -64,43 +30,9 @@ http_interactions:
       - GET, POST, OPTIONS
     body:
       encoding: UTF-8
-      string: '{"responseHeader":{"status":0,"QTime":37},"response":{"numFound":55,"start":0,"docs":[]}}
+      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":55,"start":0,"docs":[]}}
 
 '
-    http_version: 
-  recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
-- request:
-    method: get
-    uri: http://search.datacite.org/api?fl=doi,creator,title,publisher,publicationYear,resourceTypeGeneral,datacentre_symbol,relatedIdentifier,nameIdentifier,xml,minted,updated&fq=updated:%5B2015-04-07T00:00:00Z%20TO%202015-04-08T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=nameIdentifier:ORCID%5C:*&rows=1000&start=0&wt=json
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-  response:
-    status:
-      code: 301
-      message: ''
-    headers:
-      Server:
-      - openresty/1.11.2.1
-      Date:
-      - Sun, 29 Jan 2017 19:55:07 GMT
-      Content-Type:
-      - text/html
-      Content-Length:
-      - '191'
-      Connection:
-      - keep-alive
-      Location:
-      - https://search.datacite.org/api?fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CrelatedIdentifier%2CnameIdentifier%2Cxml%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&q=nameIdentifier%3AORCID%5C%3A%2A&rows=1000&start=0&wt=json
-    body:
-      encoding: UTF-8
-      string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
-        bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>openresty/1.11.2.1</center>\r\n</body>\r\n</html>\r\n"
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -122,7 +54,7 @@ http_interactions:
       Server:
       - openresty/1.11.2.1
       Date:
-      - Sun, 29 Jan 2017 19:55:08 GMT
+      - Sun, 29 Jan 2017 23:12:05 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -133,7 +65,7 @@ http_interactions:
       - GET, POST, OPTIONS
     body:
       encoding: UTF-8
-      string: '{"responseHeader":{"status":0,"QTime":293},"response":{"numFound":55,"start":0,"docs":[{"minted":"2014-06-02T01:33:35Z","datacentre_symbol":"FIGSHARE.ARS","xml":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC0zL21ldGFkYXRhLnhzZCI+PGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNjA4NC9NOS5GSUdTSEFSRS4xMDQxNTQ3PC9pZGVudGlmaWVyPjx0aXRsZXM+PHRpdGxlPkppbGxzIG9mIEFsbCBUcmFkZXM6IEFudCBEaXZlcnNpdHkgYW5kIFZlcnNhdGlsaXR5IGluIHRoZSBDcm9zcyBUaW1iZXJzIEVjb3JlZ2lvbjwvdGl0bGU+PC90aXRsZXM+PHB1Ymxpc2hlcj5GaWdzaGFyZTwvcHVibGlzaGVyPjxwdWJsaWNhdGlvblllYXI+MjAxNDwvcHVibGljYXRpb25ZZWFyPjxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iRGF0YXNldCI+UHJlc2VudGF0aW9uPC9yZXNvdXJjZVR5cGU+PHJpZ2h0c0xpc3Q+PHJpZ2h0cyByaWdodHNVUkk9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LzMuMC91cy8iPkNDLUJZPC9yaWdodHM+PC9yaWdodHNMaXN0PjxjcmVhdG9ycz48Y3JlYXRvcj48Y3JlYXRvck5hbWU+QW5uIE1heW88L2NyZWF0b3JOYW1lPjxuYW1lSWRlbnRpZmllciBuYW1lSWRlbnRpZmllclNjaGVtZT0iT1JDSUQiPjAwMDAtMDAwMi0zNTQ2LTEwNDg8L25hbWVJZGVudGlmaWVyPjwvY3JlYXRvcj48L2NyZWF0b3JzPjwvcmVzb3VyY2U+","updated":"2015-04-08T13:56:40Z","doi":"10.6084/M9.FIGSHARE.1041547","creator":["Ann
+      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":55,"start":0,"docs":[{"minted":"2014-06-02T01:33:35Z","datacentre_symbol":"FIGSHARE.ARS","xml":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC0zL21ldGFkYXRhLnhzZCI+PGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNjA4NC9NOS5GSUdTSEFSRS4xMDQxNTQ3PC9pZGVudGlmaWVyPjx0aXRsZXM+PHRpdGxlPkppbGxzIG9mIEFsbCBUcmFkZXM6IEFudCBEaXZlcnNpdHkgYW5kIFZlcnNhdGlsaXR5IGluIHRoZSBDcm9zcyBUaW1iZXJzIEVjb3JlZ2lvbjwvdGl0bGU+PC90aXRsZXM+PHB1Ymxpc2hlcj5GaWdzaGFyZTwvcHVibGlzaGVyPjxwdWJsaWNhdGlvblllYXI+MjAxNDwvcHVibGljYXRpb25ZZWFyPjxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iRGF0YXNldCI+UHJlc2VudGF0aW9uPC9yZXNvdXJjZVR5cGU+PHJpZ2h0c0xpc3Q+PHJpZ2h0cyByaWdodHNVUkk9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LzMuMC91cy8iPkNDLUJZPC9yaWdodHM+PC9yaWdodHNMaXN0PjxjcmVhdG9ycz48Y3JlYXRvcj48Y3JlYXRvck5hbWU+QW5uIE1heW88L2NyZWF0b3JOYW1lPjxuYW1lSWRlbnRpZmllciBuYW1lSWRlbnRpZmllclNjaGVtZT0iT1JDSUQiPjAwMDAtMDAwMi0zNTQ2LTEwNDg8L25hbWVJZGVudGlmaWVyPjwvY3JlYXRvcj48L2NyZWF0b3JzPjwvcmVzb3VyY2U+","updated":"2015-04-08T13:56:40Z","doi":"10.6084/M9.FIGSHARE.1041547","creator":["Ann
         Mayo"],"publisher":"Figshare","title":["Jills of All Trades: Ant Diversity
         and Versatility in the Cross Timbers Ecoregion"],"nameIdentifier":["ORCID:0000-0002-3546-1048"],"publicationYear":"2014","resourceTypeGeneral":"Dataset"},{"minted":"2015-04-07T03:09:59Z","datacentre_symbol":"FIGSHARE.ARS","xml":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC0zL21ldGFkYXRhLnhzZCI+PGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNjA4NC9NOS5GSUdTSEFSRS4xMzY4MjY5PC9pZGVudGlmaWVyPjx0aXRsZXM+PHRpdGxlPkFCTyBwaGVub3R5cGUgYW5kIGlubmF0ZSBpc29hZ2dsdXRpbmluIHNwZWNpZmljaXRpZXMgYXMgdGhleSBhcmlzZSBmcm9tIGdseWNvc2lkaWMgZXhjbHVzaW9uIGFuZCByZWxhdGUgdG8gaHVtYW4gcmVwcm9kdWN0aW9uLiAgQSBoeXBvdGhlc2lzKjwvdGl0bGU+PC90aXRsZXM+PHB1Ymxpc2hlcj5GaWdzaGFyZTwvcHVibGlzaGVyPjxwdWJsaWNhdGlvblllYXI+MjAxNTwvcHVibGljYXRpb25ZZWFyPjxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iRGF0YXNldCI+UGFwZXI8L3Jlc291cmNlVHlwZT48cmlnaHRzTGlzdD48cmlnaHRzIHJpZ2h0c1VSST0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbGljZW5zZXMvYnkvMy4wL3VzLyI+Q0MtQlk8L3JpZ2h0cz48L3JpZ2h0c0xpc3Q+PGNyZWF0b3JzPjxjcmVhdG9yPjxjcmVhdG9yTmFtZT5QZXRlciBBcmVuZDwvY3JlYXRvck5hbWU+PG5hbWVJZGVudGlmaWVyIG5hbWVJZGVudGlmaWVyU2NoZW1lPSJPUkNJRCI+MDAwMC0wMDAyLTQwMDAtNDE2NzwvbmFtZUlkZW50aWZpZXI+PC9jcmVhdG9yPjwvY3JlYXRvcnM+PC9yZXNvdXJjZT4=","updated":"2015-04-07T03:09:59Z","doi":"10.6084/M9.FIGSHARE.1368269","creator":["Peter
         Arend"],"publisher":"Figshare","title":["ABO phenotype and innate isoagglutinin
@@ -247,6 +179,58 @@ http_interactions:
         Rural Settlement of Roman Britain: an online resource"],"resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0003-3938-899X","ORCID:0000-0002-2725-6730"],"publicationYear":"2015"}]}}
 
 '
+    http_version: 
+  recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"error":"No hash returned."}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - openresty/1.11.2.1
+      Date:
+      - Sun, 29 Jan 2017 23:12:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - a1d6d6d8-1571-4506-8892-4763dfda35e2
+      X-Runtime:
+      - '0.004106'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 recorded_with: VCR 3.0.3

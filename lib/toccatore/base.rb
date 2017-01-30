@@ -3,8 +3,23 @@ require 'gender_detector'
 
 module Toccatore
   class Base
+    # load ENV variables from .env file if it exists
+    env_file = File.expand_path("../../../.env", __FILE__)
+    if File.exist?(env_file)
+      require 'dotenv'
+      Dotenv.load! env_file
+    end
+
+    # load ENV variables from container environment if json file exists
+    # see https://github.com/phusion/baseimage-docker#envvar_dumps
+    env_json_file = "/etc/container_environment.json"
+    if File.exist?(env_json_file)
+      env_vars = JSON.parse(File.read(env_json_file))
+      env_vars.each { |k, v| ENV[k] = v }
+    end
+
     def get_query_url(options={})
-      offset = options[:offset].to_i
+      offset = options[:offset].to_i || 0
       rows = options[:rows].presence || job_batch_size
       from_date = options[:from_date].presence || (Time.now.to_date - 1.day).iso8601
       until_date = options[:until_date].presence || Time.now.to_date.iso8601
@@ -46,12 +61,6 @@ module Toccatore
 
     def process_data(options = {})
       data = get_data(options.merge(timeout: timeout, source_id: source_id))
-
-      # if ENV["LOGSTASH_PATH"].present?
-      #   # write API response from external agent to log/agent.log, using agent name and work pid as tags
-      #   AGENT_LOGGER.tagged(name, pid) { AGENT_LOGGER.info "#{result.inspect}" }
-      # end
-
       data = parse_data(data, options.merge(source_id: source_id))
 
       # push to deposit API if no error and we have collected works and/or events
@@ -65,8 +74,7 @@ module Toccatore
     end
 
     def parse_data(result, options={})
-      result = { error: "No hash returned." } unless result.is_a?(Hash)
-      return [result] if result[:error]
+      return result.body.fetch("errors") if result.body.fetch("errors", nil).present?
 
       items = result.fetch("data", {}).fetch('response', {}).fetch('docs', nil)
       get_relations_with_related_works(items)
@@ -236,31 +244,15 @@ module Toccatore
     end
 
     def url
-      "http://search.datacite.org/api?"
-    end
-
-    def push_url
-      "#{ENV["LAGOTTO_URL"]}/deposits"
-    end
-
-    def access_token
-      ENV['LAGOTTO_TOKEN']
-    end
-
-    def cron_line
-      ENV['CRON_LINE'] || "40 18 * * *"
+      "https://search.datacite.org/api?"
     end
 
     def timeout
-      ENV['TIMEOUT'] || 120
+      120
     end
 
     def job_batch_size
-      ENV['JOB_BATCH_SIZE'] || 1000
-    end
-
-    def tracked
-      ENV['TRACKED'] || true
+      1000
     end
 
     # remove non-printing whitespace

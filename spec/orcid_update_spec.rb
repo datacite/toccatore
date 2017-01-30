@@ -5,23 +5,23 @@ describe Toccatore::OrcidUpdate, vcr: true do
 
   context "get_query_url" do
     it "default" do
-      expect(subject.get_query_url).to eq("http://search.datacite.org/api?q=nameIdentifier%3AORCID%5C%3A*&start=0&rows=1000&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CrelatedIdentifier%2CnameIdentifier%2Cxml%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
+      expect(subject.get_query_url).to eq("https://search.datacite.org/api?q=nameIdentifier%3AORCID%5C%3A*&start=0&rows=1000&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CrelatedIdentifier%2CnameIdentifier%2Cxml%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
     end
 
     it "with zero rows" do
-      expect(subject.get_query_url(rows: 0)).to eq("http://search.datacite.org/api?q=nameIdentifier%3AORCID%5C%3A*&start=0&rows=0&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CrelatedIdentifier%2CnameIdentifier%2Cxml%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
+      expect(subject.get_query_url(rows: 0)).to eq("https://search.datacite.org/api?q=nameIdentifier%3AORCID%5C%3A*&start=0&rows=0&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CrelatedIdentifier%2CnameIdentifier%2Cxml%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
     end
 
     it "with different from_date and until_date" do
-      expect(subject.get_query_url(from_date: "2015-04-05", until_date: "2015-04-05")).to eq("http://search.datacite.org/api?q=nameIdentifier%3AORCID%5C%3A*&start=0&rows=1000&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CrelatedIdentifier%2CnameIdentifier%2Cxml%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-05T00%3A00%3A00Z+TO+2015-04-05T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
+      expect(subject.get_query_url(from_date: "2015-04-05", until_date: "2015-04-05")).to eq("https://search.datacite.org/api?q=nameIdentifier%3AORCID%5C%3A*&start=0&rows=1000&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CrelatedIdentifier%2CnameIdentifier%2Cxml%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-05T00%3A00%3A00Z+TO+2015-04-05T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
     end
 
     it "with offset" do
-      expect(subject.get_query_url(offset: 250)).to eq("http://search.datacite.org/api?q=nameIdentifier%3AORCID%5C%3A*&start=250&rows=1000&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CrelatedIdentifier%2CnameIdentifier%2Cxml%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
+      expect(subject.get_query_url(offset: 250)).to eq("https://search.datacite.org/api?q=nameIdentifier%3AORCID%5C%3A*&start=250&rows=1000&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CrelatedIdentifier%2CnameIdentifier%2Cxml%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
     end
 
     it "with rows" do
-      expect(subject.get_query_url(rows: 250)).to eq("http://search.datacite.org/api?q=nameIdentifier%3AORCID%5C%3A*&start=0&rows=250&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CrelatedIdentifier%2CnameIdentifier%2Cxml%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
+      expect(subject.get_query_url(rows: 250)).to eq("https://search.datacite.org/api?q=nameIdentifier%3AORCID%5C%3A*&start=0&rows=250&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CrelatedIdentifier%2CnameIdentifier%2Cxml%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
     end
   end
 
@@ -71,25 +71,26 @@ describe Toccatore::OrcidUpdate, vcr: true do
   context "parse_data" do
     it "should report if there are no works returned by the Datacite Metadata Search API" do
       body = File.read(fixture_path + 'orcid_update_nil.json')
-      result = JSON.parse(body)
-      expect(subject.parse_data("data" => result)).to eq([])
+      result = OpenStruct.new(body: { "data" => JSON.parse(body) })
+      expect(subject.parse_data(result)).to eq([])
     end
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
       body = File.read(fixture_path + 'orcid_update.json')
-      result = JSON.parse(body)
-      response = subject.parse_data("data" => result)
+      result = OpenStruct.new(body: { "data" => JSON.parse(body) })
+      response = subject.parse_data(result)
 
       expect(response.length).to eq(56)
       expect(response.first).to eq("orcid"=>"0000-0001-8478-7549",
                                    "doi"=>"10.6084/M9.FIGSHARE.1226424",
-                                   "source_id"=>"orcid_update")
+                                   "source_id"=>"orcid_update",
+                                   "claim_action" => "create")
     end
 
     it "should catch timeout errors with the Datacite Metadata Search API" do
-      result = { error: "the server responded with status 408 for http://www.citeulike.org/api/posts/for/doi/", status: 408 }
+      result = OpenStruct.new(body: { "errors" => [{ "title" => "the server responded with status 408 for https://search.datacite.org", "status" => 408 }] })
       response = subject.parse_data(result)
-      expect(response).to eq([result])
+      expect(response).to eq(result.body["errors"])
     end
   end
 
@@ -101,18 +102,19 @@ describe Toccatore::OrcidUpdate, vcr: true do
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
       body = File.read(fixture_path + 'orcid_update.json')
-      result = JSON.parse(body)
-      result = subject.parse_data("data" => result)
+      result = OpenStruct.new(body: { "data" => JSON.parse(body) })
+      result = subject.parse_data(result)
+      options = { push_url: ENV['VOLPINO_URL'], access_token: ENV['VOLPINO_TOKEN'] }
 
-      response = subject.push_data(result)
+      response = subject.push_data(result, options)
       expect(response.count).to eq(56)
       claim = response.first
-      expect(claim).to eq("claims")
-      expect(claim["data"]["attributes"]).to eq("orcid"=>"0000-0001-8478-7549",
-                                                "doi"=>"10.6084/M9.FIGSHARE.1226424",
-                                                "source-id"=>"orcid_update",
-                                                "state"=>"waiting",
-                                                "claimed-at"=>nil)
+      expect(claim.body["data"]["attributes"]).to eq("orcid"=>"0000-0001-8478-7549",
+                                                     "doi"=>"10.6084/M9.FIGSHARE.1226424",
+                                                     "source-id"=>"orcid_update",
+                                                     "state"=>"waiting",
+                                                     "claim-action"=>nil,
+                                                     "claimed-at"=>nil)
     end
   end
 end
