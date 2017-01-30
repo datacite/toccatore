@@ -15,7 +15,7 @@ module Toccatore
     # load ENV variables from container environment if json file exists
     # see https://github.com/phusion/baseimage-docker#envvar_dumps
     env_json_file = "/etc/container_environment.json"
-    if File.exist?(env_json_file)
+    if File.size?(env_json_file).to_i > 2
       env_vars = JSON.parse(File.read(env_json_file))
       env_vars.each { |k, v| ENV[k] = v }
     end
