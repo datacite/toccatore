@@ -1,7 +1,6 @@
 FROM phusion/passenger-full:0.9.19
 MAINTAINER Martin Fenner "mfenner@datacite.org"
 
-ENV ACCESS_TOKEN=1
 ENV PATH="/usr/local/rvm/gems/ruby-2.3.1/bin:${PATH}"
 
 # Update installed APT packages, clean up APT when done.
@@ -11,6 +10,4 @@ RUN apt-get update && apt-get upgrade -y -o Dpkg::Options::="--force-confold" &&
 # Install toccatore gem
 RUN /sbin/setuser app gem install toccatore
 
-#CMD ["/usr/local/rvm/gems/ruby-2.3.1/bin/toccatore", "--access_token", ${access_token}]
-# CMD ["/sbin/my_init"]
-CMD ["toccatore", "orcid_update"]
+CMD toccatore orcid_update --push_url $VOLPINO_URL --access_token $VOLPINO_TOKEN --from_date $FROM_DATE --until_date $UNTIL_DATE
