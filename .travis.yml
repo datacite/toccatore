@@ -6,6 +6,7 @@ rvm:
 
 script:
   - bundle exec rspec
+  - bundle exec codeclimate-test-reporter
 
 notifications:
   slack: datacite:Wt8En0ALoTA6Kjc5EOKNDWxN
