@@ -21,9 +21,19 @@ describe Toccatore::CLI do
       expect { subject.orcid_update }.to output(/DOI 10.6084\/M9.FIGSHARE.1041547 for ORCID ID 0000-0002-3546-1048 pushed to Profiles service.\n/).to_stdout
     end
 
+    it 'should succeed with no works' do
+      from_date = "2009-04-07"
+      until_date = "2009-04-08"
+      subject.options = { push_url: push_url,
+                          access_token: access_token,
+                          from_date: from_date,
+                          until_date: until_date }
+      expect { subject.orcid_update }.to output("No works found for date range 2009-04-07 - 2009-04-08.\n").to_stdout
+    end
+
     it 'should fail' do
       subject.options = cli_options.except(:access_token)
-      expect { subject.orcid_update }.to output("An error occured: Access token missing\n").to_stdout
+      expect { subject.orcid_update }.to output(/An error occured: Access token missing.\n/).to_stdout
     end
   end
 end

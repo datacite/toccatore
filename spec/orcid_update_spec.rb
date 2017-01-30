@@ -97,7 +97,8 @@ describe Toccatore::OrcidUpdate, vcr: true do
   context "push_data" do
     it "should report if there are no works returned by the Datacite Metadata Search API" do
       result = []
-      expect(subject.push_data(result)).to be_empty
+      response = subject.push_data(result)
+      expect(response.count).to eq(0)
     end
 
     it "should report if there are works returned by the Datacite Metadata Search API" do

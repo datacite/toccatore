@@ -1,3 +1,5 @@
+require 'maremma'
+require 'active_support/all'
 require 'namae'
 require 'gender_detector'
 
@@ -63,8 +65,8 @@ module Toccatore
       data = get_data(options.merge(timeout: timeout, source_id: source_id))
       data = parse_data(data, options.merge(source_id: source_id))
 
-      # push to deposit API if no error and we have collected works and/or events
-      # returns hash with number of deposits created, e.g. { total: 10 }
+      return [OpenStruct.new(body: { "data" => [] })] if data.empty?
+
       push_data(data, options)
     end
 

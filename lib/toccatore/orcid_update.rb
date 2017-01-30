@@ -40,17 +40,17 @@ module Toccatore
 
     # push to Volpino API if no error and we have collected works
     def push_data(items, options={})
+      Array(items).map { |item| push_item(item, options) }
+    end
+
+    def push_item(item, options={})
+      return OpenStruct.new(body: { "errors" => [{ "title" => "Access token missing." }] }) if options[:access_token].blank?
+
       push_url = (options[:push_url].presence || "https://profiles.datacite.org/api") + "/claims"
-      access_token = options[:access_token]
 
-      return [] if items.empty?
-      return [OpenStruct.new(body: { "errors" => [{ "title" => "Access token missing" }] })] if access_token.blank?
-
-      Array(items).map do |item|
-        Maremma.post(push_url, data: { "claim" => item }.to_json,
-                               token: access_token,
-                               content_type: 'json')
-      end
+      Maremma.post(push_url, data: { "claim" => item }.to_json,
+                             token: options[:access_token],
+                             content_type: 'json')
     end
   end
 end
