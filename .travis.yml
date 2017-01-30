@@ -2,12 +2,18 @@ language: ruby
 cache: bundler
 sudo: false
 rvm:
-  - 2.3.1
-
+- 2.3.1
 script:
-  - bundle exec rspec
-  - bundle exec codeclimate-test-reporter
-
+- bundle exec rspec
+- bundle exec codeclimate-test-reporter
 notifications:
   slack: datacite:Wt8En0ALoTA6Kjc5EOKNDWxN
   email: false
+deploy:
+  provider: rubygems
+  api_key:
+    secure: eLWrKUf5as7RNOJpm4/viPR97yOpYjj7yiwblXf1axtBr/nJCi/ZZ3UyakHbsM88DI+sF52A56cum+0KkWTQuzBVR6TXB3u/UclC0z1pyjv6QClm3qLi5/lx6f//7K9FmdB130CuAUbJgUBiIyDElPJK4bE+teBUWft/Pb49Yy1/5M5F0VV/lZrOQ/O6js9cdmxxmp8DfC+UMmw1I982VGJ1xTW6vhWlZ3pA+PLi7KkdxzA5f3/SQLIC8ij6i9FLFXz37qs5ynumzDKiyshKoVZ7mVeR0SjmGAteAXDqkwmknJPMJTHxc2dvxDpZjB1KguBw6Ohs/Bv+R14bzyXepkBaZ8Mo++Ro0EqRdP9tdLbhhtJJ4+MrVPqYVL+JakAcJY3Y58e/j4ZOvbjrWFJ3oMljDpxzSUNvMvpWCQ8NlEDAhOEG3b4jbERl+vEhjYlcDVeSxBrxA02wXCoWTrZxpkRZY8qdgA3O21W+pcixEGIYT/Ox0jTfWdQUhqjJM16qcN13i6SMzeC1FaihXkA1AltUtEIgXA+uJA9aMrhHGYktMc2XkUqO4blna6ExzBwvafzZgor47oCOh1VLxpas+5Hui3YKEnmHn8sxKa26WuQJomnXgXfhB8n+eB/KWunWOPiBvJZDMU2C6AvP6N1MDTKvQWp2bwU5Jamt9vNjTtM=
+  gem: toccatore
+  on:
+    tags: true
+    repo: datacite/toccatore
