@@ -21,6 +21,16 @@ describe Toccatore::CLI do
       expect { subject.orcid_update }.to output(/DOI 10.6084\/M9.FIGSHARE.1041547 for ORCID ID 0000-0002-3546-1048 pushed to Profiles service.\n/).to_stdout
     end
 
+    it 'should query by DOI' do
+      subject.options = cli_options.merge(doi: "10.5438/6423", from_date: "2013-01-01", until_date: "2016-12-31")
+      expect { subject.orcid_update }.to output(/DOI 10.5438\/6423 for ORCID ID 0000-0001-5331-6592 pushed to Profiles service.\n/).to_stdout
+    end
+
+    it 'should query by ORCID ID' do
+      subject.options = cli_options.merge(orcid: "0000-0002-3546-1048", from_date: "2013-01-01", until_date: "2016-12-31")
+      expect { subject.orcid_update }.to output(/DOI 10.6084\/M9.FIGSHARE.1041547 for ORCID ID 0000-0002-3546-1048 pushed to Profiles service.\n/).to_stdout
+    end
+
     it 'should succeed with no works' do
       from_date = "2009-04-07"
       until_date = "2009-04-08"

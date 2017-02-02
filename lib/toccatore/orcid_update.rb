@@ -6,7 +6,7 @@ module Toccatore
       "orcid_update"
     end
 
-    def q
+    def query
       "nameIdentifier:ORCID\\:*"
     end
 
@@ -40,7 +40,13 @@ module Toccatore
 
     # push to Volpino API if no error and we have collected works
     def push_data(items, options={})
-      Array(items).map { |item| push_item(item, options) }
+      if items.empty?
+        puts "No works found for date range #{options[:from_date]} - #{options[:until_date]}."
+      elsif options[:access_token].blank?
+        puts "An error occured: Access token missing."
+      else
+        Array(items).each { |item| push_item(item, options) }
+      end
     end
 
     def push_item(item, options={})
@@ -48,9 +54,16 @@ module Toccatore
 
       push_url = (options[:push_url].presence || "https://profiles.datacite.org/api") + "/claims"
 
-      Maremma.post(push_url, data: { "claim" => item }.to_json,
-                             token: options[:access_token],
-                             content_type: 'json')
+      response = Maremma.post(push_url, data: { "claim" => item }.to_json,
+                                        token: options[:access_token],
+                                        content_type: 'json')
+      if response.body["data"].present?
+        doi = response.body.fetch("data", {}).fetch("attributes", {}).fetch("doi", nil)
+        orcid = response.body.fetch("data", {}).fetch("attributes", {}).fetch("orcid", nil)
+        puts "DOI #{doi} for ORCID ID #{orcid} pushed to Profiles service."
+      elsif response.body["errors"].present?
+        puts "An error occured: #{response.body['errors'].first['title']}"
+      end
     end
   end
 end

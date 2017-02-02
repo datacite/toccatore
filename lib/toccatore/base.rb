@@ -21,17 +21,13 @@ module Toccatore
     end
 
     def get_query_url(options={})
-      offset = options[:offset].to_i || 0
-      rows = options[:rows].presence || job_batch_size
-      from_date = options[:from_date].presence || (Time.now.to_date - 1.day).iso8601
-      until_date = options[:until_date].presence || Time.now.to_date.iso8601
-
-      updated = "updated:[#{from_date}T00:00:00Z TO #{until_date}T23:59:59Z]"
+      updated = "updated:[#{options[:from_date]}T00:00:00Z TO #{options[:until_date]}T23:59:59Z]"
       fq = "#{updated} AND has_metadata:true AND is_active:true"
+      q = options[:query].presence || query
 
       params = { q: q,
-                 start: offset,
-                 rows: rows,
+                 start: options[:offset],
+                 rows: options[:rows],
                  fl: "doi,creator,title,publisher,publicationYear,resourceTypeGeneral,datacentre_symbol,relatedIdentifier,nameIdentifier,xml,minted,updated",
                  fq: fq,
                  wt: "json" }
@@ -45,6 +41,11 @@ module Toccatore
     end
 
     def queue_jobs(options={})
+      options[:offset] = options[:offset].to_i || 0
+      options[:rows] = options[:rows].presence || job_batch_size
+      options[:from_date] = options[:from_date].presence || (Time.now.to_date - 1.day).iso8601
+      options[:until_date] = options[:until_date].presence || Time.now.to_date.iso8601
+
       total = get_total(options)
 
       if total > 0
@@ -55,6 +56,8 @@ module Toccatore
           options[:offset] = page * job_batch_size
           process_data(options)
         end
+      else
+        puts "No works found for date range #{options[:from_date]} - #{options[:until_date]}."
       end
 
       # return number of works queued
@@ -84,22 +87,24 @@ module Toccatore
 
     # push to Lagotto deposit API if no error and we have collected works
     def push_data(items, options={})
-      return [] if items.empty?
+      if items.empty?
+        puts "No works found for date range #{options[:from_date]} - #{options[:until_date]}."
+      else
+        Array(items).map do |item|
+          relation = item.fetch(:relation, {})
+          deposit = { "deposit" => { "subj_id" => relation.fetch("subj_id", nil),
+                                     "obj_id" => relation.fetch("obj_id", nil),
+                                     "relation_type_id" => relation.fetch("relation_type_id", nil),
+                                     "source_id" => relation.fetch("source_id", nil),
+                                     "publisher_id" => relation.fetch("publisher_id", nil),
+                                     "subj" => item.fetch(:subj, {}),
+                                     "obj" => item.fetch(:obj, {}),
+                                     "message_type" => item.fetch(:message_type, "relation"),
+                                     "prefix" => item.fetch(:prefix, nil),
+                                     "source_token" => uuid } }
 
-      Array(items).map do |item|
-        relation = item.fetch(:relation, {})
-        deposit = { "deposit" => { "subj_id" => relation.fetch("subj_id", nil),
-                                   "obj_id" => relation.fetch("obj_id", nil),
-                                   "relation_type_id" => relation.fetch("relation_type_id", nil),
-                                   "source_id" => relation.fetch("source_id", nil),
-                                   "publisher_id" => relation.fetch("publisher_id", nil),
-                                   "subj" => item.fetch(:subj, {}),
-                                   "obj" => item.fetch(:obj, {}),
-                                   "message_type" => item.fetch(:message_type, "relation"),
-                                   "prefix" => item.fetch(:prefix, nil),
-                                   "source_token" => uuid } }
-
-        Maremma.post push_url, data: deposit.to_json, content_type: 'json', token: access_token
+          Maremma.post push_url, data: deposit.to_json, content_type: 'json', token: access_token
+        end
       end
     end
 
