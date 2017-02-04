@@ -20,7 +20,7 @@ module Toccatore
         doi = item.fetch("doi")
         related_identifiers = item.fetch("relatedIdentifier", [])
         skip_doi = related_identifiers.any? do |related_identifier|
-          ["IsIdenticalTo", "IsPartOf"].include?(related_identifier.split(':', 3).first)
+          ["IsIdenticalTo", "IsPartOf", "IsPreviousVersionOf"].include?(related_identifier.split(':', 3).first)
         end
         name_identifiers = item.fetch("nameIdentifier", [])
 

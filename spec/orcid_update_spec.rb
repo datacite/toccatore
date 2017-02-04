@@ -117,6 +117,12 @@ describe Toccatore::OrcidUpdate, vcr: true do
       expect(subject.parse_data(result)).to eq([])
     end
 
+        it "should report if there are works ignored because of an IsPreviousVersionOf relation" do
+      body = File.read(fixture_path + 'orcid_update_is_previous.json')
+      result = OpenStruct.new(body: { "data" => JSON.parse(body) })
+      expect(subject.parse_data(result)).to eq([])
+    end
+
     it "should report if there are works because of an IsIdenticalTo relation and delete action" do
       body = File.read(fixture_path + 'orcid_update_is_identical.json')
       result = OpenStruct.new(body: { "data" => JSON.parse(body) })
