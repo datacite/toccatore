@@ -17,9 +17,14 @@ module Toccatore
 
       Array(items).reduce([]) do |sum, item|
         doi = item.fetch("doi")
+        related_identifiers = item.fetch("relatedIdentifier", [])
+
+        #<relatedIdentifier relatedIdentifierType="DOI" relationType="IsIdenticalTo">10.6084/m9.figshare.4126869</relatedIdentifier>
         name_identifiers = item.fetch("nameIdentifier", [])
 
-        if name_identifiers.blank?
+        if name_identifiers.blank? || related_identifiers.any? do |related_identifier|
+          ["IsIdenticalTo", "IsPartOf"].include?(related_identifier.split(':', 3).first)
+        end
           sum
         else
           name_identifiers.each do |name_identifier|

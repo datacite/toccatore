@@ -63,14 +63,14 @@ describe Toccatore::OrcidUpdate, vcr: true do
     end
 
     it "should allow queries by ORCID ID of the Datacite Metadata Search API" do
-      response = subject.get_data({ query: "nameIdentifier:ORCID\\:0000-0002-3546-1048", from_date: "2013-01-01", until_date: "2016-12-31", rows: 1000, offset: 0 })
+      response = subject.get_data({ orcid: "0000-0002-3546-1048", from_date: "2013-01-01", until_date: "2016-12-31", rows: 1000, offset: 0 })
       expect(response.body["data"]["response"]["numFound"]).to eq(68)
       doc = response.body["data"]["response"]["docs"].first
       expect(doc["doi"]).to eq("10.6084/M9.FIGSHARE.1371005.V1")
     end
 
     it "should allow queries by DOI of the Datacite Metadata Search API" do
-      response = subject.get_data({ query: "doi:10.5438/6423", from_date: "2013-01-01", until_date: "2016-12-31", rows: 1000, offset: 0 })
+      response = subject.get_data({ doi: "10.5438/6423", from_date: "2013-01-01", until_date: "2016-12-31", rows: 1000, offset: 0 })
       expect(response.body["data"]["response"]["numFound"]).to eq(1)
       doc = response.body["data"]["response"]["docs"].first
       name_identifiers = doc["nameIdentifier"]
@@ -105,6 +105,18 @@ describe Toccatore::OrcidUpdate, vcr: true do
                                    "claim_action" => "create")
     end
 
+    it "should report if there are works ignored because of an IsIdenticalTo relation" do
+      body = File.read(fixture_path + 'orcid_update_is_identical.json')
+      result = OpenStruct.new(body: { "data" => JSON.parse(body) })
+      expect(subject.parse_data(result)).to eq([])
+    end
+
+    it "should report if there are works ignored because of an IsPartOf relation" do
+      body = File.read(fixture_path + 'orcid_update_is_part.json')
+      result = OpenStruct.new(body: { "data" => JSON.parse(body) })
+      expect(subject.parse_data(result)).to eq([])
+    end
+
     it "should catch timeout errors with the Datacite Metadata Search API" do
       result = OpenStruct.new(body: { "errors" => [{ "title" => "the server responded with status 408 for https://search.datacite.org", "status" => 408 }] })
       response = subject.parse_data(result)
@@ -124,6 +136,12 @@ describe Toccatore::OrcidUpdate, vcr: true do
       result = subject.parse_data(result)
       options = { push_url: ENV['VOLPINO_URL'], access_token: ENV['VOLPINO_TOKEN'] }
       expect { subject.push_data(result, options) }.to output(/DOI 10.6084\/M9.FIGSHARE.1041547 for ORCID ID 0000-0002-3546-1048 pushed to Profiles service.\n/).to_stdout
+    end
+  end
+
+  context "unfreeze" do
+    it "should unfreeze" do
+      expect(subject.unfreeze(query_options)).to eq(:from_date=>"2015-04-07", :until_date=>"2015-04-08", :rows=>1000, :offset=>0)
     end
   end
 end
