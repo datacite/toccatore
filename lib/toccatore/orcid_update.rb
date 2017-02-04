@@ -14,17 +14,17 @@ module Toccatore
       return result.body.fetch("errors") if result.body.fetch("errors", nil).present?
 
       items = result.body.fetch("data", {}).fetch('response', {}).fetch('docs', nil)
+      claim_action = options[:claim_action].presence || "create"
 
       Array(items).reduce([]) do |sum, item|
         doi = item.fetch("doi")
         related_identifiers = item.fetch("relatedIdentifier", [])
-
-        #<relatedIdentifier relatedIdentifierType="DOI" relationType="IsIdenticalTo">10.6084/m9.figshare.4126869</relatedIdentifier>
-        name_identifiers = item.fetch("nameIdentifier", [])
-
-        if name_identifiers.blank? || related_identifiers.any? do |related_identifier|
+        skip_doi = related_identifiers.any? do |related_identifier|
           ["IsIdenticalTo", "IsPartOf"].include?(related_identifier.split(':', 3).first)
         end
+        name_identifiers = item.fetch("nameIdentifier", [])
+
+        if name_identifiers.blank? || (skip_doi && claim_action == "create") || (!skip_doi && claim_action == "delete")
           sum
         else
           name_identifiers.each do |name_identifier|
@@ -36,7 +36,7 @@ module Toccatore
             sum << { "orcid" => orcid,
                      "doi" => doi,
                      "source_id" => source_id,
-                     "claim_action"=>"create" }
+                     "claim_action"=> claim_action }
           end
           sum
         end
@@ -65,7 +65,8 @@ module Toccatore
       if response.body["data"].present?
         doi = response.body.fetch("data", {}).fetch("attributes", {}).fetch("doi", nil)
         orcid = response.body.fetch("data", {}).fetch("attributes", {}).fetch("orcid", nil)
-        puts "DOI #{doi} for ORCID ID #{orcid} pushed to Profiles service."
+        claim_action = response.body.fetch("data", {}).fetch("attributes", {}).fetch("claim-action", nil)
+        puts "#{claim_action.titleize} DOI #{doi} for ORCID ID #{orcid} pushed to Profiles service."
       elsif response.body["errors"].present?
         puts "An error occured: #{response.body['errors'].first['title']}"
       end

@@ -117,6 +117,12 @@ describe Toccatore::OrcidUpdate, vcr: true do
       expect(subject.parse_data(result)).to eq([])
     end
 
+    it "should report if there are works because of an IsIdenticalTo relation and delete action" do
+      body = File.read(fixture_path + 'orcid_update_is_identical.json')
+      result = OpenStruct.new(body: { "data" => JSON.parse(body) })
+      expect(subject.parse_data(result, claim_action: "delete")).to eq([{"orcid"=>"0000-0003-1013-1533", "doi"=>"10.6084/M9.FIGSHARE.4126869.V1", "source_id"=>"orcid_update", "claim_action"=>"delete"}])
+    end
+
     it "should catch timeout errors with the Datacite Metadata Search API" do
       result = OpenStruct.new(body: { "errors" => [{ "title" => "the server responded with status 408 for https://search.datacite.org", "status" => 408 }] })
       response = subject.parse_data(result)
@@ -135,7 +141,15 @@ describe Toccatore::OrcidUpdate, vcr: true do
       result = OpenStruct.new(body: { "data" => JSON.parse(body) })
       result = subject.parse_data(result)
       options = { push_url: ENV['VOLPINO_URL'], access_token: ENV['VOLPINO_TOKEN'] }
-      expect { subject.push_data(result, options) }.to output(/DOI 10.6084\/M9.FIGSHARE.1041547 for ORCID ID 0000-0002-3546-1048 pushed to Profiles service.\n/).to_stdout
+      expect { subject.push_data(result, options) }.to output(/Create DOI 10.6084\/M9.FIGSHARE.1041547 for ORCID ID 0000-0002-3546-1048 pushed to Profiles service.\n/).to_stdout
+    end
+
+    it "should delete claims" do
+      body = File.read(fixture_path + 'orcid_update_is_identical.json')
+      result = OpenStruct.new(body: { "data" => JSON.parse(body) })
+      result = subject.parse_data(result, claim_action: "delete")
+      options = { push_url: ENV['VOLPINO_URL'], access_token: ENV['VOLPINO_TOKEN'], from_date: "2013-01-01", until_date: "2016-12-31", claim_action: "delete" }
+      expect { subject.push_data(result, options) }.to output(/Delete DOI 10.6084\/M9.FIGSHARE.4126869.V1 for ORCID ID 0000-0003-1013-1533 pushed to Profiles service.\n/).to_stdout
     end
   end
 

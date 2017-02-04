@@ -25,6 +25,7 @@ module Toccatore
     method_option :q, type: :string
     method_option :orcid, type: :string
     method_option :doi, type: :string
+    method_option :claim_action, type: :string, default: "create"
     def orcid_update
       orcid_update = Toccatore::OrcidUpdate.new
       orcid_update.queue_jobs(orcid_update.unfreeze(options))
