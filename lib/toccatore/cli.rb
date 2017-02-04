@@ -22,15 +22,12 @@ module Toccatore
     method_option :push_url, type: :string
     method_option :from_date, type: :string, default: (Time.now.to_date - 1.day).iso8601
     method_option :until_date, type: :string, default: Time.now.to_date.iso8601
-    method_option :query, type: :string
+    method_option :q, type: :string
     method_option :orcid, type: :string
     method_option :doi, type: :string
     def orcid_update
-      options[:query] = "doi:#{options[:doi]}" if options[:doi].present?
-      options[:query] = "nameIdentifier:ORCID\\:#{options[:orcid]}" if options[:orcid].present?
-
       orcid_update = Toccatore::OrcidUpdate.new
-      orcid_update.queue_jobs(options)
+      orcid_update.queue_jobs(orcid_update.unfreeze(options))
     end
   end
 end

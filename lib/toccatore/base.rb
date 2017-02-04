@@ -23,7 +23,16 @@ module Toccatore
     def get_query_url(options={})
       updated = "updated:[#{options[:from_date]}T00:00:00Z TO #{options[:until_date]}T23:59:59Z]"
       fq = "#{updated} AND has_metadata:true AND is_active:true"
-      q = options[:query].presence || query
+
+      if options[:doi].present?
+        q = "doi:#{options[:doi]}"
+      elsif options[:orcid].present?
+        q = "nameIdentifier:ORCID\\:#{options[:orcid]}"
+      elsif options[:query].present?
+        q = options[:query]
+      else
+        q = query
+      end
 
       params = { q: q,
                  start: options[:offset],
@@ -357,6 +366,12 @@ module Toccatore
 
     def name_detector
       GenderDetector.new
+    end
+
+    def unfreeze(hsh)
+      new_hash = {}
+      hsh.each_pair { |k,v| new_hash.merge!({k.downcase.to_sym => v})  }
+      new_hash
     end
   end
 end
