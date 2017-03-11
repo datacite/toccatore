@@ -10,7 +10,7 @@ module Toccatore
       "relatedIdentifier:DOI\\:*"
     end
 
-    def parse_data(result, options={})
+    def parse_data(result)
       return result.body.fetch("errors") if result.body.fetch("errors", nil).present?
 
       items = result.body.fetch("data", {}).fetch('response', {}).fetch('docs', nil)
@@ -42,17 +42,6 @@ module Toccatore
         end
 
         sum
-      end
-    end
-
-    # push to Event Data API if no error and we have collected works
-    def push_data(items, options={})
-      if items.empty?
-        puts "No works found for date range #{options[:from_date]} - #{options[:until_date]}."
-      elsif options[:access_token].blank?
-        puts "An error occured: Access token missing."
-      else
-        Array(items).each { |item| push_item(item, options) }
       end
     end
 

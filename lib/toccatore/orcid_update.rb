@@ -43,17 +43,6 @@ module Toccatore
       end
     end
 
-    # push to Volpino API if no error and we have collected works
-    def push_data(items, options={})
-      if items.empty?
-        puts "No works found for date range #{options[:from_date]} - #{options[:until_date]}."
-      elsif options[:access_token].blank?
-        puts "An error occured: Access token missing."
-      else
-        Array(items).each { |item| push_item(item, options) }
-      end
-    end
-
     def push_item(item, options={})
       return OpenStruct.new(body: { "errors" => [{ "title" => "Access token missing." }] }) if options[:access_token].blank?
 

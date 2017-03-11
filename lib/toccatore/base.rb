@@ -89,6 +89,16 @@ module Toccatore
       Maremma.get(query_url, options)
     end
 
+    def push_data(items, options={})
+      if items.empty?
+        puts "No works found for date range #{options[:from_date]} - #{options[:until_date]}."
+      elsif options[:access_token].blank?
+        puts "An error occured: Access token missing."
+      else
+        Array(items).each { |item| push_item(item, options) }
+      end
+    end
+
     def url
       "https://search.datacite.org/api?"
     end
@@ -145,7 +155,7 @@ module Toccatore
 
     # parse author string into CSL format
     # only assume personal name when using sort-order: "Turing, Alan"
-    def get_one_author(author, options = {})
+    def get_one_author(author)
       return { "literal" => "" } if author.strip.blank?
 
       author = cleanup_author(author)
