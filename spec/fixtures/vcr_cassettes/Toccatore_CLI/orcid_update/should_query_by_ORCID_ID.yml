@@ -23,18 +23,20 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Sat, 11 Mar 2017 09:14:14 GMT
+      - Sat, 11 Mar 2017 10:47:29 GMT
       Server:
       - openresty/1.11.2.2
+      Content-Length:
+      - '89'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":68,"start":0,"docs":[]}}
+      string: '{"responseHeader":{"status":0,"QTime":1},"response":{"numFound":68,"start":0,"docs":[]}}
 
 '
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:14 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:29 GMT
 - request:
     method: get
     uri: https://search.datacite.org/api?fl=doi,resourceTypeGeneral,relatedIdentifier,nameIdentifier,minted,updated&fq=updated:%5B2013-01-01T00:00:00Z%20TO%202017-12-31T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=nameIdentifier:ORCID%5C:0000-0002-3546-1048&rows=1000&start=0&wt=json
@@ -58,7 +60,7 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Sat, 11 Mar 2017 09:14:14 GMT
+      - Sat, 11 Mar 2017 10:47:29 GMT
       Server:
       - openresty/1.11.2.2
       Connection:
@@ -69,7 +71,7 @@ http_interactions:
 
 '
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:14 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:29 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -87,26 +89,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:14 GMT
+      - Sat, 11 Mar 2017 10:47:30 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - c34d20da-b0cd-4cd8-a51a-a9641f976434
+      X-Runtime:
+      - '0.016481'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"f7d55d19-7182-4bd3-8e1e-1647b29ab577","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371005.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:14 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:30 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -124,26 +150,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:15 GMT
+      - Sat, 11 Mar 2017 10:47:30 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 442637cd-363e-47fe-9c7c-c86719b405f6
+      X-Runtime:
+      - '0.010887'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"2f6b68d9-7f8a-462d-9248-db310398c7d9","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371005.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:15 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:30 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -161,26 +211,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:15 GMT
+      - Sat, 11 Mar 2017 10:47:30 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - aa380b2a-e93b-4f20-8fd2-645134a8fae8
+      X-Runtime:
+      - '0.010423'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"a85c3b6d-2140-4be9-b823-e8160192b844","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371006.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:15 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:30 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -198,26 +272,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:15 GMT
+      - Sat, 11 Mar 2017 10:47:30 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 488d9731-4264-48d6-a3b1-419f39684632
+      X-Runtime:
+      - '0.024767'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"cc5e6be1-bc84-43cb-85c3-fb6dd152e244","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371006.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:15 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:30 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -235,26 +333,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:15 GMT
+      - Sat, 11 Mar 2017 10:47:31 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 08dd51b9-c8a9-4ac5-b262-e96b60cbb703
+      X-Runtime:
+      - '0.020605'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"ba1d5b10-644e-4bf5-9c79-7fb812215c3f","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371137.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:15 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:31 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -272,26 +394,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:15 GMT
+      - Sat, 11 Mar 2017 10:47:31 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - be1f7982-d17a-4529-b261-7da3a6c09787
+      X-Runtime:
+      - '0.014593'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"044bb59d-b87f-4f1d-9819-2e6ef139ed99","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371138.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:15 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:31 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -309,26 +455,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:15 GMT
+      - Sat, 11 Mar 2017 10:47:31 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - b8c329e2-ba95-4a3c-a033-34dfb7a15ad5
+      X-Runtime:
+      - '0.010671'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"798b6d68-85fa-453a-8990-43425a51362c","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371138.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:15 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:31 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -346,26 +516,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:16 GMT
+      - Sat, 11 Mar 2017 10:47:31 GMT
       Server:
-      - kong/0.10.0
-      Content-Length:
-      - '45'
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - b7ddff13-209d-4c98-bf81-e535357be901
+      X-Runtime:
+      - '0.010726'
+      X-Xss-Protection:
+      - 1; mode=block
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"f72892d5-7c49-4df7-a698-27027cc6b871","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371139.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:16 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:31 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -383,26 +575,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:16 GMT
+      - Sat, 11 Mar 2017 10:47:32 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - b21577a9-3e27-413c-9f78-35fb47241284
+      X-Runtime:
+      - '0.011767'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"a500ba1a-281c-4b33-bf14-22f601116277","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1407433.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:16 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:32 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -420,26 +636,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:16 GMT
+      - Sat, 11 Mar 2017 10:47:32 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 4350dc00-eacf-454b-99b5-e910b5a2f993
+      X-Runtime:
+      - '0.012132'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"2207a249-d0f9-44d1-bf11-91b1d41f315b","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1407433.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:16 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:32 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -457,26 +697,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:16 GMT
+      - Sat, 11 Mar 2017 10:47:32 GMT
       Server:
-      - kong/0.10.0
-      Content-Length:
-      - '45'
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 35a69f0c-13d0-4e1e-a132-d4978f4f6174
+      X-Runtime:
+      - '0.010582'
+      X-Xss-Protection:
+      - 1; mode=block
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"c435261a-2f94-4fbf-9d05-9364c3c92123","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1408873.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:16 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:32 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -494,26 +756,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:16 GMT
+      - Sat, 11 Mar 2017 10:47:32 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 6dfe3b92-4b4e-416b-8fba-8329e948da0e
+      X-Runtime:
+      - '0.011804'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '240'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"5469e1fb-ba78-498a-8396-4c315a9b856b","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.735810.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:16 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:32 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -531,26 +817,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:16 GMT
+      - Sat, 11 Mar 2017 10:47:33 GMT
       Server:
-      - kong/0.10.0
-      Content-Length:
-      - '45'
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 78f28811-cf38-410e-910e-e7caf6eb4987
+      X-Runtime:
+      - '0.012565'
+      X-Xss-Protection:
+      - 1; mode=block
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"9059ae4d-3963-41ba-8efe-3ae094f0adc7","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.735811.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:16 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:33 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -568,26 +876,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:16 GMT
+      - Sat, 11 Mar 2017 10:47:33 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 9131a2e3-ce5e-41de-a349-6e8153bc174f
+      X-Runtime:
+      - '0.010976'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '240'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"f953cf4a-da95-4a66-a1ff-e4ea6dd7374b","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.745301.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:16 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:33 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -605,26 +937,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:17 GMT
+      - Sat, 11 Mar 2017 10:47:33 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - cf9baabe-6c3b-4d6e-be58-63d45372b7bf
+      X-Runtime:
+      - '0.010952'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '240'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"febfaa31-8e96-482f-8cdc-c6df787e747c","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.745313.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:17 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:33 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -642,26 +998,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:17 GMT
+      - Sat, 11 Mar 2017 10:47:33 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - fbc07bee-1eb2-45b8-a10a-b6e8c5ae1dd0
+      X-Runtime:
+      - '0.010167'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '240'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"ff69f955-f7e3-4917-8885-97ac6f12de92","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.746960.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:17 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:33 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -679,26 +1059,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:17 GMT
+      - Sat, 11 Mar 2017 10:47:33 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 1854aa4d-9c5d-4e79-a9e9-d6e6bc8a68c4
+      X-Runtime:
+      - '0.011512'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '240'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"75e19279-8c38-4ed3-be2b-0a011fbc1546","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.760716.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:17 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:33 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -716,26 +1120,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:17 GMT
+      - Sat, 11 Mar 2017 10:47:34 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 40a74b42-2639-446f-8ff1-c21810e44701
+      X-Runtime:
+      - '0.025789'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '240'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"588561df-a902-4af1-9069-ec85ec646b1a","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769270.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:17 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:34 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -753,26 +1181,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:17 GMT
+      - Sat, 11 Mar 2017 10:47:34 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 45c6c86b-8ca2-45b9-bbfb-ab6d060dcdee
+      X-Runtime:
+      - '0.010890'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '240'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"5d7461de-3e94-4883-bfc1-7d8c7d1f0722","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769270.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:17 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:34 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -790,26 +1242,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:17 GMT
+      - Sat, 11 Mar 2017 10:47:34 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 4ce1f3e1-7bef-4b07-88d9-65f8f6ec146f
+      X-Runtime:
+      - '0.011476'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '240'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"b36f5034-c396-4fb0-96f1-d23d7329970b","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:17 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:34 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -827,26 +1303,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:18 GMT
+      - Sat, 11 Mar 2017 10:47:34 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 684db03f-92d2-45fc-ac80-c44a885eb441
+      X-Runtime:
+      - '0.010969'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '240'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"b1e53d56-0c02-4bae-b7d6-8febe8d5d448","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:18 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:34 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -864,26 +1364,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:18 GMT
+      - Sat, 11 Mar 2017 10:47:35 GMT
       Server:
-      - kong/0.10.0
-      Content-Length:
-      - '45'
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - a30692b8-beae-48f1-9fba-7d8595c96a18
+      X-Runtime:
+      - '0.013227'
+      X-Xss-Protection:
+      - 1; mode=block
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"f19e3c8a-a6f5-4223-8de3-28310fad14bc","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271.V3","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:18 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:35 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -901,26 +1423,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:18 GMT
+      - Sat, 11 Mar 2017 10:47:35 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - fae9d0f7-ec7f-449f-8fd3-85d9e13b796a
+      X-Runtime:
+      - '0.011456'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '240'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"8e670c7d-2fbd-451f-acc7-52a63a4fdf1d","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769272.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:18 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:35 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -938,26 +1484,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:18 GMT
+      - Sat, 11 Mar 2017 10:47:35 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 5cc27278-113c-4cb4-948c-79bf985d90bf
+      X-Runtime:
+      - '0.010916'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '240'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"374f050e-d5e8-4bb7-b5bb-4cfa581b7fe5","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769272.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:18 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:35 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -975,26 +1545,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:18 GMT
+      - Sat, 11 Mar 2017 10:47:35 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 8ac5c2b5-3c33-4e75-a9f1-c7d3386bab1d
+      X-Runtime:
+      - '0.011180'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '240'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"a27e6c31-bd8a-47b5-91a3-207d65fbbb36","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.778701.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:18 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:35 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1012,26 +1606,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:18 GMT
+      - Sat, 11 Mar 2017 10:47:36 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 1df45263-a3b4-4af5-ae8d-10b05daf8ebd
+      X-Runtime:
+      - '0.011669'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '240'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"d54d379d-bf8f-4e19-bb19-e1714aaf0b80","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.779705.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:18 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:36 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1049,26 +1667,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:19 GMT
+      - Sat, 11 Mar 2017 10:47:36 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 5dbd1db3-283e-4bb9-9791-3e424a03cc4a
+      X-Runtime:
+      - '0.012912'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '240'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"3be7ca12-c1f7-4562-948e-80abc0e0e1a9","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.999239.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:19 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:36 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1086,26 +1728,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:19 GMT
+      - Sat, 11 Mar 2017 10:47:36 GMT
       Server:
-      - kong/0.10.0
-      Content-Length:
-      - '45'
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 99b2c597-ca86-4a3f-9166-6599a1e3b703
+      X-Runtime:
+      - '0.011364'
+      X-Xss-Protection:
+      - 1; mode=block
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"911ee816-b01d-4c95-922e-660ce1fa8aa6","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.999239.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:19 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:36 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1123,26 +1787,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:19 GMT
+      - Sat, 11 Mar 2017 10:47:36 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 66b5d82c-79b1-4924-9983-d1054d6c72fe
+      X-Runtime:
+      - '0.020722'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '240'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"4042f2fc-26ca-4b58-92a3-2ef58f6cab35","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.999239.V3","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:19 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:36 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1160,26 +1848,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:19 GMT
+      - Sat, 11 Mar 2017 10:47:37 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 3e0f1cb4-661f-4276-87d0-e9e8e09d3f80
+      X-Runtime:
+      - '0.012550'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '240'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"bacdec63-9eca-499b-a49e-bbbc896577b4","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.999239.V4","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:19 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:37 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1197,26 +1909,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:19 GMT
+      - Sat, 11 Mar 2017 10:47:37 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 21bf11e9-c7dd-4a95-a9f4-ce327ce2fa60
+      X-Runtime:
+      - '0.011547'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"8956a37a-416d-4bc2-99d3-f9bbfada64ec","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008320.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:19 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:37 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1234,26 +1970,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:19 GMT
+      - Sat, 11 Mar 2017 10:47:37 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 326d0d98-aa1a-488b-a3ab-357bfcd9a5ca
+      X-Runtime:
+      - '0.011024'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"5740e9cc-d0a5-4231-9067-f7e2dff86a3a","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008320.V3","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:19 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:37 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1271,26 +2031,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:19 GMT
+      - Sat, 11 Mar 2017 10:47:37 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 25d25b6f-2dcb-4dbc-a2cb-a978e678c588
+      X-Runtime:
+      - '0.010575'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"aa59be0b-3a55-401c-8a2d-2e62b064033d","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008321.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:19 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:37 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1308,26 +2092,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:20 GMT
+      - Sat, 11 Mar 2017 10:47:37 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - ae12a22e-df95-4ca5-8986-ec99fd854cb2
+      X-Runtime:
+      - '0.011347'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"296054f0-0306-404e-9c2a-23590bee1cd8","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008321.V3","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:20 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:38 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1345,26 +2153,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:20 GMT
+      - Sat, 11 Mar 2017 10:47:38 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 18000e0c-24d5-4e8f-bc75-030c6977df9c
+      X-Runtime:
+      - '0.014795'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"1cb18622-ef17-4402-8a2e-585704a46d21","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014348.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:20 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:38 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1382,26 +2214,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:20 GMT
+      - Sat, 11 Mar 2017 10:47:38 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - fd7914a9-1d97-45df-9cec-66cb2c1ce119
+      X-Runtime:
+      - '0.011400'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"2d5ed88d-da01-4187-a1fc-deaeb629fceb","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014348.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:20 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:38 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1419,26 +2275,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:20 GMT
+      - Sat, 11 Mar 2017 10:47:38 GMT
       Server:
-      - kong/0.10.0
-      Content-Length:
-      - '45'
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 13dfaa5d-c772-4b2a-a133-e2c22bd8827a
+      X-Runtime:
+      - '0.010335'
+      X-Xss-Protection:
+      - 1; mode=block
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"9e13ef11-c907-4f7e-9a72-7f74c51bca4b","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014351.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:20 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:38 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1456,26 +2334,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:20 GMT
+      - Sat, 11 Mar 2017 10:47:38 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 480c016c-4a2a-4c2a-820a-1fbf794cc88f
+      X-Runtime:
+      - '0.011457'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"5e5eae3d-76d1-4591-a4da-6a0ea18c89c6","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014348.V3","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:20 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:39 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1493,26 +2395,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:20 GMT
+      - Sat, 11 Mar 2017 10:47:39 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - b5c34e7c-3c8b-431d-a553-1f441d1f5251
+      X-Runtime:
+      - '0.012474'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"b231fb70-29ba-422b-ac79-9e3bd5410442","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014352.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:20 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:39 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1530,26 +2456,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:21 GMT
+      - Sat, 11 Mar 2017 10:47:39 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 9b64135f-7112-413c-a626-45df88d2a7ff
+      X-Runtime:
+      - '0.011680'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"3a32ed48-4f86-4570-a3b7-47c9bdbae9f3","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1041547.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:21 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:39 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1567,26 +2517,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:21 GMT
+      - Sat, 11 Mar 2017 10:47:39 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - e72839e3-fffe-460a-84b1-c30d4776247a
+      X-Runtime:
+      - '0.011304'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"cb4db0a3-90e8-4843-b79a-04902c9f9ca2","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1041547.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:21 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:39 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1604,26 +2578,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:21 GMT
+      - Sat, 11 Mar 2017 10:47:39 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 20301ead-f18b-4006-9c03-1995ebe7ac01
+      X-Runtime:
+      - '0.010906'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"e2150a1d-a937-4257-a148-0f2b78434271","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1041547.V4","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:21 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:39 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1641,26 +2639,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:21 GMT
+      - Sat, 11 Mar 2017 10:47:40 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 586f00ed-c1f9-4eb2-b32d-739a82fdb4a5
+      X-Runtime:
+      - '0.013663'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"ec8899ef-25f0-4cb8-88c2-fa5eacc37096","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1041547.V3","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:21 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:40 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1678,26 +2700,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:21 GMT
+      - Sat, 11 Mar 2017 10:47:40 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 1034ac28-b7bd-48c3-86c4-4e11419cc097
+      X-Runtime:
+      - '0.011200'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"27913db7-e2b1-47ea-a057-f15647402e26","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1041547","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:21 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:40 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1715,26 +2761,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:21 GMT
+      - Sat, 11 Mar 2017 10:47:40 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 1d691aaf-7bb0-4194-a7cf-b0e96cab9c78
+      X-Runtime:
+      - '0.012053'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"e9c6edae-a6c9-4d21-bd35-9c7719a1d1fc","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1407433","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:21 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:40 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1752,26 +2822,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:21 GMT
+      - Sat, 11 Mar 2017 10:47:40 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 6280f0ad-5f77-4262-8535-a2777f2cd23c
+      X-Runtime:
+      - '0.010555'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"8af8e412-c333-44ce-8079-4bf55149d0c6","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1408873","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:21 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:40 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1789,26 +2883,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:22 GMT
+      - Sat, 11 Mar 2017 10:47:41 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - dd838142-5afd-465a-9f4e-b87f44764ecb
+      X-Runtime:
+      - '0.012174'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"75f9f7d1-43a8-4ce9-9a67-196c5ef4bd91","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371006","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:22 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:41 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1826,26 +2944,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:22 GMT
+      - Sat, 11 Mar 2017 10:47:41 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 86dba945-2e89-42e1-8310-e5264d6729f8
+      X-Runtime:
+      - '0.011567'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"0fe9bf2c-8d15-41ff-90be-58830a12a4c1","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371005","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:22 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:41 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1863,26 +3005,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:22 GMT
+      - Sat, 11 Mar 2017 10:47:41 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - c02aadd6-57b3-4ffc-b4ad-a82a51c1a044
+      X-Runtime:
+      - '0.010754'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"df589091-5b89-4714-a427-27367b03aa1b","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371137","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:22 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:41 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1900,26 +3066,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:22 GMT
+      - Sat, 11 Mar 2017 10:47:41 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - a5a856ef-6040-4eb3-88c7-4ddadd7d202f
+      X-Runtime:
+      - '0.011854'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"9e7cae20-e811-486c-bdcc-dcb5bd1bcbe9","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371138","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:22 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:41 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1937,26 +3127,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:22 GMT
+      - Sat, 11 Mar 2017 10:47:42 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 68a5268a-00ac-4b92-b1e0-e0762dadc791
+      X-Runtime:
+      - '0.012559'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"87265bf1-b0fb-4e36-8621-62914d9f176f","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371139","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:22 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:42 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1974,26 +3188,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:22 GMT
+      - Sat, 11 Mar 2017 10:47:42 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 3878795b-4ea5-4462-bedf-6896a38284b1
+      X-Runtime:
+      - '0.010934'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"19061330-0966-42f4-9a7c-bd932be203ac","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.999239","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:22 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:42 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2011,26 +3249,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:23 GMT
+      - Sat, 11 Mar 2017 10:47:42 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - ba7cf328-205a-45ae-8cd3-fc0742953bf0
+      X-Runtime:
+      - '0.011572'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"822fc357-3f7f-461c-a7ba-c32346f57797","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008321","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:23 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:42 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2048,26 +3310,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:23 GMT
+      - Sat, 11 Mar 2017 10:47:42 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - a17a442c-ef7a-4f33-be14-519922d37160
+      X-Runtime:
+      - '0.010090'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"fa61847e-92ff-4394-8b0f-4bdfb15beba8","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008320","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:23 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:42 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2085,26 +3371,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:23 GMT
+      - Sat, 11 Mar 2017 10:47:43 GMT
       Server:
-      - kong/0.10.0
-      Content-Length:
-      - '45'
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 2af651ab-1c92-4931-a497-d133b3ab1118
+      X-Runtime:
+      - '0.011400'
+      X-Xss-Protection:
+      - 1; mode=block
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"7908fa7b-920a-4a23-a974-47732d013abc","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.746960","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:23 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:43 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2122,26 +3430,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:23 GMT
+      - Sat, 11 Mar 2017 10:47:43 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 4ab91615-9c19-44ad-9f96-d294735adf4f
+      X-Runtime:
+      - '0.011565'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"07c2770d-159b-470e-ba94-7e81c082452c","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.760716","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:23 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:43 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2159,26 +3491,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:23 GMT
+      - Sat, 11 Mar 2017 10:47:43 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - bc0a1481-879b-4314-8f48-bf808848ff1f
+      X-Runtime:
+      - '0.010865'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"b5965e58-8bbe-4387-9d1e-36c9d6c9b5ac","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769272","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:23 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:43 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2196,26 +3552,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:23 GMT
+      - Sat, 11 Mar 2017 10:47:43 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 53c8e630-44c8-46dd-b788-c78ede1f2436
+      X-Runtime:
+      - '0.010102'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"87ed8708-35e6-4c0f-9183-1dd416071d7f","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:23 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:43 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2233,26 +3613,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:24 GMT
+      - Sat, 11 Mar 2017 10:47:43 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 61dffc7a-10a7-45b1-9454-330439019130
+      X-Runtime:
+      - '0.010345'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"729ef8bc-05a2-4daa-9774-3f9aa100478c","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769270","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:24 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:44 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2270,26 +3674,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:24 GMT
+      - Sat, 11 Mar 2017 10:47:44 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - f697ed4e-564a-4175-9d38-982672ac8168
+      X-Runtime:
+      - '0.010820'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"5e4ea0c7-b970-45d1-ba75-4bff83dac219","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.778701","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:24 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:44 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2307,26 +3735,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:24 GMT
+      - Sat, 11 Mar 2017 10:47:44 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - b9f6e44a-824b-4f96-b381-79fcb6d54750
+      X-Runtime:
+      - '0.013797'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"48d051e8-48b0-4c46-9747-3ff21135bba3","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.779705","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:24 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:44 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2344,26 +3796,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:24 GMT
+      - Sat, 11 Mar 2017 10:47:44 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 215e29c0-8dd1-4404-abed-4354d4969d4a
+      X-Runtime:
+      - '0.010760'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"2433e392-00dd-4b2e-866d-c68b1fa6fe00","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.735810","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:24 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:44 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2381,26 +3857,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:24 GMT
+      - Sat, 11 Mar 2017 10:47:44 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - a0ba232e-cbd5-44f5-be53-73a6fb70ddf7
+      X-Runtime:
+      - '0.010531'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"841b8ce7-0a5a-48db-baff-35fc87d39c07","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.735811","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:24 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:44 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2418,26 +3918,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:24 GMT
+      - Sat, 11 Mar 2017 10:47:45 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 16211ba5-d21a-49f1-9474-089eb2570d6c
+      X-Runtime:
+      - '0.011676'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"a85ad7d7-781d-432f-964b-28d1415e66e8","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.745301","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:24 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:45 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2455,26 +3979,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:25 GMT
+      - Sat, 11 Mar 2017 10:47:45 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - bba4bc04-bdab-4f4e-a176-5cd9c6ab3721
+      X-Runtime:
+      - '0.010732'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"ceecbf26-026f-4963-a26f-dc5be25a3c4a","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.745313","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:25 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:45 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2492,26 +4040,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:25 GMT
+      - Sat, 11 Mar 2017 10:47:45 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 1cfbda13-d492-488e-a701-b5dd2333b7fb
+      X-Runtime:
+      - '0.014054'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"e2fa98bb-fb5b-4fcb-a64b-8ba03cb172e6","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014351","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:25 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:45 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2529,26 +4101,50 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:25 GMT
+      - Sat, 11 Mar 2017 10:47:45 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 33fb38db-2da5-4f52-8dff-6dfdf1117e89
+      X-Runtime:
+      - '0.010163'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"44d44c6f-a78e-45b5-8031-3d63f3b11177","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014348","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:25 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:45 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2566,24 +4162,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:25 GMT
+      - Sat, 11 Mar 2017 10:47:46 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 77ef7786-028c-4c23-8db0-eff93f80f310
+      X-Runtime:
+      - '0.009972'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"823a69de-f1d7-4fd1-8b7b-42cea5ad3b60","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014352","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 09:14:25 GMT
+  recorded_at: Sat, 11 Mar 2017 10:47:46 GMT
 recorded_with: VCR 3.0.3

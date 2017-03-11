@@ -13,4 +13,4 @@ RUN apt-get update && apt-get upgrade -y -o Dpkg::Options::="--force-confold" &&
 # Install toccatore gem
 RUN /sbin/setuser app gem install toccatore
 
-CMD toccatore orcid_update --push_url $VOLPINO_URL --access_token $VOLPINO_TOKEN --from_date $FROM_DATE --until_date $UNTIL_DATE
+CMD toccatore --version

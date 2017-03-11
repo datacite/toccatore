@@ -17,24 +17,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:40 GMT
+      - Sat, 11 Mar 2017 10:44:49 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 937ab67a-7004-4109-b9b6-9f42eb59267a
+      X-Runtime:
+      - '0.051823'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"2705ee77-417f-4155-8633-94927a68ecf6","type":"claims","attributes":{"orcid":"0000-0001-8478-7549","doi":"10.6084/M9.FIGSHARE.1226424","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -54,24 +78,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:40 GMT
+      - Sat, 11 Mar 2017 10:44:49 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 69bb4f49-2dc1-49be-a4be-3243c682a2e1
+      X-Runtime:
+      - '0.011121'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"75f9f7d1-43a8-4ce9-9a67-196c5ef4bd91","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371006","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -91,24 +139,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:40 GMT
+      - Sat, 11 Mar 2017 10:44:49 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 4eeb8615-c38d-4562-91ca-14b08bdcabae
+      X-Runtime:
+      - '0.009841'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"0fe9bf2c-8d15-41ff-90be-58830a12a4c1","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371005","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -128,24 +200,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:40 GMT
+      - Sat, 11 Mar 2017 10:44:49 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 3e5adfa2-5a84-4824-aa49-8b42efbe9566
+      X-Runtime:
+      - '0.011139'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"f3d646bd-61a2-4dc6-b796-e9d8b7797796","type":"claims","attributes":{"orcid":"0000-0002-4000-4167","doi":"10.6084/M9.FIGSHARE.1368269","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -165,24 +261,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:40 GMT
+      - Sat, 11 Mar 2017 10:44:50 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 08eec333-46e6-4696-9f60-c7d5fc9c4606
+      X-Runtime:
+      - '0.012186'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"3a7107a9-01cc-493b-8177-2c0b3229267c","type":"claims","attributes":{"orcid":"0000-0001-6176-2816","doi":"10.6084/M9.FIGSHARE.1368484","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -202,24 +322,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:40 GMT
+      - Sat, 11 Mar 2017 10:44:50 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 1b3e29b8-d5ea-42ba-927d-d09964090f5c
+      X-Runtime:
+      - '0.016427'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"09fb4fcf-c634-4f8e-9c5b-73f5f5aa602c","type":"claims","attributes":{"orcid":"0000-0003-3796-827X","doi":"10.6084/M9.FIGSHARE.1368488","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -239,24 +383,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:41 GMT
+      - Sat, 11 Mar 2017 10:44:50 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - bcf6bb7e-baa3-405c-9f2f-953b8aa96951
+      X-Runtime:
+      - '0.011075'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"2ba182e7-37ad-4f32-bf0c-eff20cbcc5ea","type":"claims","attributes":{"orcid":"0000-0003-1073-887X","doi":"10.6084/M9.FIGSHARE.1368581","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -276,24 +444,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:41 GMT
+      - Sat, 11 Mar 2017 10:44:50 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - d6afa976-9006-4149-af27-5ee2f5c9ed07
+      X-Runtime:
+      - '0.011559'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"d2b7fb4a-84e8-4ce8-96e2-c82f7060e086","type":"claims","attributes":{"orcid":"0000-0001-9873-8342","doi":"10.6084/M9.FIGSHARE.1368663","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -313,24 +505,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:41 GMT
+      - Sat, 11 Mar 2017 10:44:50 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 365ed90a-1d6f-4673-aa0c-f5b4a0bd5a36
+      X-Runtime:
+      - '0.021123'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"e0b38bc7-4f0e-4bc8-8711-7520808ff0ce","type":"claims","attributes":{"orcid":"0000-0002-3437-4911","doi":"10.6084/M9.FIGSHARE.1368671","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -350,24 +566,46 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:41 GMT
+      - Sat, 11 Mar 2017 10:44:51 GMT
       Server:
-      - kong/0.10.0
-      Content-Length:
-      - '45'
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 366f73e8-3f7d-4aa6-bfc4-0659675f0ed6
+      X-Runtime:
+      - '0.013928'
+      X-Xss-Protection:
+      - 1; mode=block
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"22f58c64-3b8d-4689-a7fe-a13ba9047573","type":"claims","attributes":{"orcid":"0000-0001-9873-8342","doi":"10.6084/M9.FIGSHARE.1368728","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -387,24 +625,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:41 GMT
+      - Sat, 11 Mar 2017 10:44:51 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - fb2b3d21-34b1-419d-99ff-058bacbdaef7
+      X-Runtime:
+      - '0.011927'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"056cb105-8f96-4ea7-b341-46833042e278","type":"claims","attributes":{"orcid":"0000-0001-7757-8001","doi":"10.6084/M9.FIGSHARE.1368744","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -424,24 +686,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:41 GMT
+      - Sat, 11 Mar 2017 10:44:51 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - a98c7db5-6fe0-482d-b3a1-302b2883ff7d
+      X-Runtime:
+      - '0.011854'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"6480232b-6457-4b0b-a171-1d1b8f7a595e","type":"claims","attributes":{"orcid":"0000-0001-7757-8001","doi":"10.6084/M9.FIGSHARE.1368745","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -461,24 +747,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:42 GMT
+      - Sat, 11 Mar 2017 10:44:51 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - a18d55d2-2b2e-4a64-8403-b9ec6c4a7af4
+      X-Runtime:
+      - '0.010399'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"51a6b8d5-aae4-4c7a-8ae7-39ffbecb10f9","type":"claims","attributes":{"orcid":"0000-0001-7757-8001","doi":"10.6084/M9.FIGSHARE.1368746","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -498,24 +808,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:42 GMT
+      - Sat, 11 Mar 2017 10:44:52 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 6123c8e2-5266-44a9-962f-d1f29b9dd7dd
+      X-Runtime:
+      - '0.011832'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"0fef7a27-d2ec-4ee0-a51f-6f531ca8f718","type":"claims","attributes":{"orcid":"0000-0001-6176-2816","doi":"10.6084/M9.FIGSHARE.1368761","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -535,24 +869,46 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:42 GMT
+      - Sat, 11 Mar 2017 10:44:52 GMT
       Server:
-      - kong/0.10.0
-      Content-Length:
-      - '45'
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 51dc4b0b-24e3-4b4f-aee6-ee781b7a573f
+      X-Runtime:
+      - '0.011052'
+      X-Xss-Protection:
+      - 1; mode=block
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"0ea81b4e-83cc-4e65-b77d-48b34fa92324","type":"claims","attributes":{"orcid":"0000-0002-0311-9774","doi":"10.6084/M9.FIGSHARE.1368774","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -572,24 +928,46 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:42 GMT
+      - Sat, 11 Mar 2017 10:44:52 GMT
       Server:
-      - kong/0.10.0
-      Content-Length:
-      - '45'
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 9ab3a7df-c32a-4c7e-9f9d-d04a6cfb1b49
+      X-Runtime:
+      - '0.010164'
+      X-Xss-Protection:
+      - 1; mode=block
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"016304aa-9faf-4fba-9199-1abeb8238884","type":"claims","attributes":{"orcid":"0000-0001-6921-5307","doi":"10.6084/M9.FIGSHARE.1370882","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -609,24 +987,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:42 GMT
+      - Sat, 11 Mar 2017 10:44:52 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - cf6671a4-58f3-4331-845e-d8fb2181ae92
+      X-Runtime:
+      - '0.005042'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"73ec7b27-4205-476e-b563-221eab2731d3","type":"claims","attributes":{"orcid":"0000-0003-3938-899X","doi":"10.5284/1030449","source-id":"orcid_update","state":"done","claim-action":"create","claimed-at":"2016-02-28T16:50:23Z"}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -646,24 +1048,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:42 GMT
+      - Sat, 11 Mar 2017 10:44:53 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 21c2dce0-ed9d-443e-8a06-ed92a658fb98
+      X-Runtime:
+      - '0.004881'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"0459f74f-d44a-47b4-94a1-df5be9de1438","type":"claims","attributes":{"orcid":"0000-0002-2725-6730","doi":"10.5284/1030449","source-id":"orcid_update","state":"done","claim-action":"create","claimed-at":"2015-07-27T03:52:30Z"}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -683,24 +1109,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:43 GMT
+      - Sat, 11 Mar 2017 10:44:53 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 030f05b8-de32-471b-a4d3-c98a0fed3fbf
+      X-Runtime:
+      - '0.011100'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"a85ad7d7-781d-432f-964b-28d1415e66e8","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.745301","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -720,24 +1170,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:43 GMT
+      - Sat, 11 Mar 2017 10:44:53 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - f243c9e3-38e5-4e9e-86ce-a7e2a899909a
+      X-Runtime:
+      - '0.010265'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"ceecbf26-026f-4963-a26f-dc5be25a3c4a","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.745313","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -757,24 +1231,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:43 GMT
+      - Sat, 11 Mar 2017 10:44:53 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 5502698b-00ce-4ca9-907e-cb4d65bb2fa1
+      X-Runtime:
+      - '0.009797'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"7908fa7b-920a-4a23-a974-47732d013abc","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.746960","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -794,24 +1292,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:43 GMT
+      - Sat, 11 Mar 2017 10:44:54 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 97ee9ed0-446d-40f0-9be0-142fca8ed0a9
+      X-Runtime:
+      - '0.010807'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"2433e392-00dd-4b2e-866d-c68b1fa6fe00","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.735810","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -831,24 +1353,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:43 GMT
+      - Sat, 11 Mar 2017 10:44:54 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - a12cdba0-7f41-4f95-a3f3-69007902e180
+      X-Runtime:
+      - '0.020087'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"841b8ce7-0a5a-48db-baff-35fc87d39c07","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.735811","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -868,24 +1414,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:43 GMT
+      - Sat, 11 Mar 2017 10:44:54 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - ea78e4d8-4a5f-4136-b82c-4bc0358d9ade
+      X-Runtime:
+      - '0.011592'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"19061330-0966-42f4-9a7c-bd932be203ac","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.999239","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -905,24 +1475,46 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:43 GMT
+      - Sat, 11 Mar 2017 10:44:54 GMT
       Server:
-      - kong/0.10.0
-      Content-Length:
-      - '45'
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - b17cb7ac-93ce-4fae-99ef-0a13d19c7038
+      X-Runtime:
+      - '0.010325'
+      X-Xss-Protection:
+      - 1; mode=block
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"c1d69cb0-ef38-4d92-8cfc-6c3ef3bd7985","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371077","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -942,24 +1534,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:44 GMT
+      - Sat, 11 Mar 2017 10:44:54 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 0f97c93f-5ca0-4325-bb05-8724c0d3efd4
+      X-Runtime:
+      - '0.010797'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"1dbfbcf2-989d-414e-b11d-2769942f4b4b","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371009","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -979,24 +1595,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:44 GMT
+      - Sat, 11 Mar 2017 10:44:55 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 0b6336a8-0d69-4ca2-a3fd-3f18d5fa7bba
+      X-Runtime:
+      - '0.012387'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"e61ee6a1-9bd7-4bcb-b040-26c721bd5335","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371008","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1016,24 +1656,46 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:44 GMT
+      - Sat, 11 Mar 2017 10:44:55 GMT
       Server:
-      - kong/0.10.0
-      Content-Length:
-      - '45'
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 53913ef4-fba2-496c-b2c9-dbe57decb84b
+      X-Runtime:
+      - '0.010690'
+      X-Xss-Protection:
+      - 1; mode=block
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"32c6e155-615a-4482-b48b-1dffa04cc164","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371010","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1053,24 +1715,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:44 GMT
+      - Sat, 11 Mar 2017 10:44:55 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 511b559e-f81a-4305-b34c-585debaed613
+      X-Runtime:
+      - '0.010038'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"99a2eb18-8fb7-4550-bf1e-315087cd5336","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371011","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1090,24 +1776,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:44 GMT
+      - Sat, 11 Mar 2017 10:44:55 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - c8700dfb-b0e2-46bc-8be4-83dcd5a2f834
+      X-Runtime:
+      - '0.010156'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"a63d3ff4-2477-4531-892a-7eaea47944df","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371013","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1127,24 +1837,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:44 GMT
+      - Sat, 11 Mar 2017 10:44:56 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - bab6bc50-e0ed-4259-a4fa-0ca762ba8656
+      X-Runtime:
+      - '0.012770'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"52a6310b-3f2c-4e19-9968-b255118eb622","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371014","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1164,24 +1898,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:45 GMT
+      - Sat, 11 Mar 2017 10:44:56 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 97760f5f-20df-4372-ba6c-d5fe173c498b
+      X-Runtime:
+      - '0.010774'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"7ab7e57c-f1f9-41b6-81b2-b9a090580302","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371012","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1201,24 +1959,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:45 GMT
+      - Sat, 11 Mar 2017 10:44:56 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 17fbc046-202d-4cfe-8ef7-aea52d9a5883
+      X-Runtime:
+      - '0.010283'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"3b24c6f1-bd79-4fff-a1dd-b51398dcee6d","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371015","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1238,24 +2020,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:45 GMT
+      - Sat, 11 Mar 2017 10:44:56 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 34c646f4-878d-4815-982f-9decb628bf66
+      X-Runtime:
+      - '0.011412'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"43cd0a78-3ce4-4895-a93d-bd70949ec867","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371017","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1275,24 +2081,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:45 GMT
+      - Sat, 11 Mar 2017 10:44:57 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 6c5c55ae-6d84-442b-8959-241501f5969d
+      X-Runtime:
+      - '0.012149'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"1dc04933-4123-43cf-af50-10f85166b56d","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371018","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1312,24 +2142,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:45 GMT
+      - Sat, 11 Mar 2017 10:44:57 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - ac766b5c-f3ba-4141-88ab-f361adce05ae
+      X-Runtime:
+      - '0.011196'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"87d4e8ae-4697-4ea9-9351-4061b88ccb5c","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371016","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1349,24 +2203,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:45 GMT
+      - Sat, 11 Mar 2017 10:44:57 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - c91f20b8-3a54-47ea-8fc4-7468c0ef69d5
+      X-Runtime:
+      - '0.010660'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"4367157a-4822-4e72-ba9b-72d7ab7b9a14","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371019","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1386,24 +2264,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:46 GMT
+      - Sat, 11 Mar 2017 10:44:57 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 7bcf92ec-e31c-4672-987f-216c015953ac
+      X-Runtime:
+      - '0.009770'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"6a26f1ff-5384-404c-8e56-f428717f2c78","type":"claims","attributes":{"orcid":"0000-0001-5882-6823","doi":"10.6084/M9.FIGSHARE.1371114","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1423,24 +2325,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:46 GMT
+      - Sat, 11 Mar 2017 10:44:58 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - fdbcb928-592b-424a-8dea-b40700202084
+      X-Runtime:
+      - '0.011291'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"d159d868-ba16-46e1-a98b-30efcd0749c6","type":"claims","attributes":{"orcid":"0000-0001-5882-6823","doi":"10.6084/M9.FIGSHARE.1337953","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1460,24 +2386,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:46 GMT
+      - Sat, 11 Mar 2017 10:44:58 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - bfd22bda-a84a-4542-845e-af8a41b47a86
+      X-Runtime:
+      - '0.018444'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"df589091-5b89-4714-a427-27367b03aa1b","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371137","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1497,24 +2447,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:46 GMT
+      - Sat, 11 Mar 2017 10:44:58 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 04afd535-0534-4538-81b0-fad50cecc1e7
+      X-Runtime:
+      - '0.011549'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"9e7cae20-e811-486c-bdcc-dcb5bd1bcbe9","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371138","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1534,24 +2508,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:46 GMT
+      - Sat, 11 Mar 2017 10:44:58 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 08b0236a-5636-407f-b29b-0c01018b0202
+      X-Runtime:
+      - '0.010107'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"87265bf1-b0fb-4e36-8621-62914d9f176f","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371139","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1571,24 +2569,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:46 GMT
+      - Sat, 11 Mar 2017 10:44:59 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 21ad5480-5ae4-4989-a025-04d5d01ba24b
+      X-Runtime:
+      - '0.009825'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"9fd77892-3224-4242-b1ea-33b9663a4555","type":"claims","attributes":{"orcid":"0000-0001-9964-6984","doi":"10.6084/M9.FIGSHARE.707350","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1608,24 +2630,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:46 GMT
+      - Sat, 11 Mar 2017 10:44:59 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - f3a95c4a-754f-4e03-a1dc-a91c17e658e7
+      X-Runtime:
+      - '0.010614'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"37bbefc9-682a-4acb-8da2-7d1b7e4d984e","type":"claims","attributes":{"orcid":"0000-0001-9964-6984","doi":"10.6084/M9.FIGSHARE.707351","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1645,24 +2691,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:47 GMT
+      - Sat, 11 Mar 2017 10:44:59 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 6aa5ac02-0ae6-4867-b1f4-9b022eebabc7
+      X-Runtime:
+      - '0.010091'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"5e4ea0c7-b970-45d1-ba75-4bff83dac219","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.778701","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1682,24 +2752,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:47 GMT
+      - Sat, 11 Mar 2017 10:44:59 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - acffdf18-ae9b-4d78-b354-fab7e706f01a
+      X-Runtime:
+      - '0.009644'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"48d051e8-48b0-4c46-9747-3ff21135bba3","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.779705","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1719,24 +2813,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:47 GMT
+      - Sat, 11 Mar 2017 10:44:59 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 75ce0b9d-b98f-475e-8c96-09be32b497dc
+      X-Runtime:
+      - '0.010043'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"07c2770d-159b-470e-ba94-7e81c082452c","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.760716","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1756,24 +2874,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:47 GMT
+      - Sat, 11 Mar 2017 10:45:00 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - dff08247-0966-4d51-a1f0-cdcc4274a7e0
+      X-Runtime:
+      - '0.012788'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"b5965e58-8bbe-4387-9d1e-36c9d6c9b5ac","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769272","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1793,24 +2935,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:47 GMT
+      - Sat, 11 Mar 2017 10:45:00 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - b6351e47-55a8-4850-bd80-584a3f3b9547
+      X-Runtime:
+      - '0.011038'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"87ed8708-35e6-4c0f-9183-1dd416071d7f","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1830,24 +2996,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:47 GMT
+      - Sat, 11 Mar 2017 10:45:00 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - e071a853-4058-43fd-86da-f59136bbd89b
+      X-Runtime:
+      - '0.011523'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"729ef8bc-05a2-4daa-9774-3f9aa100478c","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769270","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1867,24 +3057,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:48 GMT
+      - Sat, 11 Mar 2017 10:45:00 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 9cdc7220-3be3-4f5c-9427-028513860d32
+      X-Runtime:
+      - '0.026185'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"27913db7-e2b1-47ea-a057-f15647402e26","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1041547","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1904,24 +3118,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:48 GMT
+      - Sat, 11 Mar 2017 10:45:01 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - d25a6e6e-0d7b-4f83-bb6c-95d4a8cfd0ea
+      X-Runtime:
+      - '0.013258'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"e2fa98bb-fb5b-4fcb-a64b-8ba03cb172e6","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014351","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1941,24 +3179,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:48 GMT
+      - Sat, 11 Mar 2017 10:45:01 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 2dde2465-b492-4790-acfd-f1e6b9dacf5a
+      X-Runtime:
+      - '0.012098'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"44d44c6f-a78e-45b5-8031-3d63f3b11177","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014348","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1978,24 +3240,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:48 GMT
+      - Sat, 11 Mar 2017 10:45:01 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - 16cfbded-f6f9-40f3-bc65-7cab23dbef93
+      X-Runtime:
+      - '0.010734'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"823a69de-f1d7-4fd1-8b7b-42cea5ad3b60","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014352","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -2015,24 +3301,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:48 GMT
+      - Sat, 11 Mar 2017 10:45:01 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - e3ffc39b-4a67-46ed-87c5-d9970bc55b65
+      X-Runtime:
+      - '0.011678'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"822fc357-3f7f-461c-a7ba-c32346f57797","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008321","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -2052,24 +3362,48 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 404
+      code: 202
       message: ''
     headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 09:14:48 GMT
+      - Sat, 11 Mar 2017 10:45:02 GMT
       Server:
-      - kong/0.10.0
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Request-Id:
+      - d852451b-625c-45d9-8b3f-17cd00e37a8d
+      X-Runtime:
+      - '0.013447'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '45'
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"no API found with those values"}
-
-'
+      string: '{"data":{"id":"fa61847e-92ff-4394-8b0f-4bdfb15beba8","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008320","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 recorded_with: VCR 3.0.3
