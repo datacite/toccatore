@@ -105,6 +105,12 @@ describe Toccatore::DataciteRelated, vcr: true do
       expect(response.last.except("id")).to eq("message_action" => "create", "subj_id"=>"https://doi.org/10.17180/obs.yzeron", "obj_id"=>"https://doi.org/10.1016/j.jhydrol.2013.09.055", "relation_type_id"=>"is_referenced_by", "source_id"=>"datacite", "occurred_at"=>"2015-04-07T12:22:40Z")
     end
 
+    it "should report if there are works ignored because of an IsIdenticalTo relation" do
+      body = File.read(fixture_path + 'datacite_related_is_identical.json')
+      result = OpenStruct.new(body: { "data" => JSON.parse(body) })
+      expect(subject.parse_data(result)).to eq([])
+    end
+
     it "should catch timeout errors with the Datacite Metadata Search API" do
       result = OpenStruct.new(body: { "errors" => [{ "title" => "the server responded with status 408 for https://search.datacite.org", "status" => 408 }] })
       response = subject.parse_data(result)

@@ -1,0 +1,20 @@
+{
+    "responseHeader": {
+        "status": 0,
+        "QTime": 0
+    },
+    "response": {
+        "numFound": 1,
+        "start": 0,
+        "docs": [{
+            "minted": "2016-07-29T18:02:34Z",
+            "updated": "2017-03-09T18:31:17Z",
+            "doi": "10.6084/M9.FIGSHARE.3505442.V1",
+            "relatedIdentifier": [
+                "IsSupplementTo:DOI:10.1080/07391102.2016.1189358",
+                "IsIdenticalTo:DOI:10.6084/m9.figshare.3505442"
+            ],
+            "resourceTypeGeneral": "Other"
+        }]
+    }
+}

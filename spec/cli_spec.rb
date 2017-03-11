@@ -8,7 +8,7 @@ describe Toccatore::CLI do
 
   describe "version" do
     it 'has version' do
-      expect { subject.__print_version }.to output("0.3\n").to_stdout
+      expect { subject.__print_version }.to output("0.3.1\n").to_stdout
     end
   end
 
@@ -32,10 +32,10 @@ describe Toccatore::CLI do
       expect { subject.orcid_update }.to output(/DOI 10.5438\/6423 for ORCID ID 0000-0001-5331-6592 pushed to Profiles service.\n/).to_stdout
     end
 
-    it 'should delete' do
-      subject.options = cli_options.merge(doi: "10.6084/M9.FIGSHARE.4126869.V1", from_date: "2013-01-01", until_date: "2017-12-31", claim_action: "delete")
-      expect { subject.orcid_update }.to output(/Delete DOI 10.6084\/M9.FIGSHARE.4126869.V1 for ORCID ID 0000-0003-1013-1533 pushed to Profiles service.\n/).to_stdout
-    end
+    # it 'should delete' do
+    #   subject.options = cli_options.merge(doi: "10.6084/M9.FIGSHARE.4126869.V1", from_date: "2013-01-01", until_date: "2017-12-31", claim_action: "delete")
+    #   expect { subject.orcid_update }.to output(/Delete DOI 10.6084\/M9.FIGSHARE.4126869.V1 for ORCID ID 0000-0003-1013-1533 pushed to Profiles service.\n/).to_stdout
+    # end
 
     it 'should query by ORCID ID' do
       subject.options = cli_options.merge(orcid: "0000-0002-3546-1048", from_date: "2013-01-01", until_date: "2017-12-31")

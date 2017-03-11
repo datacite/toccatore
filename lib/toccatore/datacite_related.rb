@@ -21,23 +21,31 @@ module Toccatore
         pid = normalize_doi(doi)
         related_doi_identifiers = item.fetch('relatedIdentifier', []).select { |id| id =~ /:DOI:.+/ }
 
-        sum += Array(related_doi_identifiers).reduce([]) do |ssum, iitem|
-          raw_relation_type, _related_identifier_type, related_identifier = iitem.split(':', 3)
-          related_identifier = related_identifier.strip.downcase
-          prefix = validate_prefix(related_identifier)
-          registration_agencies[prefix] = get_doi_ra(prefix) unless registration_agencies[prefix]
+        # don't generate event if there is a DOI for identical content with same prefix
+        skip_doi = related_doi_identifiers.any? do |related_identifier|
+          ["IsIdenticalTo"].include?(related_identifier.split(':', 3).first) &&
+          related_identifier.split(':', 3).last.to_s.starts_with?(validate_prefix(doi))
+        end
 
-          # check whether this is a DataCite DOI
-          if registration_agencies[prefix] == "DataCite"
-            ssum
-          else
-            ssum << { "id" => SecureRandom.uuid,
-                      "message_action" => "create",
-                      "subj_id" => pid,
-                      "obj_id" => normalize_doi(related_identifier),
-                      "relation_type_id" => raw_relation_type.underscore,
-                      "source_id" => "datacite",
-                      "occurred_at" => item.fetch("minted") }
+        unless skip_doi
+          sum += Array(related_doi_identifiers).reduce([]) do |ssum, iitem|
+            raw_relation_type, _related_identifier_type, related_identifier = iitem.split(':', 3)
+            related_identifier = related_identifier.strip.downcase
+            prefix = validate_prefix(related_identifier)
+            registration_agencies[prefix] = get_doi_ra(prefix) unless registration_agencies[prefix]
+
+            # check whether this is a DataCite DOI
+            if registration_agencies[prefix] == "DataCite"
+              ssum
+            else
+              ssum << { "id" => SecureRandom.uuid,
+                        "message_action" => "create",
+                        "subj_id" => pid,
+                        "obj_id" => normalize_doi(related_identifier),
+                        "relation_type_id" => raw_relation_type.underscore,
+                        "source_id" => "datacite",
+                        "occurred_at" => item.fetch("minted") }
+            end
           end
         end
 
