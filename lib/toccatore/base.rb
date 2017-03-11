@@ -28,6 +28,8 @@ module Toccatore
         q = "doi:#{options[:doi]}"
       elsif options[:orcid].present?
         q = "nameIdentifier:ORCID\\:#{options[:orcid]}"
+      elsif options[:related_identifier].present?
+        q = "relatedIdentifier:DOI\\:#{options[:related_identifier]}"
       elsif options[:query].present?
         q = options[:query]
       else
@@ -37,7 +39,7 @@ module Toccatore
       params = { q: q,
                  start: options[:offset],
                  rows: options[:rows],
-                 fl: "doi,creator,title,publisher,publicationYear,resourceTypeGeneral,datacentre_symbol,relatedIdentifier,nameIdentifier,xml,minted,updated",
+                 fl: "doi,resourceTypeGeneral,relatedIdentifier,nameIdentifier,minted,updated",
                  fq: fq,
                  wt: "json" }
       url +  URI.encode_www_form(params)
@@ -87,178 +89,6 @@ module Toccatore
       Maremma.get(query_url, options)
     end
 
-    def parse_data(result, options={})
-      return result.body.fetch("errors") if result.body.fetch("errors", nil).present?
-
-      items = result.fetch("data", {}).fetch('response', {}).fetch('docs', nil)
-      get_relations_with_related_works(items)
-    end
-
-    # push to Lagotto deposit API if no error and we have collected works
-    def push_data(items, options={})
-      if items.empty?
-        puts "No works found for date range #{options[:from_date]} - #{options[:until_date]}."
-      else
-        Array(items).map do |item|
-          relation = item.fetch(:relation, {})
-          deposit = { "deposit" => { "subj_id" => relation.fetch("subj_id", nil),
-                                     "obj_id" => relation.fetch("obj_id", nil),
-                                     "relation_type_id" => relation.fetch("relation_type_id", nil),
-                                     "source_id" => relation.fetch("source_id", nil),
-                                     "publisher_id" => relation.fetch("publisher_id", nil),
-                                     "subj" => item.fetch(:subj, {}),
-                                     "obj" => item.fetch(:obj, {}),
-                                     "message_type" => item.fetch(:message_type, "relation"),
-                                     "prefix" => item.fetch(:prefix, nil),
-                                     "source_token" => uuid } }
-
-          Maremma.post push_url, data: deposit.to_json, content_type: 'json', token: access_token
-        end
-      end
-    end
-
-    def get_relations_with_related_works(items)
-      Array(items).reduce([]) do |sum, item|
-        doi = item.fetch("doi", nil)
-        prefix = doi[/^10\.\d{4,5}/]
-        pid = doi_as_url(doi)
-        type = item.fetch("resourceTypeGeneral", nil)
-        publisher_id = item.fetch("datacentre_symbol", nil)
-
-        xml = Base64.decode64(item.fetch('xml', "PGhzaD48L2hzaD4=\n"))
-        xml = Hash.from_xml(xml).fetch("resource", {})
-        authors = xml.fetch("creators", {}).fetch("creator", [])
-        authors = [authors] if authors.is_a?(Hash)
-
-        subj = { "pid" => pid,
-                 "DOI" => doi,
-                 "author" => get_hashed_authors(authors),
-                 "title" => item.fetch("title", []).first,
-                 "container-title" => item.fetch("publisher", nil),
-                 "published" => item.fetch("publicationYear", nil),
-                 "issued" => item.fetch("minted", nil),
-                 "publisher_id" => publisher_id,
-                 "registration_agency_id" => "datacite",
-                 "tracked" => true,
-                 "type" => type }
-
-        related_doi_identifiers = item.fetch('relatedIdentifier', []).select { |id| id =~ /:DOI:.+/ }
-        sum += get_doi_relations(subj, related_doi_identifiers)
-
-        related_github_identifiers = item.fetch('relatedIdentifier', []).select { |id| id =~ /:URL:https:\/\/github.com.+/ }
-        sum += get_github_relations(subj, related_github_identifiers)
-
-        name_identifiers = item.fetch('nameIdentifier', []).select { |id| id =~ /^ORCID:.+/ }
-        sum += get_contributions(subj, name_identifiers)
-
-        if source_id == "datacite_import"
-          sum += [{ prefix: prefix,
-                    relation: { "subj_id" => subj["pid"],
-                                "source_id" => source_id,
-                                "publisher_id" => subj["publisher_id"],
-                                "occurred_at" => subj["issued"] },
-                    subj: subj }]
-        end
-
-        sum
-      end
-    end
-
-    def get_github_relations(subj, items)
-      prefix = subj["DOI"][/^10\.\d{4,5}/]
-
-      Array(items).reduce([]) do |sum, item|
-        raw_relation_type, _related_identifier_type, related_identifier = item.split(':', 3)
-
-        # get parent repo
-        # code from https://github.com/octokit/octokit.rb/blob/master/lib/octokit/repository.rb
-        related_identifier = PostRank::URI.clean(related_identifier)
-        github_hash = github_from_url(related_identifier)
-        owner_url = github_as_owner_url(github_hash)
-        repo_url = github_as_repo_url(github_hash)
-
-        sum << { prefix: prefix,
-                 relation: { "subj_id" => subj["pid"],
-                             "obj_id" => related_identifier,
-                             "relation_type_id" => raw_relation_type.underscore,
-                             "source_id" => source_id,
-                             "publisher_id" => subj["publisher_id"],
-                             "registration_agency_id" => "github",
-                             "occurred_at" => subj["issued"] },
-                 subj: subj }
-
-        # if relatedIdentifier is release URL rather than repo URL
-        if related_identifier != repo_url
-          sum << { relation: { "subj_id" => related_identifier,
-                               "obj_id" => repo_url,
-                               "relation_type_id" => "is_part_of",
-                               "source_id" => source_id,
-                               "publisher_id" => "github",
-                               "registration_agency_id" => "github" } }
-        end
-
-        sum << {  message_type: "contribution",
-                  relation: { "subj_id" => owner_url,
-                              "obj_id" => repo_url,
-                              "source_id" => "github_contributor",
-                              "registration_agency_id" => "github" }}
-      end
-    end
-
-    def get_doi_relations(subj, items)
-      prefix = subj["DOI"][/^10\.\d{4,5}/]
-
-      Array(items).reduce([]) do |sum, item|
-        raw_relation_type, _related_identifier_type, related_identifier = item.split(':', 3)
-        doi = related_identifier.strip.upcase
-        registration_agency = get_doi_ra(doi)
-
-        if source_id == "datacite_crossref" && registration_agency == "datacite"
-          sum
-        else
-          _source_id = registration_agency == "crossref" ? "datacite_crossref" : "datacite_related"
-          pid = doi_as_url(doi)
-
-          sum << { prefix: prefix,
-                   relation: { "subj_id" => subj["pid"],
-                               "obj_id" => pid,
-                               "relation_type_id" => raw_relation_type.underscore,
-                               "source_id" => _source_id,
-                               "publisher_id" => subj["publisher_id"],
-                               "registration_agency_id" => registration_agency,
-                               "occurred_at" => subj["issued"] },
-                   subj: subj }
-        end
-      end
-    end
-
-    # we are flipping subj and obj for contributions
-    def get_contributions(obj, items)
-      prefix = obj["DOI"][/^10\.\d{4,5}/]
-
-      Array(items).reduce([]) do |sum, item|
-        orcid = item.split(':', 2).last
-        orcid = validate_orcid(orcid)
-
-        return sum if orcid.nil?
-
-        sum << { prefix: prefix,
-                 message_type: "contribution",
-                 relation: { "subj_id" => orcid_as_url(orcid),
-                             "obj_id" => obj["pid"],
-                             "relation_type_id" => nil,
-                             "source_id" => source_id,
-                             "publisher_id" => obj["publisher_id"],
-                             "registration_agency_id" => "datacite",
-                             "occurred_at" => obj["issued"] },
-                 obj: obj }
-      end
-    end
-
-    def config_fields
-      [:url, :push_url, :access_token]
-    end
-
     def url
       "https://search.datacite.org/api?"
     end
@@ -271,22 +101,34 @@ module Toccatore
       1000
     end
 
-    # remove non-printing whitespace
-    def clean_doi(doi)
-      doi.gsub(/\u200B/, '')
+    def get_doi_ra(prefix)
+      return nil if prefix.blank?
+
+      url = "https://api.datacite.org/prefixes/#{prefix}"
+      result = Maremma.get(url)
+
+      return result.body.fetch("errors") if result.body.fetch("errors", nil).present?
+
+      result.body.fetch("data", {}).fetch('attributes', {}).fetch('registration-agency', nil)
     end
 
-    def doi_from_url(url)
-      if /(http|https):\/\/(dx\.)?doi\.org\/(\w+)/.match(url)
-        uri = Addressable::URI.parse(url)
-        uri.path[1..-1].upcase
-      elsif url.starts_with?("doi:")
-        url[4..-1].upcase
-      end
+    def validate_doi(doi)
+      Array(/\A(?:(http|https):\/\/(dx\.)?doi.org\/)?(doi:)?(10\.\d{4,5}\/.+)\z/.match(doi)).last
     end
 
-    def doi_as_url(doi)
-      Addressable::URI.encode("https://doi.org/#{clean_doi(doi)}") if doi.present?
+    def validate_prefix(doi)
+      Array(/\A(?:(http|https):\/\/(dx\.)?doi.org\/)?(doi:)?(10\.\d{4,5})\/.+\z/.match(doi)).last
+    end
+
+    def normalize_doi(doi)
+      doi = validate_doi(doi)
+      return nil unless doi.present?
+
+      # remove non-printing whitespace and downcase
+      doi = doi.delete("\u200B").downcase
+
+      # turn DOI into URL, escape unsafe characters
+      "https://doi.org/" + Addressable::URI.encode(doi)
     end
 
     def orcid_from_url(url)

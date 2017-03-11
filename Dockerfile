@@ -1,7 +1,10 @@
-FROM phusion/passenger-full:0.9.19
+FROM phusion/passenger-full:0.9.20
 MAINTAINER Martin Fenner "mfenner@datacite.org"
 
-ENV PATH="/usr/local/rvm/gems/ruby-2.3.1/bin:${PATH}"
+# Install Ruby 2.3.3
+RUN bash -lc 'rvm --default use ruby-2.3.3'
+
+ENV PATH="/usr/local/rvm/gems/ruby-2.3.3/bin:${PATH}"
 
 # Update installed APT packages, clean up APT when done.
 RUN apt-get update && apt-get upgrade -y -o Dpkg::Options::="--force-confold" && \

@@ -1,0 +1,1143 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://search.datacite.org/api?fl=doi,resourceTypeGeneral,relatedIdentifier,nameIdentifier,minted,updated&fq=updated:%5B2013-01-01T00:00:00Z%20TO%202017-12-31T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=doi:10.5438/CT8B-X1CE&rows=0&start=0&wt=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sat, 11 Mar 2017 09:10:22 GMT
+      Server:
+      - openresty/1.11.2.2
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":1,"start":0,"docs":[]}}
+
+'
+    http_version: 
+  recorded_at: Sat, 11 Mar 2017 09:10:22 GMT
+- request:
+    method: get
+    uri: https://search.datacite.org/api?fl=doi,resourceTypeGeneral,relatedIdentifier,nameIdentifier,minted,updated&fq=updated:%5B2013-01-01T00:00:00Z%20TO%202017-12-31T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=doi:10.5438/CT8B-X1CE&rows=1000&start=0&wt=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sat, 11 Mar 2017 09:10:22 GMT
+      Server:
+      - openresty/1.11.2.2
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":1,"start":0,"docs":[{"minted":"2016-12-23T10:35:28Z","updated":"2017-01-09T13:53:10Z","doi":"10.5438/CT8B-X1CE","resourceTypeGeneral":"Text","relatedIdentifier":["References:URL:https://arxiv.org/abs/1501.04916","References:DOI:10.3398/064.075.0213","References:DOI:10.1002/2015JE004895","References:DOI:10.1371/JOURNAL.PBIO.1001687","References:DOI:10.1016/J.JAS.2015.02.009","References:URL:http://hdl.handle.net/10536/DRO/DU:30088291","References:DOI:10.1016/J.AEOLIA.2015.08.001","References:DOI:10.1007/S12209-016-2596-Z","References:DOI:10.5194/ESURFD-2-1005-2014","References:DOI:10.1371/JOURNAL.PONE.0105948","References:URL:https://www.ncbi.nlm.nih.gov/books/NBK7256","References:DOI:10.1016/J.BPJ.2015.04.023","References:DOI:10.1002/ESP.3677","References:DOI:10.1016/J.AEOLIA.2016.01.003","References:DOI:10.4172/2381-8719.1000256","References:DOI:10.1371/JOURNAL.PONE.0134826","References:DOI:10.1016/J.TREE.2010.11.006","IsPartOf:DOI:10.5438/0000-00SS"],"nameIdentifier":["ORCID:0000-0003-1419-2405"]}]}}
+
+'
+    http_version: 
+  recorded_at: Sat, 11 Mar 2017 09:10:22 GMT
+- request:
+    method: get
+    uri: https://api.datacite.org/prefixes/10.3398
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Sat, 11 Mar 2017 09:10:23 GMT
+      Etag:
+      - W/"7cf730cb403c033dba041619ed5a152f"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.10.0rc3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Upstream-Latency:
+      - '718'
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Ratelimit-Limit-Hour:
+      - '10000'
+      X-Ratelimit-Remaining-Hour:
+      - '9955'
+      X-Request-Id:
+      - ac52b9c2-b674-449d-95cd-6f1b315b8011
+      X-Runtime:
+      - '0.717385'
+      X-Xss-Protection:
+      - 1; mode=block
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10.3398","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T21:02:24Z"}}}'
+    http_version: 
+  recorded_at: Sat, 11 Mar 2017 09:10:23 GMT
+- request:
+    method: get
+    uri: https://api.datacite.org/prefixes/10.1002
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Sat, 11 Mar 2017 09:10:24 GMT
+      Etag:
+      - W/"fd60f408ac5a8f5de6aabc61fc16b7b7"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.10.0rc3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Upstream-Latency:
+      - '1157'
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Ratelimit-Limit-Hour:
+      - '10000'
+      X-Ratelimit-Remaining-Hour:
+      - '9954'
+      X-Request-Id:
+      - f1d8da71-25b0-4ad3-9716-050f2f2b52fa
+      X-Runtime:
+      - '1.154968'
+      X-Xss-Protection:
+      - 1; mode=block
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10.1002","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T20:45:22Z"}}}'
+    http_version: 
+  recorded_at: Sat, 11 Mar 2017 09:10:24 GMT
+- request:
+    method: get
+    uri: https://api.datacite.org/prefixes/10.1371
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Sat, 11 Mar 2017 09:10:25 GMT
+      Etag:
+      - W/"a078870f021fe1686525a8135b0e29b8"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.10.0rc3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Upstream-Latency:
+      - '226'
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Ratelimit-Limit-Hour:
+      - '10000'
+      X-Ratelimit-Remaining-Hour:
+      - '9953'
+      X-Request-Id:
+      - 87fad09e-f313-44f1-9c64-07f54d63fe8e
+      X-Runtime:
+      - '0.225733'
+      X-Xss-Protection:
+      - 1; mode=block
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10.1371","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T20:47:32Z"}}}'
+    http_version: 
+  recorded_at: Sat, 11 Mar 2017 09:10:25 GMT
+- request:
+    method: get
+    uri: https://api.datacite.org/prefixes/10.1016
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Sat, 11 Mar 2017 09:10:26 GMT
+      Etag:
+      - W/"7c9a7b8f563d4b464488ed2327095f44"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.10.0rc3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Upstream-Latency:
+      - '744'
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Ratelimit-Limit-Hour:
+      - '10000'
+      X-Ratelimit-Remaining-Hour:
+      - '9952'
+      X-Request-Id:
+      - 6db71834-e3c8-428a-ad04-2eb07588e01d
+      X-Runtime:
+      - '0.742393'
+      X-Xss-Protection:
+      - 1; mode=block
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10.1016","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T20:45:22Z"}}}'
+    http_version: 
+  recorded_at: Sat, 11 Mar 2017 09:10:26 GMT
+- request:
+    method: get
+    uri: https://api.datacite.org/prefixes/10.1007
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Sat, 11 Mar 2017 09:10:26 GMT
+      Etag:
+      - W/"f53cde77e343e10a66e08694e07c9370"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.10.0rc3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '17'
+      X-Kong-Upstream-Latency:
+      - '621'
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Ratelimit-Limit-Hour:
+      - '10000'
+      X-Ratelimit-Remaining-Hour:
+      - '9951'
+      X-Request-Id:
+      - 57378c29-b5cc-4272-916e-f7b7eda0cdd7
+      X-Runtime:
+      - '0.620025'
+      X-Xss-Protection:
+      - 1; mode=block
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10.1007","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T20:45:22Z"}}}'
+    http_version: 
+  recorded_at: Sat, 11 Mar 2017 09:10:26 GMT
+- request:
+    method: get
+    uri: https://api.datacite.org/prefixes/10.5194
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Sat, 11 Mar 2017 09:10:27 GMT
+      Etag:
+      - W/"1f042efb010583ff94ca58ba029fb502"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.10.0rc3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '5'
+      X-Kong-Upstream-Latency:
+      - '528'
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Ratelimit-Limit-Hour:
+      - '10000'
+      X-Ratelimit-Remaining-Hour:
+      - '9950'
+      X-Request-Id:
+      - 3ba79d42-ff35-4adf-b8a4-50783b09625c
+      X-Runtime:
+      - '0.526453'
+      X-Xss-Protection:
+      - 1; mode=block
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10.5194","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T21:04:33Z"}}}'
+    http_version: 
+  recorded_at: Sat, 11 Mar 2017 09:10:27 GMT
+- request:
+    method: get
+    uri: https://api.datacite.org/prefixes/10.4172
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Sat, 11 Mar 2017 09:10:28 GMT
+      Etag:
+      - W/"ab8bd9cae1af53dbd883afdd0d684d71"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.10.0rc3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '4'
+      X-Kong-Upstream-Latency:
+      - '581'
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Ratelimit-Limit-Hour:
+      - '10000'
+      X-Ratelimit-Remaining-Hour:
+      - '9949'
+      X-Request-Id:
+      - ba819106-96f6-42ea-9d1a-05d7672cebe7
+      X-Runtime:
+      - '0.579680'
+      X-Xss-Protection:
+      - 1; mode=block
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10.4172","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T21:03:31Z"}}}'
+    http_version: 
+  recorded_at: Sat, 11 Mar 2017 09:10:28 GMT
+- request:
+    method: get
+    uri: https://api.datacite.org/prefixes/10.5438
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Sat, 11 Mar 2017 09:10:29 GMT
+      Etag:
+      - W/"b9f2d79281c542db437c42a5bac25ac8"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.10.0rc3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Upstream-Latency:
+      - '685'
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Ratelimit-Limit-Hour:
+      - '10000'
+      X-Ratelimit-Remaining-Hour:
+      - '9948'
+      X-Request-Id:
+      - c325f0ba-f876-42e5-9ee2-35eafcd6f8e7
+      X-Runtime:
+      - '0.684284'
+      X-Xss-Protection:
+      - 1; mode=block
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10.5438","type":"prefixes","attributes":{"registration-agency":"DataCite","updated":"2016-09-21T20:27:15Z"}}}'
+    http_version: 
+  recorded_at: Sat, 11 Mar 2017 09:10:29 GMT
+- request:
+    method: post
+    uri: https://bus-staging.eventdata.crossref.org/events
+    body:
+      encoding: UTF-8
+      string: '{"id":"2dc42c1a-676d-4571-90e7-df1f0789a2dd","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.3398/064.075.0213","relation_type_id":"references","source_id":"datacite","occurred_at":"2016-12-23T10:35:28Z"}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXRhY2l0ZSJ9.u9el_FpmfaQq6REwi2ULhNGAfVE_0xjGMZEttcq8rlw
+  response:
+    status:
+      code: 201
+      message: ''
+    headers:
+      Content-Type:
+      - application/json
+      Vary:
+      - Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Length:
+      - '0'
+      Server:
+      - http-kit
+      Date:
+      - Sat, 11 Mar 2017 09:10:30 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 11 Mar 2017 09:10:30 GMT
+- request:
+    method: post
+    uri: https://bus-staging.eventdata.crossref.org/events
+    body:
+      encoding: UTF-8
+      string: '{"id":"50e7868f-c60f-4324-984d-cfdac1407085","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1002/2015je004895","relation_type_id":"references","source_id":"datacite","occurred_at":"2016-12-23T10:35:28Z"}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXRhY2l0ZSJ9.u9el_FpmfaQq6REwi2ULhNGAfVE_0xjGMZEttcq8rlw
+  response:
+    status:
+      code: 201
+      message: ''
+    headers:
+      Content-Type:
+      - application/json
+      Vary:
+      - Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Length:
+      - '0'
+      Server:
+      - http-kit
+      Date:
+      - Sat, 11 Mar 2017 09:10:30 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 11 Mar 2017 09:10:30 GMT
+- request:
+    method: post
+    uri: https://bus-staging.eventdata.crossref.org/events
+    body:
+      encoding: UTF-8
+      string: '{"id":"948f7d5c-68de-4484-815c-6a2375dbaa91","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1371/journal.pbio.1001687","relation_type_id":"references","source_id":"datacite","occurred_at":"2016-12-23T10:35:28Z"}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXRhY2l0ZSJ9.u9el_FpmfaQq6REwi2ULhNGAfVE_0xjGMZEttcq8rlw
+  response:
+    status:
+      code: 201
+      message: ''
+    headers:
+      Content-Type:
+      - application/json
+      Vary:
+      - Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Length:
+      - '0'
+      Server:
+      - http-kit
+      Date:
+      - Sat, 11 Mar 2017 09:10:30 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 11 Mar 2017 09:10:30 GMT
+- request:
+    method: post
+    uri: https://bus-staging.eventdata.crossref.org/events
+    body:
+      encoding: UTF-8
+      string: '{"id":"516c34ff-63f6-48af-a29e-8f8b9974637b","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1016/j.jas.2015.02.009","relation_type_id":"references","source_id":"datacite","occurred_at":"2016-12-23T10:35:28Z"}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXRhY2l0ZSJ9.u9el_FpmfaQq6REwi2ULhNGAfVE_0xjGMZEttcq8rlw
+  response:
+    status:
+      code: 201
+      message: ''
+    headers:
+      Content-Type:
+      - application/json
+      Vary:
+      - Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Length:
+      - '0'
+      Server:
+      - http-kit
+      Date:
+      - Sat, 11 Mar 2017 09:10:30 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 11 Mar 2017 09:10:30 GMT
+- request:
+    method: post
+    uri: https://bus-staging.eventdata.crossref.org/events
+    body:
+      encoding: UTF-8
+      string: '{"id":"b93c1aaa-b920-494a-b88c-8318b0934a95","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1016/j.aeolia.2015.08.001","relation_type_id":"references","source_id":"datacite","occurred_at":"2016-12-23T10:35:28Z"}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXRhY2l0ZSJ9.u9el_FpmfaQq6REwi2ULhNGAfVE_0xjGMZEttcq8rlw
+  response:
+    status:
+      code: 201
+      message: ''
+    headers:
+      Content-Type:
+      - application/json
+      Vary:
+      - Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Length:
+      - '0'
+      Server:
+      - http-kit
+      Date:
+      - Sat, 11 Mar 2017 09:10:31 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 11 Mar 2017 09:10:31 GMT
+- request:
+    method: post
+    uri: https://bus-staging.eventdata.crossref.org/events
+    body:
+      encoding: UTF-8
+      string: '{"id":"b7a2a64c-a086-4e57-b941-56a8812ecf5a","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1007/s12209-016-2596-z","relation_type_id":"references","source_id":"datacite","occurred_at":"2016-12-23T10:35:28Z"}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXRhY2l0ZSJ9.u9el_FpmfaQq6REwi2ULhNGAfVE_0xjGMZEttcq8rlw
+  response:
+    status:
+      code: 201
+      message: ''
+    headers:
+      Content-Type:
+      - application/json
+      Vary:
+      - Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Length:
+      - '0'
+      Server:
+      - http-kit
+      Date:
+      - Sat, 11 Mar 2017 09:10:31 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 11 Mar 2017 09:10:31 GMT
+- request:
+    method: post
+    uri: https://bus-staging.eventdata.crossref.org/events
+    body:
+      encoding: UTF-8
+      string: '{"id":"ccb53a8b-7121-4e48-b475-d50b47421b67","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.5194/esurfd-2-1005-2014","relation_type_id":"references","source_id":"datacite","occurred_at":"2016-12-23T10:35:28Z"}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXRhY2l0ZSJ9.u9el_FpmfaQq6REwi2ULhNGAfVE_0xjGMZEttcq8rlw
+  response:
+    status:
+      code: 201
+      message: ''
+    headers:
+      Content-Type:
+      - application/json
+      Vary:
+      - Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Length:
+      - '0'
+      Server:
+      - http-kit
+      Date:
+      - Sat, 11 Mar 2017 09:10:31 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 11 Mar 2017 09:10:31 GMT
+- request:
+    method: post
+    uri: https://bus-staging.eventdata.crossref.org/events
+    body:
+      encoding: UTF-8
+      string: '{"id":"2286c238-abb6-4898-8b06-f5353b8112ec","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1371/journal.pone.0105948","relation_type_id":"references","source_id":"datacite","occurred_at":"2016-12-23T10:35:28Z"}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXRhY2l0ZSJ9.u9el_FpmfaQq6REwi2ULhNGAfVE_0xjGMZEttcq8rlw
+  response:
+    status:
+      code: 201
+      message: ''
+    headers:
+      Content-Type:
+      - application/json
+      Vary:
+      - Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Length:
+      - '0'
+      Server:
+      - http-kit
+      Date:
+      - Sat, 11 Mar 2017 09:10:32 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 11 Mar 2017 09:10:32 GMT
+- request:
+    method: post
+    uri: https://bus-staging.eventdata.crossref.org/events
+    body:
+      encoding: UTF-8
+      string: '{"id":"11ede502-36b0-4c19-b323-5d051fd6bf4a","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1016/j.bpj.2015.04.023","relation_type_id":"references","source_id":"datacite","occurred_at":"2016-12-23T10:35:28Z"}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXRhY2l0ZSJ9.u9el_FpmfaQq6REwi2ULhNGAfVE_0xjGMZEttcq8rlw
+  response:
+    status:
+      code: 201
+      message: ''
+    headers:
+      Content-Type:
+      - application/json
+      Vary:
+      - Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Length:
+      - '0'
+      Server:
+      - http-kit
+      Date:
+      - Sat, 11 Mar 2017 09:10:32 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 11 Mar 2017 09:10:32 GMT
+- request:
+    method: post
+    uri: https://bus-staging.eventdata.crossref.org/events
+    body:
+      encoding: UTF-8
+      string: '{"id":"96fbd3bf-9102-4254-abd5-81baa67cf181","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1002/esp.3677","relation_type_id":"references","source_id":"datacite","occurred_at":"2016-12-23T10:35:28Z"}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXRhY2l0ZSJ9.u9el_FpmfaQq6REwi2ULhNGAfVE_0xjGMZEttcq8rlw
+  response:
+    status:
+      code: 201
+      message: ''
+    headers:
+      Content-Type:
+      - application/json
+      Vary:
+      - Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Length:
+      - '0'
+      Server:
+      - http-kit
+      Date:
+      - Sat, 11 Mar 2017 09:10:32 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 11 Mar 2017 09:10:32 GMT
+- request:
+    method: post
+    uri: https://bus-staging.eventdata.crossref.org/events
+    body:
+      encoding: UTF-8
+      string: '{"id":"1a7aa14f-8019-43dd-b25f-28115e739e14","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1016/j.aeolia.2016.01.003","relation_type_id":"references","source_id":"datacite","occurred_at":"2016-12-23T10:35:28Z"}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXRhY2l0ZSJ9.u9el_FpmfaQq6REwi2ULhNGAfVE_0xjGMZEttcq8rlw
+  response:
+    status:
+      code: 201
+      message: ''
+    headers:
+      Content-Type:
+      - application/json
+      Vary:
+      - Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Length:
+      - '0'
+      Server:
+      - http-kit
+      Date:
+      - Sat, 11 Mar 2017 09:10:32 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 11 Mar 2017 09:10:32 GMT
+- request:
+    method: post
+    uri: https://bus-staging.eventdata.crossref.org/events
+    body:
+      encoding: UTF-8
+      string: '{"id":"3775dfb8-75c7-4872-b690-844e9c2ccfbe","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.4172/2381-8719.1000256","relation_type_id":"references","source_id":"datacite","occurred_at":"2016-12-23T10:35:28Z"}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXRhY2l0ZSJ9.u9el_FpmfaQq6REwi2ULhNGAfVE_0xjGMZEttcq8rlw
+  response:
+    status:
+      code: 201
+      message: ''
+    headers:
+      Content-Type:
+      - application/json
+      Vary:
+      - Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Length:
+      - '0'
+      Server:
+      - http-kit
+      Date:
+      - Sat, 11 Mar 2017 09:10:33 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 11 Mar 2017 09:10:33 GMT
+- request:
+    method: post
+    uri: https://bus-staging.eventdata.crossref.org/events
+    body:
+      encoding: UTF-8
+      string: '{"id":"6b8d872d-6857-42ec-8b5e-d518b3e61d2e","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1371/journal.pone.0134826","relation_type_id":"references","source_id":"datacite","occurred_at":"2016-12-23T10:35:28Z"}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXRhY2l0ZSJ9.u9el_FpmfaQq6REwi2ULhNGAfVE_0xjGMZEttcq8rlw
+  response:
+    status:
+      code: 201
+      message: ''
+    headers:
+      Content-Type:
+      - application/json
+      Vary:
+      - Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Length:
+      - '0'
+      Server:
+      - http-kit
+      Date:
+      - Sat, 11 Mar 2017 09:10:33 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 11 Mar 2017 09:10:33 GMT
+- request:
+    method: post
+    uri: https://bus-staging.eventdata.crossref.org/events
+    body:
+      encoding: UTF-8
+      string: '{"id":"2184e316-323a-465b-ae1e-6b50d952e39f","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1016/j.tree.2010.11.006","relation_type_id":"references","source_id":"datacite","occurred_at":"2016-12-23T10:35:28Z"}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXRhY2l0ZSJ9.u9el_FpmfaQq6REwi2ULhNGAfVE_0xjGMZEttcq8rlw
+  response:
+    status:
+      code: 201
+      message: ''
+    headers:
+      Content-Type:
+      - application/json
+      Vary:
+      - Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Length:
+      - '0'
+      Server:
+      - http-kit
+      Date:
+      - Sat, 11 Mar 2017 09:10:33 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 11 Mar 2017 09:10:33 GMT
+recorded_with: VCR 3.0.3

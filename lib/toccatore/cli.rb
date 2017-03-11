@@ -1,7 +1,6 @@
 # encoding: UTF-8
 
 require "thor"
-require_relative 'orcid_update'
 
 module Toccatore
   class CLI < Thor
@@ -29,6 +28,19 @@ module Toccatore
     def orcid_update
       orcid_update = Toccatore::OrcidUpdate.new
       orcid_update.queue_jobs(orcid_update.unfreeze(options))
+    end
+
+    desc "datacite_related", "push non-DataCite DOIs from DataCite MDS to Event Data"
+    method_option :access_token, type: :string, required: true
+    method_option :push_url, type: :string
+    method_option :from_date, type: :string, default: (Time.now.to_date - 1.day).iso8601
+    method_option :until_date, type: :string, default: Time.now.to_date.iso8601
+    method_option :q, type: :string
+    method_option :related_identifier, type: :string
+    method_option :doi, type: :string
+    def datacite_related
+      datacite_related = Toccatore::DataciteRelated.new
+      datacite_related.queue_jobs(datacite_related.unfreeze(options))
     end
   end
 end

@@ -17,46 +17,24 @@ http_interactions:
       - Token token=<VOLPINO_TOKEN>
   response:
     status:
-      code: 202
+      code: 404
       message: ''
     headers:
-      Server:
-      - openresty/1.11.2.1
-      Date:
-      - Sat, 04 Feb 2017 07:26:47 GMT
       Content-Type:
       - application/json; charset=utf-8
+      Date:
+      - Sat, 11 Mar 2017 09:14:49 GMT
+      Server:
+      - kong/0.10.0
+      Content-Length:
+      - '45'
       Connection:
       - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - 1f76ff9a-5012-467d-b187-dc044107faaa
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      X-Runtime:
-      - '0.008897'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"df624600-24c0-4d97-a85e-ca8fe165fe40","type":"claims","attributes":{"orcid":"0000-0003-1013-1533","doi":"10.6084/M9.FIGSHARE.4126869.V1","source-id":"orcid_update","state":"failed","claim-action":"delete","claimed-at":null}}}'
+      string: '{"message":"no API found with those values"}
+
+'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 recorded_with: VCR 3.0.3

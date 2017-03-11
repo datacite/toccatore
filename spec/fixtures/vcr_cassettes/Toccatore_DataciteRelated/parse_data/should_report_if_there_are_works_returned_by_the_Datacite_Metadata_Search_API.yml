@@ -1,0 +1,1326 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.datacite.org/prefixes/10.7480
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Sat, 11 Mar 2017 08:29:56 GMT
+      Etag:
+      - W/"ff8456784c6e0dde2efda6fdfaa69bc7"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.10.0rc3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '3'
+      X-Kong-Upstream-Latency:
+      - '572'
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Ratelimit-Limit-Hour:
+      - '10000'
+      X-Ratelimit-Remaining-Hour:
+      - '9993'
+      X-Request-Id:
+      - 83cdbc94-0a9d-447e-8125-dbb3a41134de
+      X-Runtime:
+      - '0.571454'
+      X-Xss-Protection:
+      - 1; mode=block
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10.7480","type":"prefixes","attributes":{"registration-agency":"DataCite","updated":"2016-09-21T20:27:37Z"}}}'
+    http_version: 
+  recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
+- request:
+    method: get
+    uri: https://api.datacite.org/prefixes/10.1594
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Sat, 11 Mar 2017 08:29:57 GMT
+      Etag:
+      - W/"0f8a68f3c1e4c153cec8ed895fc58aa4"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.10.0rc3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Upstream-Latency:
+      - '622'
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Ratelimit-Limit-Hour:
+      - '10000'
+      X-Ratelimit-Remaining-Hour:
+      - '9992'
+      X-Request-Id:
+      - 4e1ac868-5e53-4107-9c14-f3e3bf1001cf
+      X-Runtime:
+      - '0.621040'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '124'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10.1594","type":"prefixes","attributes":{"registration-agency":"DataCite","updated":"2016-09-21T20:24:47Z"}}}'
+    http_version: 
+  recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
+- request:
+    method: get
+    uri: https://api.datacite.org/prefixes/10.15468
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Sat, 11 Mar 2017 08:29:58 GMT
+      Etag:
+      - W/"a1ae47bd8d0f7897ea6c9746b1089744"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.10.0rc3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Upstream-Latency:
+      - '275'
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Ratelimit-Limit-Hour:
+      - '10000'
+      X-Ratelimit-Remaining-Hour:
+      - '9991'
+      X-Request-Id:
+      - 92c732d6-0c6c-4280-b1e3-8bfe8bd0e34e
+      X-Runtime:
+      - '0.274008'
+      X-Xss-Protection:
+      - 1; mode=block
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10.15468","type":"prefixes","attributes":{"registration-agency":"DataCite","updated":"2016-09-21T20:24:38Z"}}}'
+    http_version: 
+  recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
+- request:
+    method: get
+    uri: https://api.datacite.org/prefixes/10.5886
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Sat, 11 Mar 2017 08:29:59 GMT
+      Etag:
+      - W/"e592c4d7bbb0a817579d5b5c0d180f3a"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.10.0rc3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Upstream-Latency:
+      - '954'
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Ratelimit-Limit-Hour:
+      - '10000'
+      X-Ratelimit-Remaining-Hour:
+      - '9990'
+      X-Request-Id:
+      - eff0749b-8e2b-406d-ace0-fd4f9d031942
+      X-Runtime:
+      - '0.953103'
+      X-Xss-Protection:
+      - 1; mode=block
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10.5886","type":"prefixes","attributes":{"registration-agency":"DataCite","updated":"2016-09-21T20:27:21Z"}}}'
+    http_version: 
+  recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
+- request:
+    method: get
+    uri: https://api.datacite.org/prefixes/10.5519
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Sat, 11 Mar 2017 08:30:00 GMT
+      Etag:
+      - W/"c5f210487ebd06c8650fccadff28ab57"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.10.0rc3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '20'
+      X-Kong-Upstream-Latency:
+      - '615'
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Ratelimit-Limit-Hour:
+      - '10000'
+      X-Ratelimit-Remaining-Hour:
+      - '9989'
+      X-Request-Id:
+      - 3c067337-bb14-4ede-98ba-bd9ad8be486c
+      X-Runtime:
+      - '0.613543'
+      X-Xss-Protection:
+      - 1; mode=block
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10.5519","type":"prefixes","attributes":{"registration-agency":"DataCite","updated":"2016-09-21T20:27:17Z"}}}'
+    http_version: 
+  recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
+- request:
+    method: get
+    uri: https://api.datacite.org/prefixes/10.3897
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Sat, 11 Mar 2017 08:30:00 GMT
+      Etag:
+      - W/"49b5369c13185e70754b8acbba4d4827"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.10.0rc3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Upstream-Latency:
+      - '507'
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Ratelimit-Limit-Hour:
+      - '10000'
+      X-Ratelimit-Remaining-Hour:
+      - '9988'
+      X-Request-Id:
+      - a4cca5f5-64c0-43f2-a32a-2fd4e0a0dab8
+      X-Runtime:
+      - '0.506539'
+      X-Xss-Protection:
+      - 1; mode=block
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10.3897","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T21:02:52Z"}}}'
+    http_version: 
+  recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
+- request:
+    method: get
+    uri: https://api.datacite.org/prefixes/10.2307
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Sat, 11 Mar 2017 08:30:01 GMT
+      Etag:
+      - W/"20606c1979c57e322983f3c79ce94e6c"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.10.0rc3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Upstream-Latency:
+      - '585'
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Ratelimit-Limit-Hour:
+      - '10000'
+      X-Ratelimit-Remaining-Hour:
+      - '9987'
+      X-Request-Id:
+      - 2c16ecfc-3a75-42ca-b4b1-b46703ccdd9e
+      X-Runtime:
+      - '0.583912'
+      X-Xss-Protection:
+      - 1; mode=block
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10.2307","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T21:01:17Z"}}}'
+    http_version: 
+  recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
+- request:
+    method: get
+    uri: https://api.datacite.org/prefixes/10.5061
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Sat, 11 Mar 2017 08:30:02 GMT
+      Etag:
+      - W/"1eb3f4f371821b1becc6cd25a71755ce"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.10.0rc3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '10'
+      X-Kong-Upstream-Latency:
+      - '537'
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Ratelimit-Limit-Hour:
+      - '10000'
+      X-Ratelimit-Remaining-Hour:
+      - '9986'
+      X-Request-Id:
+      - 2ee50d3d-aa07-4275-8b2a-1cb987678031
+      X-Runtime:
+      - '0.535662'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '124'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10.5061","type":"prefixes","attributes":{"registration-agency":"DataCite","updated":"2016-09-21T20:27:07Z"}}}'
+    http_version: 
+  recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
+- request:
+    method: get
+    uri: https://api.datacite.org/prefixes/10.1111
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Sat, 11 Mar 2017 08:30:04 GMT
+      Etag:
+      - W/"098e53c97cd53270603fc531a82441a8"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.10.0rc3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '930'
+      X-Kong-Upstream-Latency:
+      - '256'
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Ratelimit-Limit-Hour:
+      - '10000'
+      X-Ratelimit-Remaining-Hour:
+      - '9985'
+      X-Request-Id:
+      - cab3e044-7353-4956-97f3-bd8e9fa6316c
+      X-Runtime:
+      - '0.254753'
+      X-Xss-Protection:
+      - 1; mode=block
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10.1111","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T20:45:34Z"}}}'
+    http_version: 
+  recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
+- request:
+    method: get
+    uri: https://api.datacite.org/prefixes/10.13140
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Sat, 11 Mar 2017 08:30:05 GMT
+      Etag:
+      - W/"e6a3b5cb952d909fa0a41ec4dbe91030"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.10.0rc3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Upstream-Latency:
+      - '795'
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Ratelimit-Limit-Hour:
+      - '10000'
+      X-Ratelimit-Remaining-Hour:
+      - '9984'
+      X-Request-Id:
+      - 97b167df-a040-483f-a0b1-b6f5a23c6be4
+      X-Runtime:
+      - '0.794727'
+      X-Xss-Protection:
+      - 1; mode=block
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10.13140","type":"prefixes","attributes":{"registration-agency":"DataCite","updated":"2016-09-21T20:24:15Z"}}}'
+    http_version: 
+  recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
+- request:
+    method: get
+    uri: https://api.datacite.org/prefixes/10.6068
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Sat, 11 Mar 2017 08:30:05 GMT
+      Etag:
+      - W/"c2b9b7756990965987f488516c5ecb95"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.10.0rc3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Upstream-Latency:
+      - '551'
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Ratelimit-Limit-Hour:
+      - '10000'
+      X-Ratelimit-Remaining-Hour:
+      - '9983'
+      X-Request-Id:
+      - 5b1bfb4a-00fc-4ed1-bd45-fbe9615a9cd3
+      X-Runtime:
+      - '0.550820'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '124'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10.6068","type":"prefixes","attributes":{"registration-agency":"DataCite","updated":"2016-09-21T20:27:23Z"}}}'
+    http_version: 
+  recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
+- request:
+    method: get
+    uri: https://api.datacite.org/prefixes/10.1128
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Sat, 11 Mar 2017 08:30:06 GMT
+      Etag:
+      - W/"4204d240354ea331dfe5accd8a61d79b"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.10.0rc3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Upstream-Latency:
+      - '234'
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Ratelimit-Limit-Hour:
+      - '10000'
+      X-Ratelimit-Remaining-Hour:
+      - '9982'
+      X-Request-Id:
+      - cd686e6d-e87c-413f-9240-473db9e28df4
+      X-Runtime:
+      - '0.233058'
+      X-Xss-Protection:
+      - 1; mode=block
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10.1128","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T20:45:47Z"}}}'
+    http_version: 
+  recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
+- request:
+    method: get
+    uri: https://api.datacite.org/prefixes/10.1038
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Sat, 11 Mar 2017 08:30:07 GMT
+      Etag:
+      - W/"fd6fb390239a49128465de9070d461d9"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.10.0rc3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Upstream-Latency:
+      - '989'
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Ratelimit-Limit-Hour:
+      - '10000'
+      X-Ratelimit-Remaining-Hour:
+      - '9981'
+      X-Request-Id:
+      - a305f002-42c5-4808-9093-05977d143c20
+      X-Runtime:
+      - '0.987414'
+      X-Xss-Protection:
+      - 1; mode=block
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10.1038","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T20:45:23Z"}}}'
+    http_version: 
+  recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
+- request:
+    method: get
+    uri: https://api.datacite.org/prefixes/10.1371
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Sat, 11 Mar 2017 08:30:08 GMT
+      Etag:
+      - W/"a078870f021fe1686525a8135b0e29b8"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.10.0rc3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Upstream-Latency:
+      - '700'
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Ratelimit-Limit-Hour:
+      - '10000'
+      X-Ratelimit-Remaining-Hour:
+      - '9980'
+      X-Request-Id:
+      - a998ba7f-c64b-409f-b1d2-a6ec772b9b50
+      X-Runtime:
+      - '0.699177'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '124'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10.1371","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T20:47:32Z"}}}'
+    http_version: 
+  recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
+- request:
+    method: get
+    uri: https://api.datacite.org/prefixes/10.1007
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Sat, 11 Mar 2017 08:30:09 GMT
+      Etag:
+      - W/"f53cde77e343e10a66e08694e07c9370"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.10.0rc3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Upstream-Latency:
+      - '488'
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Ratelimit-Limit-Hour:
+      - '10000'
+      X-Ratelimit-Remaining-Hour:
+      - '9979'
+      X-Request-Id:
+      - 542a0d56-22c3-4069-b768-c535e8f8a6f0
+      X-Runtime:
+      - '0.486712'
+      X-Xss-Protection:
+      - 1; mode=block
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10.1007","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T20:45:22Z"}}}'
+    http_version: 
+  recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
+- request:
+    method: get
+    uri: https://api.datacite.org/prefixes/10.1016
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Sat, 11 Mar 2017 08:30:10 GMT
+      Etag:
+      - W/"7c9a7b8f563d4b464488ed2327095f44"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.10.0rc3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '13'
+      X-Kong-Upstream-Latency:
+      - '940'
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Ratelimit-Limit-Hour:
+      - '10000'
+      X-Ratelimit-Remaining-Hour:
+      - '9978'
+      X-Request-Id:
+      - d503e640-95db-45a6-aafb-976453151667
+      X-Runtime:
+      - '0.939157'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '124'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10.1016","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T20:45:22Z"}}}'
+    http_version: 
+  recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
+- request:
+    method: get
+    uri: https://api.datacite.org/prefixes/10.1126
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Sat, 11 Mar 2017 08:30:11 GMT
+      Etag:
+      - W/"065bd79ee7e64d18b5ca29235b557338"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.10.0rc3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Upstream-Latency:
+      - '677'
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Ratelimit-Limit-Hour:
+      - '10000'
+      X-Ratelimit-Remaining-Hour:
+      - '9977'
+      X-Request-Id:
+      - 0ba544c9-138e-475b-9606-230bfb31ee6c
+      X-Runtime:
+      - '0.675634'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '124'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10.1126","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T20:45:46Z"}}}'
+    http_version: 
+  recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
+- request:
+    method: get
+    uri: https://api.datacite.org/prefixes/10.1051
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Sat, 11 Mar 2017 08:30:11 GMT
+      Etag:
+      - W/"4e812c13ab1d725399dd22c8eb3f7891"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.10.0rc3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Upstream-Latency:
+      - '233'
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Ratelimit-Limit-Hour:
+      - '10000'
+      X-Ratelimit-Remaining-Hour:
+      - '9976'
+      X-Request-Id:
+      - 6976b351-740a-419b-87c9-fb507b560409
+      X-Runtime:
+      - '0.230348'
+      X-Xss-Protection:
+      - 1; mode=block
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10.1051","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T20:45:24Z"}}}'
+    http_version: 
+  recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
+- request:
+    method: get
+    uri: https://api.datacite.org/prefixes/10.14283
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Sat, 11 Mar 2017 08:30:12 GMT
+      Etag:
+      - W/"8eed601a0861600c8eb16bf3dcd4def7"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.10.0rc3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Upstream-Latency:
+      - '898'
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Ratelimit-Limit-Hour:
+      - '10000'
+      X-Ratelimit-Remaining-Hour:
+      - '9975'
+      X-Request-Id:
+      - e646abe4-f58b-4cf0-865b-60e76ab6edcf
+      X-Runtime:
+      - '0.897023'
+      X-Xss-Protection:
+      - 1; mode=block
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10.14283","type":"prefixes","attributes":{"registration-agency":"DataCite","updated":"2016-09-21T20:24:19Z"}}}'
+    http_version: 
+  recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
+recorded_with: VCR 3.0.3

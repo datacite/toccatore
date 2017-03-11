@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://search.datacite.org/api?fl=doi,resourceTypeGeneral,relatedIdentifier,nameIdentifier,minted,updated&fq=updated:%5B2013-01-01T00:00:00Z%20TO%202017-12-31T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=relatedIdentifier:DOI%5C:10.7554/elife.01567&rows=1000&start=0&wt=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sat, 11 Mar 2017 08:27:52 GMT
+      Server:
+      - openresty/1.11.2.2
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"responseHeader":{"status":0,"QTime":3},"response":{"numFound":1,"start":0,"docs":[{"minted":"2014-01-23T19:20:48Z","updated":"2017-02-05T18:24:05Z","doi":"10.5061/DRYAD.B835K","relatedIdentifier":["HasPart:DOI:10.5061/DRYAD.B835K/1","HasPart:DOI:10.5061/DRYAD.B835K/2","HasPart:DOI:10.5061/DRYAD.B835K/3","HasPart:DOI:10.5061/DRYAD.B835K/4","IsReferencedBy:DOI:10.7554/ELIFE.01567","IsReferencedBy:PMID:24520159"],"resourceTypeGeneral":"Dataset"}]}}
+
+'
+    http_version: 
+  recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
+recorded_with: VCR 3.0.3
