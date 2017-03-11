@@ -77,7 +77,7 @@ module Toccatore
 
     def process_data(options = {})
       data = get_data(options.merge(timeout: timeout, source_id: source_id))
-      data = parse_data(data, options.merge(source_id: source_id))
+      data = parse_data(data)
 
       return [OpenStruct.new(body: { "data" => [] })] if data.empty?
 
@@ -190,7 +190,7 @@ module Toccatore
 
     # parse array of author strings into CSL format
     def get_authors(authors, options={})
-      Array(authors).map { |author| get_one_author(author, options) }
+      Array(authors).map { |author| get_one_author(author) }
     end
 
     # parse array of author hashes into CSL format
