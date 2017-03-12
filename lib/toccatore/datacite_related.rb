@@ -59,10 +59,17 @@ module Toccatore
       host = options[:push_url].presence || "https://bus.eventdata.crossref.org"
       push_url = host + "/events"
 
-      response = Maremma.post(push_url, data: item.to_json,
-                                        bearer: options[:access_token],
-                                        content_type: 'json',
-                                        host: host)
+      if host.ends_with?("datacite.org")
+        response = Maremma.post(push_url, data: { "data" => item }.to_json,
+                                          token: options[:access_token],
+                                          content_type: 'json',
+                                          host: host)
+      else
+        response = Maremma.post(push_url, data: item.to_json,
+                                          bearer: options[:access_token],
+                                          content_type: 'json',
+                                          host: host)
+      end
 
       if response.status == 201
         puts "#{item['subj_id']} #{item['relation_type_id']} #{item['obj_id']} pushed to Event Data service."
