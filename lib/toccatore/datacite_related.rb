@@ -60,7 +60,7 @@ module Toccatore
       push_url = host + "/events"
 
       if host.ends_with?("datacite.org")
-        response = Maremma.post(push_url, data: { "data" => item }.to_json,
+        response = Maremma.post(push_url, data: { "data" => item }.to_json,
                                           token: options[:access_token],
                                           content_type: 'json',
                                           host: host)
