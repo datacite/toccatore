@@ -99,10 +99,10 @@ describe Toccatore::DataciteRelated, vcr: true do
     it "should report if there are works returned by the Datacite Metadata Search API" do
       body = File.read(fixture_path + 'datacite_related.json')
       result = OpenStruct.new(body: { "data" => JSON.parse(body) })
-      response = subject.parse_data(result)
+      response = subject.parse_data(result, source_token: ENV['SOURCE_TOKEN'])
 
       expect(response.length).to eq(134)
-      expect(response.last.except("id")).to eq("message_action" => "create", "subj_id"=>"https://doi.org/10.17180/obs.yzeron", "obj_id"=>"https://doi.org/10.1016/j.jhydrol.2013.09.055", "relation_type_id"=>"is_referenced_by", "source_id"=>"datacite", "occurred_at"=>"2015-04-07T12:22:40Z")
+      expect(response.last.except("id")).to eq("message_action" => "create", "subj_id"=>"https://doi.org/10.17180/obs.yzeron", "obj_id"=>"https://doi.org/10.1016/j.jhydrol.2013.09.055", "relation_type_id"=>"is_referenced_by", "source_id"=>"datacite","source_token" => "28276d12-b320-41ba-9272-bb0adc3466ff", "occurred_at"=>"2015-04-07T12:22:40Z")
     end
 
     it "should report if there are works ignored because of an IsIdenticalTo relation" do
@@ -127,8 +127,16 @@ describe Toccatore::DataciteRelated, vcr: true do
     it "should report if there are works returned by the Datacite Metadata Search API" do
       body = File.read(fixture_path + 'datacite_related.json')
       result = OpenStruct.new(body: { "data" => JSON.parse(body) })
-      result = subject.parse_data(result)
+      result = subject.parse_data(result, source_token: ENV['SOURCE_TOKEN'])
       options = { push_url: ENV['EVENTDATA_URL'], access_token: ENV['EVENTDATA_TOKEN'] }
+      expect { subject.push_data(result, options) }.to output(/https:\/\/doi.org\/10.15468\/dl.mb4das references https:\/\/doi.org\/10.3897\/phytokeys.12.2849 pushed to Event Data service.\n/).to_stdout
+    end
+
+    it "should work with DataCite Event Data" do
+      body = File.read(fixture_path + 'datacite_related.json')
+      result = OpenStruct.new(body: { "data" => JSON.parse(body) })
+      result = subject.parse_data(result, source_token: ENV['SOURCE_TOKEN'])
+      options = { push_url: ENV['LAGOTTO_URL'], access_token: ENV['LAGOTTO_TOKEN'] }
       expect { subject.push_data(result, options) }.to output(/https:\/\/doi.org\/10.15468\/dl.mb4das references https:\/\/doi.org\/10.3897\/phytokeys.12.2849 pushed to Event Data service.\n/).to_stdout
     end
   end

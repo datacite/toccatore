@@ -77,7 +77,7 @@ module Toccatore
 
     def process_data(options = {})
       data = get_data(options.merge(timeout: timeout, source_id: source_id))
-      data = parse_data(data)
+      data = parse_data(data, options)
 
       return [OpenStruct.new(body: { "data" => [] })] if data.empty?
 

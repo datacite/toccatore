@@ -10,7 +10,7 @@ module Toccatore
       "relatedIdentifier:DOI\\:*"
     end
 
-    def parse_data(result)
+    def parse_data(result, options={})
       return result.body.fetch("errors") if result.body.fetch("errors", nil).present?
 
       items = result.body.fetch("data", {}).fetch('response', {}).fetch('docs', nil)
@@ -44,6 +44,7 @@ module Toccatore
                         "obj_id" => normalize_doi(related_identifier),
                         "relation_type_id" => raw_relation_type.underscore,
                         "source_id" => "datacite",
+                        "source_token" => options[:source_token],
                         "occurred_at" => item.fetch("minted") }
             end
           end
@@ -60,7 +61,11 @@ module Toccatore
       push_url = host + "/events"
 
       if host.ends_with?("datacite.org")
-        response = Maremma.post(push_url, data: { "data" => item }.to_json,
+        data = { "data" => {
+                   "id" => item["id"],
+                   "type" => "events",
+                   "attributes" => item.except("id") }}
+        response = Maremma.post(push_url, data: data.to_json,
                                           token: options[:access_token],
                                           content_type: 'json',
                                           host: host)

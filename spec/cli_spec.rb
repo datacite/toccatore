@@ -61,10 +61,12 @@ describe Toccatore::CLI do
   describe "datacite_related", vcr: true, :order => :defined do
     let(:push_url) { ENV['EVENTDATA_URL'] }
     let(:access_token) { ENV['EVENTDATA_TOKEN'] }
+    let(:source_token) { ENV['SOURCE_TOKEN'] }
     let(:from_date) { "2015-04-07" }
     let(:until_date) { "2015-04-08" }
     let(:cli_options) { { push_url: push_url,
                           access_token: access_token,
+                          source_token: source_token,
                           from_date: from_date,
                           until_date: until_date } }
 

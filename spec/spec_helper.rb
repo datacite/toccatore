@@ -89,4 +89,5 @@ VCR.configure do |c|
   c.configure_rspec_metadata!
   c.filter_sensitive_data("<VOLPINO_TOKEN>") { ENV['VOLPINO_TOKEN'] }
   c.filter_sensitive_data("<EVENTDATA_TOKEN>") { ENV['EVENTDATA_TOKEN'] }
+  c.filter_sensitive_data("<LAGOTTO_TOKEN>") { ENV['LAGOTTO_TOKEN'] }
 end

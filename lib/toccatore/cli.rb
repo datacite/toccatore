@@ -32,6 +32,7 @@ module Toccatore
 
     desc "datacite_related", "push non-DataCite DOIs from DataCite MDS to Event Data"
     method_option :access_token, type: :string, required: true
+    method_option :source_token, type: :string, required: true
     method_option :push_url, type: :string
     method_option :from_date, type: :string, default: (Time.now.to_date - 1.day).iso8601
     method_option :until_date, type: :string, default: Time.now.to_date.iso8601
