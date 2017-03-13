@@ -136,7 +136,7 @@ describe Toccatore::DataciteRelated, vcr: true do
       body = File.read(fixture_path + 'datacite_related.json')
       result = OpenStruct.new(body: { "data" => JSON.parse(body) })
       result = subject.parse_data(result, source_token: ENV['SOURCE_TOKEN'])
-      options = { push_url: ENV['LAGOTTO_URL'], access_token: ENV['LAGOTTO_TOKEN'] }
+      options = { push_url: ENV['LAGOTTO_URL'], access_token: ENV['LAGOTTO_TOKEN'], jsonapi: true }
       expect { subject.push_data(result, options) }.to output(/https:\/\/doi.org\/10.15468\/dl.mb4das references https:\/\/doi.org\/10.3897\/phytokeys.12.2849 pushed to Event Data service.\n/).to_stdout
     end
   end

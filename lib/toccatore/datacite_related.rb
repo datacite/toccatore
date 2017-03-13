@@ -60,7 +60,7 @@ module Toccatore
       host = options[:push_url].presence || "https://bus.eventdata.crossref.org"
       push_url = host + "/events"
 
-      if host.ends_with?("datacite.org")
+      if options[:jsonapi]
         data = { "data" => {
                    "id" => item["id"],
                    "type" => "events",

@@ -39,6 +39,7 @@ module Toccatore
     method_option :q, type: :string
     method_option :related_identifier, type: :string
     method_option :doi, type: :string
+    method_option :jsonapi, :type => :boolean, :force => false
     def datacite_related
       datacite_related = Toccatore::DataciteRelated.new
       datacite_related.queue_jobs(datacite_related.unfreeze(options))
