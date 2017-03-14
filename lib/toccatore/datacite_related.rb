@@ -35,9 +35,7 @@ module Toccatore
             registration_agencies[prefix] = get_doi_ra(prefix) unless registration_agencies[prefix]
 
             # check whether this is a DataCite DOI
-            if registration_agencies[prefix] == "DataCite"
-              ssum
-            else
+            if %w(Crossref).include?(registration_agencies[prefix])
               ssum << { "id" => SecureRandom.uuid,
                         "message_action" => "create",
                         "subj_id" => pid,
@@ -46,6 +44,8 @@ module Toccatore
                         "source_id" => "datacite",
                         "source_token" => options[:source_token],
                         "occurred_at" => item.fetch("minted") }
+            else
+              ssum
             end
           end
         end
