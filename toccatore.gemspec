@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'namae', '~> 0.11.0'
   s.add_dependency 'gender_detector', '~> 1.0'
   s.add_dependency 'thor', '~> 0.19'
+  s.add_dependency 'slack-notifier', '~> 2.1'
   s.add_development_dependency 'bundler', '~> 1.0'
   s.add_development_dependency 'rspec', '~> 3.4'
   s.add_development_dependency 'rake', '~> 12.0'
