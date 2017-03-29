@@ -23,18 +23,18 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Sat, 11 Mar 2017 10:53:10 GMT
+      - Wed, 29 Mar 2017 13:24:00 GMT
       Server:
       - openresty/1.11.2.2
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":1,"start":0,"docs":[]}}
+      string: '{"responseHeader":{"status":0,"QTime":1},"response":{"numFound":1,"start":0,"docs":[]}}
 
 '
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 10:53:10 GMT
+  recorded_at: Wed, 29 Mar 2017 13:24:00 GMT
 - request:
     method: get
     uri: https://search.datacite.org/api?fl=doi,resourceTypeGeneral,relatedIdentifier,nameIdentifier,minted,updated&fq=updated:%5B2013-01-01T00:00:00Z%20TO%202017-12-31T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=doi:10.5438/CT8B-X1CE&rows=1000&start=0&wt=json
@@ -58,18 +58,18 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Sat, 11 Mar 2017 10:53:10 GMT
+      - Wed, 29 Mar 2017 13:24:01 GMT
       Server:
       - openresty/1.11.2.2
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":1,"start":0,"docs":[{"minted":"2016-12-23T10:35:28Z","updated":"2017-01-09T13:53:10Z","doi":"10.5438/CT8B-X1CE","resourceTypeGeneral":"Text","relatedIdentifier":["References:URL:https://arxiv.org/abs/1501.04916","References:DOI:10.3398/064.075.0213","References:DOI:10.1002/2015JE004895","References:DOI:10.1371/JOURNAL.PBIO.1001687","References:DOI:10.1016/J.JAS.2015.02.009","References:URL:http://hdl.handle.net/10536/DRO/DU:30088291","References:DOI:10.1016/J.AEOLIA.2015.08.001","References:DOI:10.1007/S12209-016-2596-Z","References:DOI:10.5194/ESURFD-2-1005-2014","References:DOI:10.1371/JOURNAL.PONE.0105948","References:URL:https://www.ncbi.nlm.nih.gov/books/NBK7256","References:DOI:10.1016/J.BPJ.2015.04.023","References:DOI:10.1002/ESP.3677","References:DOI:10.1016/J.AEOLIA.2016.01.003","References:DOI:10.4172/2381-8719.1000256","References:DOI:10.1371/JOURNAL.PONE.0134826","References:DOI:10.1016/J.TREE.2010.11.006","IsPartOf:DOI:10.5438/0000-00SS"],"nameIdentifier":["ORCID:0000-0003-1419-2405"]}]}}
+      string: '{"responseHeader":{"status":0,"QTime":1},"response":{"numFound":1,"start":0,"docs":[{"minted":"2016-12-23T10:35:28Z","updated":"2017-01-09T13:53:10Z","doi":"10.5438/CT8B-X1CE","resourceTypeGeneral":"Text","relatedIdentifier":["References:URL:https://arxiv.org/abs/1501.04916","References:DOI:10.3398/064.075.0213","References:DOI:10.1002/2015JE004895","References:DOI:10.1371/JOURNAL.PBIO.1001687","References:DOI:10.1016/J.JAS.2015.02.009","References:URL:http://hdl.handle.net/10536/DRO/DU:30088291","References:DOI:10.1016/J.AEOLIA.2015.08.001","References:DOI:10.1007/S12209-016-2596-Z","References:DOI:10.5194/ESURFD-2-1005-2014","References:DOI:10.1371/JOURNAL.PONE.0105948","References:URL:https://www.ncbi.nlm.nih.gov/books/NBK7256","References:DOI:10.1016/J.BPJ.2015.04.023","References:DOI:10.1002/ESP.3677","References:DOI:10.1016/J.AEOLIA.2016.01.003","References:DOI:10.4172/2381-8719.1000256","References:DOI:10.1371/JOURNAL.PONE.0134826","References:DOI:10.1016/J.TREE.2010.11.006","IsPartOf:DOI:10.5438/0000-00SS"],"nameIdentifier":["ORCID:0000-0003-1419-2405"]}]}}
 
 '
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 10:53:10 GMT
+  recorded_at: Wed, 29 Mar 2017 13:24:01 GMT
 - request:
     method: get
     uri: https://api.datacite.org/prefixes/10.3398
@@ -86,12 +86,10 @@ http_interactions:
       code: 200
       message: ''
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
       Access-Control-Allow-Headers:
       - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
       Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
+      - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Max-Age:
@@ -101,7 +99,7 @@ http_interactions:
       Content-Type:
       - application/vnd.api+json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:53:11 GMT
+      - Wed, 29 Mar 2017 13:24:02 GMT
       Etag:
       - W/"7cf730cb403c033dba041619ed5a152f"
       Server:
@@ -110,26 +108,16 @@ http_interactions:
       - 200 OK
       Vary:
       - Accept-Encoding
-      Via:
-      - kong/0.10.0rc3
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
       - SAMEORIGIN
-      X-Kong-Proxy-Latency:
-      - '20'
-      X-Kong-Upstream-Latency:
-      - '794'
       X-Powered-By:
       - Phusion Passenger 5.1.2
-      X-Ratelimit-Limit-Hour:
-      - '10000'
-      X-Ratelimit-Remaining-Hour:
-      - '9913'
       X-Request-Id:
-      - e2c43db1-05e5-4b8a-8db4-88d487b238db
+      - c2b391d4-08be-4834-9a64-b7dbeb93c3d4
       X-Runtime:
-      - '0.792479'
+      - '0.612701'
       X-Xss-Protection:
       - 1; mode=block
       Connection:
@@ -138,7 +126,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"10.3398","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T21:02:24Z"}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 10:53:11 GMT
+  recorded_at: Wed, 29 Mar 2017 13:24:02 GMT
 - request:
     method: get
     uri: https://api.datacite.org/prefixes/10.1002
@@ -155,12 +143,10 @@ http_interactions:
       code: 200
       message: ''
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
       Access-Control-Allow-Headers:
       - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
       Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
+      - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Max-Age:
@@ -170,7 +156,7 @@ http_interactions:
       Content-Type:
       - application/vnd.api+json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:53:12 GMT
+      - Wed, 29 Mar 2017 13:24:03 GMT
       Etag:
       - W/"fd60f408ac5a8f5de6aabc61fc16b7b7"
       Server:
@@ -179,26 +165,16 @@ http_interactions:
       - 200 OK
       Vary:
       - Accept-Encoding
-      Via:
-      - kong/0.10.0rc3
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
       - SAMEORIGIN
-      X-Kong-Proxy-Latency:
-      - '1'
-      X-Kong-Upstream-Latency:
-      - '521'
       X-Powered-By:
       - Phusion Passenger 5.1.2
-      X-Ratelimit-Limit-Hour:
-      - '10000'
-      X-Ratelimit-Remaining-Hour:
-      - '9912'
       X-Request-Id:
-      - c0d7a391-773b-4174-acba-406228445b58
+      - a1f737c2-1f07-41ad-9110-7aeddb8dbac1
       X-Runtime:
-      - '0.520202'
+      - '0.459592'
       X-Xss-Protection:
       - 1; mode=block
       Connection:
@@ -207,7 +183,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"10.1002","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T20:45:22Z"}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 10:53:12 GMT
+  recorded_at: Wed, 29 Mar 2017 13:24:03 GMT
 - request:
     method: get
     uri: https://api.datacite.org/prefixes/10.1371
@@ -224,12 +200,10 @@ http_interactions:
       code: 200
       message: ''
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
       Access-Control-Allow-Headers:
       - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
       Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
+      - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Max-Age:
@@ -239,7 +213,7 @@ http_interactions:
       Content-Type:
       - application/vnd.api+json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:53:13 GMT
+      - Wed, 29 Mar 2017 13:24:04 GMT
       Etag:
       - W/"a078870f021fe1686525a8135b0e29b8"
       Server:
@@ -248,26 +222,16 @@ http_interactions:
       - 200 OK
       Vary:
       - Accept-Encoding
-      Via:
-      - kong/0.10.0rc3
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
       - SAMEORIGIN
-      X-Kong-Proxy-Latency:
-      - '1'
-      X-Kong-Upstream-Latency:
-      - '583'
       X-Powered-By:
       - Phusion Passenger 5.1.2
-      X-Ratelimit-Limit-Hour:
-      - '10000'
-      X-Ratelimit-Remaining-Hour:
-      - '9911'
       X-Request-Id:
-      - a27fbab9-de70-476d-b28f-39e7f76b4185
+      - 8fc9b5df-48f4-4b36-ba6e-112dbecb2b5c
       X-Runtime:
-      - '0.582003'
+      - '0.628426'
       X-Xss-Protection:
       - 1; mode=block
       Connection:
@@ -276,7 +240,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"10.1371","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T20:47:32Z"}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 10:53:13 GMT
+  recorded_at: Wed, 29 Mar 2017 13:24:04 GMT
 - request:
     method: get
     uri: https://api.datacite.org/prefixes/10.1016
@@ -293,12 +257,10 @@ http_interactions:
       code: 200
       message: ''
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
       Access-Control-Allow-Headers:
       - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
       Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
+      - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Max-Age:
@@ -308,7 +270,7 @@ http_interactions:
       Content-Type:
       - application/vnd.api+json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:53:14 GMT
+      - Wed, 29 Mar 2017 13:24:05 GMT
       Etag:
       - W/"7c9a7b8f563d4b464488ed2327095f44"
       Server:
@@ -317,26 +279,16 @@ http_interactions:
       - 200 OK
       Vary:
       - Accept-Encoding
-      Via:
-      - kong/0.10.0rc3
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
       - SAMEORIGIN
-      X-Kong-Proxy-Latency:
-      - '1'
-      X-Kong-Upstream-Latency:
-      - '632'
       X-Powered-By:
       - Phusion Passenger 5.1.2
-      X-Ratelimit-Limit-Hour:
-      - '10000'
-      X-Ratelimit-Remaining-Hour:
-      - '9910'
       X-Request-Id:
-      - bace1f17-746f-4c3f-aea7-6ec6c7926ae2
+      - 77f240a3-650b-443e-aeeb-248d16d50dcb
       X-Runtime:
-      - '0.629494'
+      - '0.525723'
       X-Xss-Protection:
       - 1; mode=block
       Connection:
@@ -345,7 +297,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"10.1016","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T20:45:22Z"}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 10:53:14 GMT
+  recorded_at: Wed, 29 Mar 2017 13:24:05 GMT
 - request:
     method: get
     uri: https://api.datacite.org/prefixes/10.1007
@@ -362,12 +314,10 @@ http_interactions:
       code: 200
       message: ''
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
       Access-Control-Allow-Headers:
       - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
       Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
+      - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Max-Age:
@@ -377,7 +327,7 @@ http_interactions:
       Content-Type:
       - application/vnd.api+json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:53:14 GMT
+      - Wed, 29 Mar 2017 13:24:06 GMT
       Etag:
       - W/"f53cde77e343e10a66e08694e07c9370"
       Server:
@@ -386,26 +336,16 @@ http_interactions:
       - 200 OK
       Vary:
       - Accept-Encoding
-      Via:
-      - kong/0.10.0rc3
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
       - SAMEORIGIN
-      X-Kong-Proxy-Latency:
-      - '2'
-      X-Kong-Upstream-Latency:
-      - '537'
       X-Powered-By:
       - Phusion Passenger 5.1.2
-      X-Ratelimit-Limit-Hour:
-      - '10000'
-      X-Ratelimit-Remaining-Hour:
-      - '9909'
       X-Request-Id:
-      - df920055-7660-4d2a-95cb-812cc4ae22b5
+      - ae0e47fb-6ac0-4f36-9f65-c307ea1d3122
       X-Runtime:
-      - '0.535714'
+      - '0.268021'
       X-Xss-Protection:
       - 1; mode=block
       Connection:
@@ -414,7 +354,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"10.1007","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T20:45:22Z"}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 10:53:14 GMT
+  recorded_at: Wed, 29 Mar 2017 13:24:06 GMT
 - request:
     method: get
     uri: https://api.datacite.org/prefixes/10.5194
@@ -431,12 +371,10 @@ http_interactions:
       code: 200
       message: ''
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
       Access-Control-Allow-Headers:
       - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
       Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
+      - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Max-Age:
@@ -446,7 +384,7 @@ http_interactions:
       Content-Type:
       - application/vnd.api+json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:53:15 GMT
+      - Wed, 29 Mar 2017 13:24:08 GMT
       Etag:
       - W/"1f042efb010583ff94ca58ba029fb502"
       Server:
@@ -455,26 +393,16 @@ http_interactions:
       - 200 OK
       Vary:
       - Accept-Encoding
-      Via:
-      - kong/0.10.0rc3
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
       - SAMEORIGIN
-      X-Kong-Proxy-Latency:
-      - '26'
-      X-Kong-Upstream-Latency:
-      - '249'
       X-Powered-By:
       - Phusion Passenger 5.1.2
-      X-Ratelimit-Limit-Hour:
-      - '10000'
-      X-Ratelimit-Remaining-Hour:
-      - '9908'
       X-Request-Id:
-      - 7fdf522c-e876-4372-bb91-e44ab2afee5a
+      - ce8a177a-b250-4bbc-a413-172c9c53e102
       X-Runtime:
-      - '0.247254'
+      - '0.771816'
       X-Xss-Protection:
       - 1; mode=block
       Connection:
@@ -483,7 +411,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"10.5194","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T21:04:33Z"}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 10:53:15 GMT
+  recorded_at: Wed, 29 Mar 2017 13:24:08 GMT
 - request:
     method: get
     uri: https://api.datacite.org/prefixes/10.4172
@@ -500,12 +428,10 @@ http_interactions:
       code: 200
       message: ''
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
       Access-Control-Allow-Headers:
       - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
       Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
+      - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Max-Age:
@@ -515,7 +441,7 @@ http_interactions:
       Content-Type:
       - application/vnd.api+json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:53:17 GMT
+      - Wed, 29 Mar 2017 13:24:09 GMT
       Etag:
       - W/"ab8bd9cae1af53dbd883afdd0d684d71"
       Server:
@@ -524,26 +450,16 @@ http_interactions:
       - 200 OK
       Vary:
       - Accept-Encoding
-      Via:
-      - kong/0.10.0rc3
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
       - SAMEORIGIN
-      X-Kong-Proxy-Latency:
-      - '2'
-      X-Kong-Upstream-Latency:
-      - '1579'
       X-Powered-By:
       - Phusion Passenger 5.1.2
-      X-Ratelimit-Limit-Hour:
-      - '10000'
-      X-Ratelimit-Remaining-Hour:
-      - '9907'
       X-Request-Id:
-      - 68d17312-2de3-4597-94af-0539adc676b7
+      - 8a0c9ec2-8568-447f-82ab-f2ea15c415ce
       X-Runtime:
-      - '1.578423'
+      - '0.633629'
       X-Xss-Protection:
       - 1; mode=block
       Connection:
@@ -552,7 +468,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"10.4172","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T21:03:31Z"}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 10:53:17 GMT
+  recorded_at: Wed, 29 Mar 2017 13:24:09 GMT
 - request:
     method: get
     uri: https://api.datacite.org/prefixes/10.5438
@@ -569,12 +485,10 @@ http_interactions:
       code: 200
       message: ''
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
       Access-Control-Allow-Headers:
       - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
       Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
+      - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Max-Age:
@@ -584,7 +498,7 @@ http_interactions:
       Content-Type:
       - application/vnd.api+json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:53:18 GMT
+      - Wed, 29 Mar 2017 13:24:10 GMT
       Etag:
       - W/"b9f2d79281c542db437c42a5bac25ac8"
       Server:
@@ -593,43 +507,31 @@ http_interactions:
       - 200 OK
       Vary:
       - Accept-Encoding
-      Via:
-      - kong/0.10.0rc3
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
       - SAMEORIGIN
-      X-Kong-Proxy-Latency:
-      - '1'
-      X-Kong-Upstream-Latency:
-      - '1151'
       X-Powered-By:
       - Phusion Passenger 5.1.2
-      X-Ratelimit-Limit-Hour:
-      - '10000'
-      X-Ratelimit-Remaining-Hour:
-      - '9906'
       X-Request-Id:
-      - 1056a352-0e69-4cf5-bc55-71a98aeb66ea
+      - 1a951b92-59da-4093-b0a4-b86075bbf96a
       X-Runtime:
-      - '1.149475'
+      - '0.679528'
       X-Xss-Protection:
       - 1; mode=block
-      Content-Length:
-      - '124'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"data":{"id":"10.5438","type":"prefixes","attributes":{"registration-agency":"DataCite","updated":"2016-09-21T20:27:15Z"}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 10:53:18 GMT
+  recorded_at: Wed, 29 Mar 2017 13:24:10 GMT
 - request:
     method: post
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"20d8204b-5bf9-4d18-8ec2-0179688b7bfa","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.3398/064.075.0213","relation_type_id":"references","source_id":"datacite","occurred_at":"2016-12-23T10:35:28Z"}'
+      string: '{"id":"463696db-192b-40da-8657-a2778074513f","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.3398/064.075.0213","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z"}'
     headers:
       User-Agent:
       - Maremma - https://github.com/datacite/maremma
@@ -655,18 +557,18 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Sat, 11 Mar 2017 10:53:18 GMT
+      - Wed, 29 Mar 2017 13:24:11 GMT
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 10:53:18 GMT
+  recorded_at: Wed, 29 Mar 2017 13:24:11 GMT
 - request:
     method: post
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"2427eaba-fcfb-49ca-b709-42900d11e029","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1002/2015je004895","relation_type_id":"references","source_id":"datacite","occurred_at":"2016-12-23T10:35:28Z"}'
+      string: '{"id":"8281e055-95a5-4bc8-a13e-4a9d8c616b79","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1002/2015je004895","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z"}'
     headers:
       User-Agent:
       - Maremma - https://github.com/datacite/maremma
@@ -692,18 +594,18 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Sat, 11 Mar 2017 10:53:19 GMT
+      - Wed, 29 Mar 2017 13:24:13 GMT
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 10:53:19 GMT
+  recorded_at: Wed, 29 Mar 2017 13:24:13 GMT
 - request:
     method: post
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"f0067604-b1cb-4431-9715-e890a49729cc","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1371/journal.pbio.1001687","relation_type_id":"references","source_id":"datacite","occurred_at":"2016-12-23T10:35:28Z"}'
+      string: '{"id":"a87f9a86-4864-4977-a770-e715c737c4d0","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1371/journal.pbio.1001687","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z"}'
     headers:
       User-Agent:
       - Maremma - https://github.com/datacite/maremma
@@ -729,18 +631,18 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Sat, 11 Mar 2017 10:53:19 GMT
+      - Wed, 29 Mar 2017 13:24:14 GMT
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 10:53:19 GMT
+  recorded_at: Wed, 29 Mar 2017 13:24:14 GMT
 - request:
     method: post
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"643ee548-4dd4-4e63-8ff1-e9bc38a65692","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1016/j.jas.2015.02.009","relation_type_id":"references","source_id":"datacite","occurred_at":"2016-12-23T10:35:28Z"}'
+      string: '{"id":"e27d52f8-0f65-41c8-88c5-ececa053c4fd","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1016/j.jas.2015.02.009","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z"}'
     headers:
       User-Agent:
       - Maremma - https://github.com/datacite/maremma
@@ -766,18 +668,18 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Sat, 11 Mar 2017 10:53:19 GMT
+      - Wed, 29 Mar 2017 13:24:14 GMT
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 10:53:19 GMT
+  recorded_at: Wed, 29 Mar 2017 13:24:14 GMT
 - request:
     method: post
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"4c5491fc-a159-4852-985f-7b3bef97cf99","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1016/j.aeolia.2015.08.001","relation_type_id":"references","source_id":"datacite","occurred_at":"2016-12-23T10:35:28Z"}'
+      string: '{"id":"3e29bf78-a725-4d82-8e5f-efa3ff345762","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1016/j.aeolia.2015.08.001","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z"}'
     headers:
       User-Agent:
       - Maremma - https://github.com/datacite/maremma
@@ -803,18 +705,18 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Sat, 11 Mar 2017 10:53:19 GMT
+      - Wed, 29 Mar 2017 13:24:15 GMT
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 10:53:20 GMT
+  recorded_at: Wed, 29 Mar 2017 13:24:15 GMT
 - request:
     method: post
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"13564ee8-5ae7-4063-9640-f52af0d2058e","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1007/s12209-016-2596-z","relation_type_id":"references","source_id":"datacite","occurred_at":"2016-12-23T10:35:28Z"}'
+      string: '{"id":"7666b9b9-3c53-4546-a8b5-38d796c884f3","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1007/s12209-016-2596-z","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z"}'
     headers:
       User-Agent:
       - Maremma - https://github.com/datacite/maremma
@@ -840,18 +742,18 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Sat, 11 Mar 2017 10:53:20 GMT
+      - Wed, 29 Mar 2017 13:24:15 GMT
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 10:53:20 GMT
+  recorded_at: Wed, 29 Mar 2017 13:24:15 GMT
 - request:
     method: post
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"92177c98-2e1d-49a4-a34c-c879d29cc7be","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.5194/esurfd-2-1005-2014","relation_type_id":"references","source_id":"datacite","occurred_at":"2016-12-23T10:35:28Z"}'
+      string: '{"id":"1cac5167-0248-4130-b979-416120927fa8","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.5194/esurfd-2-1005-2014","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z"}'
     headers:
       User-Agent:
       - Maremma - https://github.com/datacite/maremma
@@ -877,18 +779,18 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Sat, 11 Mar 2017 10:53:20 GMT
+      - Wed, 29 Mar 2017 13:24:16 GMT
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 10:53:20 GMT
+  recorded_at: Wed, 29 Mar 2017 13:24:16 GMT
 - request:
     method: post
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"cbbd9ca0-5695-444f-a1d8-cbd0639120eb","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1371/journal.pone.0105948","relation_type_id":"references","source_id":"datacite","occurred_at":"2016-12-23T10:35:28Z"}'
+      string: '{"id":"085c3a70-eb1c-48ac-a093-6693af206f20","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1371/journal.pone.0105948","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z"}'
     headers:
       User-Agent:
       - Maremma - https://github.com/datacite/maremma
@@ -914,18 +816,18 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Sat, 11 Mar 2017 10:53:20 GMT
+      - Wed, 29 Mar 2017 13:24:16 GMT
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 10:53:20 GMT
+  recorded_at: Wed, 29 Mar 2017 13:24:16 GMT
 - request:
     method: post
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"7680ec63-09bd-42b0-8e7c-a74b691f1546","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1016/j.bpj.2015.04.023","relation_type_id":"references","source_id":"datacite","occurred_at":"2016-12-23T10:35:28Z"}'
+      string: '{"id":"db03b100-e846-4a6e-a9dc-9a49dd923f83","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1016/j.bpj.2015.04.023","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z"}'
     headers:
       User-Agent:
       - Maremma - https://github.com/datacite/maremma
@@ -951,18 +853,18 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Sat, 11 Mar 2017 10:53:20 GMT
+      - Wed, 29 Mar 2017 13:24:17 GMT
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 10:53:20 GMT
+  recorded_at: Wed, 29 Mar 2017 13:24:17 GMT
 - request:
     method: post
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"4ae63af3-4e7d-4a1c-ad10-5ef47688148e","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1002/esp.3677","relation_type_id":"references","source_id":"datacite","occurred_at":"2016-12-23T10:35:28Z"}'
+      string: '{"id":"86c2160f-811c-48dd-9772-4bd199895bc8","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1002/esp.3677","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z"}'
     headers:
       User-Agent:
       - Maremma - https://github.com/datacite/maremma
@@ -988,18 +890,18 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Sat, 11 Mar 2017 10:53:21 GMT
+      - Wed, 29 Mar 2017 13:24:17 GMT
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 10:53:21 GMT
+  recorded_at: Wed, 29 Mar 2017 13:24:17 GMT
 - request:
     method: post
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"259d7ddb-77d7-4f8d-833f-e63fb3d011a0","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1016/j.aeolia.2016.01.003","relation_type_id":"references","source_id":"datacite","occurred_at":"2016-12-23T10:35:28Z"}'
+      string: '{"id":"095b3447-ddc5-488b-82bc-7b31b95c9468","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1016/j.aeolia.2016.01.003","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z"}'
     headers:
       User-Agent:
       - Maremma - https://github.com/datacite/maremma
@@ -1025,18 +927,18 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Sat, 11 Mar 2017 10:53:21 GMT
+      - Wed, 29 Mar 2017 13:24:18 GMT
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 10:53:21 GMT
+  recorded_at: Wed, 29 Mar 2017 13:24:18 GMT
 - request:
     method: post
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"b16f3c8d-b7d8-4a0a-9ae5-44291f2b4f26","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.4172/2381-8719.1000256","relation_type_id":"references","source_id":"datacite","occurred_at":"2016-12-23T10:35:28Z"}'
+      string: '{"id":"b1c026e1-ee2b-4c3f-87f5-60b32aa0c543","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.4172/2381-8719.1000256","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z"}'
     headers:
       User-Agent:
       - Maremma - https://github.com/datacite/maremma
@@ -1062,18 +964,18 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Sat, 11 Mar 2017 10:53:21 GMT
+      - Wed, 29 Mar 2017 13:24:19 GMT
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 10:53:21 GMT
+  recorded_at: Wed, 29 Mar 2017 13:24:19 GMT
 - request:
     method: post
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"664f7dfb-bd8e-4357-a01b-b849583a800c","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1371/journal.pone.0134826","relation_type_id":"references","source_id":"datacite","occurred_at":"2016-12-23T10:35:28Z"}'
+      string: '{"id":"f5ea78c5-0bf8-4381-888b-5b3c8e53c3b6","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1371/journal.pone.0134826","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z"}'
     headers:
       User-Agent:
       - Maremma - https://github.com/datacite/maremma
@@ -1099,18 +1001,18 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Sat, 11 Mar 2017 10:53:22 GMT
+      - Wed, 29 Mar 2017 13:24:21 GMT
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 10:53:22 GMT
+  recorded_at: Wed, 29 Mar 2017 13:24:21 GMT
 - request:
     method: post
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"88b8346f-099b-4ecf-917d-7811ef66377e","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1016/j.tree.2010.11.006","relation_type_id":"references","source_id":"datacite","occurred_at":"2016-12-23T10:35:28Z"}'
+      string: '{"id":"07668fd7-bd3a-487e-91a9-faf7f4ce8d12","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1016/j.tree.2010.11.006","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z"}'
     headers:
       User-Agent:
       - Maremma - https://github.com/datacite/maremma
@@ -1136,10 +1038,63 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Sat, 11 Mar 2017 10:53:22 GMT
+      - Wed, 29 Mar 2017 13:24:21 GMT
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 10:53:22 GMT
+  recorded_at: Wed, 29 Mar 2017 13:24:21 GMT
+- request:
+    method: post
+    uri: "<SLACK_WEBHOOK_URL>"
+    body:
+      encoding: US-ASCII
+      string: payload=%7B%22username%22%3A%22Event+Data+Agent%22%2C%22icon_url%22%3A%22https%3A%2F%2Fraw.githubusercontent.com%2Fdatacite%2Ftoccatore%2Fmaster%2Flib%2Ftoccatore%2Fimages%2Ftoccatore.png%22%2C%22attachments%22%3A%5B%7B%22title%22%3A%22Report+for+datacite_related%22%2C%22text%22%3A%221+works+processed+for+date+range+2013-01-01+-+2017-12-31.%22%2C%22color%22%3A%22good%22%7D%5D%7D
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/html
+      Content-Length:
+      - '22'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Wed, 29 Mar 2017 13:24:22 GMT
+      Referrer-Policy:
+      - no-referrer
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Slack-Backend:
+      - h
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 2905d0bd25e66c3f788fb2134262d52a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - rAe_FEeJovOdB-ClRicsY_k-BQbY5e7DN9he5PiQoYj-ytq-beYjjw==
+    body:
+      encoding: ASCII-8BIT
+      string: ok
+    http_version: 
+  recorded_at: Wed, 29 Mar 2017 13:24:22 GMT
 recorded_with: VCR 3.0.3

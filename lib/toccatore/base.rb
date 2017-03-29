@@ -1,10 +1,15 @@
 require 'maremma'
 require 'active_support/all'
+require 'erb'
+require 'slack-notifier'
 require 'namae'
 require 'gender_detector'
 
 module Toccatore
   class Base
+    # icon for Slack messages
+    ICON_URL = "https://raw.githubusercontent.com/datacite/toccatore/master/lib/toccatore/images/toccatore.png"
+
     # load ENV variables from .env file if it exists
     env_file = File.expand_path("../../../.env", __FILE__)
     if File.exist?(env_file)
@@ -67,9 +72,16 @@ module Toccatore
           options[:offset] = page * job_batch_size
           process_data(options)
         end
+        text = "#{total} works processed for date range #{options[:from_date]} - #{options[:until_date]}."
       else
-        puts "No works found for date range #{options[:from_date]} - #{options[:until_date]}."
+        text = "No works found for date range #{options[:from_date]} - #{options[:until_date]}."
+        puts text
       end
+
+      # send slack notification
+      options[:level] = total > 0 ? "good" : "warning"
+      options[:title] = "Report for #{source_id}"
+      send_notification_to_slack(text, options) if options[:slack_webhook_url].present?
 
       # return number of works queued
       total
@@ -109,6 +121,22 @@ module Toccatore
 
     def job_batch_size
       1000
+    end
+
+    def send_notification_to_slack(text, options={})
+      return nil unless options[:slack_webhook_url].present?
+
+      attachment = {
+        title: options[:title] || "Report",
+        text: text,
+        color: options[:level] || "good"
+      }
+
+      notifier = Slack::Notifier.new options[:slack_webhook_url],
+                                     username: "Event Data Agent",
+                                     icon_url: ICON_URL
+      response = notifier.ping attachments: [attachment]
+      response.body
     end
 
     def get_doi_ra(prefix)

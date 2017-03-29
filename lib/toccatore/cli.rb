@@ -19,6 +19,7 @@ module Toccatore
     desc "orcid_update", "push ORCID IDs from DataCite MDS to ORCID"
     method_option :access_token, type: :string, required: true
     method_option :push_url, type: :string
+    method_option :slack_webhook_url, type: :string
     method_option :from_date, type: :string, default: (Time.now.to_date - 1.day).iso8601
     method_option :until_date, type: :string, default: Time.now.to_date.iso8601
     method_option :q, type: :string
@@ -34,6 +35,7 @@ module Toccatore
     method_option :access_token, type: :string, required: true
     method_option :source_token, type: :string, required: true
     method_option :push_url, type: :string
+    method_option :slack_webhook_url, type: :string
     method_option :from_date, type: :string, default: (Time.now.to_date - 1.day).iso8601
     method_option :until_date, type: :string, default: Time.now.to_date.iso8601
     method_option :q, type: :string

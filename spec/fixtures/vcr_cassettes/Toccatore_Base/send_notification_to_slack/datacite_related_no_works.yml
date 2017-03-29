@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: "<SLACK_WEBHOOK_URL>"
+    body:
+      encoding: US-ASCII
+      string: payload=%7B%22username%22%3A%22Event+Data+Agent%22%2C%22icon_url%22%3A%22https%3A%2F%2Fraw.githubusercontent.com%2Fdatacite%2Ftoccatore%2Fmaster%2Flib%2Ftoccatore%2Fimages%2Ftoccatore.png%22%2C%22attachments%22%3A%5B%7B%22title%22%3A%22Report+for+datacite_related%22%2C%22text%22%3A%220+works+found+for+date+range+2015-04-07+-+2015-04-08.%22%2C%22color%22%3A%22warning%22%7D%5D%7D
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/html
+      Content-Length:
+      - '22'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Wed, 29 Mar 2017 12:32:14 GMT
+      Referrer-Policy:
+      - no-referrer
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Slack-Backend:
+      - h
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 ffaf96eee86cf7d96c222b2f54e79b63.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - sId6-A4zxQG3y6g80-ChvRT3r9j6sEDB7Xk2-YBlPktC2847t3eG2Q==
+    body:
+      encoding: ASCII-8BIT
+      string: ok
+    http_version: 
+  recorded_at: Wed, 29 Mar 2017 12:32:15 GMT
+recorded_with: VCR 3.0.3

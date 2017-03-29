@@ -8,16 +8,18 @@ describe Toccatore::CLI do
 
   describe "version" do
     it 'has version' do
-      expect { subject.__print_version }.to output("0.3.5\n").to_stdout
+      expect { subject.__print_version }.to output("0.3.6\n").to_stdout
     end
   end
 
   describe "orcid_update", vcr: true, :order => :defined do
     let(:push_url) { ENV['VOLPINO_URL'] }
     let(:access_token) { ENV['VOLPINO_TOKEN'] }
+    let(:slack_webhook_url) { ENV['SLACK_WEBHOOK_URL'] }
     let(:from_date) { "2015-04-07" }
     let(:until_date) { "2015-04-08" }
     let(:cli_options) { { push_url: push_url,
+                          slack_webhook_url: slack_webhook_url,
                           access_token: access_token,
                           from_date: from_date,
                           until_date: until_date } }
@@ -46,6 +48,7 @@ describe Toccatore::CLI do
       from_date = "2009-04-07"
       until_date = "2009-04-08"
       subject.options = { push_url: push_url,
+                          slack_webhook_url: slack_webhook_url,
                           access_token: access_token,
                           from_date: from_date,
                           until_date: until_date }
@@ -62,9 +65,11 @@ describe Toccatore::CLI do
     let(:push_url) { ENV['EVENTDATA_URL'] }
     let(:access_token) { ENV['EVENTDATA_TOKEN'] }
     let(:source_token) { ENV['SOURCE_TOKEN'] }
+    let(:slack_webhook_url) { ENV['SLACK_WEBHOOK_URL'] }
     let(:from_date) { "2015-04-07" }
     let(:until_date) { "2015-04-08" }
     let(:cli_options) { { push_url: push_url,
+                          slack_webhook_url: slack_webhook_url,
                           access_token: access_token,
                           source_token: source_token,
                           from_date: from_date,
@@ -89,6 +94,7 @@ describe Toccatore::CLI do
       from_date = "1899-04-07"
       until_date = "1899-04-08"
       subject.options = { push_url: push_url,
+                          slack_webhook_url: slack_webhook_url,
                           access_token: access_token,
                           from_date: from_date,
                           until_date: until_date }

@@ -29,6 +29,38 @@ describe Toccatore::Base, vcr: true do
     end
   end
 
+  context "send_notification_to_slack" do
+    let(:slack_webhook_url) { ENV['SLACK_WEBHOOK_URL'] }
+
+    it "datacite_related" do
+      text =  "12 works processed for date range 2015-04-07 - 2015-04-08."
+      options = { title: "Report for datacite_related", slack_webhook_url: slack_webhook_url }
+      expect(subject.send_notification_to_slack(text, options)).to eq("ok")
+    end
+
+    it "datacite_related no works" do
+      text =  "No works found for date range 2015-04-07 - 2015-04-08."
+      options = { title: "Report for datacite_related",
+                  slack_webhook_url: slack_webhook_url,
+                  level: "warning" }
+      expect(subject.send_notification_to_slack(text, options)).to eq("ok")
+    end
+
+    it "orcid_update" do
+      text =  "12 works processed for date range 2015-04-07 - 2015-04-08."
+      options = { title: "Report for orcid_update", slack_webhook_url: slack_webhook_url }
+      expect(subject.send_notification_to_slack(text, options)).to eq("ok")
+    end
+
+    it "orcid_update no works" do
+      text =  "No works found for date range 2015-04-07 - 2015-04-08."
+      options = { title: "Report for orcid_update",
+                  slack_webhook_url: slack_webhook_url,
+                  level: "warning" }
+      expect(subject.send_notification_to_slack(text, options)).to eq("ok")
+    end
+  end
+
   context "get_doi_ra" do
     it "datacite" do
       expect(subject.get_doi_ra("10.5061")).to eq("DataCite")

@@ -23,18 +23,18 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Sat, 11 Mar 2017 11:12:48 GMT
+      - Wed, 29 Mar 2017 13:23:06 GMT
       Server:
       - openresty/1.11.2.2
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":68,"start":0,"docs":[]}}
+      string: '{"responseHeader":{"status":0,"QTime":1},"response":{"numFound":68,"start":0,"docs":[]}}
 
 '
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:48 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:06 GMT
 - request:
     method: get
     uri: https://search.datacite.org/api?fl=doi,resourceTypeGeneral,relatedIdentifier,nameIdentifier,minted,updated&fq=updated:%5B2013-01-01T00:00:00Z%20TO%202017-12-31T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=nameIdentifier:ORCID%5C:0000-0002-3546-1048&rows=1000&start=0&wt=json
@@ -58,18 +58,18 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Sat, 11 Mar 2017 11:12:48 GMT
+      - Wed, 29 Mar 2017 13:23:06 GMT
       Server:
       - openresty/1.11.2.2
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":68,"start":0,"docs":[{"minted":"2016-01-19T18:33:51Z","updated":"2016-01-19T18:33:51Z","doi":"10.6084/M9.FIGSHARE.1371005.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T18:33:51Z","updated":"2016-01-19T18:33:51Z","doi":"10.6084/M9.FIGSHARE.1371005.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T18:33:58Z","updated":"2016-01-19T18:33:58Z","doi":"10.6084/M9.FIGSHARE.1371006.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T18:33:58Z","updated":"2016-01-19T18:33:58Z","doi":"10.6084/M9.FIGSHARE.1371006.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T18:35:55Z","updated":"2016-01-19T18:35:55Z","doi":"10.6084/M9.FIGSHARE.1371137.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T18:35:56Z","updated":"2016-01-19T18:35:56Z","doi":"10.6084/M9.FIGSHARE.1371138.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T18:35:56Z","updated":"2016-01-19T18:35:56Z","doi":"10.6084/M9.FIGSHARE.1371138.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T18:35:56Z","updated":"2016-01-19T18:35:56Z","doi":"10.6084/M9.FIGSHARE.1371139.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T20:44:44Z","updated":"2016-01-19T20:44:44Z","doi":"10.6084/M9.FIGSHARE.1407433.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-19T20:44:51Z","updated":"2016-01-19T20:44:51Z","doi":"10.6084/M9.FIGSHARE.1407433.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-19T20:55:17Z","updated":"2016-01-19T20:55:17Z","doi":"10.6084/M9.FIGSHARE.1408873.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T14:43:34Z","updated":"2016-01-18T14:43:34Z","doi":"10.6084/M9.FIGSHARE.735810.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T14:43:41Z","updated":"2016-01-18T14:43:41Z","doi":"10.6084/M9.FIGSHARE.735811.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-18T14:55:53Z","updated":"2016-01-18T14:55:53Z","doi":"10.6084/M9.FIGSHARE.745301.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-18T14:56:04Z","updated":"2016-01-18T14:56:04Z","doi":"10.6084/M9.FIGSHARE.745313.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T14:59:51Z","updated":"2016-01-18T14:59:51Z","doi":"10.6084/M9.FIGSHARE.746960.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-18T15:20:17Z","updated":"2016-01-18T15:20:17Z","doi":"10.6084/M9.FIGSHARE.760716.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T15:34:50Z","updated":"2016-01-18T15:34:50Z","doi":"10.6084/M9.FIGSHARE.769270.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T15:34:57Z","updated":"2016-01-18T15:34:57Z","doi":"10.6084/M9.FIGSHARE.769270.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T15:34:57Z","updated":"2016-01-18T15:34:57Z","doi":"10.6084/M9.FIGSHARE.769271.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T15:34:57Z","updated":"2016-01-18T15:34:57Z","doi":"10.6084/M9.FIGSHARE.769271.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T15:35:04Z","updated":"2016-01-18T15:35:04Z","doi":"10.6084/M9.FIGSHARE.769271.V3","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T15:35:04Z","updated":"2016-01-18T15:35:04Z","doi":"10.6084/M9.FIGSHARE.769272.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T15:35:04Z","updated":"2016-01-18T15:35:04Z","doi":"10.6084/M9.FIGSHARE.769272.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T15:46:57Z","updated":"2016-01-18T15:46:57Z","doi":"10.6084/M9.FIGSHARE.778701.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T15:47:04Z","updated":"2016-01-18T15:47:05Z","doi":"10.6084/M9.FIGSHARE.779705.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T22:56:25Z","updated":"2016-01-18T22:56:25Z","doi":"10.6084/M9.FIGSHARE.999239.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-18T22:56:26Z","updated":"2016-01-18T22:56:26Z","doi":"10.6084/M9.FIGSHARE.999239.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-18T22:56:26Z","updated":"2016-01-18T22:56:26Z","doi":"10.6084/M9.FIGSHARE.999239.V3","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T22:56:27Z","updated":"2016-01-18T22:56:27Z","doi":"10.6084/M9.FIGSHARE.999239.V4","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T23:19:45Z","updated":"2016-01-18T23:19:45Z","doi":"10.6084/M9.FIGSHARE.1008320.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T23:19:46Z","updated":"2016-01-18T23:19:46Z","doi":"10.6084/M9.FIGSHARE.1008320.V3","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T23:19:52Z","updated":"2016-01-18T23:19:52Z","doi":"10.6084/M9.FIGSHARE.1008321.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T23:19:52Z","updated":"2016-01-18T23:19:52Z","doi":"10.6084/M9.FIGSHARE.1008321.V3","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-19T00:17:43Z","updated":"2016-01-19T00:17:43Z","doi":"10.6084/M9.FIGSHARE.1014348.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T00:17:43Z","updated":"2016-01-19T00:17:43Z","doi":"10.6084/M9.FIGSHARE.1014348.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T00:17:45Z","updated":"2016-01-19T00:17:45Z","doi":"10.6084/M9.FIGSHARE.1014351.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T00:17:45Z","updated":"2016-01-19T00:17:45Z","doi":"10.6084/M9.FIGSHARE.1014348.V3","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T00:17:51Z","updated":"2016-01-19T00:17:51Z","doi":"10.6084/M9.FIGSHARE.1014352.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T02:05:43Z","updated":"2016-01-19T02:05:43Z","doi":"10.6084/M9.FIGSHARE.1041547.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-19T02:05:50Z","updated":"2016-01-19T02:05:50Z","doi":"10.6084/M9.FIGSHARE.1041547.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-19T02:05:50Z","updated":"2016-01-19T02:05:50Z","doi":"10.6084/M9.FIGSHARE.1041547.V4","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-19T02:05:50Z","updated":"2016-01-19T02:05:50Z","doi":"10.6084/M9.FIGSHARE.1041547.V3","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2014-06-02T01:33:35Z","updated":"2015-04-08T13:56:40Z","doi":"10.6084/M9.FIGSHARE.1041547","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2015-05-08T00:27:12Z","updated":"2015-05-08T00:27:12Z","doi":"10.6084/M9.FIGSHARE.1407433","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2015-05-10T16:32:54Z","updated":"2015-05-10T16:32:54Z","doi":"10.6084/M9.FIGSHARE.1408873","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2015-04-08T14:05:30Z","updated":"2015-04-08T14:05:30Z","doi":"10.6084/M9.FIGSHARE.1371006","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2015-04-08T14:12:36Z","updated":"2015-04-08T14:12:36Z","doi":"10.6084/M9.FIGSHARE.1371005","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2015-04-08T23:41:41Z","updated":"2015-04-08T23:41:41Z","doi":"10.6084/M9.FIGSHARE.1371137","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2015-04-08T23:48:49Z","updated":"2015-04-08T23:48:49Z","doi":"10.6084/M9.FIGSHARE.1371138","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2015-04-08T23:55:26Z","updated":"2015-04-08T23:55:26Z","doi":"10.6084/M9.FIGSHARE.1371139","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2014-04-16T00:45:06Z","updated":"2015-04-08T13:56:35Z","doi":"10.6084/M9.FIGSHARE.999239","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2014-04-28T12:44:11Z","updated":"2015-04-08T13:56:38Z","doi":"10.6084/M9.FIGSHARE.1008321","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2014-04-28T13:12:45Z","updated":"2015-04-08T13:56:37Z","doi":"10.6084/M9.FIGSHARE.1008320","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2013-07-17T15:43:04Z","updated":"2015-04-08T13:56:32Z","doi":"10.6084/M9.FIGSHARE.746960","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2013-08-01T01:56:31Z","updated":"2015-04-08T13:56:32Z","doi":"10.6084/M9.FIGSHARE.760716","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2013-08-11T17:51:31Z","updated":"2015-04-08T13:56:35Z","doi":"10.6084/M9.FIGSHARE.769272","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2013-08-11T17:58:38Z","updated":"2015-04-08T13:56:32Z","doi":"10.6084/M9.FIGSHARE.769271","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2013-08-11T18:02:15Z","updated":"2015-04-08T13:56:32Z","doi":"10.6084/M9.FIGSHARE.769270","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2013-08-22T00:40:17Z","updated":"2015-04-08T13:56:35Z","doi":"10.6084/M9.FIGSHARE.778701","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2013-08-22T04:04:35Z","updated":"2015-04-08T13:56:35Z","doi":"10.6084/M9.FIGSHARE.779705","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2013-07-01T02:46:44Z","updated":"2015-04-08T13:56:29Z","doi":"10.6084/M9.FIGSHARE.735810","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2013-07-01T02:48:05Z","updated":"2015-04-08T13:56:29Z","doi":"10.6084/M9.FIGSHARE.735811","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2013-07-14T00:34:46Z","updated":"2015-04-08T13:56:30Z","doi":"10.6084/M9.FIGSHARE.745301","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2013-07-14T19:57:14Z","updated":"2015-04-08T13:56:30Z","doi":"10.6084/M9.FIGSHARE.745313","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2014-05-02T23:51:05Z","updated":"2015-04-08T13:56:38Z","doi":"10.6084/M9.FIGSHARE.1014351","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2014-05-02T23:51:54Z","updated":"2015-04-08T13:56:38Z","doi":"10.6084/M9.FIGSHARE.1014348","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2014-05-03T00:43:42Z","updated":"2015-04-08T13:56:40Z","doi":"10.6084/M9.FIGSHARE.1014352","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"}]}}
+      string: '{"responseHeader":{"status":0,"QTime":1},"response":{"numFound":68,"start":0,"docs":[{"minted":"2016-01-19T18:33:51Z","updated":"2016-01-19T18:33:51Z","doi":"10.6084/M9.FIGSHARE.1371005.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T18:33:51Z","updated":"2016-01-19T18:33:51Z","doi":"10.6084/M9.FIGSHARE.1371005.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T18:33:58Z","updated":"2016-01-19T18:33:58Z","doi":"10.6084/M9.FIGSHARE.1371006.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T18:33:58Z","updated":"2016-01-19T18:33:58Z","doi":"10.6084/M9.FIGSHARE.1371006.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T18:35:55Z","updated":"2016-01-19T18:35:55Z","doi":"10.6084/M9.FIGSHARE.1371137.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T18:35:56Z","updated":"2016-01-19T18:35:56Z","doi":"10.6084/M9.FIGSHARE.1371138.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T18:35:56Z","updated":"2016-01-19T18:35:56Z","doi":"10.6084/M9.FIGSHARE.1371138.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T18:35:56Z","updated":"2016-01-19T18:35:56Z","doi":"10.6084/M9.FIGSHARE.1371139.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T20:44:44Z","updated":"2016-01-19T20:44:44Z","doi":"10.6084/M9.FIGSHARE.1407433.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-19T20:44:51Z","updated":"2016-01-19T20:44:51Z","doi":"10.6084/M9.FIGSHARE.1407433.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-19T20:55:17Z","updated":"2016-01-19T20:55:17Z","doi":"10.6084/M9.FIGSHARE.1408873.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T14:43:34Z","updated":"2016-01-18T14:43:34Z","doi":"10.6084/M9.FIGSHARE.735810.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T14:43:41Z","updated":"2016-01-18T14:43:41Z","doi":"10.6084/M9.FIGSHARE.735811.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-18T14:55:53Z","updated":"2016-01-18T14:55:53Z","doi":"10.6084/M9.FIGSHARE.745301.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-18T14:56:04Z","updated":"2016-01-18T14:56:04Z","doi":"10.6084/M9.FIGSHARE.745313.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T14:59:51Z","updated":"2016-01-18T14:59:51Z","doi":"10.6084/M9.FIGSHARE.746960.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-18T15:20:17Z","updated":"2016-01-18T15:20:17Z","doi":"10.6084/M9.FIGSHARE.760716.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T15:34:50Z","updated":"2016-01-18T15:34:50Z","doi":"10.6084/M9.FIGSHARE.769270.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T15:34:57Z","updated":"2016-01-18T15:34:57Z","doi":"10.6084/M9.FIGSHARE.769270.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T15:34:57Z","updated":"2016-01-18T15:34:57Z","doi":"10.6084/M9.FIGSHARE.769271.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T15:34:57Z","updated":"2016-01-18T15:34:57Z","doi":"10.6084/M9.FIGSHARE.769271.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T15:35:04Z","updated":"2016-01-18T15:35:04Z","doi":"10.6084/M9.FIGSHARE.769271.V3","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T15:35:04Z","updated":"2016-01-18T15:35:04Z","doi":"10.6084/M9.FIGSHARE.769272.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T15:35:04Z","updated":"2016-01-18T15:35:04Z","doi":"10.6084/M9.FIGSHARE.769272.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T15:46:57Z","updated":"2016-01-18T15:46:57Z","doi":"10.6084/M9.FIGSHARE.778701.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T15:47:04Z","updated":"2016-01-18T15:47:05Z","doi":"10.6084/M9.FIGSHARE.779705.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T22:56:25Z","updated":"2016-01-18T22:56:25Z","doi":"10.6084/M9.FIGSHARE.999239.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-18T22:56:26Z","updated":"2016-01-18T22:56:26Z","doi":"10.6084/M9.FIGSHARE.999239.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-18T22:56:26Z","updated":"2016-01-18T22:56:26Z","doi":"10.6084/M9.FIGSHARE.999239.V3","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T22:56:27Z","updated":"2016-01-18T22:56:27Z","doi":"10.6084/M9.FIGSHARE.999239.V4","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T23:19:45Z","updated":"2016-01-18T23:19:45Z","doi":"10.6084/M9.FIGSHARE.1008320.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T23:19:46Z","updated":"2016-01-18T23:19:46Z","doi":"10.6084/M9.FIGSHARE.1008320.V3","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T23:19:52Z","updated":"2016-01-18T23:19:52Z","doi":"10.6084/M9.FIGSHARE.1008321.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T23:19:52Z","updated":"2016-01-18T23:19:52Z","doi":"10.6084/M9.FIGSHARE.1008321.V3","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-19T00:17:43Z","updated":"2016-01-19T00:17:43Z","doi":"10.6084/M9.FIGSHARE.1014348.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T00:17:43Z","updated":"2016-01-19T00:17:43Z","doi":"10.6084/M9.FIGSHARE.1014348.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T00:17:45Z","updated":"2016-01-19T00:17:45Z","doi":"10.6084/M9.FIGSHARE.1014351.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T00:17:45Z","updated":"2016-01-19T00:17:45Z","doi":"10.6084/M9.FIGSHARE.1014348.V3","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T00:17:51Z","updated":"2016-01-19T00:17:51Z","doi":"10.6084/M9.FIGSHARE.1014352.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T02:05:43Z","updated":"2016-01-19T02:05:43Z","doi":"10.6084/M9.FIGSHARE.1041547.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-19T02:05:50Z","updated":"2016-01-19T02:05:50Z","doi":"10.6084/M9.FIGSHARE.1041547.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-19T02:05:50Z","updated":"2016-01-19T02:05:50Z","doi":"10.6084/M9.FIGSHARE.1041547.V4","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-19T02:05:50Z","updated":"2016-01-19T02:05:50Z","doi":"10.6084/M9.FIGSHARE.1041547.V3","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2014-06-02T01:33:35Z","updated":"2015-04-08T13:56:40Z","doi":"10.6084/M9.FIGSHARE.1041547","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2015-05-08T00:27:12Z","updated":"2015-05-08T00:27:12Z","doi":"10.6084/M9.FIGSHARE.1407433","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2015-05-10T16:32:54Z","updated":"2015-05-10T16:32:54Z","doi":"10.6084/M9.FIGSHARE.1408873","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2015-04-08T14:05:30Z","updated":"2015-04-08T14:05:30Z","doi":"10.6084/M9.FIGSHARE.1371006","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2015-04-08T14:12:36Z","updated":"2015-04-08T14:12:36Z","doi":"10.6084/M9.FIGSHARE.1371005","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2015-04-08T23:41:41Z","updated":"2015-04-08T23:41:41Z","doi":"10.6084/M9.FIGSHARE.1371137","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2015-04-08T23:48:49Z","updated":"2015-04-08T23:48:49Z","doi":"10.6084/M9.FIGSHARE.1371138","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2015-04-08T23:55:26Z","updated":"2015-04-08T23:55:26Z","doi":"10.6084/M9.FIGSHARE.1371139","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2014-04-16T00:45:06Z","updated":"2015-04-08T13:56:35Z","doi":"10.6084/M9.FIGSHARE.999239","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2014-04-28T12:44:11Z","updated":"2015-04-08T13:56:38Z","doi":"10.6084/M9.FIGSHARE.1008321","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2014-04-28T13:12:45Z","updated":"2015-04-08T13:56:37Z","doi":"10.6084/M9.FIGSHARE.1008320","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2013-07-17T15:43:04Z","updated":"2015-04-08T13:56:32Z","doi":"10.6084/M9.FIGSHARE.746960","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2013-08-01T01:56:31Z","updated":"2015-04-08T13:56:32Z","doi":"10.6084/M9.FIGSHARE.760716","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2013-08-11T17:51:31Z","updated":"2015-04-08T13:56:35Z","doi":"10.6084/M9.FIGSHARE.769272","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2013-08-11T17:58:38Z","updated":"2015-04-08T13:56:32Z","doi":"10.6084/M9.FIGSHARE.769271","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2013-08-11T18:02:15Z","updated":"2015-04-08T13:56:32Z","doi":"10.6084/M9.FIGSHARE.769270","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2013-08-22T00:40:17Z","updated":"2015-04-08T13:56:35Z","doi":"10.6084/M9.FIGSHARE.778701","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2013-08-22T04:04:35Z","updated":"2015-04-08T13:56:35Z","doi":"10.6084/M9.FIGSHARE.779705","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2013-07-01T02:46:44Z","updated":"2015-04-08T13:56:29Z","doi":"10.6084/M9.FIGSHARE.735810","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2013-07-01T02:48:05Z","updated":"2015-04-08T13:56:29Z","doi":"10.6084/M9.FIGSHARE.735811","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2013-07-14T00:34:46Z","updated":"2015-04-08T13:56:30Z","doi":"10.6084/M9.FIGSHARE.745301","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2013-07-14T19:57:14Z","updated":"2015-04-08T13:56:30Z","doi":"10.6084/M9.FIGSHARE.745313","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2014-05-02T23:51:05Z","updated":"2015-04-08T13:56:38Z","doi":"10.6084/M9.FIGSHARE.1014351","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2014-05-02T23:51:54Z","updated":"2015-04-08T13:56:38Z","doi":"10.6084/M9.FIGSHARE.1014348","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2014-05-03T00:43:42Z","updated":"2015-04-08T13:56:40Z","doi":"10.6084/M9.FIGSHARE.1014352","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"}]}}
 
 '
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:48 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:06 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -103,7 +103,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:48 GMT
+      - Wed, 29 Mar 2017 13:23:07 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -117,9 +117,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 206fc071-e746-4fef-ba7a-f6b9b573c42d
+      - d5443205-90a6-4f01-840c-ec80a3297a57
       X-Runtime:
-      - '0.010698'
+      - '0.013881'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -130,7 +130,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"f7d55d19-7182-4bd3-8e1e-1647b29ab577","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371005.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:48 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:07 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -164,7 +164,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:49 GMT
+      - Wed, 29 Mar 2017 13:23:08 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -178,9 +178,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 70247ed9-1b6a-48d1-896d-d88878a4072b
+      - 593e4312-fe66-40d0-a1f9-bf459080639a
       X-Runtime:
-      - '0.015204'
+      - '0.013690'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -191,7 +191,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"2f6b68d9-7f8a-462d-9248-db310398c7d9","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371005.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:49 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:08 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -225,7 +225,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:49 GMT
+      - Wed, 29 Mar 2017 13:23:08 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -239,9 +239,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - c754f5a5-f289-48d9-acd3-deeb773d337c
+      - bbecf4d3-cafc-4e4b-8ff5-7f7929be305d
       X-Runtime:
-      - '0.011300'
+      - '0.011595'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -252,7 +252,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"a85c3b6d-2140-4be9-b823-e8160192b844","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371006.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:49 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:08 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -286,7 +286,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:49 GMT
+      - Wed, 29 Mar 2017 13:23:09 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -300,9 +300,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - d89bd1b3-7972-464b-b37b-48edf17dfe08
+      - 4f242b8b-3234-4145-970f-7678a8b23310
       X-Runtime:
-      - '0.010601'
+      - '0.012653'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -313,7 +313,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"cc5e6be1-bc84-43cb-85c3-fb6dd152e244","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371006.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:49 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:09 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -347,7 +347,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:49 GMT
+      - Wed, 29 Mar 2017 13:23:09 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -361,18 +361,20 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - fe4b40d7-101a-4b91-a0c3-9a960a7387dc
+      - 5caed6c0-bca2-4ea8-a656-054e159016c0
       X-Runtime:
-      - '0.011113'
+      - '0.013332'
       X-Xss-Protection:
       - 1; mode=block
+      Content-Length:
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"data":{"id":"ba1d5b10-644e-4bf5-9c79-7fb812215c3f","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371137.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:49 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:09 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -406,7 +408,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:50 GMT
+      - Wed, 29 Mar 2017 13:23:10 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -420,9 +422,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 3bd7e203-0c00-4f9e-9355-81c74a3cd291
+      - 69443be9-7ddb-4c1a-8c03-6df82e496815
       X-Runtime:
-      - '0.012220'
+      - '0.015392'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -433,7 +435,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"044bb59d-b87f-4f1d-9819-2e6ef139ed99","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371138.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:50 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:10 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -467,7 +469,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:50 GMT
+      - Wed, 29 Mar 2017 13:23:11 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -481,18 +483,20 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 891b3498-e9eb-4838-8655-9bd7744e458d
+      - 60908330-f968-47cd-b25e-318e6535b956
       X-Runtime:
-      - '0.011579'
+      - '0.018422'
       X-Xss-Protection:
       - 1; mode=block
+      Content-Length:
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"data":{"id":"798b6d68-85fa-453a-8990-43425a51362c","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371138.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:50 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:11 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -526,7 +530,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:50 GMT
+      - Wed, 29 Mar 2017 13:23:11 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -540,9 +544,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 757de1bd-3759-453d-9ca7-77e192edebb7
+      - ba99639d-04db-40dd-b8b4-93920977a771
       X-Runtime:
-      - '0.010472'
+      - '0.011507'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -553,7 +557,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"f72892d5-7c49-4df7-a698-27027cc6b871","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371139.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:50 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:11 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -587,7 +591,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:50 GMT
+      - Wed, 29 Mar 2017 13:23:13 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -601,18 +605,20 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - a9b4d6ec-4419-4dab-bacd-599f3a02f652
+      - c1f47893-24d5-4307-ad90-80134d27db7f
       X-Runtime:
-      - '0.010203'
+      - '0.012773'
       X-Xss-Protection:
       - 1; mode=block
+      Content-Length:
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"data":{"id":"a500ba1a-281c-4b33-bf14-22f601116277","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1407433.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:50 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:13 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -646,7 +652,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:51 GMT
+      - Wed, 29 Mar 2017 13:23:14 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -660,9 +666,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 77ea37a2-ff12-49a5-89c0-f6c94e2f97a2
+      - 5d152951-c725-404c-bbb0-84f0fc84c289
       X-Runtime:
-      - '0.011517'
+      - '0.027574'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -673,7 +679,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"2207a249-d0f9-44d1-bf11-91b1d41f315b","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1407433.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:51 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:14 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -707,7 +713,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:51 GMT
+      - Wed, 29 Mar 2017 13:23:15 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -721,18 +727,20 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 6b79a4be-5f13-48a5-af8c-bda6eb6a861e
+      - ca036f7f-96db-43f8-90f1-e5deb83192e6
       X-Runtime:
-      - '0.017521'
+      - '0.013758'
       X-Xss-Protection:
       - 1; mode=block
+      Content-Length:
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"data":{"id":"c435261a-2f94-4fbf-9d05-9364c3c92123","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1408873.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:51 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:15 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -766,7 +774,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:51 GMT
+      - Wed, 29 Mar 2017 13:23:16 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -780,9 +788,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 9c501663-7402-4d2d-8182-91f8f3052cd5
+      - 08e65ef1-06a9-4376-8952-4f70476344dd
       X-Runtime:
-      - '0.010064'
+      - '0.014158'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -793,7 +801,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"5469e1fb-ba78-498a-8396-4c315a9b856b","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.735810.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:51 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:16 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -827,7 +835,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:51 GMT
+      - Wed, 29 Mar 2017 13:23:18 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -841,9 +849,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - e2951128-e25d-4e4a-8326-49860327d995
+      - 5dd9f5df-bb85-4316-a37f-1d6a1b5c7075
       X-Runtime:
-      - '0.010531'
+      - '0.013517'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -854,7 +862,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"9059ae4d-3963-41ba-8efe-3ae094f0adc7","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.735811.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:51 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:18 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -888,7 +896,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:52 GMT
+      - Wed, 29 Mar 2017 13:23:19 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -902,9 +910,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - e01d8ecf-4838-448c-94bd-3c5091dbe381
+      - d5cd62d2-d2ae-40e7-85bf-585db52f6a48
       X-Runtime:
-      - '0.010893'
+      - '0.013126'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -915,7 +923,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"f953cf4a-da95-4a66-a1ff-e4ea6dd7374b","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.745301.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:52 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:19 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -949,7 +957,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:52 GMT
+      - Wed, 29 Mar 2017 13:23:20 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -963,18 +971,20 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 89525d92-04c1-4128-a006-596a2275350c
+      - b3e62aeb-39d1-451b-925d-bde33c0f24c6
       X-Runtime:
-      - '0.011469'
+      - '0.013161'
       X-Xss-Protection:
       - 1; mode=block
+      Content-Length:
+      - '240'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"data":{"id":"febfaa31-8e96-482f-8cdc-c6df787e747c","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.745313.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:52 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:20 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1008,7 +1018,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:52 GMT
+      - Wed, 29 Mar 2017 13:23:21 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1022,9 +1032,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - d58adf8e-e4ce-4da0-8719-b35e004a0d2f
+      - 972ebe37-ff2c-448a-bc15-a6d2dc478c78
       X-Runtime:
-      - '0.010069'
+      - '0.013500'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1035,7 +1045,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"ff69f955-f7e3-4917-8885-97ac6f12de92","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.746960.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:52 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:21 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1069,7 +1079,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:52 GMT
+      - Wed, 29 Mar 2017 13:23:21 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1083,9 +1093,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - c885391e-89ba-44d3-9eb5-3ce6e143f4c4
+      - 67cec0ab-2757-4144-a3cc-18a803123fe0
       X-Runtime:
-      - '0.009836'
+      - '0.011751'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1096,7 +1106,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"75e19279-8c38-4ed3-be2b-0a011fbc1546","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.760716.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:52 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:21 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1130,7 +1140,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:52 GMT
+      - Wed, 29 Mar 2017 13:23:23 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1144,18 +1154,20 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - d46b0b6b-3441-48a0-a5f4-c035899485c5
+      - fe614979-2aa5-4ae4-8306-435f57e9fbf0
       X-Runtime:
-      - '0.010689'
+      - '0.012762'
       X-Xss-Protection:
       - 1; mode=block
+      Content-Length:
+      - '240'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"data":{"id":"588561df-a902-4af1-9069-ec85ec646b1a","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769270.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:52 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:23 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1189,7 +1201,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:53 GMT
+      - Wed, 29 Mar 2017 13:23:24 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1203,9 +1215,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 171f5992-1306-4500-ac61-61d401e12d84
+      - 626c71af-dcc9-4c25-a8e8-553db5a09cca
       X-Runtime:
-      - '0.014602'
+      - '0.013958'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1216,7 +1228,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"5d7461de-3e94-4883-bfc1-7d8c7d1f0722","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769270.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:53 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:24 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1250,7 +1262,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:53 GMT
+      - Wed, 29 Mar 2017 13:23:25 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1264,9 +1276,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - f86065d1-a0f5-42da-905d-290869e0ab95
+      - 49d2a330-87b4-4a0f-9b1f-2b0c1e77a26e
       X-Runtime:
-      - '0.011505'
+      - '0.012853'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1277,7 +1289,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"b36f5034-c396-4fb0-96f1-d23d7329970b","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:53 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:25 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1311,7 +1323,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:53 GMT
+      - Wed, 29 Mar 2017 13:23:26 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1325,9 +1337,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - f1e6e668-4719-48c9-9689-91238495ed13
+      - a2c15ea7-66bf-4ff9-ae66-737a648ca338
       X-Runtime:
-      - '0.010365'
+      - '0.013057'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1338,7 +1350,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"b1e53d56-0c02-4bae-b7d6-8febe8d5d448","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:53 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:26 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1372,7 +1384,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:53 GMT
+      - Wed, 29 Mar 2017 13:23:26 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1386,9 +1398,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 81024dc6-cc48-4377-aadf-b64ccb474710
+      - 2c877b51-9910-4ef0-9b8e-59603bfdcc2d
       X-Runtime:
-      - '0.011033'
+      - '0.012228'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1399,7 +1411,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"f19e3c8a-a6f5-4223-8de3-28310fad14bc","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271.V3","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:53 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:26 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1433,7 +1445,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:54 GMT
+      - Wed, 29 Mar 2017 13:23:27 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1447,9 +1459,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 830dd7b2-d29e-4dd6-8f98-08db0dd21b31
+      - 4f5870e4-d066-465a-85c0-325c65e82ab8
       X-Runtime:
-      - '0.011389'
+      - '0.012839'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1460,7 +1472,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"8e670c7d-2fbd-451f-acc7-52a63a4fdf1d","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769272.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:54 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:27 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1494,7 +1506,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:54 GMT
+      - Wed, 29 Mar 2017 13:23:28 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1508,18 +1520,20 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 63341456-cc10-44f2-a16e-724d08bf2a3d
+      - 0a724c84-a9bc-4808-b85b-e4df1f991b18
       X-Runtime:
-      - '0.011437'
+      - '0.018804'
       X-Xss-Protection:
       - 1; mode=block
+      Content-Length:
+      - '240'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"data":{"id":"374f050e-d5e8-4bb7-b5bb-4cfa581b7fe5","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769272.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:54 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:28 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1553,7 +1567,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:54 GMT
+      - Wed, 29 Mar 2017 13:23:29 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1567,18 +1581,20 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - a8970ea7-01f8-4325-ba11-f7495bdab8f9
+      - 14c2a69d-3853-451f-9879-ef40df892775
       X-Runtime:
-      - '0.011012'
+      - '0.014402'
       X-Xss-Protection:
       - 1; mode=block
+      Content-Length:
+      - '240'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"data":{"id":"a27e6c31-bd8a-47b5-91a3-207d65fbbb36","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.778701.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:54 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:29 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1612,7 +1628,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:54 GMT
+      - Wed, 29 Mar 2017 13:23:30 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1626,9 +1642,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 5cd41c5c-a287-408a-b549-4970364a8a24
+      - 910f2468-e263-4a8d-a555-bdef617873cc
       X-Runtime:
-      - '0.010671'
+      - '0.012527'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1639,7 +1655,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"d54d379d-bf8f-4e19-bb19-e1714aaf0b80","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.779705.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:54 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:30 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1673,7 +1689,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:55 GMT
+      - Wed, 29 Mar 2017 13:23:31 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1687,9 +1703,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 60a14912-bc4e-43a1-adf3-a908956f2a28
+      - dc06da0d-f1eb-4202-a455-f01c237595dd
       X-Runtime:
-      - '0.013405'
+      - '0.021009'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1700,7 +1716,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"3be7ca12-c1f7-4562-948e-80abc0e0e1a9","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.999239.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:55 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:31 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1734,7 +1750,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:55 GMT
+      - Wed, 29 Mar 2017 13:23:32 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1748,9 +1764,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 38d639c2-bd3b-4909-92a9-7da67b3f57d1
+      - 16cdc80f-fc78-469e-9a63-53fbbb314533
       X-Runtime:
-      - '0.010933'
+      - '0.013785'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1761,7 +1777,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"911ee816-b01d-4c95-922e-660ce1fa8aa6","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.999239.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:55 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:32 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1795,7 +1811,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:55 GMT
+      - Wed, 29 Mar 2017 13:23:32 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1809,9 +1825,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 858011e8-5dce-4ab9-9520-b2b8ddbd494b
+      - d29272c6-d0da-4e27-8ee4-2815a39342b1
       X-Runtime:
-      - '0.010632'
+      - '0.012759'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1822,7 +1838,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"4042f2fc-26ca-4b58-92a3-2ef58f6cab35","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.999239.V3","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:55 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:32 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1856,7 +1872,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:55 GMT
+      - Wed, 29 Mar 2017 13:23:33 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1870,9 +1886,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 67445f9b-54a3-4db0-b48d-bf8862c2c5a5
+      - de6fa678-5508-4bd9-9653-6782369ce17c
       X-Runtime:
-      - '0.011348'
+      - '0.012797'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1883,7 +1899,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"bacdec63-9eca-499b-a49e-bbbc896577b4","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.999239.V4","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:55 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:33 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1917,7 +1933,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:56 GMT
+      - Wed, 29 Mar 2017 13:23:33 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1931,9 +1947,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 9d67b4e0-57e3-4793-8eca-0721c819aec3
+      - 179c0207-d23d-4e3c-9f68-3c4ceba3dcc1
       X-Runtime:
-      - '0.012259'
+      - '0.014677'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1944,7 +1960,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"8956a37a-416d-4bc2-99d3-f9bbfada64ec","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008320.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:56 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:33 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1978,7 +1994,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:56 GMT
+      - Wed, 29 Mar 2017 13:23:34 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1992,18 +2008,20 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - ff9da376-719d-404c-8fa1-e96290136618
+      - ce5f8d4c-2d15-4ffa-a2bd-05b80d4ff1bb
       X-Runtime:
-      - '0.011638'
+      - '0.018057'
       X-Xss-Protection:
       - 1; mode=block
+      Content-Length:
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"data":{"id":"5740e9cc-d0a5-4231-9067-f7e2dff86a3a","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008320.V3","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:56 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:34 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2037,7 +2055,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:56 GMT
+      - Wed, 29 Mar 2017 13:23:34 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2051,9 +2069,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - f3b849b5-2c8d-4cc7-bf85-20acab5b2394
+      - 887b7cbb-2aed-4f54-8f64-c0dbf5e2e2e4
       X-Runtime:
-      - '0.010893'
+      - '0.028783'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2064,7 +2082,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"aa59be0b-3a55-401c-8a2d-2e62b064033d","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008321.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:56 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:34 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2098,7 +2116,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:56 GMT
+      - Wed, 29 Mar 2017 13:23:35 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2112,9 +2130,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 15dc3efb-577c-47b7-aac6-30c1939463ed
+      - 265d65fb-a833-4a73-aad0-e44515647af4
       X-Runtime:
-      - '0.010593'
+      - '0.023431'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2125,7 +2143,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"296054f0-0306-404e-9c2a-23590bee1cd8","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008321.V3","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:56 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:35 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2159,7 +2177,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:57 GMT
+      - Wed, 29 Mar 2017 13:23:36 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2173,9 +2191,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - ff8949e7-8769-4cb0-9058-365050b498ea
+      - d6f6fcb7-b28d-424d-9b18-249558d958d3
       X-Runtime:
-      - '0.011559'
+      - '0.020126'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2186,7 +2204,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"1cb18622-ef17-4402-8a2e-585704a46d21","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014348.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:57 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:36 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2220,7 +2238,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:57 GMT
+      - Wed, 29 Mar 2017 13:23:36 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2234,9 +2252,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 5b67e784-45ea-4feb-b237-7296645194ef
+      - e744c117-ec38-441a-8103-39644754a933
       X-Runtime:
-      - '0.011051'
+      - '0.012864'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2247,7 +2265,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"2d5ed88d-da01-4187-a1fc-deaeb629fceb","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014348.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:57 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:36 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2281,7 +2299,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:57 GMT
+      - Wed, 29 Mar 2017 13:23:37 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2295,9 +2313,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 75d4ca0c-2d98-47dd-b65d-332b21fbc2e6
+      - 6a069798-63c0-4f34-858a-207f7aa9113d
       X-Runtime:
-      - '0.011152'
+      - '0.024540'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2308,7 +2326,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"9e13ef11-c907-4f7e-9a72-7f74c51bca4b","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014351.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:57 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:37 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2342,7 +2360,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:57 GMT
+      - Wed, 29 Mar 2017 13:23:37 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2356,9 +2374,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - b319f4ca-2eaf-42b9-a922-bdde3f537139
+      - 45d7d988-65f7-4ab7-bdd1-b927e8a9ba53
       X-Runtime:
-      - '0.010363'
+      - '0.015786'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2369,7 +2387,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"5e5eae3d-76d1-4591-a4da-6a0ea18c89c6","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014348.V3","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:57 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:37 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2403,7 +2421,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:57 GMT
+      - Wed, 29 Mar 2017 13:23:38 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2417,9 +2435,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - f3fc1bec-fbb2-4e29-9aff-8a7e4617c012
+      - a5bf1faf-0e0a-4251-8878-9d559eb9ddbf
       X-Runtime:
-      - '0.010611'
+      - '0.012887'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2430,7 +2448,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"b231fb70-29ba-422b-ac79-9e3bd5410442","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014352.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:57 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:38 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2464,7 +2482,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:58 GMT
+      - Wed, 29 Mar 2017 13:23:38 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2478,9 +2496,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 8bb199d2-21f8-4893-ac7e-94b766a826a1
+      - 75445ea4-db1a-4630-93f9-d08d74549438
       X-Runtime:
-      - '0.015751'
+      - '0.018193'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2491,7 +2509,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"3a32ed48-4f86-4570-a3b7-47c9bdbae9f3","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1041547.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:58 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:38 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2525,7 +2543,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:58 GMT
+      - Wed, 29 Mar 2017 13:23:39 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2539,18 +2557,20 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 5552ca30-1101-4387-af95-117e85f77ea4
+      - 33e2af37-0c99-4865-a391-7ad18cf911a2
       X-Runtime:
-      - '0.009946'
+      - '0.017094'
       X-Xss-Protection:
       - 1; mode=block
+      Content-Length:
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"data":{"id":"cb4db0a3-90e8-4843-b79a-04902c9f9ca2","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1041547.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:58 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:39 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2584,7 +2604,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:58 GMT
+      - Wed, 29 Mar 2017 13:23:39 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2598,18 +2618,20 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 7a5478c1-dc3f-41bf-8d36-a954817a984e
+      - 3d2d2458-81d5-402a-b2c2-526639a00295
       X-Runtime:
-      - '0.009778'
+      - '0.012381'
       X-Xss-Protection:
       - 1; mode=block
+      Content-Length:
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"data":{"id":"e2150a1d-a937-4257-a148-0f2b78434271","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1041547.V4","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:58 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:39 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2643,7 +2665,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:58 GMT
+      - Wed, 29 Mar 2017 13:23:40 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2657,9 +2679,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 004c5b66-10cf-438d-8ef7-b2a85ba332a5
+      - 19073b29-bbc8-4112-85b6-f5f6f17ac7a6
       X-Runtime:
-      - '0.010734'
+      - '0.014271'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2670,7 +2692,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"ec8899ef-25f0-4cb8-88c2-fa5eacc37096","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1041547.V3","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:58 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:40 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2704,7 +2726,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:59 GMT
+      - Wed, 29 Mar 2017 13:23:41 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2718,9 +2740,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - fa804c1a-4b73-4a65-9997-13e72265b379
+      - a607dd0b-b687-4fbe-b826-dab3f101b78c
       X-Runtime:
-      - '0.013782'
+      - '0.013082'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2731,7 +2753,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"27913db7-e2b1-47ea-a057-f15647402e26","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1041547","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:59 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:41 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2765,7 +2787,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:59 GMT
+      - Wed, 29 Mar 2017 13:23:41 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2779,9 +2801,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 987a4269-e8cd-4041-bc4b-e51577b2098f
+      - 49c21690-f2fa-4985-af05-7e19a31cbf0f
       X-Runtime:
-      - '0.011115'
+      - '0.011675'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2792,7 +2814,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"e9c6edae-a6c9-4d21-bd35-9c7719a1d1fc","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1407433","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:59 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:41 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2826,7 +2848,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:59 GMT
+      - Wed, 29 Mar 2017 13:23:42 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2840,9 +2862,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 8ca4f776-d25f-4e09-b205-242f9ee19b08
+      - 429ce984-7e0b-4224-8e7a-9ae144a813c2
       X-Runtime:
-      - '0.010863'
+      - '0.012254'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2853,7 +2875,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"8af8e412-c333-44ce-8079-4bf55149d0c6","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1408873","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:59 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:42 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2887,7 +2909,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:12:59 GMT
+      - Wed, 29 Mar 2017 13:23:43 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2901,9 +2923,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - c95604cc-c751-4cee-ac42-8d6f51478a1f
+      - 7cc85ade-adb4-406f-9ae7-da216ee2e648
       X-Runtime:
-      - '0.011182'
+      - '0.011860'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2914,7 +2936,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"75f9f7d1-43a8-4ce9-9a67-196c5ef4bd91","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371006","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:12:59 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:43 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2948,7 +2970,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:13:00 GMT
+      - Wed, 29 Mar 2017 13:23:43 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2962,9 +2984,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - e332a063-9725-43dc-ba85-37947244c0b9
+      - c2794739-ddf5-4a29-b690-57333663aff1
       X-Runtime:
-      - '0.013620'
+      - '0.012149'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2975,7 +2997,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"0fe9bf2c-8d15-41ff-90be-58830a12a4c1","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371005","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:13:00 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:43 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -3009,7 +3031,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:13:00 GMT
+      - Wed, 29 Mar 2017 13:23:44 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -3023,9 +3045,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - b39d0bb7-f76d-4a2e-a67f-6459b7edc903
+      - dd3998b6-69e4-4b93-a432-22bdd3508ca3
       X-Runtime:
-      - '0.010847'
+      - '0.011847'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -3036,7 +3058,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"df589091-5b89-4714-a427-27367b03aa1b","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371137","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:13:00 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:44 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -3070,7 +3092,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:13:00 GMT
+      - Wed, 29 Mar 2017 13:23:44 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -3084,9 +3106,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - f9812691-ac9e-4a09-adef-514ffed4d9d8
+      - d2e5eb34-4323-4b27-86b6-826c2d801333
       X-Runtime:
-      - '0.011876'
+      - '0.011581'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -3097,7 +3119,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"9e7cae20-e811-486c-bdcc-dcb5bd1bcbe9","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371138","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:13:00 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:44 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -3131,7 +3153,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:13:00 GMT
+      - Wed, 29 Mar 2017 13:23:45 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -3145,9 +3167,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - a2ee7f0d-773b-46b3-a1c6-db33e2cb307d
+      - e7c37d21-7c5a-4d24-b4d2-9ecb85994ad2
       X-Runtime:
-      - '0.014768'
+      - '0.011607'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -3158,7 +3180,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"87265bf1-b0fb-4e36-8621-62914d9f176f","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371139","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:13:00 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:45 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -3192,7 +3214,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:13:01 GMT
+      - Wed, 29 Mar 2017 13:23:46 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -3206,9 +3228,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 691b6323-2fd3-4b4d-884f-9d520c2e1fb8
+      - 3e8f38e9-5d16-4c9f-9340-886eb902aaf8
       X-Runtime:
-      - '0.012780'
+      - '0.013142'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -3219,7 +3241,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"19061330-0966-42f4-9a7c-bd932be203ac","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.999239","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:13:01 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:46 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -3253,7 +3275,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:13:01 GMT
+      - Wed, 29 Mar 2017 13:23:46 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -3267,9 +3289,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - f6155759-d154-458b-bb3e-007c0493a7bb
+      - af40d376-928b-462f-a353-9b23f52848fc
       X-Runtime:
-      - '0.011699'
+      - '0.012819'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -3280,7 +3302,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"822fc357-3f7f-461c-a7ba-c32346f57797","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008321","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:13:01 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:46 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -3314,7 +3336,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:13:01 GMT
+      - Wed, 29 Mar 2017 13:23:47 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -3328,9 +3350,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 440cfe72-ac4b-424e-b6d6-c093309ebccb
+      - 7ed90015-893b-48bc-83fe-38a8e2d329b6
       X-Runtime:
-      - '0.011432'
+      - '0.013022'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -3341,7 +3363,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"fa61847e-92ff-4394-8b0f-4bdfb15beba8","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008320","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:13:01 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:47 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -3375,7 +3397,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:13:01 GMT
+      - Wed, 29 Mar 2017 13:23:47 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -3389,9 +3411,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 82bd430f-ff2f-487f-bbe5-a80d9496c8e6
+      - d75bc171-212e-433b-bce5-0148eda2a163
       X-Runtime:
-      - '0.011116'
+      - '0.011637'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -3402,7 +3424,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"7908fa7b-920a-4a23-a974-47732d013abc","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.746960","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:13:01 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:47 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -3436,7 +3458,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:13:02 GMT
+      - Wed, 29 Mar 2017 13:23:48 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -3450,18 +3472,20 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 4fb6f93f-a190-4a42-be50-982ede5c02f4
+      - 60a2d9f2-b796-479e-a145-c9c78a94529d
       X-Runtime:
-      - '0.012284'
+      - '0.011430'
       X-Xss-Protection:
       - 1; mode=block
+      Content-Length:
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"data":{"id":"07c2770d-159b-470e-ba94-7e81c082452c","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.760716","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:13:02 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:48 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -3495,7 +3519,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:13:02 GMT
+      - Wed, 29 Mar 2017 13:23:48 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -3509,9 +3533,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 5516d8db-2cd8-4d6a-a8d2-ea811e633a87
+      - d9870f51-a222-40aa-b4f0-c524a96df059
       X-Runtime:
-      - '0.013290'
+      - '0.013268'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -3522,7 +3546,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"b5965e58-8bbe-4387-9d1e-36c9d6c9b5ac","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769272","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:13:02 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:48 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -3556,7 +3580,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:13:02 GMT
+      - Wed, 29 Mar 2017 13:23:49 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -3570,9 +3594,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - bb72b787-89fa-452a-b8f3-ec312300dfd2
+      - cd151b45-ed10-4bb4-b2b3-6e4aa9ad5635
       X-Runtime:
-      - '0.011326'
+      - '0.012393'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -3583,7 +3607,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"87ed8708-35e6-4c0f-9183-1dd416071d7f","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:13:02 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:49 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -3617,7 +3641,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:13:02 GMT
+      - Wed, 29 Mar 2017 13:23:49 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -3631,18 +3655,20 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 9caa752a-8bf2-4dd5-a6df-a381cd7dc22c
+      - 74160c47-2306-466f-9760-62b11b523169
       X-Runtime:
-      - '0.010720'
+      - '0.013048'
       X-Xss-Protection:
       - 1; mode=block
+      Content-Length:
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"data":{"id":"729ef8bc-05a2-4daa-9774-3f9aa100478c","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769270","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:13:02 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:49 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -3676,7 +3702,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:13:03 GMT
+      - Wed, 29 Mar 2017 13:23:50 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -3690,18 +3716,20 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 542f8627-dde4-4f9f-98b9-b9675664da25
+      - b2055c19-6805-44ed-8c44-a31e4449d111
       X-Runtime:
-      - '0.012190'
+      - '0.011584'
       X-Xss-Protection:
       - 1; mode=block
+      Content-Length:
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"data":{"id":"5e4ea0c7-b970-45d1-ba75-4bff83dac219","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.778701","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:13:03 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:50 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -3735,7 +3763,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:13:03 GMT
+      - Wed, 29 Mar 2017 13:23:50 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -3749,9 +3777,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - cbd63aa6-4eb4-4944-afde-b80ed9e7faae
+      - ab696275-a578-4ec2-8fd9-ed2bf455bd86
       X-Runtime:
-      - '0.011531'
+      - '0.011918'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -3762,7 +3790,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"48d051e8-48b0-4c46-9747-3ff21135bba3","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.779705","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:13:03 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:50 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -3796,7 +3824,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:13:03 GMT
+      - Wed, 29 Mar 2017 13:23:51 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -3810,18 +3838,20 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - dd631cb6-bfda-408b-a36e-6e786b869dec
+      - 09b5a32a-8948-43d1-a668-34dcf1e2802d
       X-Runtime:
-      - '0.010884'
+      - '0.011331'
       X-Xss-Protection:
       - 1; mode=block
+      Content-Length:
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"data":{"id":"2433e392-00dd-4b2e-866d-c68b1fa6fe00","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.735810","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:13:03 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:51 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -3855,7 +3885,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:13:03 GMT
+      - Wed, 29 Mar 2017 13:23:51 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -3869,18 +3899,20 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 25e8bff4-932e-42d4-af01-5d867fe21cc9
+      - 36afae09-7812-43b9-893c-ecdfa9269e29
       X-Runtime:
-      - '0.011077'
+      - '0.011540'
       X-Xss-Protection:
       - 1; mode=block
+      Content-Length:
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"data":{"id":"841b8ce7-0a5a-48db-baff-35fc87d39c07","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.735811","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:13:03 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:51 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -3914,7 +3946,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:13:04 GMT
+      - Wed, 29 Mar 2017 13:23:52 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -3928,9 +3960,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 81aa6bf5-7c43-4680-b1a4-b66ebf48d04b
+      - 046d3b0e-926b-489e-9927-df2eaefeb267
       X-Runtime:
-      - '0.010906'
+      - '0.011554'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -3941,7 +3973,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"a85ad7d7-781d-432f-964b-28d1415e66e8","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.745301","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:13:04 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:52 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -3975,7 +4007,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:13:04 GMT
+      - Wed, 29 Mar 2017 13:23:52 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -3989,18 +4021,20 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 9e5b259c-4b71-4672-8c17-944d41bfe678
+      - b8b7e4a2-4d93-4713-a263-45e29d75206e
       X-Runtime:
-      - '0.013057'
+      - '0.011870'
       X-Xss-Protection:
       - 1; mode=block
+      Content-Length:
+      - '237'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"data":{"id":"ceecbf26-026f-4963-a26f-dc5be25a3c4a","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.745313","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:13:04 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:52 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -4034,7 +4068,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:13:04 GMT
+      - Wed, 29 Mar 2017 13:23:53 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -4048,9 +4082,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - eaa1d294-f40b-4231-b1b7-629ad99e021f
+      - 9590730f-21e6-4fe2-acd1-58174f4ea0c3
       X-Runtime:
-      - '0.015711'
+      - '0.012277'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -4061,7 +4095,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"e2fa98bb-fb5b-4fcb-a64b-8ba03cb172e6","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014351","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:13:04 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:53 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -4095,7 +4129,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:13:04 GMT
+      - Wed, 29 Mar 2017 13:23:54 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -4109,18 +4143,20 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - a52562a0-f0fd-4a32-ab7c-6ad42f450e2a
+      - 2dfd12bf-23f9-41e2-bc6e-1d403e141ffc
       X-Runtime:
-      - '0.010216'
+      - '0.013216'
       X-Xss-Protection:
       - 1; mode=block
+      Content-Length:
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"data":{"id":"44d44c6f-a78e-45b5-8031-3d63f3b11177","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014348","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:13:04 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:54 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -4154,7 +4190,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 11:13:05 GMT
+      - Wed, 29 Mar 2017 13:23:54 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -4168,16 +4204,71 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.2
       X-Request-Id:
-      - 4cf89bc3-68e0-4c29-9c14-2dd29f79748c
+      - 6c4eb718-5b51-429a-9b7d-6858061574ce
       X-Runtime:
-      - '0.011948'
+      - '0.012220'
       X-Xss-Protection:
       - 1; mode=block
+      Content-Length:
+      - '238'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"data":{"id":"823a69de-f1d7-4fd1-8b7b-42cea5ad3b60","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014352","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Sat, 11 Mar 2017 11:13:05 GMT
+  recorded_at: Wed, 29 Mar 2017 13:23:54 GMT
+- request:
+    method: post
+    uri: "<SLACK_WEBHOOK_URL>"
+    body:
+      encoding: US-ASCII
+      string: payload=%7B%22username%22%3A%22Event+Data+Agent%22%2C%22icon_url%22%3A%22https%3A%2F%2Fraw.githubusercontent.com%2Fdatacite%2Ftoccatore%2Fmaster%2Flib%2Ftoccatore%2Fimages%2Ftoccatore.png%22%2C%22attachments%22%3A%5B%7B%22title%22%3A%22Report+for+orcid_update%22%2C%22text%22%3A%2268+works+processed+for+date+range+2013-01-01+-+2017-12-31.%22%2C%22color%22%3A%22good%22%7D%5D%7D
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/html
+      Content-Length:
+      - '22'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Wed, 29 Mar 2017 13:23:55 GMT
+      Referrer-Policy:
+      - no-referrer
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Slack-Backend:
+      - h
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 3283735112d0a322451d32ef038129c9.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - rlMW8EHuLiTkN2SypLKnUflBaOHMNOc4HfncpTT41gbrBTipkgbUkw==
+    body:
+      encoding: ASCII-8BIT
+      string: ok
+    http_version: 
+  recorded_at: Wed, 29 Mar 2017 13:23:55 GMT
 recorded_with: VCR 3.0.3
