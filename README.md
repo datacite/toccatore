@@ -6,6 +6,19 @@
 
 Agent for Event Data service, providing links to ORCID IDs and DOIs not from DataCite as related identifiers in DataCite metadata.
 
+## Installation and use
+
+```
+gem install toccatore
+toccatore datacite_related --push_url https://example.org --access_token abc
+```
+
+Or run as Docker container
+
+```
+docker run datacite/toccatore toccatore datacite_related --push_url https://example.org --access_token abc
+```
+
 ## Development
 
 We use rspec for unit testing:
