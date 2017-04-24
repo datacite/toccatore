@@ -67,16 +67,19 @@ module Toccatore
       if total > 0
         # walk through paginated results
         total_pages = (total.to_f / job_batch_size).ceil
+        error_total = 0
 
         (0...total_pages).each do |page|
           options[:offset] = page * job_batch_size
-          process_data(options)
+          options[:total] = total
+          error_total += process_data(options)
         end
-        text = "#{total} works processed for date range #{options[:from_date]} - #{options[:until_date]}."
+        text = "#{total} works processed with #{error_total} errors for date range #{options[:from_date]} - #{options[:until_date]}."
       else
         text = "No works found for date range #{options[:from_date]} - #{options[:until_date]}."
-        puts text
       end
+
+      puts text
 
       # send slack notification
       options[:level] = total > 0 ? "good" : "warning"
@@ -101,13 +104,20 @@ module Toccatore
       Maremma.get(query_url, options)
     end
 
+    # method returns number of errors
     def push_data(items, options={})
       if items.empty?
         puts "No works found for date range #{options[:from_date]} - #{options[:until_date]}."
+        0
       elsif options[:access_token].blank?
         puts "An error occured: Access token missing."
+        options[:total]
       else
-        Array(items).each { |item| push_item(item, options) }
+        error_total = 0
+        Array(items).each do |item|
+          error_total += push_item(item, options)
+        end
+        error_total
       end
     end
 

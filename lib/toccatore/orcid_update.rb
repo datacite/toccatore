@@ -56,8 +56,11 @@ module Toccatore
         orcid = response.body.fetch("data", {}).fetch("attributes", {}).fetch("orcid", nil)
         claim_action = response.body.fetch("data", {}).fetch("attributes", {}).fetch("claim-action", nil)
         puts "#{claim_action.titleize} DOI #{doi} for ORCID ID #{orcid} pushed to Profiles service."
+        0
       elsif response.body["errors"].present?
-        puts "An error occured: #{response.body['errors'].first['title']}"
+        puts "#{claim_action.titleize} DOI #{doi} for ORCID ID #{orcid} had an error:"
+        puts "#{response.body['errors'].first['title']}"
+        1
       end
     end
   end

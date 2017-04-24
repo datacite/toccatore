@@ -2,6 +2,8 @@ require_relative 'base'
 
 module Toccatore
   class DataciteRelated < Base
+    LICENSE = "https://creativecommons.org/publicdomain/zero/1.0/"
+
     def source_id
       "datacite_related"
     end
@@ -43,7 +45,8 @@ module Toccatore
                         "relation_type_id" => raw_relation_type.underscore,
                         "source_id" => "datacite",
                         "source_token" => options[:source_token],
-                        "occurred_at" => item.fetch("minted") }
+                        "occurred_at" => item.fetch("minted"),
+                        "license" => LICENSE }
             else
               ssum
             end
@@ -76,10 +79,14 @@ module Toccatore
                                           host: host)
       end
 
+      # return 0 if successful, 1 if error
       if response.status == 201
         puts "#{item['subj_id']} #{item['relation_type_id']} #{item['obj_id']} pushed to Event Data service."
+        0
       elsif response.body["errors"].present?
-        puts "An error occured: #{response.body['errors'].first['title']}"
+        puts "#{item['subj_id']} #{item['relation_type_id']} #{item['obj_id']} had an error:"
+        puts "#{response.body['errors'].first['title']}"
+        1
       end
     end
   end
