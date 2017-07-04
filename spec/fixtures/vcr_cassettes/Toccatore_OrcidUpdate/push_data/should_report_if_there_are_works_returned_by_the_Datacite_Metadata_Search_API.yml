@@ -14,7 +14,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -33,7 +33,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:49 GMT
+      - Tue, 04 Jul 2017 17:33:32 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -45,11 +45,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 937ab67a-7004-4109-b9b6-9f42eb59267a
+      - 712e7242-7d5a-43a4-b743-9b9cf97a0d1c
       X-Runtime:
-      - '0.051823'
+      - '0.014639'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -75,7 +75,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -94,7 +94,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:49 GMT
+      - Tue, 04 Jul 2017 17:33:33 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -106,11 +106,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 69bb4f49-2dc1-49be-a4be-3243c682a2e1
+      - 6b7c0950-c9b4-45ae-af11-52d525b54dc7
       X-Runtime:
-      - '0.011121'
+      - '0.022158'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -136,7 +136,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -155,7 +155,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:49 GMT
+      - Tue, 04 Jul 2017 17:33:33 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -167,11 +167,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 4eeb8615-c38d-4562-91ca-14b08bdcabae
+      - 40dd0176-106a-45a3-92cf-70e2a45ff111
       X-Runtime:
-      - '0.009841'
+      - '0.017557'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -197,7 +197,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -216,7 +216,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:49 GMT
+      - Tue, 04 Jul 2017 17:33:33 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -228,11 +228,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 3e5adfa2-5a84-4824-aa49-8b42efbe9566
+      - edfa5ba7-c310-441f-aaac-39b8a8e91298
       X-Runtime:
-      - '0.011139'
+      - '0.013063'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -258,7 +258,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -277,7 +277,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:50 GMT
+      - Tue, 04 Jul 2017 17:33:33 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -289,11 +289,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 08eec333-46e6-4696-9f60-c7d5fc9c4606
+      - 5f28ff6b-1799-484a-b6d6-fda448e35225
       X-Runtime:
-      - '0.012186'
+      - '0.012582'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -319,7 +319,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -338,7 +338,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:50 GMT
+      - Tue, 04 Jul 2017 17:33:34 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -350,11 +350,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 1b3e29b8-d5ea-42ba-927d-d09964090f5c
+      - 48ef70ec-3e2c-4ba1-ba9f-31658fd9fae4
       X-Runtime:
-      - '0.016427'
+      - '0.012135'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -380,7 +380,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -399,7 +399,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:50 GMT
+      - Tue, 04 Jul 2017 17:33:34 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -411,11 +411,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - bcf6bb7e-baa3-405c-9f2f-953b8aa96951
+      - 5f6fdadb-ecd5-47ba-a8cc-f4f871f8ace5
       X-Runtime:
-      - '0.011075'
+      - '0.012330'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -441,7 +441,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -460,7 +460,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:50 GMT
+      - Tue, 04 Jul 2017 17:33:34 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -472,11 +472,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - d6afa976-9006-4149-af27-5ee2f5c9ed07
+      - 7de1efd9-b6b3-4d07-af50-520a8a9b2a3e
       X-Runtime:
-      - '0.011559'
+      - '0.015037'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -502,7 +502,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -521,7 +521,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:50 GMT
+      - Tue, 04 Jul 2017 17:33:34 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -533,11 +533,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 365ed90a-1d6f-4673-aa0c-f5b4a0bd5a36
+      - dd26f074-dd3a-4fbd-b67c-d1f08a6b953b
       X-Runtime:
-      - '0.021123'
+      - '0.023091'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -563,7 +563,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -582,7 +582,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:51 GMT
+      - Tue, 04 Jul 2017 17:33:35 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -594,13 +594,15 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 366f73e8-3f7d-4aa6-bfc4-0659675f0ed6
+      - a1d78913-5522-4b19-a989-fe25c9118689
       X-Runtime:
-      - '0.013928'
+      - '0.012766'
       X-Xss-Protection:
       - 1; mode=block
+      Content-Length:
+      - '238'
       Connection:
       - keep-alive
     body:
@@ -622,7 +624,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -641,7 +643,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:51 GMT
+      - Tue, 04 Jul 2017 17:33:35 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -653,11 +655,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - fb2b3d21-34b1-419d-99ff-058bacbdaef7
+      - 37c945f1-b046-41df-8e95-e3043a5f64bc
       X-Runtime:
-      - '0.011927'
+      - '0.011945'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -683,7 +685,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -702,7 +704,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:51 GMT
+      - Tue, 04 Jul 2017 17:33:35 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -714,11 +716,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - a98c7db5-6fe0-482d-b3a1-302b2883ff7d
+      - cf244d93-5d81-4000-a29b-98f1a4260b5c
       X-Runtime:
-      - '0.011854'
+      - '0.011960'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -744,7 +746,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -763,7 +765,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:51 GMT
+      - Tue, 04 Jul 2017 17:33:35 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -775,11 +777,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - a18d55d2-2b2e-4a64-8403-b9ec6c4a7af4
+      - 158ec82e-3f29-4406-a742-0beab95793c3
       X-Runtime:
-      - '0.010399'
+      - '0.011265'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -805,7 +807,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -824,7 +826,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:52 GMT
+      - Tue, 04 Jul 2017 17:33:36 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -836,11 +838,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 6123c8e2-5266-44a9-962f-d1f29b9dd7dd
+      - bb1aac1b-8ba9-4c45-9f0d-9b976303fd27
       X-Runtime:
-      - '0.011832'
+      - '0.013964'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -866,7 +868,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -885,7 +887,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:52 GMT
+      - Tue, 04 Jul 2017 17:33:36 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -897,13 +899,15 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 51dc4b0b-24e3-4b4f-aee6-ee781b7a573f
+      - 46b0027e-0033-4347-8514-25bc91b0ed33
       X-Runtime:
-      - '0.011052'
+      - '0.016771'
       X-Xss-Protection:
       - 1; mode=block
+      Content-Length:
+      - '238'
       Connection:
       - keep-alive
     body:
@@ -925,7 +929,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -944,7 +948,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:52 GMT
+      - Tue, 04 Jul 2017 17:33:36 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -956,13 +960,15 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 9ab3a7df-c32a-4c7e-9f9d-d04a6cfb1b49
+      - 661567f7-815f-4146-89b0-08fd6ae6e302
       X-Runtime:
-      - '0.010164'
+      - '0.011888'
       X-Xss-Protection:
       - 1; mode=block
+      Content-Length:
+      - '238'
       Connection:
       - keep-alive
     body:
@@ -984,7 +990,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -1003,7 +1009,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:52 GMT
+      - Tue, 04 Jul 2017 17:33:36 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1015,11 +1021,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - cf6671a4-58f3-4331-845e-d8fb2181ae92
+      - 175a7684-92f7-451a-b3ab-fcf20a5a4f33
       X-Runtime:
-      - '0.005042'
+      - '0.006645'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1045,7 +1051,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -1064,7 +1070,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:53 GMT
+      - Tue, 04 Jul 2017 17:33:37 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1076,11 +1082,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 21c2dce0-ed9d-443e-8a06-ed92a658fb98
+      - 01f79e98-1eff-42cd-b511-2cf626ed7e2c
       X-Runtime:
-      - '0.004881'
+      - '0.007692'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1106,7 +1112,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -1125,7 +1131,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:53 GMT
+      - Tue, 04 Jul 2017 17:33:37 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1137,11 +1143,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 030f05b8-de32-471b-a4d3-c98a0fed3fbf
+      - 240a7918-4dc9-4f89-a61f-773602629b53
       X-Runtime:
-      - '0.011100'
+      - '0.012741'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1167,7 +1173,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -1186,7 +1192,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:53 GMT
+      - Tue, 04 Jul 2017 17:33:37 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1198,11 +1204,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - f243c9e3-38e5-4e9e-86ce-a7e2a899909a
+      - 54738792-ba05-4452-a6c2-3b0311cb5131
       X-Runtime:
-      - '0.010265'
+      - '0.029423'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1228,7 +1234,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -1247,7 +1253,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:53 GMT
+      - Tue, 04 Jul 2017 17:33:37 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1259,11 +1265,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 5502698b-00ce-4ca9-907e-cb4d65bb2fa1
+      - 9610a6af-b1df-425e-94d9-794a14b7ca4a
       X-Runtime:
-      - '0.009797'
+      - '0.038070'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1289,7 +1295,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -1308,7 +1314,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:54 GMT
+      - Tue, 04 Jul 2017 17:33:38 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1320,11 +1326,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 97ee9ed0-446d-40f0-9be0-142fca8ed0a9
+      - fae51659-130e-4757-86cd-5639e5472832
       X-Runtime:
-      - '0.010807'
+      - '0.022565'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1350,7 +1356,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -1369,7 +1375,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:54 GMT
+      - Tue, 04 Jul 2017 17:33:38 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1381,11 +1387,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - a12cdba0-7f41-4f95-a3f3-69007902e180
+      - 185ec3ec-8045-417d-bee6-1c4caa4c4c6c
       X-Runtime:
-      - '0.020087'
+      - '0.012890'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1411,7 +1417,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -1430,7 +1436,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:54 GMT
+      - Tue, 04 Jul 2017 17:33:38 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1442,11 +1448,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - ea78e4d8-4a5f-4136-b82c-4bc0358d9ade
+      - f5ce1608-3bfc-414a-81ce-ac9601058a19
       X-Runtime:
-      - '0.011592'
+      - '0.012366'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1472,7 +1478,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -1491,7 +1497,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:54 GMT
+      - Tue, 04 Jul 2017 17:33:38 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1503,11 +1509,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - b17cb7ac-93ce-4fae-99ef-0a13d19c7038
+      - 7f4ad8f0-c907-48d8-828d-6d4633cec3d4
       X-Runtime:
-      - '0.010325'
+      - '0.011909'
       X-Xss-Protection:
       - 1; mode=block
       Connection:
@@ -1531,7 +1537,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -1550,7 +1556,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:54 GMT
+      - Tue, 04 Jul 2017 17:33:39 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1562,11 +1568,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 0f97c93f-5ca0-4325-bb05-8724c0d3efd4
+      - 5f8cba4a-d37e-49da-887b-a2690e464abe
       X-Runtime:
-      - '0.010797'
+      - '0.011857'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1592,7 +1598,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -1611,7 +1617,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:55 GMT
+      - Tue, 04 Jul 2017 17:33:39 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1623,11 +1629,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 0b6336a8-0d69-4ca2-a3fd-3f18d5fa7bba
+      - d4a58c36-8c9e-4073-9c79-588cf37d802a
       X-Runtime:
-      - '0.012387'
+      - '0.012389'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1653,7 +1659,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -1672,7 +1678,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:55 GMT
+      - Tue, 04 Jul 2017 17:33:39 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1684,13 +1690,15 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 53913ef4-fba2-496c-b2c9-dbe57decb84b
+      - 2c1014e4-4c06-4c17-8155-f4bfe713cf83
       X-Runtime:
-      - '0.010690'
+      - '0.018475'
       X-Xss-Protection:
       - 1; mode=block
+      Content-Length:
+      - '238'
       Connection:
       - keep-alive
     body:
@@ -1712,7 +1720,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -1731,7 +1739,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:55 GMT
+      - Tue, 04 Jul 2017 17:33:39 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1743,11 +1751,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 511b559e-f81a-4305-b34c-585debaed613
+      - 809b2a01-a8c6-4758-8cf7-b79f0e1a16c1
       X-Runtime:
-      - '0.010038'
+      - '0.013067'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1773,7 +1781,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -1792,7 +1800,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:55 GMT
+      - Tue, 04 Jul 2017 17:33:40 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1804,11 +1812,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - c8700dfb-b0e2-46bc-8be4-83dcd5a2f834
+      - 40bf4260-a1d3-4849-9bbb-430ba93eb575
       X-Runtime:
-      - '0.010156'
+      - '0.019405'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1834,7 +1842,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -1853,7 +1861,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:56 GMT
+      - Tue, 04 Jul 2017 17:33:40 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1865,11 +1873,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - bab6bc50-e0ed-4259-a4fa-0ca762ba8656
+      - d4ca3173-d8d5-47f3-b0d3-45853bb2376d
       X-Runtime:
-      - '0.012770'
+      - '0.011864'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1895,7 +1903,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -1914,7 +1922,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:56 GMT
+      - Tue, 04 Jul 2017 17:33:40 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1926,11 +1934,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 97760f5f-20df-4372-ba6c-d5fe173c498b
+      - 8e292c41-32ff-46a4-80fe-746fe3c67077
       X-Runtime:
-      - '0.010774'
+      - '0.017895'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1956,7 +1964,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -1975,7 +1983,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:56 GMT
+      - Tue, 04 Jul 2017 17:33:40 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1987,11 +1995,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 17fbc046-202d-4cfe-8ef7-aea52d9a5883
+      - a6f51b05-ef2f-4b88-bdcf-4bd0a2317a78
       X-Runtime:
-      - '0.010283'
+      - '0.013552'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2017,7 +2025,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2036,7 +2044,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:56 GMT
+      - Tue, 04 Jul 2017 17:33:41 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2048,11 +2056,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 34c646f4-878d-4815-982f-9decb628bf66
+      - 48ca2986-089d-41d5-aca3-83daefc84763
       X-Runtime:
-      - '0.011412'
+      - '0.012086'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2078,7 +2086,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2097,7 +2105,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:57 GMT
+      - Tue, 04 Jul 2017 17:33:41 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2109,11 +2117,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 6c5c55ae-6d84-442b-8959-241501f5969d
+      - 0447b02e-8c53-4547-a4ff-7ca043fbabb6
       X-Runtime:
-      - '0.012149'
+      - '0.012076'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2139,7 +2147,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2158,7 +2166,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:57 GMT
+      - Tue, 04 Jul 2017 17:33:41 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2170,11 +2178,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - ac766b5c-f3ba-4141-88ab-f361adce05ae
+      - 7641d0ea-09e4-4188-b8cd-a87b2f810ebe
       X-Runtime:
-      - '0.011196'
+      - '0.012773'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2200,7 +2208,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2219,7 +2227,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:57 GMT
+      - Tue, 04 Jul 2017 17:33:41 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2231,11 +2239,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - c91f20b8-3a54-47ea-8fc4-7468c0ef69d5
+      - 258a25b9-95a1-4e19-9361-ec125750a803
       X-Runtime:
-      - '0.010660'
+      - '0.012022'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2261,7 +2269,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2280,7 +2288,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:57 GMT
+      - Tue, 04 Jul 2017 17:33:42 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2292,11 +2300,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 7bcf92ec-e31c-4672-987f-216c015953ac
+      - 3f4df3f1-4160-49da-a9d7-2475cbae1dd1
       X-Runtime:
-      - '0.009770'
+      - '0.029066'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2322,7 +2330,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2341,7 +2349,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:58 GMT
+      - Tue, 04 Jul 2017 17:33:42 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2353,11 +2361,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - fdbcb928-592b-424a-8dea-b40700202084
+      - d99a2785-3d49-4eee-9a9c-8a123c2dbf26
       X-Runtime:
-      - '0.011291'
+      - '0.024277'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2383,7 +2391,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2402,7 +2410,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:58 GMT
+      - Tue, 04 Jul 2017 17:33:42 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2414,11 +2422,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - bfd22bda-a84a-4542-845e-af8a41b47a86
+      - 0267a7be-9e91-4d70-8a30-8a2b8447962c
       X-Runtime:
-      - '0.018444'
+      - '0.012102'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2444,7 +2452,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2463,7 +2471,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:58 GMT
+      - Tue, 04 Jul 2017 17:33:42 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2475,11 +2483,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 04afd535-0534-4538-81b0-fad50cecc1e7
+      - 2dd3e521-0c27-460a-9510-14287daf5658
       X-Runtime:
-      - '0.011549'
+      - '0.012095'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2505,7 +2513,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2524,7 +2532,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:58 GMT
+      - Tue, 04 Jul 2017 17:33:43 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2536,11 +2544,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 08b0236a-5636-407f-b29b-0c01018b0202
+      - dd2fed6e-25e1-471d-ae68-22248c4a64a3
       X-Runtime:
-      - '0.010107'
+      - '0.030719'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2566,7 +2574,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2585,7 +2593,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:59 GMT
+      - Tue, 04 Jul 2017 17:33:43 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2597,11 +2605,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 21ad5480-5ae4-4989-a025-04d5d01ba24b
+      - c2320897-ce44-45e8-b42f-2e25d109d18d
       X-Runtime:
-      - '0.009825'
+      - '0.015879'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2627,7 +2635,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2646,7 +2654,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:59 GMT
+      - Tue, 04 Jul 2017 17:33:43 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2658,11 +2666,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - f3a95c4a-754f-4e03-a1dc-a91c17e658e7
+      - 91f28c84-2e23-4190-b7f0-15750a1f47eb
       X-Runtime:
-      - '0.010614'
+      - '0.012599'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2688,7 +2696,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2707,7 +2715,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:59 GMT
+      - Tue, 04 Jul 2017 17:33:43 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2719,11 +2727,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 6aa5ac02-0ae6-4867-b1f4-9b022eebabc7
+      - aad3ca31-eda5-48de-8469-f26842155f87
       X-Runtime:
-      - '0.010091'
+      - '0.011968'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2749,7 +2757,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2768,7 +2776,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:59 GMT
+      - Tue, 04 Jul 2017 17:33:44 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2780,11 +2788,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - acffdf18-ae9b-4d78-b354-fab7e706f01a
+      - 4a70ef7b-d1a2-4e2d-8378-ced1aa54a6a7
       X-Runtime:
-      - '0.009644'
+      - '0.014733'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2810,7 +2818,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2829,7 +2837,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:44:59 GMT
+      - Tue, 04 Jul 2017 17:33:44 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2841,11 +2849,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 75ce0b9d-b98f-475e-8c96-09be32b497dc
+      - e284530c-f31d-4ddb-8f3a-9a61f6b69b2c
       X-Runtime:
-      - '0.010043'
+      - '0.025348'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2871,7 +2879,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2890,7 +2898,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:45:00 GMT
+      - Tue, 04 Jul 2017 17:33:44 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2902,11 +2910,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - dff08247-0966-4d51-a1f0-cdcc4274a7e0
+      - a0fe9bf4-c49c-4549-965b-4050ce288b1f
       X-Runtime:
-      - '0.012788'
+      - '0.012623'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2932,7 +2940,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2951,7 +2959,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:45:00 GMT
+      - Tue, 04 Jul 2017 17:33:44 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2963,11 +2971,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - b6351e47-55a8-4850-bd80-584a3f3b9547
+      - 3cfcf8ee-0226-460d-a54b-4c4346ce6700
       X-Runtime:
-      - '0.011038'
+      - '0.011592'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2993,7 +3001,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -3012,7 +3020,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:45:00 GMT
+      - Tue, 04 Jul 2017 17:33:45 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -3024,11 +3032,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - e071a853-4058-43fd-86da-f59136bbd89b
+      - 4f81b7f0-221b-4cc2-bc41-c776ca546433
       X-Runtime:
-      - '0.011523'
+      - '0.014086'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -3054,7 +3062,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -3073,7 +3081,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:45:00 GMT
+      - Tue, 04 Jul 2017 17:33:45 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -3085,11 +3093,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 9cdc7220-3be3-4f5c-9427-028513860d32
+      - d9b8b161-3c9a-47d2-a144-2d2bc20f142d
       X-Runtime:
-      - '0.026185'
+      - '0.026413'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -3115,7 +3123,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -3134,7 +3142,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:45:01 GMT
+      - Tue, 04 Jul 2017 17:33:45 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -3146,15 +3154,13 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - d25a6e6e-0d7b-4f83-bb6c-95d4a8cfd0ea
+      - ed98f4e8-d37e-47fe-b8e2-d2b55fd0edbe
       X-Runtime:
-      - '0.013258'
+      - '0.011926'
       X-Xss-Protection:
       - 1; mode=block
-      Content-Length:
-      - '238'
       Connection:
       - keep-alive
     body:
@@ -3176,7 +3182,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -3195,7 +3201,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:45:01 GMT
+      - Tue, 04 Jul 2017 17:33:45 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -3207,11 +3213,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 2dde2465-b492-4790-acfd-f1e6b9dacf5a
+      - e002caf2-be4f-447a-a313-98e9df258255
       X-Runtime:
-      - '0.012098'
+      - '0.012207'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -3237,7 +3243,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -3256,7 +3262,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:45:01 GMT
+      - Tue, 04 Jul 2017 17:33:46 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -3268,11 +3274,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 16cfbded-f6f9-40f3-bc65-7cab23dbef93
+      - 7ef48a98-5b83-41ab-abfb-578593be3691
       X-Runtime:
-      - '0.010734'
+      - '0.013924'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -3298,7 +3304,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -3317,7 +3323,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:45:01 GMT
+      - Tue, 04 Jul 2017 17:33:46 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -3329,11 +3335,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - e3ffc39b-4a67-46ed-87c5-d9970bc55b65
+      - 71621bb3-5546-4ba0-bf2f-f38feb8c6276
       X-Runtime:
-      - '0.011678'
+      - '0.011973'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -3359,7 +3365,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -3378,7 +3384,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 11 Mar 2017 10:45:02 GMT
+      - Tue, 04 Jul 2017 17:33:46 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -3390,11 +3396,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - d852451b-625c-45d9-8b3f-17cd00e37a8d
+      - bbf6acd8-6712-4acf-93b7-093477f7d127
       X-Runtime:
-      - '0.013447'
+      - '0.012369'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:

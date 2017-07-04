@@ -49,7 +49,7 @@ module Toccatore
       push_url = (options[:push_url].presence || "https://profiles.datacite.org/api") + "/claims"
 
       response = Maremma.post(push_url, data: { "claim" => item }.to_json,
-                                        token: options[:access_token],
+                                        bearer: options[:access_token],
                                         content_type: 'json')
       if response.body["data"].present?
         doi = response.body.fetch("data", {}).fetch("attributes", {}).fetch("doi", nil)
@@ -58,6 +58,8 @@ module Toccatore
         puts "#{claim_action.titleize} DOI #{doi} for ORCID ID #{orcid} pushed to Profiles service."
         0
       elsif response.body["errors"].present?
+        claim_action = options[:claim_action].presence || "create"
+        
         puts "#{claim_action.titleize} DOI #{doi} for ORCID ID #{orcid} had an error:"
         puts "#{response.body['errors'].first['title']}"
         1

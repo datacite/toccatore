@@ -23,18 +23,20 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Wed, 29 Mar 2017 13:23:06 GMT
+      - Tue, 04 Jul 2017 17:51:52 GMT
       Server:
       - openresty/1.11.2.2
+      Content-Length:
+      - '89'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"responseHeader":{"status":0,"QTime":1},"response":{"numFound":68,"start":0,"docs":[]}}
+      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":68,"start":0,"docs":[]}}
 
 '
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:06 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:52 GMT
 - request:
     method: get
     uri: https://search.datacite.org/api?fl=doi,resourceTypeGeneral,relatedIdentifier,nameIdentifier,minted,updated&fq=updated:%5B2013-01-01T00:00:00Z%20TO%202017-12-31T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=nameIdentifier:ORCID%5C:0000-0002-3546-1048&rows=1000&start=0&wt=json
@@ -58,18 +60,18 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Wed, 29 Mar 2017 13:23:06 GMT
+      - Tue, 04 Jul 2017 17:51:52 GMT
       Server:
       - openresty/1.11.2.2
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"responseHeader":{"status":0,"QTime":1},"response":{"numFound":68,"start":0,"docs":[{"minted":"2016-01-19T18:33:51Z","updated":"2016-01-19T18:33:51Z","doi":"10.6084/M9.FIGSHARE.1371005.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T18:33:51Z","updated":"2016-01-19T18:33:51Z","doi":"10.6084/M9.FIGSHARE.1371005.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T18:33:58Z","updated":"2016-01-19T18:33:58Z","doi":"10.6084/M9.FIGSHARE.1371006.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T18:33:58Z","updated":"2016-01-19T18:33:58Z","doi":"10.6084/M9.FIGSHARE.1371006.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T18:35:55Z","updated":"2016-01-19T18:35:55Z","doi":"10.6084/M9.FIGSHARE.1371137.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T18:35:56Z","updated":"2016-01-19T18:35:56Z","doi":"10.6084/M9.FIGSHARE.1371138.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T18:35:56Z","updated":"2016-01-19T18:35:56Z","doi":"10.6084/M9.FIGSHARE.1371138.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T18:35:56Z","updated":"2016-01-19T18:35:56Z","doi":"10.6084/M9.FIGSHARE.1371139.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T20:44:44Z","updated":"2016-01-19T20:44:44Z","doi":"10.6084/M9.FIGSHARE.1407433.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-19T20:44:51Z","updated":"2016-01-19T20:44:51Z","doi":"10.6084/M9.FIGSHARE.1407433.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-19T20:55:17Z","updated":"2016-01-19T20:55:17Z","doi":"10.6084/M9.FIGSHARE.1408873.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T14:43:34Z","updated":"2016-01-18T14:43:34Z","doi":"10.6084/M9.FIGSHARE.735810.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T14:43:41Z","updated":"2016-01-18T14:43:41Z","doi":"10.6084/M9.FIGSHARE.735811.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-18T14:55:53Z","updated":"2016-01-18T14:55:53Z","doi":"10.6084/M9.FIGSHARE.745301.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-18T14:56:04Z","updated":"2016-01-18T14:56:04Z","doi":"10.6084/M9.FIGSHARE.745313.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T14:59:51Z","updated":"2016-01-18T14:59:51Z","doi":"10.6084/M9.FIGSHARE.746960.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-18T15:20:17Z","updated":"2016-01-18T15:20:17Z","doi":"10.6084/M9.FIGSHARE.760716.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T15:34:50Z","updated":"2016-01-18T15:34:50Z","doi":"10.6084/M9.FIGSHARE.769270.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T15:34:57Z","updated":"2016-01-18T15:34:57Z","doi":"10.6084/M9.FIGSHARE.769270.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T15:34:57Z","updated":"2016-01-18T15:34:57Z","doi":"10.6084/M9.FIGSHARE.769271.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T15:34:57Z","updated":"2016-01-18T15:34:57Z","doi":"10.6084/M9.FIGSHARE.769271.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T15:35:04Z","updated":"2016-01-18T15:35:04Z","doi":"10.6084/M9.FIGSHARE.769271.V3","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T15:35:04Z","updated":"2016-01-18T15:35:04Z","doi":"10.6084/M9.FIGSHARE.769272.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T15:35:04Z","updated":"2016-01-18T15:35:04Z","doi":"10.6084/M9.FIGSHARE.769272.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T15:46:57Z","updated":"2016-01-18T15:46:57Z","doi":"10.6084/M9.FIGSHARE.778701.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T15:47:04Z","updated":"2016-01-18T15:47:05Z","doi":"10.6084/M9.FIGSHARE.779705.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T22:56:25Z","updated":"2016-01-18T22:56:25Z","doi":"10.6084/M9.FIGSHARE.999239.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-18T22:56:26Z","updated":"2016-01-18T22:56:26Z","doi":"10.6084/M9.FIGSHARE.999239.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-18T22:56:26Z","updated":"2016-01-18T22:56:26Z","doi":"10.6084/M9.FIGSHARE.999239.V3","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T22:56:27Z","updated":"2016-01-18T22:56:27Z","doi":"10.6084/M9.FIGSHARE.999239.V4","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T23:19:45Z","updated":"2016-01-18T23:19:45Z","doi":"10.6084/M9.FIGSHARE.1008320.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T23:19:46Z","updated":"2016-01-18T23:19:46Z","doi":"10.6084/M9.FIGSHARE.1008320.V3","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T23:19:52Z","updated":"2016-01-18T23:19:52Z","doi":"10.6084/M9.FIGSHARE.1008321.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-18T23:19:52Z","updated":"2016-01-18T23:19:52Z","doi":"10.6084/M9.FIGSHARE.1008321.V3","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-19T00:17:43Z","updated":"2016-01-19T00:17:43Z","doi":"10.6084/M9.FIGSHARE.1014348.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T00:17:43Z","updated":"2016-01-19T00:17:43Z","doi":"10.6084/M9.FIGSHARE.1014348.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T00:17:45Z","updated":"2016-01-19T00:17:45Z","doi":"10.6084/M9.FIGSHARE.1014351.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T00:17:45Z","updated":"2016-01-19T00:17:45Z","doi":"10.6084/M9.FIGSHARE.1014348.V3","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T00:17:51Z","updated":"2016-01-19T00:17:51Z","doi":"10.6084/M9.FIGSHARE.1014352.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2016-01-19T02:05:43Z","updated":"2016-01-19T02:05:43Z","doi":"10.6084/M9.FIGSHARE.1041547.V1","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-19T02:05:50Z","updated":"2016-01-19T02:05:50Z","doi":"10.6084/M9.FIGSHARE.1041547.V2","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-19T02:05:50Z","updated":"2016-01-19T02:05:50Z","doi":"10.6084/M9.FIGSHARE.1041547.V4","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2016-01-19T02:05:50Z","updated":"2016-01-19T02:05:50Z","doi":"10.6084/M9.FIGSHARE.1041547.V3","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2014-06-02T01:33:35Z","updated":"2015-04-08T13:56:40Z","doi":"10.6084/M9.FIGSHARE.1041547","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2015-05-08T00:27:12Z","updated":"2015-05-08T00:27:12Z","doi":"10.6084/M9.FIGSHARE.1407433","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2015-05-10T16:32:54Z","updated":"2015-05-10T16:32:54Z","doi":"10.6084/M9.FIGSHARE.1408873","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2015-04-08T14:05:30Z","updated":"2015-04-08T14:05:30Z","doi":"10.6084/M9.FIGSHARE.1371006","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2015-04-08T14:12:36Z","updated":"2015-04-08T14:12:36Z","doi":"10.6084/M9.FIGSHARE.1371005","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2015-04-08T23:41:41Z","updated":"2015-04-08T23:41:41Z","doi":"10.6084/M9.FIGSHARE.1371137","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2015-04-08T23:48:49Z","updated":"2015-04-08T23:48:49Z","doi":"10.6084/M9.FIGSHARE.1371138","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2015-04-08T23:55:26Z","updated":"2015-04-08T23:55:26Z","doi":"10.6084/M9.FIGSHARE.1371139","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2014-04-16T00:45:06Z","updated":"2015-04-08T13:56:35Z","doi":"10.6084/M9.FIGSHARE.999239","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2014-04-28T12:44:11Z","updated":"2015-04-08T13:56:38Z","doi":"10.6084/M9.FIGSHARE.1008321","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2014-04-28T13:12:45Z","updated":"2015-04-08T13:56:37Z","doi":"10.6084/M9.FIGSHARE.1008320","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2013-07-17T15:43:04Z","updated":"2015-04-08T13:56:32Z","doi":"10.6084/M9.FIGSHARE.746960","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2013-08-01T01:56:31Z","updated":"2015-04-08T13:56:32Z","doi":"10.6084/M9.FIGSHARE.760716","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2013-08-11T17:51:31Z","updated":"2015-04-08T13:56:35Z","doi":"10.6084/M9.FIGSHARE.769272","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2013-08-11T17:58:38Z","updated":"2015-04-08T13:56:32Z","doi":"10.6084/M9.FIGSHARE.769271","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2013-08-11T18:02:15Z","updated":"2015-04-08T13:56:32Z","doi":"10.6084/M9.FIGSHARE.769270","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2013-08-22T00:40:17Z","updated":"2015-04-08T13:56:35Z","doi":"10.6084/M9.FIGSHARE.778701","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2013-08-22T04:04:35Z","updated":"2015-04-08T13:56:35Z","doi":"10.6084/M9.FIGSHARE.779705","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2013-07-01T02:46:44Z","updated":"2015-04-08T13:56:29Z","doi":"10.6084/M9.FIGSHARE.735810","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2013-07-01T02:48:05Z","updated":"2015-04-08T13:56:29Z","doi":"10.6084/M9.FIGSHARE.735811","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2013-07-14T00:34:46Z","updated":"2015-04-08T13:56:30Z","doi":"10.6084/M9.FIGSHARE.745301","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2013-07-14T19:57:14Z","updated":"2015-04-08T13:56:30Z","doi":"10.6084/M9.FIGSHARE.745313","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Dataset"},{"minted":"2014-05-02T23:51:05Z","updated":"2015-04-08T13:56:38Z","doi":"10.6084/M9.FIGSHARE.1014351","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2014-05-02T23:51:54Z","updated":"2015-04-08T13:56:38Z","doi":"10.6084/M9.FIGSHARE.1014348","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"},{"minted":"2014-05-03T00:43:42Z","updated":"2015-04-08T13:56:40Z","doi":"10.6084/M9.FIGSHARE.1014352","nameIdentifier":["ORCID:0000-0002-3546-1048"],"resourceTypeGeneral":"Image"}]}}
+      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":68,"start":0,"docs":[{"minted":"2016-01-19T18:33:51Z","updated":"2016-01-19T18:33:51Z","doi":"10.6084/M9.FIGSHARE.1371005.V1","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-19T18:33:51Z","updated":"2016-01-19T18:33:51Z","doi":"10.6084/M9.FIGSHARE.1371005.V2","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-19T18:33:58Z","updated":"2016-01-19T18:33:58Z","doi":"10.6084/M9.FIGSHARE.1371006.V1","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-19T18:33:58Z","updated":"2016-01-19T18:33:58Z","doi":"10.6084/M9.FIGSHARE.1371006.V2","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-19T18:35:55Z","updated":"2016-01-19T18:35:55Z","doi":"10.6084/M9.FIGSHARE.1371137.V1","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-19T18:35:56Z","updated":"2016-01-19T18:35:56Z","doi":"10.6084/M9.FIGSHARE.1371138.V1","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-19T18:35:56Z","updated":"2016-01-19T18:35:56Z","doi":"10.6084/M9.FIGSHARE.1371138.V2","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-19T18:35:56Z","updated":"2016-01-19T18:35:56Z","doi":"10.6084/M9.FIGSHARE.1371139.V1","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-18T14:43:34Z","updated":"2016-01-18T14:43:34Z","doi":"10.6084/M9.FIGSHARE.735810.V1","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-18T14:43:41Z","updated":"2016-01-18T14:43:41Z","doi":"10.6084/M9.FIGSHARE.735811.V1","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-18T14:55:53Z","updated":"2016-01-18T14:55:53Z","doi":"10.6084/M9.FIGSHARE.745301.V1","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-18T14:56:04Z","updated":"2016-01-18T14:56:04Z","doi":"10.6084/M9.FIGSHARE.745313.V1","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-18T14:59:51Z","updated":"2016-01-18T14:59:51Z","doi":"10.6084/M9.FIGSHARE.746960.V1","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-18T22:56:25Z","updated":"2016-01-18T22:56:25Z","doi":"10.6084/M9.FIGSHARE.999239.V1","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-18T22:56:26Z","updated":"2016-01-18T22:56:26Z","doi":"10.6084/M9.FIGSHARE.999239.V2","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-18T22:56:26Z","updated":"2016-01-18T22:56:26Z","doi":"10.6084/M9.FIGSHARE.999239.V3","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-18T22:56:27Z","updated":"2016-01-18T22:56:27Z","doi":"10.6084/M9.FIGSHARE.999239.V4","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-18T23:19:45Z","updated":"2016-01-18T23:19:45Z","doi":"10.6084/M9.FIGSHARE.1008320.V2","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-18T23:19:46Z","updated":"2016-01-18T23:19:46Z","doi":"10.6084/M9.FIGSHARE.1008320.V3","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-18T23:19:52Z","updated":"2016-01-18T23:19:52Z","doi":"10.6084/M9.FIGSHARE.1008321.V2","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-18T23:19:52Z","updated":"2016-01-18T23:19:52Z","doi":"10.6084/M9.FIGSHARE.1008321.V3","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-19T00:17:43Z","updated":"2016-01-19T00:17:43Z","doi":"10.6084/M9.FIGSHARE.1014348.V1","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-19T00:17:43Z","updated":"2016-01-19T00:17:43Z","doi":"10.6084/M9.FIGSHARE.1014348.V2","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-19T00:17:45Z","updated":"2016-01-19T00:17:45Z","doi":"10.6084/M9.FIGSHARE.1014351.V1","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-19T00:17:45Z","updated":"2016-01-19T00:17:45Z","doi":"10.6084/M9.FIGSHARE.1014348.V3","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-19T00:17:51Z","updated":"2016-01-19T00:17:51Z","doi":"10.6084/M9.FIGSHARE.1014352.V1","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-19T02:05:43Z","updated":"2016-01-19T02:05:43Z","doi":"10.6084/M9.FIGSHARE.1041547.V1","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-19T02:05:50Z","updated":"2016-01-19T02:05:50Z","doi":"10.6084/M9.FIGSHARE.1041547.V2","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-19T02:05:50Z","updated":"2016-01-19T02:05:50Z","doi":"10.6084/M9.FIGSHARE.1041547.V4","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-19T02:05:50Z","updated":"2016-01-19T02:05:50Z","doi":"10.6084/M9.FIGSHARE.1041547.V3","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-19T20:44:44Z","updated":"2016-01-19T20:44:44Z","doi":"10.6084/M9.FIGSHARE.1407433.V1","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-19T20:44:51Z","updated":"2016-01-19T20:44:51Z","doi":"10.6084/M9.FIGSHARE.1407433.V2","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-19T20:55:17Z","updated":"2016-01-19T20:55:17Z","doi":"10.6084/M9.FIGSHARE.1408873.V1","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2013-07-01T02:46:44Z","updated":"2015-04-08T13:56:29Z","doi":"10.6084/M9.FIGSHARE.735810","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2013-07-01T02:48:05Z","updated":"2015-04-08T13:56:29Z","doi":"10.6084/M9.FIGSHARE.735811","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2013-07-14T00:34:46Z","updated":"2015-04-08T13:56:30Z","doi":"10.6084/M9.FIGSHARE.745301","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2013-07-14T19:57:14Z","updated":"2015-04-08T13:56:30Z","doi":"10.6084/M9.FIGSHARE.745313","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2013-07-17T15:43:04Z","updated":"2015-04-08T13:56:32Z","doi":"10.6084/M9.FIGSHARE.746960","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2013-08-01T01:56:31Z","updated":"2015-04-08T13:56:32Z","doi":"10.6084/M9.FIGSHARE.760716","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2013-08-11T17:51:31Z","updated":"2015-04-08T13:56:35Z","doi":"10.6084/M9.FIGSHARE.769272","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2013-08-11T17:58:38Z","updated":"2015-04-08T13:56:32Z","doi":"10.6084/M9.FIGSHARE.769271","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2013-08-11T18:02:15Z","updated":"2015-04-08T13:56:32Z","doi":"10.6084/M9.FIGSHARE.769270","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2013-08-22T00:40:17Z","updated":"2015-04-08T13:56:35Z","doi":"10.6084/M9.FIGSHARE.778701","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2013-08-22T04:04:35Z","updated":"2015-04-08T13:56:35Z","doi":"10.6084/M9.FIGSHARE.779705","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2015-04-08T14:05:30Z","updated":"2015-04-08T14:05:30Z","doi":"10.6084/M9.FIGSHARE.1371006","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2015-04-08T14:12:36Z","updated":"2015-04-08T14:12:36Z","doi":"10.6084/M9.FIGSHARE.1371005","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2015-04-08T23:41:41Z","updated":"2015-04-08T23:41:41Z","doi":"10.6084/M9.FIGSHARE.1371137","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2015-04-08T23:48:49Z","updated":"2015-04-08T23:48:49Z","doi":"10.6084/M9.FIGSHARE.1371138","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2015-04-08T23:55:26Z","updated":"2015-04-08T23:55:26Z","doi":"10.6084/M9.FIGSHARE.1371139","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2015-05-08T00:27:12Z","updated":"2015-05-08T00:27:12Z","doi":"10.6084/M9.FIGSHARE.1407433","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2015-05-10T16:32:54Z","updated":"2015-05-10T16:32:54Z","doi":"10.6084/M9.FIGSHARE.1408873","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2014-04-16T00:45:06Z","updated":"2015-04-08T13:56:35Z","doi":"10.6084/M9.FIGSHARE.999239","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2014-04-28T12:44:11Z","updated":"2015-04-08T13:56:38Z","doi":"10.6084/M9.FIGSHARE.1008321","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2014-04-28T13:12:45Z","updated":"2015-04-08T13:56:37Z","doi":"10.6084/M9.FIGSHARE.1008320","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2014-05-02T23:51:05Z","updated":"2015-04-08T13:56:38Z","doi":"10.6084/M9.FIGSHARE.1014351","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2014-05-02T23:51:54Z","updated":"2015-04-08T13:56:38Z","doi":"10.6084/M9.FIGSHARE.1014348","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2014-05-03T00:43:42Z","updated":"2015-04-08T13:56:40Z","doi":"10.6084/M9.FIGSHARE.1014352","resourceTypeGeneral":"Image","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2014-06-02T01:33:35Z","updated":"2015-04-08T13:56:40Z","doi":"10.6084/M9.FIGSHARE.1041547","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-18T15:20:17Z","updated":"2016-01-18T15:20:17Z","doi":"10.6084/M9.FIGSHARE.760716.V1","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-18T15:34:50Z","updated":"2016-01-18T15:34:50Z","doi":"10.6084/M9.FIGSHARE.769270.V1","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-18T15:34:57Z","updated":"2016-01-18T15:34:57Z","doi":"10.6084/M9.FIGSHARE.769270.V2","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-18T15:34:57Z","updated":"2016-01-18T15:34:57Z","doi":"10.6084/M9.FIGSHARE.769271.V1","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-18T15:34:57Z","updated":"2016-01-18T15:34:57Z","doi":"10.6084/M9.FIGSHARE.769271.V2","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-18T15:35:04Z","updated":"2016-01-18T15:35:04Z","doi":"10.6084/M9.FIGSHARE.769271.V3","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-18T15:35:04Z","updated":"2016-01-18T15:35:04Z","doi":"10.6084/M9.FIGSHARE.769272.V1","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-18T15:35:04Z","updated":"2016-01-18T15:35:04Z","doi":"10.6084/M9.FIGSHARE.769272.V2","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-18T15:46:57Z","updated":"2016-01-18T15:46:57Z","doi":"10.6084/M9.FIGSHARE.778701.V1","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]},{"minted":"2016-01-18T15:47:04Z","updated":"2016-01-18T15:47:05Z","doi":"10.6084/M9.FIGSHARE.779705.V1","resourceTypeGeneral":"Dataset","nameIdentifier":["ORCID:0000-0002-3546-1048"]}]}}
 
 '
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:06 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:52 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -84,7 +86,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -103,7 +105,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:07 GMT
+      - Tue, 04 Jul 2017 17:51:52 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -115,11 +117,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - d5443205-90a6-4f01-840c-ec80a3297a57
+      - e70b9bf1-de84-4e43-8dd9-a597c6df49c9
       X-Runtime:
-      - '0.013881'
+      - '0.025900'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -130,7 +132,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"f7d55d19-7182-4bd3-8e1e-1647b29ab577","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371005.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:07 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:52 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -145,7 +147,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -164,7 +166,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:08 GMT
+      - Tue, 04 Jul 2017 17:51:52 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -176,11 +178,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 593e4312-fe66-40d0-a1f9-bf459080639a
+      - e134736a-6372-497a-b55e-a6d2dc8e92ed
       X-Runtime:
-      - '0.013690'
+      - '0.012256'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -191,7 +193,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"2f6b68d9-7f8a-462d-9248-db310398c7d9","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371005.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:08 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:52 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -206,7 +208,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -225,7 +227,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:08 GMT
+      - Tue, 04 Jul 2017 17:51:52 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -237,11 +239,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - bbecf4d3-cafc-4e4b-8ff5-7f7929be305d
+      - fe631689-5aca-4584-b2d1-8d628c77c5ee
       X-Runtime:
-      - '0.011595'
+      - '0.013305'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -252,7 +254,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"a85c3b6d-2140-4be9-b823-e8160192b844","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371006.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:08 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:53 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -267,7 +269,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -286,7 +288,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:09 GMT
+      - Tue, 04 Jul 2017 17:51:53 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -298,11 +300,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 4f242b8b-3234-4145-970f-7678a8b23310
+      - 6379806f-6759-4bad-8c76-2e79663061c3
       X-Runtime:
-      - '0.012653'
+      - '0.012977'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -313,7 +315,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"cc5e6be1-bc84-43cb-85c3-fb6dd152e244","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371006.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:09 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:53 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -328,7 +330,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -347,7 +349,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:09 GMT
+      - Tue, 04 Jul 2017 17:51:53 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -359,11 +361,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 5caed6c0-bca2-4ea8-a656-054e159016c0
+      - 358b3049-4de2-4eb0-80ff-2df898f6b3c6
       X-Runtime:
-      - '0.013332'
+      - '0.011591'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -374,7 +376,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"ba1d5b10-644e-4bf5-9c79-7fb812215c3f","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371137.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:09 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:53 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -389,7 +391,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -408,7 +410,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:10 GMT
+      - Tue, 04 Jul 2017 17:51:53 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -420,11 +422,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 69443be9-7ddb-4c1a-8c03-6df82e496815
+      - b065da7d-cdb4-48b7-9989-399a2dbea8e2
       X-Runtime:
-      - '0.015392'
+      - '0.012128'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -435,7 +437,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"044bb59d-b87f-4f1d-9819-2e6ef139ed99","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371138.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:10 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:53 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -450,7 +452,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -469,7 +471,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:11 GMT
+      - Tue, 04 Jul 2017 17:51:54 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -481,11 +483,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 60908330-f968-47cd-b25e-318e6535b956
+      - b9c2ccfe-9b28-49e7-9c2a-c03d101c117b
       X-Runtime:
-      - '0.018422'
+      - '0.026860'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -496,7 +498,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"798b6d68-85fa-453a-8990-43425a51362c","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371138.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:11 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:54 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -511,7 +513,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -530,7 +532,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:11 GMT
+      - Tue, 04 Jul 2017 17:51:54 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -542,11 +544,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - ba99639d-04db-40dd-b8b4-93920977a771
+      - 75356696-5f9d-456d-a8db-15666f33fe82
       X-Runtime:
-      - '0.011507'
+      - '0.013114'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -557,190 +559,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"f72892d5-7c49-4df7-a698-27027cc6b871","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371139.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:11 GMT
-- request:
-    method: post
-    uri: https://profiles.test.datacite.org/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1407433.V1","source_id":"orcid_update","claim_action":"create"}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Token token=<VOLPINO_TOKEN>
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:23:13 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - c1f47893-24d5-4307-ad90-80134d27db7f
-      X-Runtime:
-      - '0.012773'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '241'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"a500ba1a-281c-4b33-bf14-22f601116277","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1407433.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
-    http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:13 GMT
-- request:
-    method: post
-    uri: https://profiles.test.datacite.org/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1407433.V2","source_id":"orcid_update","claim_action":"create"}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Token token=<VOLPINO_TOKEN>
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:23:14 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - 5d152951-c725-404c-bbb0-84f0fc84c289
-      X-Runtime:
-      - '0.027574'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '241'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"2207a249-d0f9-44d1-bf11-91b1d41f315b","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1407433.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
-    http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:14 GMT
-- request:
-    method: post
-    uri: https://profiles.test.datacite.org/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1408873.V1","source_id":"orcid_update","claim_action":"create"}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Token token=<VOLPINO_TOKEN>
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:23:15 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - ca036f7f-96db-43f8-90f1-e5deb83192e6
-      X-Runtime:
-      - '0.013758'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '241'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"c435261a-2f94-4fbf-9d05-9364c3c92123","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1408873.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
-    http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:15 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:54 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -755,7 +574,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -774,7 +593,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:16 GMT
+      - Tue, 04 Jul 2017 17:51:54 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -786,11 +605,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 08e65ef1-06a9-4376-8952-4f70476344dd
+      - 15b817f6-ccf3-4389-89e8-54c031d61dd2
       X-Runtime:
-      - '0.014158'
+      - '0.012007'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -801,7 +620,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"5469e1fb-ba78-498a-8396-4c315a9b856b","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.735810.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:16 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:54 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -816,7 +635,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -835,7 +654,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:18 GMT
+      - Tue, 04 Jul 2017 17:51:54 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -847,11 +666,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 5dd9f5df-bb85-4316-a37f-1d6a1b5c7075
+      - f10501f8-d9b9-436f-a9ad-a61bce1183fb
       X-Runtime:
-      - '0.013517'
+      - '0.012510'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -862,7 +681,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"9059ae4d-3963-41ba-8efe-3ae094f0adc7","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.735811.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:18 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:54 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -877,7 +696,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -896,7 +715,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:19 GMT
+      - Tue, 04 Jul 2017 17:51:55 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -908,11 +727,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - d5cd62d2-d2ae-40e7-85bf-585db52f6a48
+      - 7840ae49-eda5-4937-a788-9f898c239979
       X-Runtime:
-      - '0.013126'
+      - '0.020859'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -923,7 +742,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"f953cf4a-da95-4a66-a1ff-e4ea6dd7374b","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.745301.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:19 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:55 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -938,7 +757,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -957,7 +776,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:20 GMT
+      - Tue, 04 Jul 2017 17:51:55 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -969,11 +788,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - b3e62aeb-39d1-451b-925d-bde33c0f24c6
+      - 9cd89d28-5e72-461e-a4d8-40893266b4fb
       X-Runtime:
-      - '0.013161'
+      - '0.012473'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -984,7 +803,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"febfaa31-8e96-482f-8cdc-c6df787e747c","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.745313.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:20 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:55 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -999,7 +818,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -1018,7 +837,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:21 GMT
+      - Tue, 04 Jul 2017 17:51:55 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1030,11 +849,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 972ebe37-ff2c-448a-bc15-a6d2dc478c78
+      - 1d1e1248-e7f1-400f-a209-3fbd855e1aef
       X-Runtime:
-      - '0.013500'
+      - '0.013449'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1045,617 +864,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"ff69f955-f7e3-4917-8885-97ac6f12de92","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.746960.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:21 GMT
-- request:
-    method: post
-    uri: https://profiles.test.datacite.org/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.760716.V1","source_id":"orcid_update","claim_action":"create"}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Token token=<VOLPINO_TOKEN>
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:23:21 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - 67cec0ab-2757-4144-a3cc-18a803123fe0
-      X-Runtime:
-      - '0.011751'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '240'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"75e19279-8c38-4ed3-be2b-0a011fbc1546","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.760716.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
-    http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:21 GMT
-- request:
-    method: post
-    uri: https://profiles.test.datacite.org/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769270.V1","source_id":"orcid_update","claim_action":"create"}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Token token=<VOLPINO_TOKEN>
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:23:23 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - fe614979-2aa5-4ae4-8306-435f57e9fbf0
-      X-Runtime:
-      - '0.012762'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '240'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"588561df-a902-4af1-9069-ec85ec646b1a","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769270.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
-    http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:23 GMT
-- request:
-    method: post
-    uri: https://profiles.test.datacite.org/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769270.V2","source_id":"orcid_update","claim_action":"create"}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Token token=<VOLPINO_TOKEN>
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:23:24 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - 626c71af-dcc9-4c25-a8e8-553db5a09cca
-      X-Runtime:
-      - '0.013958'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '240'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"5d7461de-3e94-4883-bfc1-7d8c7d1f0722","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769270.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
-    http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:24 GMT
-- request:
-    method: post
-    uri: https://profiles.test.datacite.org/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271.V1","source_id":"orcid_update","claim_action":"create"}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Token token=<VOLPINO_TOKEN>
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:23:25 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - 49d2a330-87b4-4a0f-9b1f-2b0c1e77a26e
-      X-Runtime:
-      - '0.012853'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '240'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"b36f5034-c396-4fb0-96f1-d23d7329970b","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
-    http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:25 GMT
-- request:
-    method: post
-    uri: https://profiles.test.datacite.org/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271.V2","source_id":"orcid_update","claim_action":"create"}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Token token=<VOLPINO_TOKEN>
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:23:26 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - a2c15ea7-66bf-4ff9-ae66-737a648ca338
-      X-Runtime:
-      - '0.013057'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '240'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"b1e53d56-0c02-4bae-b7d6-8febe8d5d448","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
-    http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:26 GMT
-- request:
-    method: post
-    uri: https://profiles.test.datacite.org/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271.V3","source_id":"orcid_update","claim_action":"create"}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Token token=<VOLPINO_TOKEN>
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:23:26 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - 2c877b51-9910-4ef0-9b8e-59603bfdcc2d
-      X-Runtime:
-      - '0.012228'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '240'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"f19e3c8a-a6f5-4223-8de3-28310fad14bc","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271.V3","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
-    http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:26 GMT
-- request:
-    method: post
-    uri: https://profiles.test.datacite.org/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769272.V1","source_id":"orcid_update","claim_action":"create"}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Token token=<VOLPINO_TOKEN>
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:23:27 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - 4f5870e4-d066-465a-85c0-325c65e82ab8
-      X-Runtime:
-      - '0.012839'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '240'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"8e670c7d-2fbd-451f-acc7-52a63a4fdf1d","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769272.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
-    http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:27 GMT
-- request:
-    method: post
-    uri: https://profiles.test.datacite.org/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769272.V2","source_id":"orcid_update","claim_action":"create"}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Token token=<VOLPINO_TOKEN>
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:23:28 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - 0a724c84-a9bc-4808-b85b-e4df1f991b18
-      X-Runtime:
-      - '0.018804'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '240'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"374f050e-d5e8-4bb7-b5bb-4cfa581b7fe5","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769272.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
-    http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:28 GMT
-- request:
-    method: post
-    uri: https://profiles.test.datacite.org/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.778701.V1","source_id":"orcid_update","claim_action":"create"}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Token token=<VOLPINO_TOKEN>
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:23:29 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - 14c2a69d-3853-451f-9879-ef40df892775
-      X-Runtime:
-      - '0.014402'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '240'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"a27e6c31-bd8a-47b5-91a3-207d65fbbb36","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.778701.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
-    http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:29 GMT
-- request:
-    method: post
-    uri: https://profiles.test.datacite.org/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.779705.V1","source_id":"orcid_update","claim_action":"create"}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Token token=<VOLPINO_TOKEN>
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:23:30 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - 910f2468-e263-4a8d-a555-bdef617873cc
-      X-Runtime:
-      - '0.012527'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '240'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"d54d379d-bf8f-4e19-bb19-e1714aaf0b80","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.779705.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
-    http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:30 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:55 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1670,7 +879,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -1689,7 +898,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:31 GMT
+      - Tue, 04 Jul 2017 17:51:55 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1701,11 +910,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - dc06da0d-f1eb-4202-a455-f01c237595dd
+      - 10d2cd44-04a1-475b-8ced-f7ffb5230f17
       X-Runtime:
-      - '0.021009'
+      - '0.013644'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1716,7 +925,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"3be7ca12-c1f7-4562-948e-80abc0e0e1a9","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.999239.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:31 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:55 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1731,7 +940,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -1750,7 +959,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:32 GMT
+      - Tue, 04 Jul 2017 17:51:56 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1762,11 +971,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 16cdc80f-fc78-469e-9a63-53fbbb314533
+      - be41a8cb-98be-417d-af61-c2369f669034
       X-Runtime:
-      - '0.013785'
+      - '0.020653'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1777,7 +986,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"911ee816-b01d-4c95-922e-660ce1fa8aa6","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.999239.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:32 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:56 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1792,7 +1001,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -1811,7 +1020,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:32 GMT
+      - Tue, 04 Jul 2017 17:51:56 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1823,11 +1032,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - d29272c6-d0da-4e27-8ee4-2815a39342b1
+      - d8871bb2-0bde-4d17-85f4-f5d237952409
       X-Runtime:
-      - '0.012759'
+      - '0.013324'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1838,7 +1047,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"4042f2fc-26ca-4b58-92a3-2ef58f6cab35","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.999239.V3","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:32 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:56 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1853,7 +1062,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -1872,7 +1081,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:33 GMT
+      - Tue, 04 Jul 2017 17:51:56 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1884,11 +1093,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - de6fa678-5508-4bd9-9653-6782369ce17c
+      - 1e6e6132-fdc6-4891-9596-8fa294cecccf
       X-Runtime:
-      - '0.012797'
+      - '0.012195'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1899,7 +1108,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"bacdec63-9eca-499b-a49e-bbbc896577b4","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.999239.V4","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:33 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:56 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1914,7 +1123,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -1933,7 +1142,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:33 GMT
+      - Tue, 04 Jul 2017 17:51:56 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -1945,11 +1154,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 179c0207-d23d-4e3c-9f68-3c4ceba3dcc1
+      - e89e0f08-f096-43ef-9c2e-cdb255f0ebc9
       X-Runtime:
-      - '0.014677'
+      - '0.012386'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1960,7 +1169,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"8956a37a-416d-4bc2-99d3-f9bbfada64ec","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008320.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:33 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:56 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1975,7 +1184,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -1994,7 +1203,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:34 GMT
+      - Tue, 04 Jul 2017 17:51:57 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2006,11 +1215,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - ce5f8d4c-2d15-4ffa-a2bd-05b80d4ff1bb
+      - 8c13e4be-842c-4d9c-89b6-3db8789898c5
       X-Runtime:
-      - '0.018057'
+      - '0.014963'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2021,7 +1230,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"5740e9cc-d0a5-4231-9067-f7e2dff86a3a","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008320.V3","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:34 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:57 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2036,7 +1245,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2055,7 +1264,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:34 GMT
+      - Tue, 04 Jul 2017 17:51:57 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2067,11 +1276,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 887b7cbb-2aed-4f54-8f64-c0dbf5e2e2e4
+      - 9745c569-e039-4dcc-adeb-6e69d0e1427a
       X-Runtime:
-      - '0.028783'
+      - '0.012389'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2082,7 +1291,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"aa59be0b-3a55-401c-8a2d-2e62b064033d","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008321.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:34 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:57 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2097,7 +1306,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2116,7 +1325,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:35 GMT
+      - Tue, 04 Jul 2017 17:51:57 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2128,11 +1337,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 265d65fb-a833-4a73-aad0-e44515647af4
+      - 3cc21df0-028a-4417-9ec4-edb0bae215e1
       X-Runtime:
-      - '0.023431'
+      - '0.013107'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2143,7 +1352,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"296054f0-0306-404e-9c2a-23590bee1cd8","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008321.V3","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:35 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:57 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2158,7 +1367,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2177,7 +1386,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:36 GMT
+      - Tue, 04 Jul 2017 17:51:57 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2189,11 +1398,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - d6f6fcb7-b28d-424d-9b18-249558d958d3
+      - 2199ea85-3c6b-421b-bc58-eaee6b898ad5
       X-Runtime:
-      - '0.020126'
+      - '0.012967'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2204,7 +1413,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"1cb18622-ef17-4402-8a2e-585704a46d21","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014348.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:36 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:57 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2219,7 +1428,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2238,7 +1447,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:36 GMT
+      - Tue, 04 Jul 2017 17:51:58 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2250,11 +1459,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - e744c117-ec38-441a-8103-39644754a933
+      - 800553b0-25b3-4fe1-a91f-bc02da40abb3
       X-Runtime:
-      - '0.012864'
+      - '0.013561'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2265,7 +1474,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"2d5ed88d-da01-4187-a1fc-deaeb629fceb","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014348.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:36 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:58 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2280,7 +1489,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2299,7 +1508,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:37 GMT
+      - Tue, 04 Jul 2017 17:51:58 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2311,11 +1520,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 6a069798-63c0-4f34-858a-207f7aa9113d
+      - 9371ceb8-ff3f-4c93-bd3c-8f448c5c91f2
       X-Runtime:
-      - '0.024540'
+      - '0.012013'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2326,7 +1535,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"9e13ef11-c907-4f7e-9a72-7f74c51bca4b","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014351.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:37 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:58 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2341,7 +1550,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2360,7 +1569,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:37 GMT
+      - Tue, 04 Jul 2017 17:51:58 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2372,11 +1581,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 45d7d988-65f7-4ab7-bdd1-b927e8a9ba53
+      - 4a9d8f35-6f40-451f-b43f-00a689b671e1
       X-Runtime:
-      - '0.015786'
+      - '0.011944'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2387,7 +1596,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"5e5eae3d-76d1-4591-a4da-6a0ea18c89c6","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014348.V3","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:37 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:58 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2402,7 +1611,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2421,7 +1630,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:38 GMT
+      - Tue, 04 Jul 2017 17:51:58 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2433,11 +1642,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - a5bf1faf-0e0a-4251-8878-9d559eb9ddbf
+      - 53cd4129-4106-4d51-b9d6-cfc385d9adea
       X-Runtime:
-      - '0.012887'
+      - '0.012723'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2448,7 +1657,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"b231fb70-29ba-422b-ac79-9e3bd5410442","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014352.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:38 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:58 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2463,7 +1672,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2482,7 +1691,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:38 GMT
+      - Tue, 04 Jul 2017 17:51:59 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2494,11 +1703,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 75445ea4-db1a-4630-93f9-d08d74549438
+      - c7ddcc62-b3ae-4164-935b-5176fab62fc5
       X-Runtime:
-      - '0.018193'
+      - '0.021027'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2509,7 +1718,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"3a32ed48-4f86-4570-a3b7-47c9bdbae9f3","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1041547.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:38 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:59 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2524,7 +1733,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2543,7 +1752,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:39 GMT
+      - Tue, 04 Jul 2017 17:51:59 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2555,11 +1764,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 33e2af37-0c99-4865-a391-7ad18cf911a2
+      - 037adda9-6db4-46bd-a525-2bab7ba7e8aa
       X-Runtime:
-      - '0.017094'
+      - '0.021120'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2570,7 +1779,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"cb4db0a3-90e8-4843-b79a-04902c9f9ca2","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1041547.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:39 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:59 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2585,7 +1794,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2604,7 +1813,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:39 GMT
+      - Tue, 04 Jul 2017 17:51:59 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2616,11 +1825,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 3d2d2458-81d5-402a-b2c2-526639a00295
+      - 3d07c7f8-d6a6-49ba-ae51-7483288358b4
       X-Runtime:
-      - '0.012381'
+      - '0.012302'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2631,7 +1840,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"e2150a1d-a937-4257-a148-0f2b78434271","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1041547.V4","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:39 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:59 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -2646,7 +1855,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2665,7 +1874,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:40 GMT
+      - Tue, 04 Jul 2017 17:51:59 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2677,11 +1886,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 19073b29-bbc8-4112-85b6-f5f6f17ac7a6
+      - a0b3cb53-867c-4e3b-9ecd-809d27dbf218
       X-Runtime:
-      - '0.014271'
+      - '0.013322'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2692,13 +1901,13 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"ec8899ef-25f0-4cb8-88c2-fa5eacc37096","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1041547.V3","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:40 GMT
+  recorded_at: Tue, 04 Jul 2017 17:51:59 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
     body:
       encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1041547","source_id":"orcid_update","claim_action":"create"}}'
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1407433.V1","source_id":"orcid_update","claim_action":"create"}}'
     headers:
       User-Agent:
       - Maremma - https://github.com/datacite/maremma
@@ -2707,7 +1916,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2726,7 +1935,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:41 GMT
+      - Tue, 04 Jul 2017 17:52:00 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2738,28 +1947,28 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - a607dd0b-b687-4fbe-b826-dab3f101b78c
+      - 0f24200c-6182-4081-8fca-1b565c948240
       X-Runtime:
-      - '0.013082'
+      - '0.030720'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '238'
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"27913db7-e2b1-47ea-a057-f15647402e26","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1041547","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+      string: '{"data":{"id":"a500ba1a-281c-4b33-bf14-22f601116277","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1407433.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:41 GMT
+  recorded_at: Tue, 04 Jul 2017 17:52:00 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
     body:
       encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1407433","source_id":"orcid_update","claim_action":"create"}}'
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1407433.V2","source_id":"orcid_update","claim_action":"create"}}'
     headers:
       User-Agent:
       - Maremma - https://github.com/datacite/maremma
@@ -2768,7 +1977,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2787,7 +1996,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:41 GMT
+      - Tue, 04 Jul 2017 17:52:00 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2799,28 +2008,28 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 49c21690-f2fa-4985-af05-7e19a31cbf0f
+      - 859a61ce-84cd-4f7d-b867-4a11030b5f50
       X-Runtime:
-      - '0.011675'
+      - '0.012106'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '238'
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"e9c6edae-a6c9-4d21-bd35-9c7719a1d1fc","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1407433","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+      string: '{"data":{"id":"2207a249-d0f9-44d1-bf11-91b1d41f315b","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1407433.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:41 GMT
+  recorded_at: Tue, 04 Jul 2017 17:52:00 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
     body:
       encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1408873","source_id":"orcid_update","claim_action":"create"}}'
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1408873.V1","source_id":"orcid_update","claim_action":"create"}}'
     headers:
       User-Agent:
       - Maremma - https://github.com/datacite/maremma
@@ -2829,7 +2038,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -2848,7 +2057,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:42 GMT
+      - Tue, 04 Jul 2017 17:52:00 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -2860,937 +2069,22 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 429ce984-7e0b-4224-8e7a-9ae144a813c2
+      - 04c79ba7-82ee-437d-898c-533b2dccd8cb
       X-Runtime:
-      - '0.012254'
+      - '0.032739'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '238'
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"8af8e412-c333-44ce-8079-4bf55149d0c6","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1408873","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+      string: '{"data":{"id":"c435261a-2f94-4fbf-9d05-9364c3c92123","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1408873.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:42 GMT
-- request:
-    method: post
-    uri: https://profiles.test.datacite.org/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371006","source_id":"orcid_update","claim_action":"create"}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Token token=<VOLPINO_TOKEN>
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:23:43 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - 7cc85ade-adb4-406f-9ae7-da216ee2e648
-      X-Runtime:
-      - '0.011860'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '238'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"75f9f7d1-43a8-4ce9-9a67-196c5ef4bd91","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371006","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
-    http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:43 GMT
-- request:
-    method: post
-    uri: https://profiles.test.datacite.org/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371005","source_id":"orcid_update","claim_action":"create"}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Token token=<VOLPINO_TOKEN>
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:23:43 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - c2794739-ddf5-4a29-b690-57333663aff1
-      X-Runtime:
-      - '0.012149'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '238'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"0fe9bf2c-8d15-41ff-90be-58830a12a4c1","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371005","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
-    http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:43 GMT
-- request:
-    method: post
-    uri: https://profiles.test.datacite.org/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371137","source_id":"orcid_update","claim_action":"create"}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Token token=<VOLPINO_TOKEN>
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:23:44 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - dd3998b6-69e4-4b93-a432-22bdd3508ca3
-      X-Runtime:
-      - '0.011847'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '238'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"df589091-5b89-4714-a427-27367b03aa1b","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371137","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
-    http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:44 GMT
-- request:
-    method: post
-    uri: https://profiles.test.datacite.org/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371138","source_id":"orcid_update","claim_action":"create"}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Token token=<VOLPINO_TOKEN>
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:23:44 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - d2e5eb34-4323-4b27-86b6-826c2d801333
-      X-Runtime:
-      - '0.011581'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '238'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"9e7cae20-e811-486c-bdcc-dcb5bd1bcbe9","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371138","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
-    http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:44 GMT
-- request:
-    method: post
-    uri: https://profiles.test.datacite.org/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371139","source_id":"orcid_update","claim_action":"create"}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Token token=<VOLPINO_TOKEN>
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:23:45 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - e7c37d21-7c5a-4d24-b4d2-9ecb85994ad2
-      X-Runtime:
-      - '0.011607'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '238'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"87265bf1-b0fb-4e36-8621-62914d9f176f","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371139","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
-    http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:45 GMT
-- request:
-    method: post
-    uri: https://profiles.test.datacite.org/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.999239","source_id":"orcid_update","claim_action":"create"}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Token token=<VOLPINO_TOKEN>
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:23:46 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - 3e8f38e9-5d16-4c9f-9340-886eb902aaf8
-      X-Runtime:
-      - '0.013142'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '237'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"19061330-0966-42f4-9a7c-bd932be203ac","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.999239","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
-    http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:46 GMT
-- request:
-    method: post
-    uri: https://profiles.test.datacite.org/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008321","source_id":"orcid_update","claim_action":"create"}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Token token=<VOLPINO_TOKEN>
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:23:46 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - af40d376-928b-462f-a353-9b23f52848fc
-      X-Runtime:
-      - '0.012819'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '238'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"822fc357-3f7f-461c-a7ba-c32346f57797","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008321","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
-    http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:46 GMT
-- request:
-    method: post
-    uri: https://profiles.test.datacite.org/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008320","source_id":"orcid_update","claim_action":"create"}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Token token=<VOLPINO_TOKEN>
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:23:47 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - 7ed90015-893b-48bc-83fe-38a8e2d329b6
-      X-Runtime:
-      - '0.013022'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '238'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"fa61847e-92ff-4394-8b0f-4bdfb15beba8","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008320","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
-    http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:47 GMT
-- request:
-    method: post
-    uri: https://profiles.test.datacite.org/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.746960","source_id":"orcid_update","claim_action":"create"}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Token token=<VOLPINO_TOKEN>
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:23:47 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - d75bc171-212e-433b-bce5-0148eda2a163
-      X-Runtime:
-      - '0.011637'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '237'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"7908fa7b-920a-4a23-a974-47732d013abc","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.746960","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
-    http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:47 GMT
-- request:
-    method: post
-    uri: https://profiles.test.datacite.org/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.760716","source_id":"orcid_update","claim_action":"create"}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Token token=<VOLPINO_TOKEN>
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:23:48 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - 60a2d9f2-b796-479e-a145-c9c78a94529d
-      X-Runtime:
-      - '0.011430'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '237'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"07c2770d-159b-470e-ba94-7e81c082452c","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.760716","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
-    http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:48 GMT
-- request:
-    method: post
-    uri: https://profiles.test.datacite.org/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769272","source_id":"orcid_update","claim_action":"create"}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Token token=<VOLPINO_TOKEN>
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:23:48 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - d9870f51-a222-40aa-b4f0-c524a96df059
-      X-Runtime:
-      - '0.013268'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '237'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"b5965e58-8bbe-4387-9d1e-36c9d6c9b5ac","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769272","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
-    http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:48 GMT
-- request:
-    method: post
-    uri: https://profiles.test.datacite.org/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271","source_id":"orcid_update","claim_action":"create"}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Token token=<VOLPINO_TOKEN>
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:23:49 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - cd151b45-ed10-4bb4-b2b3-6e4aa9ad5635
-      X-Runtime:
-      - '0.012393'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '237'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"87ed8708-35e6-4c0f-9183-1dd416071d7f","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
-    http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:49 GMT
-- request:
-    method: post
-    uri: https://profiles.test.datacite.org/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769270","source_id":"orcid_update","claim_action":"create"}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Token token=<VOLPINO_TOKEN>
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:23:49 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - 74160c47-2306-466f-9760-62b11b523169
-      X-Runtime:
-      - '0.013048'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '237'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"729ef8bc-05a2-4daa-9774-3f9aa100478c","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769270","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
-    http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:49 GMT
-- request:
-    method: post
-    uri: https://profiles.test.datacite.org/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.778701","source_id":"orcid_update","claim_action":"create"}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Token token=<VOLPINO_TOKEN>
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:23:50 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - b2055c19-6805-44ed-8c44-a31e4449d111
-      X-Runtime:
-      - '0.011584'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '237'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"5e4ea0c7-b970-45d1-ba75-4bff83dac219","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.778701","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
-    http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:50 GMT
-- request:
-    method: post
-    uri: https://profiles.test.datacite.org/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.779705","source_id":"orcid_update","claim_action":"create"}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Token token=<VOLPINO_TOKEN>
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:23:50 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - ab696275-a578-4ec2-8fd9-ed2bf455bd86
-      X-Runtime:
-      - '0.011918'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '237'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"48d051e8-48b0-4c46-9747-3ff21135bba3","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.779705","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
-    http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:50 GMT
+  recorded_at: Tue, 04 Jul 2017 17:52:00 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -3805,7 +2099,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -3824,7 +2118,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:51 GMT
+      - Tue, 04 Jul 2017 17:52:00 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -3836,11 +2130,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 09b5a32a-8948-43d1-a668-34dcf1e2802d
+      - 212be3bb-985c-4aa5-9381-7b9315bde3e3
       X-Runtime:
-      - '0.011331'
+      - '0.014354'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -3851,7 +2145,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"2433e392-00dd-4b2e-866d-c68b1fa6fe00","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.735810","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:51 GMT
+  recorded_at: Tue, 04 Jul 2017 17:52:00 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -3866,7 +2160,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -3885,7 +2179,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:51 GMT
+      - Tue, 04 Jul 2017 17:52:01 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -3897,11 +2191,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 36afae09-7812-43b9-893c-ecdfa9269e29
+      - 17f2587d-f8c1-43e5-8427-0ec52d599f2c
       X-Runtime:
-      - '0.011540'
+      - '0.013985'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -3912,7 +2206,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"841b8ce7-0a5a-48db-baff-35fc87d39c07","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.735811","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:51 GMT
+  recorded_at: Tue, 04 Jul 2017 17:52:01 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -3927,7 +2221,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -3946,7 +2240,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:52 GMT
+      - Tue, 04 Jul 2017 17:52:01 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -3958,11 +2252,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 046d3b0e-926b-489e-9927-df2eaefeb267
+      - 68c8bf28-05db-45d9-81a2-478cc16e71b8
       X-Runtime:
-      - '0.011554'
+      - '0.012169'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -3973,7 +2267,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"a85ad7d7-781d-432f-964b-28d1415e66e8","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.745301","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:52 GMT
+  recorded_at: Tue, 04 Jul 2017 17:52:01 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -3988,7 +2282,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -4007,7 +2301,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:52 GMT
+      - Tue, 04 Jul 2017 17:52:01 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -4019,11 +2313,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - b8b7e4a2-4d93-4713-a263-45e29d75206e
+      - aa68fb91-f4cf-45ef-afe5-7121c35bacae
       X-Runtime:
-      - '0.011870'
+      - '0.023138'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -4034,7 +2328,1044 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"ceecbf26-026f-4963-a26f-dc5be25a3c4a","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.745313","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:52 GMT
+  recorded_at: Tue, 04 Jul 2017 17:52:01 GMT
+- request:
+    method: post
+    uri: https://profiles.test.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.746960","source_id":"orcid_update","claim_action":"create"}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <VOLPINO_TOKEN>
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 04 Jul 2017 17:52:02 GMT
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - 2ccc1ce8-240d-4ec8-b698-a9be0361e5d4
+      X-Runtime:
+      - '0.020628'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '237'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"7908fa7b-920a-4a23-a974-47732d013abc","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.746960","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 17:52:02 GMT
+- request:
+    method: post
+    uri: https://profiles.test.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.760716","source_id":"orcid_update","claim_action":"create"}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <VOLPINO_TOKEN>
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 04 Jul 2017 17:52:02 GMT
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - c0c0af0f-1762-4083-ae93-c01d0e1e0590
+      X-Runtime:
+      - '0.012066'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '237'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"07c2770d-159b-470e-ba94-7e81c082452c","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.760716","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 17:52:02 GMT
+- request:
+    method: post
+    uri: https://profiles.test.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769272","source_id":"orcid_update","claim_action":"create"}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <VOLPINO_TOKEN>
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 04 Jul 2017 17:52:02 GMT
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - 9ad8bac7-3286-4043-a27b-777cb419a943
+      X-Runtime:
+      - '0.029397'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '237'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"b5965e58-8bbe-4387-9d1e-36c9d6c9b5ac","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769272","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 17:52:02 GMT
+- request:
+    method: post
+    uri: https://profiles.test.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271","source_id":"orcid_update","claim_action":"create"}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <VOLPINO_TOKEN>
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 04 Jul 2017 17:52:02 GMT
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - 44ed95f8-d74b-4bdd-a0b4-16a08b99d9f4
+      X-Runtime:
+      - '0.024729'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '237'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"87ed8708-35e6-4c0f-9183-1dd416071d7f","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 17:52:02 GMT
+- request:
+    method: post
+    uri: https://profiles.test.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769270","source_id":"orcid_update","claim_action":"create"}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <VOLPINO_TOKEN>
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 04 Jul 2017 17:52:03 GMT
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - faeab20e-b59f-469f-bbea-fa258e512f0b
+      X-Runtime:
+      - '0.014565'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '237'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"729ef8bc-05a2-4daa-9774-3f9aa100478c","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769270","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 17:52:03 GMT
+- request:
+    method: post
+    uri: https://profiles.test.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.778701","source_id":"orcid_update","claim_action":"create"}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <VOLPINO_TOKEN>
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 04 Jul 2017 17:52:03 GMT
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - 889bc4b6-7c77-451b-b12c-81f5150620c7
+      X-Runtime:
+      - '0.012080'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '237'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"5e4ea0c7-b970-45d1-ba75-4bff83dac219","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.778701","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 17:52:03 GMT
+- request:
+    method: post
+    uri: https://profiles.test.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.779705","source_id":"orcid_update","claim_action":"create"}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <VOLPINO_TOKEN>
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 04 Jul 2017 17:52:03 GMT
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - b73bb507-9be6-4f10-b270-1cec8f706dbd
+      X-Runtime:
+      - '0.018199'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '237'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"48d051e8-48b0-4c46-9747-3ff21135bba3","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.779705","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 17:52:03 GMT
+- request:
+    method: post
+    uri: https://profiles.test.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371006","source_id":"orcid_update","claim_action":"create"}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <VOLPINO_TOKEN>
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 04 Jul 2017 17:52:03 GMT
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - 97b2c332-f286-4ac2-bb90-41d34e0d9530
+      X-Runtime:
+      - '0.012213'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '238'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"75f9f7d1-43a8-4ce9-9a67-196c5ef4bd91","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371006","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 17:52:03 GMT
+- request:
+    method: post
+    uri: https://profiles.test.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371005","source_id":"orcid_update","claim_action":"create"}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <VOLPINO_TOKEN>
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 04 Jul 2017 17:52:04 GMT
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - a8a28d6c-f248-4c70-947e-39536371bfdd
+      X-Runtime:
+      - '0.016817'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '238'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"0fe9bf2c-8d15-41ff-90be-58830a12a4c1","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371005","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 17:52:04 GMT
+- request:
+    method: post
+    uri: https://profiles.test.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371137","source_id":"orcid_update","claim_action":"create"}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <VOLPINO_TOKEN>
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 04 Jul 2017 17:52:04 GMT
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - 2a48847e-0edb-4f71-a718-abbcf56240f5
+      X-Runtime:
+      - '0.012408'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '238'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"df589091-5b89-4714-a427-27367b03aa1b","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371137","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 17:52:04 GMT
+- request:
+    method: post
+    uri: https://profiles.test.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371138","source_id":"orcid_update","claim_action":"create"}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <VOLPINO_TOKEN>
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 04 Jul 2017 17:52:04 GMT
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - 5079370b-31c1-464a-a266-053debe6bb2b
+      X-Runtime:
+      - '0.012560'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '238'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"9e7cae20-e811-486c-bdcc-dcb5bd1bcbe9","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371138","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 17:52:04 GMT
+- request:
+    method: post
+    uri: https://profiles.test.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371139","source_id":"orcid_update","claim_action":"create"}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <VOLPINO_TOKEN>
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 04 Jul 2017 17:52:04 GMT
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - bd2a309f-eeff-4390-a4f5-3d21396d9bf0
+      X-Runtime:
+      - '0.011917'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '238'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"87265bf1-b0fb-4e36-8621-62914d9f176f","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371139","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 17:52:04 GMT
+- request:
+    method: post
+    uri: https://profiles.test.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1407433","source_id":"orcid_update","claim_action":"create"}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <VOLPINO_TOKEN>
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 04 Jul 2017 17:52:05 GMT
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - d4d4e491-4dcf-4daa-ace9-8ab849772fb7
+      X-Runtime:
+      - '0.015556'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '238'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"e9c6edae-a6c9-4d21-bd35-9c7719a1d1fc","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1407433","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 17:52:05 GMT
+- request:
+    method: post
+    uri: https://profiles.test.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1408873","source_id":"orcid_update","claim_action":"create"}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <VOLPINO_TOKEN>
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 04 Jul 2017 17:52:05 GMT
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - 6592dcc8-5c7c-41ee-9c04-5c926cbf9ccb
+      X-Runtime:
+      - '0.011840'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '238'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"8af8e412-c333-44ce-8079-4bf55149d0c6","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1408873","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 17:52:05 GMT
+- request:
+    method: post
+    uri: https://profiles.test.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.999239","source_id":"orcid_update","claim_action":"create"}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <VOLPINO_TOKEN>
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 04 Jul 2017 17:52:05 GMT
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - 39661870-6dfe-4b42-bcff-7dd3ed62111f
+      X-Runtime:
+      - '0.011544'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '237'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"19061330-0966-42f4-9a7c-bd932be203ac","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.999239","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 17:52:05 GMT
+- request:
+    method: post
+    uri: https://profiles.test.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008321","source_id":"orcid_update","claim_action":"create"}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <VOLPINO_TOKEN>
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 04 Jul 2017 17:52:05 GMT
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - 00ecfc08-cb26-4b82-905d-86cb24041b13
+      X-Runtime:
+      - '0.014781'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '238'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"822fc357-3f7f-461c-a7ba-c32346f57797","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008321","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 17:52:05 GMT
+- request:
+    method: post
+    uri: https://profiles.test.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008320","source_id":"orcid_update","claim_action":"create"}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <VOLPINO_TOKEN>
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 04 Jul 2017 17:52:06 GMT
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - 10a554e2-8f50-48ff-abc9-f632a4112d30
+      X-Runtime:
+      - '0.015653'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '238'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"fa61847e-92ff-4394-8b0f-4bdfb15beba8","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008320","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 17:52:06 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -4049,7 +3380,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -4068,7 +3399,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:53 GMT
+      - Tue, 04 Jul 2017 17:52:06 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -4080,11 +3411,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 9590730f-21e6-4fe2-acd1-58174f4ea0c3
+      - c9329a7b-5d1f-4396-a8e5-aed0d9370647
       X-Runtime:
-      - '0.012277'
+      - '0.021891'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -4095,7 +3426,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"e2fa98bb-fb5b-4fcb-a64b-8ba03cb172e6","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014351","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:53 GMT
+  recorded_at: Tue, 04 Jul 2017 17:52:06 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -4110,7 +3441,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -4129,7 +3460,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:54 GMT
+      - Tue, 04 Jul 2017 17:52:06 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -4141,11 +3472,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 2dfd12bf-23f9-41e2-bc6e-1d403e141ffc
+      - ab72cd3a-d37f-469c-aabf-882fa7173c74
       X-Runtime:
-      - '0.013216'
+      - '0.014196'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -4156,7 +3487,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"44d44c6f-a78e-45b5-8031-3d63f3b11177","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014348","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:54 GMT
+  recorded_at: Tue, 04 Jul 2017 17:52:06 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -4171,7 +3502,7 @@ http_interactions:
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
-      - Token token=<VOLPINO_TOKEN>
+      - Bearer <VOLPINO_TOKEN>
   response:
     status:
       code: 202
@@ -4190,7 +3521,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 13:23:54 GMT
+      - Tue, 04 Jul 2017 17:52:06 GMT
       Server:
       - openresty/1.11.2.2
       Status:
@@ -4202,11 +3533,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 6c4eb718-5b51-429a-9b7d-6858061574ce
+      - 56dc184a-1183-46dd-b768-28f4e0928deb
       X-Runtime:
-      - '0.012220'
+      - '0.013425'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -4217,13 +3548,682 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"823a69de-f1d7-4fd1-8b7b-42cea5ad3b60","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014352","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:54 GMT
+  recorded_at: Tue, 04 Jul 2017 17:52:06 GMT
+- request:
+    method: post
+    uri: https://profiles.test.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1041547","source_id":"orcid_update","claim_action":"create"}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <VOLPINO_TOKEN>
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 04 Jul 2017 17:52:07 GMT
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - 6feb13d4-4be3-48e3-b259-e27cd89fa12d
+      X-Runtime:
+      - '0.013678'
+      X-Xss-Protection:
+      - 1; mode=block
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"27913db7-e2b1-47ea-a057-f15647402e26","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1041547","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 17:52:07 GMT
+- request:
+    method: post
+    uri: https://profiles.test.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.760716.V1","source_id":"orcid_update","claim_action":"create"}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <VOLPINO_TOKEN>
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 04 Jul 2017 17:52:07 GMT
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - 21631c02-e3d9-4754-a21f-09f186807b90
+      X-Runtime:
+      - '0.012927'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '240'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"75e19279-8c38-4ed3-be2b-0a011fbc1546","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.760716.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 17:52:07 GMT
+- request:
+    method: post
+    uri: https://profiles.test.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769270.V1","source_id":"orcid_update","claim_action":"create"}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <VOLPINO_TOKEN>
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 04 Jul 2017 17:52:07 GMT
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - 81a5931c-7b0d-4cc6-9cd4-6f0be90ca6c6
+      X-Runtime:
+      - '0.026065'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '240'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"588561df-a902-4af1-9069-ec85ec646b1a","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769270.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 17:52:07 GMT
+- request:
+    method: post
+    uri: https://profiles.test.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769270.V2","source_id":"orcid_update","claim_action":"create"}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <VOLPINO_TOKEN>
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 04 Jul 2017 17:52:08 GMT
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - bd4063eb-c9d0-40e7-9799-ce49f10d8f7f
+      X-Runtime:
+      - '0.014605'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '240'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"5d7461de-3e94-4883-bfc1-7d8c7d1f0722","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769270.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 17:52:08 GMT
+- request:
+    method: post
+    uri: https://profiles.test.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271.V1","source_id":"orcid_update","claim_action":"create"}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <VOLPINO_TOKEN>
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 04 Jul 2017 17:52:08 GMT
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - 07410f55-4911-41ba-94a7-30858a3d5521
+      X-Runtime:
+      - '0.012650'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '240'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"b36f5034-c396-4fb0-96f1-d23d7329970b","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 17:52:08 GMT
+- request:
+    method: post
+    uri: https://profiles.test.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271.V2","source_id":"orcid_update","claim_action":"create"}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <VOLPINO_TOKEN>
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 04 Jul 2017 17:52:08 GMT
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - 519646cd-ebe9-4610-b40a-bea673abefd0
+      X-Runtime:
+      - '0.012290'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '240'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"b1e53d56-0c02-4bae-b7d6-8febe8d5d448","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 17:52:08 GMT
+- request:
+    method: post
+    uri: https://profiles.test.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271.V3","source_id":"orcid_update","claim_action":"create"}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <VOLPINO_TOKEN>
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 04 Jul 2017 17:52:08 GMT
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - d8192311-5eb3-4919-8b7e-624e75a96f88
+      X-Runtime:
+      - '0.024422'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '240'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"f19e3c8a-a6f5-4223-8de3-28310fad14bc","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271.V3","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 17:52:08 GMT
+- request:
+    method: post
+    uri: https://profiles.test.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769272.V1","source_id":"orcid_update","claim_action":"create"}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <VOLPINO_TOKEN>
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 04 Jul 2017 17:52:09 GMT
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - 77e89070-ac50-47da-aa7b-e027d0955a72
+      X-Runtime:
+      - '0.018740'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '240'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"8e670c7d-2fbd-451f-acc7-52a63a4fdf1d","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769272.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 17:52:09 GMT
+- request:
+    method: post
+    uri: https://profiles.test.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769272.V2","source_id":"orcid_update","claim_action":"create"}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <VOLPINO_TOKEN>
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 04 Jul 2017 17:52:09 GMT
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - 4169ac51-0169-40a2-9547-8f5e727a0859
+      X-Runtime:
+      - '0.012784'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '240'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"374f050e-d5e8-4bb7-b5bb-4cfa581b7fe5","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769272.V2","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 17:52:09 GMT
+- request:
+    method: post
+    uri: https://profiles.test.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.778701.V1","source_id":"orcid_update","claim_action":"create"}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <VOLPINO_TOKEN>
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 04 Jul 2017 17:52:09 GMT
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - b96e1d64-2f0d-444d-b67c-b5f08254d6d8
+      X-Runtime:
+      - '0.026856'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '240'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"a27e6c31-bd8a-47b5-91a3-207d65fbbb36","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.778701.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 17:52:09 GMT
+- request:
+    method: post
+    uri: https://profiles.test.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.779705.V1","source_id":"orcid_update","claim_action":"create"}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <VOLPINO_TOKEN>
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 04 Jul 2017 17:52:09 GMT
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 202 Accepted
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - 46a75c66-e704-48c1-94c3-801ea8269e2f
+      X-Runtime:
+      - '0.024536'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '240'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"d54d379d-bf8f-4e19-bb19-e1714aaf0b80","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.779705.V1","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jul 2017 17:52:09 GMT
 - request:
     method: post
     uri: "<SLACK_WEBHOOK_URL>"
     body:
       encoding: US-ASCII
-      string: payload=%7B%22username%22%3A%22Event+Data+Agent%22%2C%22icon_url%22%3A%22https%3A%2F%2Fraw.githubusercontent.com%2Fdatacite%2Ftoccatore%2Fmaster%2Flib%2Ftoccatore%2Fimages%2Ftoccatore.png%22%2C%22attachments%22%3A%5B%7B%22title%22%3A%22Report+for+orcid_update%22%2C%22text%22%3A%2268+works+processed+for+date+range+2013-01-01+-+2017-12-31.%22%2C%22color%22%3A%22good%22%7D%5D%7D
+      string: payload=%7B%22username%22%3A%22Event+Data+Agent%22%2C%22icon_url%22%3A%22https%3A%2F%2Fraw.githubusercontent.com%2Fdatacite%2Ftoccatore%2Fmaster%2Flib%2Ftoccatore%2Fimages%2Ftoccatore.png%22%2C%22attachments%22%3A%5B%7B%22title%22%3A%22Report+for+orcid_update%22%2C%22text%22%3A%2268+works+processed+with+0+errors+for+date+range+2013-01-01+-+2017-12-31.%22%2C%22color%22%3A%22good%22%7D%5D%7D
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -4247,7 +4247,7 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Date:
-      - Wed, 29 Mar 2017 13:23:55 GMT
+      - Tue, 04 Jul 2017 17:52:09 GMT
       Referrer-Policy:
       - no-referrer
       Server:
@@ -4263,12 +4263,12 @@ http_interactions:
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 3283735112d0a322451d32ef038129c9.cloudfront.net (CloudFront)
+      - 1.1 87683b2e94f5a08f552b261ed269c83b.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - rlMW8EHuLiTkN2SypLKnUflBaOHMNOc4HfncpTT41gbrBTipkgbUkw==
+      - "-HG7k2GopKQnCl9eolTmhvFHwfgZWZREkWIz-tmDaluOLlwWqk_-yQ=="
     body:
       encoding: ASCII-8BIT
       string: ok
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:23:55 GMT
+  recorded_at: Tue, 04 Jul 2017 17:52:10 GMT
 recorded_with: VCR 3.0.3

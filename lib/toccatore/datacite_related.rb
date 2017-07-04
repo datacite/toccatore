@@ -69,7 +69,7 @@ module Toccatore
                    "type" => "events",
                    "attributes" => item.except("id") }}
         response = Maremma.post(push_url, data: data.to_json,
-                                          token: options[:access_token],
+                                          bearer: options[:access_token],
                                           content_type: 'json',
                                           host: host)
       else
