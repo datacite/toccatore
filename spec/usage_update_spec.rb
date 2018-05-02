@@ -67,57 +67,57 @@ describe Toccatore::UsageUpdate, vcr: true do
   context "get_data" do
     it "should report if there are no works returned by the Usage Queue" do
       response = subject.get_data()
-      expect(response.body["data"]["response"]["numFound"]).to eq(0)
+      expect(response.body["report"]["report-header"]["report-name"]).to eq(0)
     end
 
-    it "should report if there are works returned by the Datacite Metadata Search API" do
-      response = subject.get_data(query_options)
-      expect(response.body["data"]["response"]["numFound"]).to eq(650)
-      doc = response.body["data"]["response"]["docs"].first
+    it "should report if there are works returned by the Queue" do
+      response = subject.get_data()
+      expect(response.body["report"]["response"]["numFound"]).to eq(650)
+      doc = response.body["report"]["response"]["docs"].first
       expect(doc["doi"]).to eq("10.7480/KNOB.113.2014.3")
     end
 
-    it "should allow queries by related_identifier of the Datacite Metadata Search API" do
-      response = subject.get_data({ related_identifier: "10.7554/elife.01567", from_date: "2013-01-01", until_date: "2017-12-31", rows: 1000, offset: 0 })
-      expect(response.body["data"]["response"]["numFound"]).to eq(1)
-      doc = response.body["data"]["response"]["docs"].first
-      expect(doc["doi"]).to eq("10.5061/DRYAD.B835K")
-      related_identifiers = doc["relatedIdentifier"]
-      expect(related_identifiers.count).to eq(6)
-      expect(related_identifiers[4]).to eq("IsReferencedBy:DOI:10.7554/ELIFE.01567")
-    end
+    # it "should allow queries by related_identifier of the Queue" do
+    #   response = subject.get_data()
+    #   expect(response.body["data"]["response"]["numFound"]).to eq(1)
+    #   doc = response.body["data"]["response"]["docs"].first
+    #   expect(doc["doi"]).to eq("10.5061/DRYAD.B835K")
+    #   related_identifiers = doc["relatedIdentifier"]
+    #   expect(related_identifiers.count).to eq(6)
+    #   expect(related_identifiers[4]).to eq("IsReferencedBy:DOI:10.7554/ELIFE.01567")
+    # end
 
-    it "should allow queries by DOI of the Datacite Metadata Search API" do
-      response = subject.get_data({ doi: "10.5438/6423", from_date: "2013-01-01", until_date: "2017-12-31", rows: 1000, offset: 0 })
-      expect(response.body["data"]["response"]["numFound"]).to eq(1)
-      doc = response.body["data"]["response"]["docs"].first
-      related_identifiers = doc["relatedIdentifier"]
-      expect(related_identifiers.count).to eq(25)
-      expect(related_identifiers.first).to eq("HasPart:DOI:10.5281/ZENODO.30799")
-    end
+    # it "should allow queries by DOI of the Queue" do
+    #   response = subject.get_data()
+    #   expect(response.body["data"]["response"]["numFound"]).to eq(1)
+    #   doc = response.body["data"]["response"]["docs"].first
+    #   related_identifiers = doc["relatedIdentifier"]
+    #   expect(related_identifiers.count).to eq(25)
+    #   expect(related_identifiers.first).to eq("HasPart:DOI:10.5281/ZENODO.30799")
+    # end
 
-    it "should catch errors with the Datacite Metadata Search API" do
-      stub = stub_request(:get, subject.get_query_url(query_options.merge(rows: 0, source_id: subject.source_id))).to_return(:status => [408])
-      response = subject.get_data(query_options.merge(rows: 0, source_id: subject.source_id))
-      expect(response.body).to eq("errors"=>[{"status"=>408, "title"=>"Request timeout"}])
-      expect(stub).to have_been_requested
-    end
+    # it "should catch errors with the Queue" do
+    #   stub = stub_request(:get, subject.get_query_url(query_options.merge(rows: 0, source_id: subject.source_id))).to_return(:status => [408])
+    #   response = subject.get_data(query_options.merge(rows: 0, source_id: subject.source_id))
+    #   expect(response.body).to eq("errors"=>[{"status"=>408, "title"=>"Request timeout"}])
+    #   expect(stub).to have_been_requested
+    # end
   end
 
   context "parse_data" do
-    it "should report if there are no works returned by the Datacite Metadata Search API" do
+    it "should report if there are no works returned by the Queue" do
       body = File.read(fixture_path + 'usage_update_nil.json')
       result = OpenStruct.new(body:  JSON.parse(body) )
       expect(subject.parse_data(result)).to eq([{"status"=>"404", "title"=>"The resource you are looking for doesn't exist."}])
     end
 
-    it "should report if there are works returned by the Datacite Metadata Search API" do
+    it "should report if there are works returned by the Queue" do
       body = File.read(fixture_path + 'usage_update.json')
       result = OpenStruct.new(body: JSON.parse(body) )
       response = subject.parse_data(result, source_token: ENV['SOURCE_TOKEN'])
       puts response.last
       expect(response.length).to eq(2)
-      expect(response.last.except("id")).to eq("subj"=>{"pid"=>"https://metrics.test.datacite.org/reports/2018-3-Dash", "issued"=>"2128-04-09"},"total"=>3,"message_action" => "create", "subj_id"=>"https://metrics.test.datacite.org/reports/2018-3-Dash", "obj_id"=>"https://doi.org/10.7291/d1q94r", "relation_type_id"=>"unique-dataset-investigations-regular", "source_id"=>"datacite", "occurred_at"=>"2015-04-07T12:22:40Z", "license" => "https://creativecommons.org/publicdomain/zero/1.0/", "source_token" => "28276d12-b320-41ba-9272-bb0adc3466ff")
+      expect(response.last.except("id")).to eq("subj"=>{"pid"=>"https://metrics.test.datacite.org/reports/2018-3-Dash", "issued"=>"2128-04-09"},"total"=>3,"message-action" => "add", "subj-id"=>"https://metrics.test.datacite.org/reports/2018-3-Dash", "obj-id"=>"https://doi.org/10.7291/d1q94r", "relation-type-id"=>"unique-dataset-investigations-regular", "source-id"=>"datacite", "occurred-at"=>"2128-04-09", "license" => "https://creativecommons.org/publicdomain/zero/1.0/", "source-token" => "28276d12-b320-41ba-9272-bb0adc3466ff")
     end
 
     # it "should report if there are works ignored because of an IsIdenticalTo relation" do
@@ -126,7 +126,7 @@ describe Toccatore::UsageUpdate, vcr: true do
     #   expect(subject.parse_data(result)).to eq([])
     # end
 
-    it "should catch timeout errors with the Datacite Metadata Search API" do
+    it "should catch timeout errors with the Queue" do
       result = OpenStruct.new(body: { "errors" => [{ "title" => "the server responded with status 408 for https://search.datacite.org", "status" => 408 }] })
       response = subject.parse_data(result)
       expect(response).to eq(result.body["errors"])
@@ -134,7 +134,7 @@ describe Toccatore::UsageUpdate, vcr: true do
   end
 
   context "push_data" do
-    it "should report if there are no works returned by the Datacite Metadata Search API" do
+    it "should report if there are no works returned by the Queue" do
       result = []
       expect { subject.push_data(result) }.to output("No works found in the Queue.\n").to_stdout
     end
@@ -152,7 +152,7 @@ describe Toccatore::UsageUpdate, vcr: true do
       result = OpenStruct.new(body: JSON.parse(body) )
       result = subject.parse_data(result, source_token: ENV['SOURCE_TOKEN'])
       options = { push_url: ENV['LAGOTTO_URL'], access_token: ENV['LAGOTTO_TOKEN'], jsonapi: true }
-      expect { subject.push_data(result, options) }.to output(/https:\/\/doi.org\/10.15468\/dl.mb4das references https:\/\/doi.org\/10.3897\/phytokeys.12.2849 pushed to Event Data service.\n/).to_stdout
+      expect { subject.push_data(result, options) }.to output("https://metrics.test.datacite.org/reports/2018-3-Dash total-dataset-investigations-regular https://doi.org/10.7291/d1q94r pushed to Event Data service\nhttps://metrics.test.datacite.org/reports/2018-3-Dash unique-dataset-investigations-regular https://doi.org/10.7291/d1q94r pushed to Event Data service").to_stdout
     end
   end
 
