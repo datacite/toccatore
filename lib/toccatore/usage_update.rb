@@ -6,32 +6,7 @@ module Toccatore
     include Toccatore::Queue
     LICENSE = "https://creativecommons.org/publicdomain/zero/1.0/"
 
-    # def get_query_url(options={})
-    #   updated = "updated:[#{options[:from_date]}T00:00:00Z TO #{options[:until_date]}T23:59:59Z]"
-    #   fq = "#{updated} AND has_metadata:true AND is_active:true"
-
-    #   if options[:doi].present?
-    #     q = "doi:#{options[:doi]}"
-    #   elsif options[:query].present?
-    #     q = options[:query]
-    #   else
-    #     q = query
-    #   end
-
-    #   params = { q: q,
-    #              start: options[:offset],
-    #              rows: options[:rows],
-    #              fl: "doi,resourceTypeGeneral,relatedIdentifier,nameIdentifier,minted,updated",
-    #              fq: fq,
-    #              wt: "json" }
-    #   url +  URI.encode_www_form(params)
-    # end
-
     def queue_jobs(options={})
-      # options[:offset] = options[:offset].to_i || 0
-      # options[:rows] = options[:rows].presence || job_batch_size
-      # options[:from_date] = options[:from_date].presence || (Time.now.to_date - 1.day).iso8601
-      # options[:until_date] = options[:until_date].presence || Time.now.to_date.iso8601
 
       total = get_total(options)
 
@@ -69,8 +44,6 @@ module Toccatore
     end
 
     def get_data(options={})
-      # query_url = get_query_url(options)
-      # Maremma.get(query_url, options)
       event = sqs.receive_message(queue_url: queue_url, max_number_of_messages: 100, wait_time_seconds: timeout)
       report_id = event.dig(:message_body, :report_id)
       Maremma.get(get_metrics_query_url(report_id))
