@@ -9,7 +9,7 @@ module Toccatore
     def queue_jobs(options={})
 
       total = get_total(options)
-
+      
       if total > 0
         # walk through paginated results
         total_pages = (total.to_f / job_batch_size).ceil
@@ -20,7 +20,7 @@ module Toccatore
           options[:total] = total
           error_total += process_data(options)
         end
-        text = "#{total} works processed with #{error_total} errors for date range #{options[:from_date]} - #{options[:until_date]}."
+        text = "#{total} works processed with #{error_total} errors for Usage Reports Queue"
       else
         text = "No works found for in the queue."
       end
@@ -94,7 +94,7 @@ module Toccatore
         },
         "total"=> data[:count],
         "obj-id" => data[:pid],
-        "relation-type_id" => type,
+        "relation-type-id" => type,
         "source-id" => "datacite",
         "source-token" => options[:source_token],
         "occurred-at" => data[:created_at],

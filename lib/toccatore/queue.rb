@@ -31,7 +31,7 @@ module Toccatore
     end
 
     def queue_url
-      sqs.get_queue_url(queue_name: "#{Rails.env}_usage").queue_url
+      sqs.get_queue_url(queue_name: "stage_usage").queue_url
     end
   end
 end
