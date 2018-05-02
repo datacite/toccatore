@@ -1,9 +1,9 @@
 require_relative 'base'
 
-require 'aws-sdk-sqs'
 
 module Toccatore
   class UsageUpdate < Base
+    include Toccatore::Queue
     LICENSE = "https://creativecommons.org/publicdomain/zero/1.0/"
 
     # def get_query_url(options={})
@@ -26,28 +26,6 @@ module Toccatore
     #              wt: "json" }
     #   url +  URI.encode_www_form(params)
     # end
-
-    def get_total(options={})
-      # query_url = get_query_url(options.merge(rows: 0))
-      # result = Maremma.get(query_url, options)
-      # result.body.fetch("data", {}).fetch("response", {}).fetch("numFound", 0)
-      sqs = Aws::SQS::Client.new(region: ENV['AWS_REGION'].to_s)
-      # resp = sqs.receive_message(queue_url: url, max_number_of_messages: 100, wait_time_seconds: 10)
-      # resp.messages.size
-      req = sqs.get_queue_attributes(
-        {
-          queue_url: url, attribute_names: 
-            [
-              'ApproximateNumberOfMessages', 
-              'ApproximateNumberOfMessagesNotVisible'
-            ]
-        }
-      )
-    
-      msgs_available = req.attributes['ApproximateNumberOfMessages']
-      msgs_in_flight = req.attributes['ApproximateNumberOfMessagesNotVisible']
-      msgs_available.size
-    end
 
     def queue_jobs(options={})
       # options[:offset] = options[:offset].to_i || 0
@@ -93,7 +71,7 @@ module Toccatore
     def get_data(options={})
       # query_url = get_query_url(options)
       # Maremma.get(query_url, options)
-      event = sqs.receive_message(queue_url: url, max_number_of_messages: 100, wait_time_seconds: timeout)
+      event = sqs.receive_message(queue_url: queue_url, max_number_of_messages: 100, wait_time_seconds: timeout)
       report_id = event.dig(:message_body, :report_id)
       Maremma.get(get_metrics_query_url(report_id))
     end
@@ -115,12 +93,7 @@ module Toccatore
       end
     end
 
-    def url
-      # "https://search.datacite.org/api?"
-      # "sqs.#{ENV['AWS_REGION'].to_s}.amazonaws.com"
-      sqs = Aws::SQS::Client.new
-      sqs.get_queue_url(queue_name: "#{Rails.env}_sashimi").queue_url
-    end
+
 
     def get_metrics_query_url(options={})
       metrics_url + options[:report_id]
@@ -140,19 +113,18 @@ module Toccatore
 
     def format_event type, data, options
       { "id" => SecureRandom.uuid,
-        "message_action" => "create",
-        "subj_id" => data[:report_id],
+        "message-action" => "add",
+        "subj-id" => data[:report_id],
         "subj"=> {
           "pid"=> data[:report_id],
-          "issued"=> data[:created],
-          "type"=> type
+          "issued"=> data[:created]
         },
         "total"=> data[:count],
-        "obj_id" => data[:pid],
-        "relation_type_id" => "tallies",
-        "source_id" => "datacite",
-        "source_token" => options[:source_token],
-        "occurred_at" => data[:created_at],
+        "obj-id" => data[:pid],
+        "relation-type_id" => type,
+        "source-id" => "datacite",
+        "source-token" => options[:source_token],
+        "occurred-at" => data[:created_at],
         "license" => LICENSE 
       }
     end
@@ -172,14 +144,14 @@ module Toccatore
         data[:pid] = normalize_doi(data[:doi])
         data[:created] = created
         data[:report_id] = report_id
-        data[:created_at] = "2015-04-07T12:22:40Z"
+        data[:created_at] = created
 
         instances = item.dig("performance").first.dig("instance")
      
         x += Array.wrap(instances).reduce([]) do |ssum, instance|
           data[:count] = instance.dig("count")
-          evetn_type = "#{instance.dig("metric-type")}-#{instance.dig("access-method")}"
-          ssum << format_event(evetn_type, data, options)
+          event_type = "#{instance.dig("metric-type")}-#{instance.dig("access-method")}"
+          ssum << format_event(event_type, data, options)
         end
       end    
     end
@@ -189,7 +161,7 @@ module Toccatore
 
       host = options[:push_url].presence || "https://api.test.datacite.org"
       push_url = host + "/events"
-      puts item.to_json
+
       if options[:jsonapi]
         data = { "data" => {
                    "id" => item["id"],
@@ -208,10 +180,10 @@ module Toccatore
 
       # return 0 if successful, 1 if error
       if response.status == 201
-        puts "#{item['subj_id']} #{item['relation_type_id']} #{item['obj_id']} pushed to Event Data service."
+        puts "#{item['subj-id']} #{item['relation-type-id']} #{item['obj-id']} pushed to Event Data service."
         0
       elsif response.body["errors"].present?
-        puts "#{item['subj_id']} #{item['relation_type_id']} #{item['obj_id']} had an error:"
+        puts "#{item['subj-id']} #{item['relation-type-id']} #{item['obj-id']} had an error:"
         puts "#{response.body['errors'].first['title']}"
         1
       end
