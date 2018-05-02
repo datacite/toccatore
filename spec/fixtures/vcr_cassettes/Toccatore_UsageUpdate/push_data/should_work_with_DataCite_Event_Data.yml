@@ -1,0 +1,101 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.test.datacite.org/events
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"97de0ae8-991d-4065-bd7f-fbdca105b8d6","type":"events","attributes":{"message-action":"add","subj-id":"https://metrics.test.datacite.org/reports/2018-3-Dash","subj":{"pid":"https://metrics.test.datacite.org/reports/2018-3-Dash","issued":"2128-04-09"},"total":3,"obj-id":"https://doi.org/10.7291/d1q94r","relation-type_id":"total-dataset-investigations-regular","source-id":"datacite","source-token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred-at":"2128-04-09","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <LAGOTTO_TOKEN>
+  response:
+    status:
+      code: 201
+      message: ''
+    headers:
+      Date:
+      - Wed, 02 May 2018 08:25:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      Etag:
+      - W/"24e2c2dd3a9f5226f9e8b9bdeb121e18"
+      X-Runtime:
+      - '0.011407'
+      X-Credential-Username:
+      - 0000-0001-5489-3594
+      X-Request-Id:
+      - 3fea7853-482f-4096-902a-46bb126de6c8
+      X-Powered-By:
+      - Phusion Passenger 5.2.3
+      Server:
+      - nginx/1.12.2 + Phusion Passenger 5.2.3
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"25e36e0f-f124-4ea1-816b-e099a5560e0a","type":"events","attributes":{"subj-id":"https://metrics.test.datacite.org/reports/2018-3-Dash","obj-id":"https://doi.org/10.7291/d1q94r","message-action":"add","source-token":"28276d12-b320-41ba-9272-bb0adc3466ff","relation-type-id":"references","source-id":"datacite","total":3,"license":"https://creativecommons.org/publicdomain/zero/1.0/","occurred-at":"2128-04-09T00:00:00.000Z","timestamp":"2018-05-02T08:25:46Z","subj":{"pid":"https://metrics.test.datacite.org/reports/2018-3-Dash","issued":"2128-04-09"},"obj":{}}}}'
+    http_version: 
+  recorded_at: Wed, 02 May 2018 08:25:50 GMT
+- request:
+    method: post
+    uri: https://api.test.datacite.org/events
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1e7b634c-16da-4e66-abc6-822a924e9bcf","type":"events","attributes":{"message-action":"add","subj-id":"https://metrics.test.datacite.org/reports/2018-3-Dash","subj":{"pid":"https://metrics.test.datacite.org/reports/2018-3-Dash","issued":"2128-04-09"},"total":3,"obj-id":"https://doi.org/10.7291/d1q94r","relation-type_id":"unique-dataset-investigations-regular","source-id":"datacite","source-token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred-at":"2128-04-09","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <LAGOTTO_TOKEN>
+  response:
+    status:
+      code: 201
+      message: ''
+    headers:
+      Date:
+      - Wed, 02 May 2018 08:25:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      Etag:
+      - W/"09df03d92ecc4fa1ae320bf02879540f"
+      X-Runtime:
+      - '0.011364'
+      X-Credential-Username:
+      - 0000-0001-5489-3594
+      X-Request-Id:
+      - f3f95264-2fae-477c-a4fa-86dfbcc1f2a5
+      X-Powered-By:
+      - Phusion Passenger 5.2.3
+      Server:
+      - nginx/1.12.2 + Phusion Passenger 5.2.3
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"50f875d6-f3f9-4873-98bb-7d3817d84edf","type":"events","attributes":{"subj-id":"https://metrics.test.datacite.org/reports/2018-3-Dash","obj-id":"https://doi.org/10.7291/d1q94r","message-action":"add","source-token":"28276d12-b320-41ba-9272-bb0adc3466ff","relation-type-id":"references","source-id":"datacite","total":3,"license":"https://creativecommons.org/publicdomain/zero/1.0/","occurred-at":"2128-04-09T00:00:00.000Z","timestamp":"2018-05-02T08:25:46Z","subj":{"pid":"https://metrics.test.datacite.org/reports/2018-3-Dash","issued":"2128-04-09"},"obj":{}}}}'
+    http_version: 
+  recorded_at: Wed, 02 May 2018 08:25:51 GMT
+recorded_with: VCR 3.0.3
