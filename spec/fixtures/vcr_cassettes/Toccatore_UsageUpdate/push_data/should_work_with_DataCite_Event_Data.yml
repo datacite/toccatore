@@ -5,7 +5,7 @@ http_interactions:
     uri: https://api.test.datacite.org/events
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"97de0ae8-991d-4065-bd7f-fbdca105b8d6","type":"events","attributes":{"message-action":"add","subj-id":"https://metrics.test.datacite.org/reports/2018-3-Dash","subj":{"pid":"https://metrics.test.datacite.org/reports/2018-3-Dash","issued":"2128-04-09"},"total":3,"obj-id":"https://doi.org/10.7291/d1q94r","relation-type_id":"total-dataset-investigations-regular","source-id":"datacite","source-token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred-at":"2128-04-09","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
+      string: '{"data":{"id":"37426bc8-0cc2-43e2-80fc-9dff97a2bd67","type":"events","attributes":{"message-action":"add","subj-id":"https://metrics.test.datacite.org/reports/2018-3-Dash","subj":{"pid":"https://metrics.test.datacite.org/reports/2018-3-Dash","issued":"2128-04-09"},"total":3,"obj-id":"https://doi.org/10.7291/d1q94r","relation-type-id":"total-dataset-investigations-regular","source-id":"datacite","source-token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred-at":"2128-04-09","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
     headers:
       User-Agent:
       - Maremma - https://github.com/datacite/maremma
@@ -21,7 +21,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Wed, 02 May 2018 08:25:46 GMT
+      - Thu, 03 May 2018 14:45:29 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -33,28 +33,28 @@ http_interactions:
       Vary:
       - Accept-Encoding, Origin
       Etag:
-      - W/"24e2c2dd3a9f5226f9e8b9bdeb121e18"
+      - W/"095b4291a0fee032454dfa2a4b7be372"
       X-Runtime:
-      - '0.011407'
+      - '0.011984'
       X-Credential-Username:
       - 0000-0001-5489-3594
       X-Request-Id:
-      - 3fea7853-482f-4096-902a-46bb126de6c8
+      - 2122ee23-9a7a-4bf1-9825-65a7a38aa628
       X-Powered-By:
       - Phusion Passenger 5.2.3
       Server:
       - nginx/1.12.2 + Phusion Passenger 5.2.3
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"25e36e0f-f124-4ea1-816b-e099a5560e0a","type":"events","attributes":{"subj-id":"https://metrics.test.datacite.org/reports/2018-3-Dash","obj-id":"https://doi.org/10.7291/d1q94r","message-action":"add","source-token":"28276d12-b320-41ba-9272-bb0adc3466ff","relation-type-id":"references","source-id":"datacite","total":3,"license":"https://creativecommons.org/publicdomain/zero/1.0/","occurred-at":"2128-04-09T00:00:00.000Z","timestamp":"2018-05-02T08:25:46Z","subj":{"pid":"https://metrics.test.datacite.org/reports/2018-3-Dash","issued":"2128-04-09"},"obj":{}}}}'
+      string: '{"data":{"id":"c47effcb-df3c-4b43-8ae2-898a532001d6","type":"events","attributes":{"subj-id":"https://metrics.test.datacite.org/reports/2018-3-Dash","obj-id":"https://doi.org/10.7291/d1q94r","message-action":"add","source-token":"28276d12-b320-41ba-9272-bb0adc3466ff","relation-type-id":"total-dataset-investigations-regular","source-id":"datacite","total":3,"license":"https://creativecommons.org/publicdomain/zero/1.0/","occurred-at":"2128-04-09T00:00:00.000Z","timestamp":"2018-05-03T14:45:28Z","subj":{"pid":"https://metrics.test.datacite.org/reports/2018-3-Dash","issued":"2128-04-09"},"obj":{}}}}'
     http_version: 
-  recorded_at: Wed, 02 May 2018 08:25:50 GMT
+  recorded_at: Thu, 03 May 2018 14:45:29 GMT
 - request:
     method: post
     uri: https://api.test.datacite.org/events
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1e7b634c-16da-4e66-abc6-822a924e9bcf","type":"events","attributes":{"message-action":"add","subj-id":"https://metrics.test.datacite.org/reports/2018-3-Dash","subj":{"pid":"https://metrics.test.datacite.org/reports/2018-3-Dash","issued":"2128-04-09"},"total":3,"obj-id":"https://doi.org/10.7291/d1q94r","relation-type_id":"unique-dataset-investigations-regular","source-id":"datacite","source-token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred-at":"2128-04-09","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
+      string: '{"data":{"id":"070683e9-995d-4a49-9762-dd68b65bc3e2","type":"events","attributes":{"message-action":"add","subj-id":"https://metrics.test.datacite.org/reports/2018-3-Dash","subj":{"pid":"https://metrics.test.datacite.org/reports/2018-3-Dash","issued":"2128-04-09"},"total":3,"obj-id":"https://doi.org/10.7291/d1q94r","relation-type-id":"unique-dataset-investigations-regular","source-id":"datacite","source-token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred-at":"2128-04-09","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
     headers:
       User-Agent:
       - Maremma - https://github.com/datacite/maremma
@@ -70,7 +70,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Wed, 02 May 2018 08:25:46 GMT
+      - Thu, 03 May 2018 14:45:29 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -82,20 +82,20 @@ http_interactions:
       Vary:
       - Accept-Encoding, Origin
       Etag:
-      - W/"09df03d92ecc4fa1ae320bf02879540f"
+      - W/"8a2decdf9335b165211c92d0a8b53138"
       X-Runtime:
-      - '0.011364'
+      - '0.010744'
       X-Credential-Username:
       - 0000-0001-5489-3594
       X-Request-Id:
-      - f3f95264-2fae-477c-a4fa-86dfbcc1f2a5
+      - 18e004c1-27e9-4282-badc-4df94e501a62
       X-Powered-By:
       - Phusion Passenger 5.2.3
       Server:
       - nginx/1.12.2 + Phusion Passenger 5.2.3
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"50f875d6-f3f9-4873-98bb-7d3817d84edf","type":"events","attributes":{"subj-id":"https://metrics.test.datacite.org/reports/2018-3-Dash","obj-id":"https://doi.org/10.7291/d1q94r","message-action":"add","source-token":"28276d12-b320-41ba-9272-bb0adc3466ff","relation-type-id":"references","source-id":"datacite","total":3,"license":"https://creativecommons.org/publicdomain/zero/1.0/","occurred-at":"2128-04-09T00:00:00.000Z","timestamp":"2018-05-02T08:25:46Z","subj":{"pid":"https://metrics.test.datacite.org/reports/2018-3-Dash","issued":"2128-04-09"},"obj":{}}}}'
+      string: '{"data":{"id":"9a5d68fd-6dc2-47d9-815a-443ddffc7428","type":"events","attributes":{"subj-id":"https://metrics.test.datacite.org/reports/2018-3-Dash","obj-id":"https://doi.org/10.7291/d1q94r","message-action":"add","source-token":"28276d12-b320-41ba-9272-bb0adc3466ff","relation-type-id":"unique-dataset-investigations-regular","source-id":"datacite","total":3,"license":"https://creativecommons.org/publicdomain/zero/1.0/","occurred-at":"2128-04-09T00:00:00.000Z","timestamp":"2018-05-03T14:45:29Z","subj":{"pid":"https://metrics.test.datacite.org/reports/2018-3-Dash","issued":"2128-04-09"},"obj":{}}}}'
     http_version: 
-  recorded_at: Wed, 02 May 2018 08:25:51 GMT
+  recorded_at: Thu, 03 May 2018 14:45:29 GMT
 recorded_with: VCR 3.0.3

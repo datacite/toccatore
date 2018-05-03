@@ -17,16 +17,20 @@ module Toccatore
             ]
         }
       )
-    
+
       msgs_available = req.attributes['ApproximateNumberOfMessages']
       msgs_in_flight = req.attributes['ApproximateNumberOfMessagesNotVisible']
-      msgs_available.size
+      msgs_available.to_i
     end
 
-    def delete_messages options={}
+    def get_message options={}
+      sqs.receive_message(queue_url: queue_url, max_number_of_messages: 1, wait_time_seconds: 1)
+    end
+
+    def delete_message options={}
       sqs.delete_message({
         queue_url: queue_url,
-        receipt_handle: message.receipt_handle    
+        receipt_handle: options.messages[0][:receipt_handle]    
       })
     end
 

@@ -10,7 +10,7 @@ module Toccatore
 
       total = get_total(options)
       
-      if total > 0
+      while total > 0
         # walk through paginated results
         total_pages = (total.to_f / job_batch_size).ceil
         error_total = 0
@@ -21,9 +21,10 @@ module Toccatore
           error_total += process_data(options)
         end
         text = "#{total} works processed with #{error_total} errors for Usage Reports Queue"
-      else
-        text = "No works found for in the queue."
       end
+
+      #   text = "No works found for in the queue."
+      # end
 
       # send slack notification
       options[:level] = total > 0 ? "good" : "warning"
@@ -35,19 +36,21 @@ module Toccatore
     end
 
     def process_data(options = {})
-      data = get_data(options.merge(timeout: timeout))
+      message = get_message
+      data = get_data(message)
       data = parse_data(data, options)
 
       return [OpenStruct.new(body: { "data" => [] })] if data.empty?
 
       push_data(data, options)
+      delete_message message
     end
 
     def get_data(options={})
-      event = sqs.receive_message(queue_url: queue_url, max_number_of_messages: 100, wait_time_seconds: timeout)
-      report_id = event.dig(:message_body, :report_id)
-      Maremma.get(get_metrics_query_url(report_id))
+      body = JSON.parse(options.messages[0].body)
+      Maremma.get(body["report-id"])
     end
+
 
     # method returns number of errors
     def push_data(items, options={})
@@ -64,12 +67,6 @@ module Toccatore
         end
         error_total
       end
-    end
-
-
-
-    def get_metrics_query_url(options={})
-      metrics_url + options[:report_id]
     end
 
     def metrics_url
