@@ -52,10 +52,6 @@ module Toccatore
     method_option :source_token, type: :string, required: true
     method_option :push_url, type: :string
     method_option :slack_webhook_url, type: :string
-    method_option :from_date, type: :string, default: (Time.now.to_date - 1.day).iso8601
-    method_option :until_date, type: :string, default: Time.now.to_date.iso8601
-    method_option :q, type: :string
-    method_option :related_identifier, type: :string
     method_option :doi, type: :string
     method_option :jsonapi, :type => :boolean, :force => false
     method_option :report, type: :string
