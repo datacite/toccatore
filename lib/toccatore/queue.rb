@@ -28,14 +28,22 @@ module Toccatore
     end
 
     def delete_message options={}
-      sqs.delete_message({
+      reponse = sqs.delete_message({
         queue_url: queue_url,
         receipt_handle: options.messages[0][:receipt_handle]    
       })
+      if reponse.successful?
+        puts "Message #{options.messages[0][:receipt_handle]} deleted"
+        0
+      else
+        puts "Could NOT delete Message #{options.messages[0][:receipt_handle]}"
+        1
+      end
+
     end
 
     def queue_url
-      sqs.get_queue_url(queue_name: "stage_usage").queue_url
+      sqs.get_queue_url(queue_name: "test_usage").queue_url
     end
   end
-end
+end 

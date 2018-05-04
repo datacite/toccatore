@@ -48,7 +48,7 @@ module Toccatore
 
     def get_data(options={})
       body = JSON.parse(options.messages[0].body)
-      Maremma.get(body["report-id"])
+      Maremma.get(body["report_id"])
     end
 
 
@@ -103,9 +103,9 @@ module Toccatore
     def parse_data(result, options={})
       return result.body.fetch("errors") if result.body.fetch("errors", nil).present?
 
-      items = result.body.dig("report","report-datasets")
-      header = result.body.dig("report","report-header")
-      report_id = metrics_url + result.body.dig("report","id")
+      items = result.body.dig("data","report","report-datasets")
+      header = result.body.dig("data","report","report-header")
+      report_id = metrics_url + result.body.dig("data","report","id")
 
       created = header.fetch("created")
       Array.wrap(items).reduce([]) do |x, item|

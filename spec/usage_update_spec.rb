@@ -1,41 +1,24 @@
 require 'spec_helper'
 
 describe Toccatore::UsageUpdate, vcr: true do
-  # let(:query_options) { { from_date: "2015-04-07", until_date: "2015-04-08", rows: 1000, offset: 0 } }
+  # let(:queue_url){"https://sqs.#{ENV['AWS_REGION']}.amazonaws.com/404017989009/test_usage"}
+  let(:lented){Toccatore::UsageUpdate}
 
-  # before(:each) { allow(Time).to receive(:now).and_return(Time.mktime(2015, 4, 8)) }
+  # before(:context) do
+  #   @client_aws_sqs = Aws::SQS::Client.new
+  #   body = { report_id: "https://metrics.test.datacite.org/reports/2018-3-DataONE" }.to_json
+  #   options = {
+  #     queue_url: "https://sqs.#{ENV['AWS_REGION']}.amazonaws.com/404017989009/test_usage", 
+  #     message_body: body,
+  #     message_attributes: {
+  #       "report-id" => {
+  #         string_value: "https://metrics.test.datacite.org/reports/2018-3-DataONE",
+  #         data_type: "String"
+  #       }
+  #     }
+  #   }
 
-  # context "get_query_url" do
-  #   it "default" do
-  #     expect(subject.get_query_url(query_options)).to eq("https://search.datacite.org/api?q=relatedIdentifier%3ADOI%5C%3A*&start=0&rows=1000&fl=doi%2CresourceTypeGeneral%2CrelatedIdentifier%2CnameIdentifier%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
-  #   end
-
-  #   it "with zero rows" do
-  #     expect(subject.get_query_url(query_options.merge(rows: 0))).to eq("https://search.datacite.org/api?q=relatedIdentifier%3ADOI%5C%3A*&start=0&rows=0&fl=doi%2CresourceTypeGeneral%2CrelatedIdentifier%2CnameIdentifier%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
-  #   end
-
-  #   it "with different from_date and until_date" do
-  #     expect(subject.get_query_url(query_options.merge(from_date: "2015-04-05", until_date: "2015-04-05"))).to eq("https://search.datacite.org/api?q=relatedIdentifier%3ADOI%5C%3A*&start=0&rows=1000&fl=doi%2CresourceTypeGeneral%2CrelatedIdentifier%2CnameIdentifier%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-05T00%3A00%3A00Z+TO+2015-04-05T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
-  #   end
-
-  #   it "with offset" do
-  #     expect(subject.get_query_url(query_options.merge(offset: 250))).to eq("https://search.datacite.org/api?q=relatedIdentifier%3ADOI%5C%3A*&start=250&rows=1000&fl=doi%2CresourceTypeGeneral%2CrelatedIdentifier%2CnameIdentifier%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
-  #   end
-
-  #   it "with rows" do
-  #     expect(subject.get_query_url(query_options.merge(rows: 250))).to eq("https://search.datacite.org/api?q=relatedIdentifier%3ADOI%5C%3A*&start=0&rows=250&fl=doi%2CresourceTypeGeneral%2CrelatedIdentifier%2CnameIdentifier%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
-  #   end
   # end
-
-  context "get_total" do
-    it "with reports" do
-      expect(subject.get_total()).to eq(3)
-    end
-
-    it "with no reports" do
-      expect(subject.get_total()).to eq(0)
-    end
-  end
 
   context "queue_jobs" do
     it "should report if there are no works returned by the Usage Queue" do
@@ -66,41 +49,42 @@ describe Toccatore::UsageUpdate, vcr: true do
 
   context "get_data" do
     it "should report if there are no works returned by the Usage Queue" do
-      response = subject.get_data()
-      expect(response.body["data"]["report"]["report-header"]["report-name"]).to eq("Dataset Report")
+      response = subject.get_data(subject.get_message)
+      expect(response.body["data"]["report"]["report-header"]["report-name"]).to eq("Dataset Master Report")
     end
 
-    it "should report if there are works returned by the Queue" do
-      # response = subject.get_data()
-      # expect(response.body["report"]["response"]["numFound"]).to eq(650)
-      # doc = response.body["report"]["response"]["docs"].first
-      # expect(doc["doi"]).to eq("10.7480/KNOB.113.2014.3")
-    end
-
-    # it "should allow queries by related_identifier of the Queue" do
-    #   response = subject.get_data()
-    #   expect(response.body["data"]["response"]["numFound"]).to eq(1)
-    #   doc = response.body["data"]["response"]["docs"].first
-    #   expect(doc["doi"]).to eq("10.5061/DRYAD.B835K")
-    #   related_identifiers = doc["relatedIdentifier"]
-    #   expect(related_identifiers.count).to eq(6)
-    #   expect(related_identifiers[4]).to eq("IsReferencedBy:DOI:10.7554/ELIFE.01567")
+    # it "should report if there are works returned by the Queue" do
+    #   # response = subject.get_data()
+    #   # expect(response.body["report"]["response"]["numFound"]).to eq(650)
+    #   # doc = response.body["report"]["response"]["docs"].first
+    #   # expect(doc["doi"]).to eq("10.7480/KNOB.113.2014.3")
     # end
 
-    # it "should allow queries by DOI of the Queue" do
-    #   response = subject.get_data()
-    #   expect(response.body["data"]["response"]["numFound"]).to eq(1)
-    #   doc = response.body["data"]["response"]["docs"].first
-    #   related_identifiers = doc["relatedIdentifier"]
-    #   expect(related_identifiers.count).to eq(25)
-    #   expect(related_identifiers.first).to eq("HasPart:DOI:10.5281/ZENODO.30799")
+    # it "Should return one message" do
+    #   body = File.read(fixture_path + 'usage_event.json')
+    #   @client_aws_sqs.stub_responses(:receive_message, messages: [body: JSON.parse(body)])
+    #   response = @client_aws_sqs.receive_message({queue_url: queue_url})
+    #   expect ( response.successful? ).should be_truthy
+    #   expect ( response.messages.length ).should eq(1)
+    #   expect ( response.messages.first.class).should eq(Aws::SQS::Types::Message)
+    #   expect ( response.messages.first.body).should eq(JSON.parse(body))
     # end
 
-    # it "should catch errors with the Queue" do
-    #   stub = stub_request(:get, subject.get_query_url(query_options.merge(rows: 0, source_id: subject.source_id))).to_return(:status => [408])
-    #   response = subject.get_data(query_options.merge(rows: 0, source_id: subject.source_id))
-    #   expect(response.body).to eq("errors"=>[{"status"=>408, "title"=>"Request timeout"}])
-    #   expect(stub).to have_been_requested
+    # it "Should return two messages" do
+    #   body = File.read(fixture_path + 'usage_event.json')
+    #   @client_aws_sqs.stub_responses(:receive_message, messages: [{body: JSON.parse(body)}, {body: JSON.parse(body)}])
+    #   response = @client_aws_sqs.receive_message({queue_url: queue_url, max_number_of_messages: 10})
+    #   expect ( response.successful? ).should be_truthy
+    #   expect ( response.messages.length ).should eq(2)
+    #   expect ( response.messages.first.body).should eq(JSON.parse(body))
+    #   expect ( response.messages.last.body).should eq(JSON.parse(body))
+    # end
+
+    # it "Should return no messages" do
+    #   @client_aws_sqs.stub_responses(:receive_message, messages: [])
+    #   response = @client_aws_sqs.receive_message({queue_url: queue_url})
+    #   expect ( response.successful? ).should be_truthy
+    #   expect ( response.messages.length ).should eq(0)
     # end
   end
 
