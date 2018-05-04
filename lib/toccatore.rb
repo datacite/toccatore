@@ -1,6 +1,6 @@
 require "toccatore/orcid_update"
 require "toccatore/datacite_related"
+require "toccatore/queue"
+require "toccatore/usage_update"
 require "toccatore/cli"
-# require "toccatore/queue"
 require "toccatore/version"
-# require "toccatore/usage_update"
