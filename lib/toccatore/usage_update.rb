@@ -6,6 +6,11 @@ module Toccatore
     include Toccatore::Queue
     LICENSE = "https://creativecommons.org/publicdomain/zero/1.0/"
 
+
+    def initialize options={}
+      @sqs = queue options
+    end
+
     def queue_jobs(options={})
 
       total = get_total(options)
@@ -46,8 +51,10 @@ module Toccatore
       delete_message message
     end
 
-    def get_data(options={})
-      body = JSON.parse(options.messages[0].body)
+    def get_data reponse 
+      return OpenStruct.new(body: { "errors" => "Queue is empty" }) if reponse.messages.empty?
+
+      body = JSON.parse(reponse.messages[0].body)
       Maremma.get(body["report_id"])
     end
 
@@ -117,6 +124,8 @@ module Toccatore
         data[:created_at] = created
 
         instances = item.dig("performance").first.dig("instance")
+
+        return x += [OpenStruct.new(body: { "errors" => "There are too many instances. There can only be 4" })] if instances.size > 8
      
         x += Array.wrap(instances).reduce([]) do |ssum, instance|
           data[:count] = instance.dig("count")

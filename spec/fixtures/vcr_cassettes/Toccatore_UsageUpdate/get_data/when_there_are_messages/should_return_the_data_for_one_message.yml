@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://metrics.test.datacite.org/reports/2018-3-DataONE
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Mon, 07 May 2018 15:07:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      Etag:
+      - W/"4f2411eb13af4c17be452f00b66b9bc8"
+      X-Runtime:
+      - '0.004929'
+      X-Request-Id:
+      - 88da99f7-e209-4ede-8adf-7954ff834a5b
+      X-Powered-By:
+      - Phusion Passenger 5.2.3
+      Server:
+      - nginx/1.12.2 + Phusion Passenger 5.2.3
+    body:
+      encoding: UTF-8
+      string: '{"report":{"id":"2018-3-DataONE","report-header":{"report-name":"Dataset
+        Master Report","report-id":"DSR","created-by":"DataONE","created":"2018-03-16"},"report-datasets":[{"uri":"https://search.DataONE.org/index.html#view/https://pasta.lternet.edu/package/metadata/eml/knb-lter-luq/88/559501","yop":2010,"creators":[{"type":"Name","value":"Jess
+        Zimmerman"}],"platform":"DataONE","data-type":"Dataset","publisher":"LTER
+        Network","dataset-id":[{"type":"DOI","value":"10.6073/pasta/aec48ca27decb1fd2c2f454f1c5f88e4"}],"performance":[{"period":{"end-date":"2018-03-31","begin-date":"2018-03-01"},"instance":[{"count":7,"country":"US","metric-type":"Total-Dataset-Investigations","access-method":"Regular"}]}],"publisher-id":"urn:node:LTER","dataset-title":"Phenologies
+        of the Tabonuco Forest trees and shrubs.","publication-dates":"2010-03-22"}]}}'
+    http_version: 
+  recorded_at: Mon, 07 May 2018 15:07:45 GMT
+recorded_with: VCR 3.0.3

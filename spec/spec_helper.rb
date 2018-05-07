@@ -11,7 +11,7 @@ require 'rack/test'
 require 'webmock/rspec'
 require 'nokogiri'
 require 'vcr'
-# require 'aws-sdk-sqs'
+require 'aws-sdk-sqs'
 
 
 RSpec.configure do |config|

@@ -3,12 +3,12 @@ require 'aws-sdk-sqs'
 module Toccatore
   module Queue
 
-    def sqs 
-      Aws::SQS::Client.new(region: ENV['AWS_REGION'].to_s)
+    def queue options={}
+      Aws::SQS::Client.new(region: ENV['AWS_REGION'].to_s, stub_responses: false)
     end
 
     def get_total options={}
-      req = sqs.get_queue_attributes(
+      req = @sqs.get_queue_attributes(
         {
           queue_url: queue_url, attribute_names: 
             [
@@ -24,11 +24,11 @@ module Toccatore
     end
 
     def get_message options={}
-      sqs.receive_message(queue_url: queue_url, max_number_of_messages: 1, wait_time_seconds: 1)
+      @sqs.receive_message(queue_url: queue_url, max_number_of_messages: 1, wait_time_seconds: 1)
     end
 
     def delete_message options={}
-      reponse = sqs.delete_message({
+      reponse = @sqs.delete_message({
         queue_url: queue_url,
         receipt_handle: options.messages[0][:receipt_handle]    
       })
@@ -42,8 +42,9 @@ module Toccatore
 
     end
 
-    def queue_url
-      sqs.get_queue_url(queue_name: "test_usage").queue_url
+    def queue_url options={}
+      queue_name = queue_name ||= "test_usage"
+      @sqs.get_queue_url(queue_name: queue_name).queue_url
     end
   end
 end 
