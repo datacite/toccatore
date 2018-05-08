@@ -15,6 +15,10 @@ module Toccatore
 
       total = get_total(options)
       
+      if total < 1
+        text = "No works found for in the Usage Reports Queue."
+      end
+
       while total > 0
         # walk through paginated results
         total_pages = (total.to_f / job_batch_size).ceil
@@ -28,9 +32,7 @@ module Toccatore
         text = "#{total} works processed with #{error_total} errors for Usage Reports Queue"
       end
 
-      #   text = "No works found for in the queue."
-      # end
-
+      puts text
       # send slack notification
       options[:level] = total > 0 ? "good" : "warning"
       options[:title] = "Report for #{source_id}"
