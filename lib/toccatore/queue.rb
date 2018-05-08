@@ -43,7 +43,7 @@ module Toccatore
     end
 
     def queue_url options={}
-      queue_name = queue_name ||= "test_usage"
+      queue_name = queue_name ||= "#{ENV['ENVIROMENT']}_usage"
       @sqs.get_queue_url(queue_name: queue_name).queue_url
     end
   end
