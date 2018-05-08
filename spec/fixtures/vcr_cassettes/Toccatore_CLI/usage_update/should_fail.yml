@@ -1,0 +1,150 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://sqs.eu-west-1.amazonaws.com/
+    body:
+      encoding: UTF-8
+      string: Action=GetQueueUrl&QueueName=test_usage&Version=2012-11-05
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded; charset=utf-8
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby3/3.20.2 ruby/2.3.3 x86_64-darwin15 aws-sdk-sqs/1.3.0
+      X-Amz-Date:
+      - 20180508T094700Z
+      X-Amz-Content-Sha256:
+      - 5761efd13dd0ed81182207171d3660628968189941431d6044920ef8fe7b1160
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=AKIAIXLDUBIDM74CC6KQ/20180508/eu-west-1/sqs/aws4_request,
+        SignedHeaders=content-type;host;x-amz-content-sha256;x-amz-date, Signature=320fd5e4a16dbf0f04c65595516867443637c8f7278349c0870209eeee57cd96
+      Content-Length:
+      - '58'
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Server
+      Date:
+      - Tue, 08 May 2018 09:47:00 GMT
+      Content-Type:
+      - text/xml
+      Content-Length:
+      - '330'
+      Connection:
+      - keep-alive
+      X-Amzn-Requestid:
+      - 90d1e902-eb78-56b1-8e31-ba699f2cbc88
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0"?><GetQueueUrlResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><GetQueueUrlResult><QueueUrl>https://sqs.eu-west-1.amazonaws.com/404017989009/test_usage</QueueUrl></GetQueueUrlResult><ResponseMetadata><RequestId>90d1e902-eb78-56b1-8e31-ba699f2cbc88</RequestId></ResponseMetadata></GetQueueUrlResponse>
+    http_version: 
+  recorded_at: Tue, 08 May 2018 09:47:00 GMT
+- request:
+    method: post
+    uri: https://sqs.eu-west-1.amazonaws.com/404017989009/test_usage
+    body:
+      encoding: UTF-8
+      string: Action=GetQueueAttributes&AttributeName.1=ApproximateNumberOfMessages&AttributeName.2=ApproximateNumberOfMessagesNotVisible&QueueUrl=https%3A%2F%2Fsqs.eu-west-1.amazonaws.com%2F404017989009%2Ftest_usage&Version=2012-11-05
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded; charset=utf-8
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby3/3.20.2 ruby/2.3.3 x86_64-darwin15 aws-sdk-sqs/1.3.0
+      X-Amz-Date:
+      - 20180508T094700Z
+      X-Amz-Content-Sha256:
+      - 4fa1f9790ab8d8b778fc048ef890ef00e82c1fd4658cd21964eff9eb5dc9426d
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=AKIAIXLDUBIDM74CC6KQ/20180508/eu-west-1/sqs/aws4_request,
+        SignedHeaders=content-type;host;x-amz-content-sha256;x-amz-date, Signature=9bf193363d0e9d47c2286f4ca182057152c791e99f73160ff7b17f8362f5fa88
+      Content-Length:
+      - '221'
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Server
+      Date:
+      - Tue, 08 May 2018 09:47:00 GMT
+      Content-Type:
+      - text/xml
+      Content-Length:
+      - '446'
+      Connection:
+      - keep-alive
+      X-Amzn-Requestid:
+      - be0ad828-d22d-5165-88d7-8b43a67987ba
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0"?><GetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><GetQueueAttributesResult><Attribute><Name>ApproximateNumberOfMessages</Name><Value>0</Value></Attribute><Attribute><Name>ApproximateNumberOfMessagesNotVisible</Name><Value>0</Value></Attribute></GetQueueAttributesResult><ResponseMetadata><RequestId>be0ad828-d22d-5165-88d7-8b43a67987ba</RequestId></ResponseMetadata></GetQueueAttributesResponse>
+    http_version: 
+  recorded_at: Tue, 08 May 2018 09:47:00 GMT
+- request:
+    method: post
+    uri: "<SLACK_WEBHOOK_URL>"
+    body:
+      encoding: US-ASCII
+      string: payload=%7B%22username%22%3A%22Event+Data+Agent%22%2C%22icon_url%22%3A%22https%3A%2F%2Fraw.githubusercontent.com%2Fdatacite%2Ftoccatore%2Fmaster%2Flib%2Ftoccatore%2Fimages%2Ftoccatore.png%22%2C%22attachments%22%3A%5B%7B%22title%22%3A%22Report+for+usage_update%22%2C%22text%22%3Anull%2C%22color%22%3A%22warning%22%7D%5D%7D
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/html
+      Content-Length:
+      - '22'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 08 May 2018 09:47:00 GMT
+      Server:
+      - Apache
+      X-Slack-Backend:
+      - h
+      Referrer-Policy:
+      - no-referrer
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Frame-Options:
+      - SAMEORIGIN
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Via:
+      - haproxy-www-cvx8
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 f794b89ac7b5d3a7a6b25a236579db6c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - bkYNFP6Gnanq0lrZLB3V4BwXtCqIGV0KyyQdx_n8Qcl7CyyD0_n1wQ==
+    body:
+      encoding: ASCII-8BIT
+      string: ok
+    http_version: 
+  recorded_at: Tue, 08 May 2018 09:47:00 GMT
+recorded_with: VCR 3.0.3
