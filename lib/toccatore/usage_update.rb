@@ -77,15 +77,11 @@ module Toccatore
     end
 
     def metrics_url
-      "https://metrics.test.datacite.org/reports/"
+      ENV['SASHIMI_URL']
     end
 
     def source_id
       "usage_update"
-    end
-
-    def query
-      "relatedIdentifier:DOI\\:*"
     end
 
     def format_event type, data, options
@@ -99,7 +95,7 @@ module Toccatore
         "total"=> data[:count],
         "obj-id" => data[:pid],
         "relation-type-id" => type,
-        "source-id" => "datacite",
+        "source-id" => "datacite-usage",
         "source-token" => options[:source_token],
         "occurred-at" => data[:created_at],
         "license" => LICENSE 
@@ -112,7 +108,7 @@ module Toccatore
 
       items = result.body.dig("data","report","report-datasets")
       header = result.body.dig("data","report","report-header")
-      report_id = metrics_url + result.body.dig("data","report","id")
+      report_id = metrics_url + "/" + result.body.dig("data","report","id")
 
       created = header.fetch("created")
       Array.wrap(items).reduce([]) do |x, item|
@@ -123,7 +119,7 @@ module Toccatore
         data[:report_id] = report_id
         data[:created_at] = created
 
-        instances = item.dig("performance").first.dig("instance")
+        instances = item.dig("performance", 0, "instance")
 
         return x += [OpenStruct.new(body: { "errors" => "There are too many instances. There can only be 4" })] if instances.size > 8
      
@@ -131,6 +127,7 @@ module Toccatore
           data[:count] = instance.dig("count")
           event_type = "#{instance.dig("metric-type")}-#{instance.dig("access-method")}"
           ssum << format_event(event_type, data, options)
+          ssum
         end
       end    
     end
