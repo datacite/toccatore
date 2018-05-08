@@ -92,7 +92,7 @@ describe Toccatore::UsageUpdate, vcr: true do
         result = OpenStruct.new(body: JSON.parse(body) )
         response = subject.parse_data(result, source_token: ENV['SOURCE_TOKEN'])
         expect(response.length).to eq(2)
-        expect(response.last.except("id")).to eq("subj"=>{"pid"=>"https://metrics.test.datacite.org/reports/2018-3-Dash", "issued"=>"2128-04-09"},"total"=>3,"message-action" => "add", "subj-id"=>"https://metrics.test.datacite.org/reports/2018-3-Dash", "obj-id"=>"https://doi.org/10.7291/d1q94r", "relation-type-id"=>"unique-dataset-investigations-regular", "source-id"=>"datacite", "occurred-at"=>"2128-04-09", "license" => "https://creativecommons.org/publicdomain/zero/1.0/", "source-token" => "28276d12-b320-41ba-9272-bb0adc3466ff")
+        expect(response.last.except("id")).to eq("subj"=>{"pid"=>"https://metrics.test.datacite.org/reports/2018-3-Dash", "issued"=>"2128-04-09"},"total"=>3,"message-action" => "add", "subj-id"=>"https://metrics.test.datacite.org/reports/2018-3-Dash", "obj-id"=>"https://doi.org/10.7291/d1q94r", "relation-type-id"=>"unique-dataset-investigations-regular", "source-id"=>"datacite-usage", "occurred-at"=>"2128-04-09", "license" => "https://creativecommons.org/publicdomain/zero/1.0/", "source-token" => "28276d12-b320-41ba-9272-bb0adc3466ff")
       end
 
       it "should parsed it correctly when it has five metrics  and two DOIs" do
@@ -100,7 +100,7 @@ describe Toccatore::UsageUpdate, vcr: true do
         result = OpenStruct.new(body: JSON.parse(body) )
         response = subject.parse_data(result, source_token: ENV['SOURCE_TOKEN'])
         expect(response.length).to eq(5)
-        expect(response.last.except("id")).to eq("message-action"=>"add", "subj-id"=>"https://metrics.test.datacite.org/reports/2018-3-Dash", "subj"=>{"pid"=>"https://metrics.test.datacite.org/reports/2018-3-Dash", "issued"=>"2128-04-09"}, "total"=>208, "obj-id"=>"https://doi.org/10.6071/z7wc73", "relation-type-id"=>"Unique-Dataset-Requests-Machine", "source-id"=>"datacite", "source-token"=>"28276d12-b320-41ba-9272-bb0adc3466ff", "occurred-at"=>"2128-04-09", "license"=>"https://creativecommons.org/publicdomain/zero/1.0/")
+        expect(response.last.except("id")).to eq("message-action"=>"add", "subj-id"=>"https://metrics.test.datacite.org/reports/2018-3-Dash", "subj"=>{"pid"=>"https://metrics.test.datacite.org/reports/2018-3-Dash", "issued"=>"2128-04-09"}, "total"=>208, "obj-id"=>"https://doi.org/10.6071/z7wc73", "relation-type-id"=>"Unique-Dataset-Requests-Machine", "source-id"=>"datacite-usage", "source-token"=>"28276d12-b320-41ba-9272-bb0adc3466ff", "occurred-at"=>"2128-04-09", "license"=>"https://creativecommons.org/publicdomain/zero/1.0/")
       end
 
       it "should parsed it correctly when it has two metrics per DOI " do
@@ -108,7 +108,7 @@ describe Toccatore::UsageUpdate, vcr: true do
         result = OpenStruct.new(body: JSON.parse(body) )
         response = subject.parse_data(result, source_token: ENV['SOURCE_TOKEN'])
         expect(response.length).to eq(4)
-        expect(response.last.except("id")).to eq("message-action"=>"add", "subj-id"=>"https://metrics.test.datacite.org/reports/2018-3-Dash", "subj"=>{"pid"=>"https://metrics.test.datacite.org/reports/2018-3-Dash", "issued"=>"2128-04-09"}, "total"=>208, "obj-id"=>"https://doi.org/10.6071/z7wc73", "relation-type-id"=>"Unique-Dataset-Requests-Machine", "source-id"=>"datacite", "source-token"=>"28276d12-b320-41ba-9272-bb0adc3466ff", "occurred-at"=>"2128-04-09", "license"=>"https://creativecommons.org/publicdomain/zero/1.0/")
+        expect(response.last.except("id")).to eq("message-action"=>"add", "subj-id"=>"https://metrics.test.datacite.org/reports/2018-3-Dash", "subj"=>{"pid"=>"https://metrics.test.datacite.org/reports/2018-3-Dash", "issued"=>"2128-04-09"}, "total"=>208, "obj-id"=>"https://doi.org/10.6071/z7wc73", "relation-type-id"=>"Unique-Dataset-Requests-Machine", "source-id"=>"datacite-usage", "source-token"=>"28276d12-b320-41ba-9272-bb0adc3466ff", "occurred-at"=>"2128-04-09", "license"=>"https://creativecommons.org/publicdomain/zero/1.0/")
       end
 
       it "should send a warning if there are more than 4 metrics" do
