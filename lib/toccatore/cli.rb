@@ -53,8 +53,7 @@ module Toccatore
     method_option :push_url, type: :string
     method_option :slack_webhook_url, type: :string
     method_option :doi, type: :string
-    method_option :jsonapi, :type => :boolean, :force => false
-    method_option :report, type: :string
+    method_option :jsonapi, :type => :boolean, :force => true
     def usage_update
       usage_update = Toccatore::UsageUpdate.new
       usage_update.queue_jobs(usage_update.unfreeze(options))
