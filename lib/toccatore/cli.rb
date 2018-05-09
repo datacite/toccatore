@@ -46,5 +46,17 @@ module Toccatore
       datacite_related = Toccatore::DataciteRelated.new
       datacite_related.queue_jobs(datacite_related.unfreeze(options))
     end
+
+    desc "usage_update", "push DataCite DOIs usage from DLM Hub to Event Data"
+    method_option :access_token, type: :string, required: true
+    method_option :source_token, type: :string, required: true
+    method_option :push_url, type: :string
+    method_option :slack_webhook_url, type: :string
+    method_option :doi, type: :string
+    method_option :jsonapi, :type => :boolean, :force => true
+    def usage_update
+      usage_update = Toccatore::UsageUpdate.new
+      usage_update.queue_jobs(usage_update.unfreeze(options))
+    end
   end
 end

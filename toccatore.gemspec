@@ -15,13 +15,15 @@ Gem::Specification.new do |s|
   s.license       = 'MIT'
 
   # Declary dependencies here, rather than in the Gemfile
+  
   s.add_dependency 'maremma', '~> 3.5'
   s.add_dependency 'activesupport', '~> 4.2', '>= 4.2.5'
   s.add_dependency 'dotenv', '~> 2.1', '>= 2.1.1'
   s.add_dependency 'namae', '~> 0.11.0'
   s.add_dependency 'gender_detector', '~> 1.0'
   s.add_dependency 'thor', '~> 0.19'
-  s.add_dependency 'slack-notifier', '~> 2.1'
+  s.add_dependency 'slack-notifier', '= 2.2.2'
+  s.add_dependency 'aws-sdk-sqs'
   s.add_development_dependency 'bundler', '~> 1.0'
   s.add_development_dependency 'rspec', '~> 3.4'
   s.add_development_dependency 'rake', '~> 12.0'
