@@ -5,7 +5,7 @@ http_interactions:
     uri: https://sqs.eu-west-1.amazonaws.com/
     body:
       encoding: UTF-8
-      string: Action=GetQueueUrl&QueueName=test_usage&Version=2012-11-05
+      string: Action=GetQueueUrl&QueueName=stage_usage&Version=2012-11-05
     headers:
       Content-Type:
       - application/x-www-form-urlencoded; charset=utf-8
@@ -14,14 +14,14 @@ http_interactions:
       User-Agent:
       - aws-sdk-ruby3/3.20.2 ruby/2.3.3 x86_64-darwin15 aws-sdk-sqs/1.3.0
       X-Amz-Date:
-      - 20180508T103005Z
+      - 20180514T185256Z
       X-Amz-Content-Sha256:
-      - 5761efd13dd0ed81182207171d3660628968189941431d6044920ef8fe7b1160
+      - 5034a1b0b889e68da64b7a052e782d357595681cff3bfea21cac68581dec9836
       Authorization:
-      - AWS4-HMAC-SHA256 Credential=AKIAIXLDUBIDM74CC6KQ/20180508/eu-west-1/sqs/aws4_request,
-        SignedHeaders=content-type;host;x-amz-content-sha256;x-amz-date, Signature=64ba16e1f33bae2a1571ef2dfde579e6970cfa8693ecca0126e825b4870e9e8c
+      - AWS4-HMAC-SHA256 Credential=AKIAIXLDUBIDM74CC6KQ/20180514/eu-west-1/sqs/aws4_request,
+        SignedHeaders=content-type;host;x-amz-content-sha256;x-amz-date, Signature=6f80ad6e442efda70037393318997b354d066418adda913aca50b6a3e6b08a3d
       Content-Length:
-      - '58'
+      - '59'
       Accept:
       - "*/*"
   response:
@@ -32,26 +32,26 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Tue, 08 May 2018 10:30:06 GMT
+      - Mon, 14 May 2018 18:52:56 GMT
       Content-Type:
       - text/xml
       Content-Length:
-      - '330'
+      - '331'
       Connection:
       - keep-alive
       X-Amzn-Requestid:
-      - 41e1b46e-d509-52d1-8d62-e705ab67c01a
+      - f27211da-58e2-5317-86d9-42a985aa48ed
     body:
       encoding: UTF-8
-      string: <?xml version="1.0"?><GetQueueUrlResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><GetQueueUrlResult><QueueUrl>https://sqs.eu-west-1.amazonaws.com/404017989009/test_usage</QueueUrl></GetQueueUrlResult><ResponseMetadata><RequestId>41e1b46e-d509-52d1-8d62-e705ab67c01a</RequestId></ResponseMetadata></GetQueueUrlResponse>
+      string: <?xml version="1.0"?><GetQueueUrlResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><GetQueueUrlResult><QueueUrl>https://sqs.eu-west-1.amazonaws.com/404017989009/stage_usage</QueueUrl></GetQueueUrlResult><ResponseMetadata><RequestId>f27211da-58e2-5317-86d9-42a985aa48ed</RequestId></ResponseMetadata></GetQueueUrlResponse>
     http_version: 
-  recorded_at: Tue, 08 May 2018 10:30:06 GMT
+  recorded_at: Mon, 14 May 2018 18:52:56 GMT
 - request:
     method: post
-    uri: https://sqs.eu-west-1.amazonaws.com/404017989009/test_usage
+    uri: https://sqs.eu-west-1.amazonaws.com/
     body:
       encoding: UTF-8
-      string: Action=GetQueueAttributes&AttributeName.1=ApproximateNumberOfMessages&AttributeName.2=ApproximateNumberOfMessagesNotVisible&QueueUrl=https%3A%2F%2Fsqs.eu-west-1.amazonaws.com%2F404017989009%2Ftest_usage&Version=2012-11-05
+      string: Action=GetQueueUrl&QueueName=stage_usage&Version=2012-11-05
     headers:
       Content-Type:
       - application/x-www-form-urlencoded; charset=utf-8
@@ -60,14 +60,14 @@ http_interactions:
       User-Agent:
       - aws-sdk-ruby3/3.20.2 ruby/2.3.3 x86_64-darwin15 aws-sdk-sqs/1.3.0
       X-Amz-Date:
-      - 20180508T103006Z
+      - 20180514T185256Z
       X-Amz-Content-Sha256:
-      - 4fa1f9790ab8d8b778fc048ef890ef00e82c1fd4658cd21964eff9eb5dc9426d
+      - 5034a1b0b889e68da64b7a052e782d357595681cff3bfea21cac68581dec9836
       Authorization:
-      - AWS4-HMAC-SHA256 Credential=AKIAIXLDUBIDM74CC6KQ/20180508/eu-west-1/sqs/aws4_request,
-        SignedHeaders=content-type;host;x-amz-content-sha256;x-amz-date, Signature=1150f8f5456b041990e00a58f96be8ff5fc1cad94a21d75ffd45901d4062360d
+      - AWS4-HMAC-SHA256 Credential=AKIAIXLDUBIDM74CC6KQ/20180514/eu-west-1/sqs/aws4_request,
+        SignedHeaders=content-type;host;x-amz-content-sha256;x-amz-date, Signature=6f80ad6e442efda70037393318997b354d066418adda913aca50b6a3e6b08a3d
       Content-Length:
-      - '221'
+      - '59'
       Accept:
       - "*/*"
   response:
@@ -78,7 +78,53 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Tue, 08 May 2018 10:30:06 GMT
+      - Mon, 14 May 2018 18:52:56 GMT
+      Content-Type:
+      - text/xml
+      Content-Length:
+      - '331'
+      Connection:
+      - keep-alive
+      X-Amzn-Requestid:
+      - 5378d5d0-3bce-5788-83c6-86a3e68676d7
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0"?><GetQueueUrlResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><GetQueueUrlResult><QueueUrl>https://sqs.eu-west-1.amazonaws.com/404017989009/stage_usage</QueueUrl></GetQueueUrlResult><ResponseMetadata><RequestId>5378d5d0-3bce-5788-83c6-86a3e68676d7</RequestId></ResponseMetadata></GetQueueUrlResponse>
+    http_version: 
+  recorded_at: Mon, 14 May 2018 18:52:56 GMT
+- request:
+    method: post
+    uri: https://sqs.eu-west-1.amazonaws.com/404017989009/stage_usage
+    body:
+      encoding: UTF-8
+      string: Action=GetQueueAttributes&AttributeName.1=ApproximateNumberOfMessages&AttributeName.2=ApproximateNumberOfMessagesNotVisible&QueueUrl=https%3A%2F%2Fsqs.eu-west-1.amazonaws.com%2F404017989009%2Fstage_usage&Version=2012-11-05
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded; charset=utf-8
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby3/3.20.2 ruby/2.3.3 x86_64-darwin15 aws-sdk-sqs/1.3.0
+      X-Amz-Date:
+      - 20180514T185256Z
+      X-Amz-Content-Sha256:
+      - 96a6d2cb54f526d279e954a56182b68f10b0ee5e7a64bc951623176e816b2435
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=AKIAIXLDUBIDM74CC6KQ/20180514/eu-west-1/sqs/aws4_request,
+        SignedHeaders=content-type;host;x-amz-content-sha256;x-amz-date, Signature=72bfc9b0b1a9422d153e06ff09eed6cd08293be275fd31dd7afe3953c90fd691
+      Content-Length:
+      - '222'
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Server
+      Date:
+      - Mon, 14 May 2018 18:52:57 GMT
       Content-Type:
       - text/xml
       Content-Length:
@@ -86,18 +132,18 @@ http_interactions:
       Connection:
       - keep-alive
       X-Amzn-Requestid:
-      - 20a02d4c-100d-55c7-bbe9-7e276e6354cc
+      - 2d292f4c-1574-5de3-b70d-7c3fc83dae1f
     body:
       encoding: UTF-8
-      string: <?xml version="1.0"?><GetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><GetQueueAttributesResult><Attribute><Name>ApproximateNumberOfMessages</Name><Value>0</Value></Attribute><Attribute><Name>ApproximateNumberOfMessagesNotVisible</Name><Value>0</Value></Attribute></GetQueueAttributesResult><ResponseMetadata><RequestId>20a02d4c-100d-55c7-bbe9-7e276e6354cc</RequestId></ResponseMetadata></GetQueueAttributesResponse>
+      string: <?xml version="1.0"?><GetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><GetQueueAttributesResult><Attribute><Name>ApproximateNumberOfMessages</Name><Value>0</Value></Attribute><Attribute><Name>ApproximateNumberOfMessagesNotVisible</Name><Value>0</Value></Attribute></GetQueueAttributesResult><ResponseMetadata><RequestId>2d292f4c-1574-5de3-b70d-7c3fc83dae1f</RequestId></ResponseMetadata></GetQueueAttributesResponse>
     http_version: 
-  recorded_at: Tue, 08 May 2018 10:30:06 GMT
+  recorded_at: Mon, 14 May 2018 18:52:57 GMT
 - request:
     method: post
     uri: "<SLACK_WEBHOOK_URL>"
     body:
       encoding: US-ASCII
-      string: payload=%7B%22username%22%3A%22Event+Data+Agent%22%2C%22icon_url%22%3A%22https%3A%2F%2Fraw.githubusercontent.com%2Fdatacite%2Ftoccatore%2Fmaster%2Flib%2Ftoccatore%2Fimages%2Ftoccatore.png%22%2C%22attachments%22%3A%5B%7B%22title%22%3A%22Report+for+usage_update%22%2C%22text%22%3A%22No+works+found+for+in+the+Usage+Reports+Queue.%22%2C%22color%22%3A%22warning%22%7D%5D%7D
+      string: payload=%7B%22username%22%3A%22Event+Data+Agent%22%2C%22icon_url%22%3A%22https%3A%2F%2Fraw.githubusercontent.com%2Fdatacite%2Ftoccatore%2Fmaster%2Flib%2Ftoccatore%2Fimages%2Ftoccatore.png%22%2C%22attachments%22%3A%5B%7B%22title%22%3A%22Report+for+usage_update%22%2C%22text%22%3A%220+works+processed+with+0+errors+for+Usage+Reports+Queue%22%2C%22color%22%3A%22warning%22%7D%5D%7D
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -119,7 +165,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Tue, 08 May 2018 10:30:06 GMT
+      - Mon, 14 May 2018 18:52:57 GMT
       Server:
       - Apache
       X-Slack-Backend:
@@ -135,16 +181,16 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       X-Via:
-      - haproxy-www-ti0y
+      - haproxy-www-ql6f
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 8e7b38fb8c27e98caec113dfa99daa1a.cloudfront.net (CloudFront)
+      - 1.1 72f202fb973968c0cfdb028ab6f36fac.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - mbliRIKKiAQjGo9tR4VjqK8IZTKtq0EK3p7-D2JxFlYWtziVB5gJfw==
+      - K-xLU_tl9uE8DQCYd4of4Znn7FecPQIa_uGV_NEbWMDwcjrcb78SFA==
     body:
       encoding: ASCII-8BIT
       string: ok
     http_version: 
-  recorded_at: Tue, 08 May 2018 10:30:06 GMT
+  recorded_at: Mon, 14 May 2018 18:52:57 GMT
 recorded_with: VCR 3.0.3

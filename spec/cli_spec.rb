@@ -123,7 +123,7 @@ describe Toccatore::CLI do
           subject.options = { push_url: push_url,
                               slack_webhook_url: slack_webhook_url,
                               access_token: access_token}
-          expect { subject.usage_update }.to output("No works found for in the Usage Reports Queue.\n").to_stdout
+          expect { subject.usage_update }.to output("0 works processed with 0 errors for Usage Reports Queue\n").to_stdout
         end
       end
 
