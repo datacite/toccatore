@@ -19,18 +19,19 @@ module Toccatore
         text = "No works found for in the Usage Reports Queue."
       end
 
-      while total > 0
+      error_total = 0
+      num_messages = total
+      while num_messages > 0
         # walk through paginated results
-        total_pages = (total.to_f / job_batch_size).ceil
-        error_total = 0
-
-        (0...total_pages).each do |page|
-          options[:offset] = page * job_batch_size
-          options[:total] = total
+        
+        # (0...total).each do |page|
+          # options[:offset] = page * 1
+          # options[:total] = total
           error_total += process_data(options)
-        end
-        text = "#{total} works processed with #{error_total} errors for Usage Reports Queue"
+          num_messages = get_total(options)
+        # end
       end
+      text = "#{total} works processed with #{error_total} errors for Usage Reports Queue"
 
       puts text
       # send slack notification

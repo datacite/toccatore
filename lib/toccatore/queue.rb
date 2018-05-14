@@ -28,6 +28,7 @@ module Toccatore
     end
 
     def delete_message options={}
+      return 1 if options.messages.size < 1
       reponse = @sqs.delete_message({
         queue_url: queue_url,
         receipt_handle: options.messages[0][:receipt_handle]    
@@ -43,7 +44,9 @@ module Toccatore
     end
 
     def queue_url options={}
-      queue_name = queue_name ||= "#{ENV['ENVIROMENT']}_usage"
+      options[:queue_name] ||= "#{ENV['ENVIROMENT']}_usage"
+      queue_name = options[:queue_name] 
+      puts "Using  #{@sqs.get_queue_url(queue_name: queue_name).queue_url} queue"
       @sqs.get_queue_url(queue_name: queue_name).queue_url
     end
   end
