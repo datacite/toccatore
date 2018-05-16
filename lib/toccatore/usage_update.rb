@@ -50,8 +50,11 @@ module Toccatore
 
       return [OpenStruct.new(body: { "data" => [] })] if data.empty?
 
-      push_data(data, options)
-      delete_message message
+      errors = push_data(data, options)
+      if errors < 1
+        delete_message message
+      end
+      errors
     end
 
     def get_data reponse 
@@ -141,7 +144,7 @@ module Toccatore
       host = options[:push_url].presence || "https://api.test.datacite.org"
       push_url = host + "/events"
 
-      if options[:jsonapi]
+      # if options[:jsonapi]
         data = { "data" => {
                    "id" => item["id"],
                    "type" => "events",
@@ -150,12 +153,12 @@ module Toccatore
                                           bearer: options[:access_token],
                                           content_type: 'json',
                                           host: host)
-      else
-        response = Maremma.post(push_url, data: item.to_json,
-                                          bearer: options[:access_token],
-                                          content_type: 'json',
-                                          host: host)
-      end
+      # else
+      #   response = Maremma.post(push_url, data: item.to_json,
+      #                                     bearer: options[:access_token],
+      #                                     content_type: 'json',
+      #                                     host: host)
+      # end
 
       # return 0 if successful, 1 if error
       if response.status == 201
