@@ -13,12 +13,12 @@ describe Toccatore::UsageUpdate, vcr: true do
   context "queue_url" do
     it "should return always correct queue url" do
       response = subject.queue_url
-      expect(response).to eq("https://sqs.#{ENV['AWS_REGION']}.amazonaws.com/404017989009/#{ENV['ENVIROMENT']}_usage")
+      expect(response).to eq("https://sqs.#{ENV['AWS_REGION']}.amazonaws.com/404017989009/#{ENV['ENVIRONMENT']}_usage")
     end
 
     it "should fail if the queue doesn exist" do
       response = subject.queue_url({ queue_name: "stage_usage" })
-      expect(response).to eq("https://sqs.#{ENV['AWS_REGION']}.amazonaws.com/404017989009/#{ENV['ENVIROMENT']}_usage")
+      expect(response).to eq("https://sqs.#{ENV['AWS_REGION']}.amazonaws.com/404017989009/#{ENV['ENVIRONMENT']}_usage")
     end
   end
 
