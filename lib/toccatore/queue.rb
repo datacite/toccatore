@@ -4,7 +4,8 @@ module Toccatore
   module Queue
 
     def queue options={}
-      Aws::SQS::Client.new(region: ENV['AWS_REGION'].to_s, stub_responses: false)
+      region = ENV['AWS_REGION'] ||= 'eu-west-1'
+      Aws::SQS::Client.new(region: region.to_s, stub_responses: false)
     end
 
     def get_total options={}
@@ -44,7 +45,7 @@ module Toccatore
     end
 
     def queue_url options={}
-      options[:queue_name] ||= "#{ENV['ENVIRONMENT']}_usage"
+      options[:queue_name] ||= "#{ENV['ENVIRONMENT']}_usage" || "stage_usage"
       queue_name = options[:queue_name] 
       # puts "Using  #{@sqs.get_queue_url(queue_name: queue_name).queue_url} queue"
       @sqs.get_queue_url(queue_name: queue_name).queue_url
