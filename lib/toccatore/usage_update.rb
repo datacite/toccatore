@@ -31,7 +31,7 @@ module Toccatore
           num_messages = get_total(options)
         # end
       end
-      text = "#{total} works processed with #{error_total} errors for Usage Reports Queue"
+      text = "#{num_messages} works processed with #{error_total} errors for Usage Reports Queue"
 
       puts text
       # send slack notification
@@ -40,7 +40,7 @@ module Toccatore
       send_notification_to_slack(text, options) if options[:slack_webhook_url].present?
 
       # return number of works queued
-      total
+      get_total(options)
     end
 
     def process_data(options = {})
@@ -140,19 +140,20 @@ module Toccatore
 
     def push_item(item, options={})
       return OpenStruct.new(body: { "errors" => [{ "title" => "Access token missing." }] }) if options[:access_token].blank?
+      return 0 if item == "Queue is empty"
 
       host = options[:push_url].presence || "https://api.test.datacite.org"
-      push_url = host + "/events"
+      push_url = host + "/events/" + item["id"].to_s
 
       # if options[:jsonapi]
-        data = { "data" => {
-                   "id" => item["id"],
-                   "type" => "events",
-                   "attributes" => item.except("id") }}
-        response = Maremma.post(push_url, data: data.to_json,
-                                          bearer: options[:access_token],
-                                          content_type: 'json',
-                                          host: host)
+      data = { "data" => {
+                  "id" => item["id"],
+                  "type" => "events",
+                  "attributes" => item.except("id") }}
+      response = Maremma.put(push_url, data: data.to_json,
+                                        bearer: options[:access_token],
+                                        content_type: 'json',
+                                        host: host)
       # else
       #   response = Maremma.post(push_url, data: item.to_json,
       #                                     bearer: options[:access_token],
