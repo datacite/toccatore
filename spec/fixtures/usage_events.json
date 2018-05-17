@@ -1,6 +1,6 @@
 [
   {
-    "id": "a17e783b-8214-451e-9b0d-077213c2acae",
+    "uuid": "a17e783b-8214-451e-9b0d-077213c2acae",
     "message-action": "add",
     "subj-id": "https://metrics.test.datacite.org/reports/2018-3-Dash",
     "subj": {
@@ -15,7 +15,7 @@
     "occurred-at": "2128-04-09",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/"
   }, {
-    "id": "fc6860b8-4230-41bc-8b8e-21d60e9a7d9a",
+    "uuid": "fc6860b8-4230-41bc-8b8e-21d60e9a7d9a",
     "message-action": "add",
     "subj-id": "https://metrics.test.datacite.org/reports/2018-3-Dash",
     "subj": {
@@ -30,7 +30,7 @@
     "occurred-at": "2128-04-09",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/"
   }, {
-    "id": "054da0ad-9821-492e-877e-5c3adbfd5ccf",
+    "uuid": "054da0ad-9821-492e-877e-5c3adbfd5ccf",
     "message-action": "add",
     "subj-id": "https://metrics.test.datacite.org/reports/2018-3-Dash",
     "subj": {
@@ -45,7 +45,7 @@
     "occurred-at": "2128-04-09",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/"
   }, {
-    "id": "6d6fd620-2123-42da-91f3-6c02e63f3cec",
+    "uuid": "6d6fd620-2123-42da-91f3-6c02e63f3cec",
     "message-action": "add",
     "subj-id": "https://metrics.test.datacite.org/reports/2018-3-Dash",
     "subj": {

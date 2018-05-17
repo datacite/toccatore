@@ -91,7 +91,7 @@ module Toccatore
     end
 
     def format_event type, data, options
-      { "id" => SecureRandom.uuid,
+      { "uuid" => SecureRandom.uuid,
         "message-action" => "add",
         "subj-id" => data[:report_id],
         "subj"=> {
@@ -143,11 +143,9 @@ module Toccatore
       return 0 if item == "Queue is empty"
 
       host = options[:push_url].presence || "https://api.test.datacite.org"
-      push_url = host + "/events/" + item["id"].to_s
-
-      # if options[:jsonapi]
+      push_url = host + "/events/" + item["uuid"].to_s
       data = { "data" => {
-                  "id" => item["id"],
+                  "id" => item["uuid"],
                   "type" => "events",
                   "attributes" => item.except("id") }}
       response = Maremma.put(push_url, data: data.to_json,
@@ -162,8 +160,11 @@ module Toccatore
       # end
 
       # return 0 if successful, 1 if error
-      if response.status == 201
+      if response.status == 201 
         puts "#{item['subj-id']} #{item['relation-type-id']} #{item['obj-id']} pushed to Event Data service."
+        0
+      elsif response.status == 200
+        puts "#{item['subj-id']} #{item['relation-type-id']} #{item['obj-id']} pushed to Event Data service for update."
         0
       elsif response.body["errors"].present?
         puts "#{item['subj-id']} #{item['relation-type-id']} #{item['obj-id']} had an error:"
