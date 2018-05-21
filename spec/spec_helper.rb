@@ -13,7 +13,8 @@ require 'nokogiri'
 require 'vcr'
 require 'aws-sdk-sqs'
 require 'factory_bot'
-
+ENV['ENVIRONMENT'] ||= 'test'
+ENV['AWS_REGION']  ||= 'eu-west-1'
 
 RSpec.configure do |config|
   config.order = :random
