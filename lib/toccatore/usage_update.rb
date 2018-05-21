@@ -22,16 +22,11 @@ module Toccatore
       error_total = 0
       num_messages = total
       while num_messages > 0
-        # walk through paginated results
-        
-        # (0...total).each do |page|
-          # options[:offset] = page * 1
-          # options[:total] = total
-          error_total += process_data(options)
-          num_messages = get_total(options)
-        # end
+          processed = process_data(options)
+          error_total += processed
+          num_messages += 1 if processed == 0
       end
-      text = "#{num_messages} works processed with #{error_total} errors for Usage Reports Queue"
+      text = "#{num_messages} works processed with #{error_total} errors for Usage Reports Queue #{queue_url}"
 
       puts text
       # send slack notification
@@ -40,17 +35,17 @@ module Toccatore
       send_notification_to_slack(text, options) if options[:slack_webhook_url].present?
 
       # return number of works queued
-      get_total(options)
+      num_messages
     end
 
     def process_data(options = {})
       message = get_message
       data = get_data(message)
-      data = parse_data(data, options)
+      events = parse_data(data, options)
 
-      return [OpenStruct.new(body: { "data" => [] })] if data.empty?
+      return [OpenStruct.new(body: { "data" => [] })] if events.empty?
 
-      errors = push_data(data, options)
+      errors = push_data(events, options)
       if errors < 1
         delete_message message
       end
@@ -108,7 +103,6 @@ module Toccatore
       }
     end
 
-
     def parse_data(result, options={})
       return result.body.fetch("errors") if result.body.fetch("errors", nil).present?
 
@@ -127,7 +121,7 @@ module Toccatore
 
         instances = item.dig("performance", 0, "instance")
 
-        return x += [OpenStruct.new(body: { "errors" => "There are too many instances. There can only be 4" })] if instances.size > 8
+        return x += [OpenStruct.new(body: { "errors" => "There are too many instances in #{data[:doi]} for report #{report_id}. There can only be 4" })] if instances.size > 8
      
         x += Array.wrap(instances).reduce([]) do |ssum, instance|
           data[:count] = instance.dig("count")
