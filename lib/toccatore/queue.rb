@@ -45,7 +45,7 @@ module Toccatore
     end
 
     def queue_url options={}
-      options[:queue_name] ||= "#{ENV['ENVIRONMENT']}_usage" || "stage_usage"
+      options[:queue_name] ||= "#{ENV['ENVIRONMENT']}_usage" 
       queue_name = options[:queue_name] 
       # puts "Using  #{@sqs.get_queue_url(queue_name: queue_name).queue_url} queue"
       @sqs.get_queue_url(queue_name: queue_name).queue_url
