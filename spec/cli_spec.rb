@@ -8,7 +8,7 @@ describe Toccatore::CLI do
 
   describe "version" do
     it 'has version' do
-      expect { subject.__print_version }.to output("0.4.2\n").to_stdout
+      expect { subject.__print_version }.to output("0.4.3\n").to_stdout
     end
   end
 
@@ -123,15 +123,15 @@ describe Toccatore::CLI do
           subject.options = { push_url: push_url,
                               slack_webhook_url: slack_webhook_url,
                               access_token: access_token}
-          expect { subject.usage_update }.to output("0 works processed with 0 errors for Usage Reports Queue\n").to_stdout
+          expect { subject.usage_update }.to output("0 works processed with 0 errors for Usage Reports Queue https://sqs.eu-west-1.amazonaws.com/404017989009/test_usage\n").to_stdout
         end
       end
 
       context "with reports in the queue" do 
-        ## TO test this we need a real queue working 
+        # TO test this we need a real queue working 
         # it 'should succeed' do
         #   subject.options = cli_options
-        #   expect { subject.usage_update }.to output(/https:\/\/doi.org\/10.5281\/zenodo.16396 is_supplement_to https:\/\/doi.org\/10.1007\/s11548-015-1180-7 pushed to Event Data service.\n/).to_stdout
+        #   expect { subject.usage_update }.to output("0 works processed with 0 errors for Usage Reports Queue https://sqs.eu-west-1.amazonaws.com/404017989009/test_usage\n").to_stdout
         # end
         # it 'should fail' do
         #   subject.options = cli_options.except(:access_token)

@@ -102,7 +102,7 @@ describe Toccatore::DataciteRelated, vcr: true do
       response = subject.parse_data(result, source_token: ENV['SOURCE_TOKEN'])
 
       expect(response.length).to eq(134)
-      expect(response.last.except("id")).to eq("message_action" => "create", "subj_id"=>"https://doi.org/10.17180/obs.yzeron", "obj_id"=>"https://doi.org/10.1016/j.jhydrol.2013.09.055", "relation_type_id"=>"is_referenced_by", "source_id"=>"datacite","source_token" => "28276d12-b320-41ba-9272-bb0adc3466ff", "occurred_at"=>"2015-04-07T12:22:40Z", "license" => "https://creativecommons.org/publicdomain/zero/1.0/")
+      expect(response.last.except("id")).to eq("message_action" => "create", "subj_id"=>"https://doi.org/10.17180/obs.yzeron", "obj_id"=>"https://doi.org/10.1016/j.jhydrol.2013.09.055", "relation_type_id"=>"is_referenced_by", "source_id"=>"datacite","source_token" => "43ba99ae-5cf0-11e8-9c2d-fa7ae01bbebc", "occurred_at"=>"2015-04-07T12:22:40Z", "license" => "https://creativecommons.org/publicdomain/zero/1.0/")
     end
 
     it "should report if there are works ignored because of an IsIdenticalTo relation" do

@@ -191,7 +191,7 @@ http_interactions:
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"6accc7dd-d727-4202-9d33-a314d357fc2f","message_action":"create","subj_id":"https://doi.org/10.5061/dryad.b835k","obj_id":"https://doi.org/10.7554/elife.01567","relation_type_id":"is_referenced_by","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2014-01-23T19:20:48Z"}'
+      string: '{"id":"6accc7dd-d727-4202-9d33-a314d357fc2f","message_action":"create","subj_id":"https://doi.org/10.5061/dryad.b835k","obj_id":"https://doi.org/10.7554/elife.01567","relation_type_id":"is_referenced_by","source_id":"datacite","source_token":"43ba99ae-5cf0-11e8-9c2d-fa7ae01bbebc","occurred_at":"2014-01-23T19:20:48Z"}'
     headers:
       User-Agent:
       - Maremma - https://github.com/datacite/maremma

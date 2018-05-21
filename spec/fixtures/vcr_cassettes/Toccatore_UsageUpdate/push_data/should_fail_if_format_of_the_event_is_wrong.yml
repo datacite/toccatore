@@ -5,7 +5,7 @@ http_interactions:
     uri: https://api.test.datacite.org/events/a17e783b-8214-451e-9b0d-077213c2acae
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"a17e783b-8214-451e-9b0d-077213c2acae","type":"events","attributes":{"uuid":"a17e783b-8214-451e-9b0d-077213c2acae","message-action":"add","subj-id":"https://metrics.test.datacite.org/reports/2018-3-Dash","subj":{"pid":"https://metrics.test.datacite.org/reports/2018-3-Dash","issued":"2128-04-09"},"total":3,"obj-id":"https://doi.org/10.7291/d1q94r","relation-type-id":"total-dataset-investigations-regular","source-id":"datacite","source-token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred-at":"2128-04-09","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
+      string: '{"data":{"id":"a17e783b-8214-451e-9b0d-077213c2acae","type":"events","attributes":{"uuid":"a17e783b-8214-451e-9b0d-077213c2acae","message-action":"add","subj-id":"https://metrics.test.datacite.org/reports/2018-3-Dash","subj":{"pid":"https://metrics.test.datacite.org/reports/2018-3-Dash","issued":"2128-04-09"},"total":3,"obj-id":"https://doi.org/10.7291/d1q94r","relation-type-id":"total-dataset-investigations-regular","source-id":"datacite","source-token":"43ba99ae-5cf0-11e8-9c2d-fa7ae01bbebc","occurred-at":"2128-04-09","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
     headers:
       User-Agent:
       - Maremma - https://github.com/datacite/maremma
@@ -21,7 +21,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Thu, 17 May 2018 13:47:05 GMT
+      - Mon, 21 May 2018 11:37:59 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -33,9 +33,9 @@ http_interactions:
       Vary:
       - Origin
       X-Runtime:
-      - '0.094216'
+      - '0.093151'
       X-Request-Id:
-      - c752d13a-fe4b-420f-a7a4-c9256fc0821c
+      - a5fb7585-f8ca-4a88-bc9c-b2b9f41c1ca2
       X-Powered-By:
       - Phusion Passenger 5.3.1
       Server:
@@ -46,7 +46,7 @@ http_interactions:
         Mysql2::Error: Duplicate entry ''https://metrics.test.datacite.org/reports/2018-3-Dash-https://do''
         for key ''index_events_on_multiple_columns'': UPDATE `events` SET `subj_id`
         = ''https://metrics.test.datacite.org/reports/2018-3-Dash'', `updated_at`
-        = ''2018-05-17 13:47:05'', `subj` = ''{\\\"pid\\\":\\\"https://metrics.test.datacite.org/reports/2018-3-Dash\\\",\\\"issued\\\":\\\"2128-04-09\\\"}''
+        = ''2018-05-21 11:37:59'', `subj` = ''{\\\"pid\\\":\\\"https://metrics.test.datacite.org/reports/2018-3-Dash\\\",\\\"issued\\\":\\\"2128-04-09\\\"}''
         WHERE `events`.`id` = 337\u003e","traces":{"Application Trace":[{"id":58,"trace":"app/controllers/events_controller.rb:30:in
         `update''"}],"Framework Trace":[{"id":0,"trace":"vendor/bundle/ruby/2.4.0/gems/mysql2-0.4.10/lib/mysql2/client.rb:120:in
         `_query''"},{"id":1,"trace":"vendor/bundle/ruby/2.4.0/gems/mysql2-0.4.10/lib/mysql2/client.rb:120:in
@@ -284,13 +284,13 @@ http_interactions:
         `block (3 levels) in start_threads''"},{"id":117,"trace":"/usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in
         `block in create_thread_and_abort_on_exception''"}]}}'
     http_version: 
-  recorded_at: Thu, 17 May 2018 13:47:05 GMT
+  recorded_at: Mon, 21 May 2018 11:37:59 GMT
 - request:
     method: put
     uri: https://api.test.datacite.org/events/fc6860b8-4230-41bc-8b8e-21d60e9a7d9a
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"fc6860b8-4230-41bc-8b8e-21d60e9a7d9a","type":"events","attributes":{"uuid":"fc6860b8-4230-41bc-8b8e-21d60e9a7d9a","message-action":"add","subj-id":"https://metrics.test.datacite.org/reports/2018-3-Dash","subj":{"pid":"https://metrics.test.datacite.org/reports/2018-3-Dash","issued":"2128-04-09"},"total":3,"obj-id":"https://doi.org/10.7291/d1q94r","relation-type-id":"unique-dataset-investigations-regular","source-id":"datacite","source-token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred-at":"2128-04-09","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
+      string: '{"data":{"id":"fc6860b8-4230-41bc-8b8e-21d60e9a7d9a","type":"events","attributes":{"uuid":"fc6860b8-4230-41bc-8b8e-21d60e9a7d9a","message-action":"add","subj-id":"https://metrics.test.datacite.org/reports/2018-3-Dash","subj":{"pid":"https://metrics.test.datacite.org/reports/2018-3-Dash","issued":"2128-04-09"},"total":3,"obj-id":"https://doi.org/10.7291/d1q94r","relation-type-id":"unique-dataset-investigations-regular","source-id":"datacite","source-token":"43ba99ae-5cf0-11e8-9c2d-fa7ae01bbebc","occurred-at":"2128-04-09","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
     headers:
       User-Agent:
       - Maremma - https://github.com/datacite/maremma
@@ -306,7 +306,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Thu, 17 May 2018 13:47:06 GMT
+      - Mon, 21 May 2018 11:38:00 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -318,9 +318,9 @@ http_interactions:
       Vary:
       - Origin
       X-Runtime:
-      - '0.094007'
+      - '0.100154'
       X-Request-Id:
-      - 17479414-98ae-47e8-bfde-d9f2478dfd3c
+      - 8c4abeea-9b83-49e8-8a29-2d5dacdbd83d
       X-Powered-By:
       - Phusion Passenger 5.3.1
       Server:
@@ -333,8 +333,8 @@ http_interactions:
         `subj_id`, `obj_id`, `source_id`, `aasm_state`, `source_token`, `created_at`,
         `updated_at`, `occurred_at`, `relation_type_id`, `subj`, `obj`, `total`, `license`)
         VALUES (''fc6860b8-4230-41bc-8b8e-21d60e9a7d9a'', ''https://metrics.test.datacite.org/reports/2018-3-Dash'',
-        ''https://doi.org/10.7291/d1q94r'', ''datacite'', ''waiting'', ''28276d12-b320-41ba-9272-bb0adc3466ff'',
-        ''2018-05-17 13:47:06'', ''2018-05-17 13:47:06'', ''2128-04-09 00:00:00'',
+        ''https://doi.org/10.7291/d1q94r'', ''datacite'', ''waiting'', ''43ba99ae-5cf0-11e8-9c2d-fa7ae01bbebc'',
+        ''2018-05-21 11:38:00'', ''2018-05-21 11:38:00'', ''2128-04-09 00:00:00'',
         ''unique-dataset-investigations-regular'', ''{\\\"pid\\\":\\\"https://metrics.test.datacite.org/reports/2018-3-Dash\\\",\\\"issued\\\":\\\"2128-04-09\\\"}'',
         ''{}'', 3, ''https://creativecommons.org/publicdomain/zero/1.0/'')\u003e","traces":{"Application
         Trace":[{"id":59,"trace":"app/controllers/events_controller.rb:30:in `update''"}],"Framework
@@ -576,13 +576,13 @@ http_interactions:
         `block (3 levels) in start_threads''"},{"id":118,"trace":"/usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in
         `block in create_thread_and_abort_on_exception''"}]}}'
     http_version: 
-  recorded_at: Thu, 17 May 2018 13:47:06 GMT
+  recorded_at: Mon, 21 May 2018 11:38:00 GMT
 - request:
     method: put
     uri: https://api.test.datacite.org/events/054da0ad-9821-492e-877e-5c3adbfd5ccf
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"054da0ad-9821-492e-877e-5c3adbfd5ccf","type":"events","attributes":{"uuid":"054da0ad-9821-492e-877e-5c3adbfd5ccf","message-action":"add","subj-id":"https://metrics.test.datacite.org/reports/2018-3-Dash","subj":{"pid":"https://metrics.test.datacite.org/reports/2018-3-Dash","issued":"2128-04-09"},"total":254,"obj-id":"https://doi.org/10.6071/z7wc73","relation-type-id":"Total-Dataset-Requests-Machine","source-id":"datacite","source-token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred-at":"2128-04-09","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
+      string: '{"data":{"id":"054da0ad-9821-492e-877e-5c3adbfd5ccf","type":"events","attributes":{"uuid":"054da0ad-9821-492e-877e-5c3adbfd5ccf","message-action":"add","subj-id":"https://metrics.test.datacite.org/reports/2018-3-Dash","subj":{"pid":"https://metrics.test.datacite.org/reports/2018-3-Dash","issued":"2128-04-09"},"total":254,"obj-id":"https://doi.org/10.6071/z7wc73","relation-type-id":"Total-Dataset-Requests-Machine","source-id":"datacite","source-token":"43ba99ae-5cf0-11e8-9c2d-fa7ae01bbebc","occurred-at":"2128-04-09","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
     headers:
       User-Agent:
       - Maremma - https://github.com/datacite/maremma
@@ -598,7 +598,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Thu, 17 May 2018 13:47:06 GMT
+      - Mon, 21 May 2018 11:38:00 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -610,9 +610,9 @@ http_interactions:
       Vary:
       - Origin
       X-Runtime:
-      - '0.096308'
+      - '0.094595'
       X-Request-Id:
-      - d3ca28ed-45a3-4351-bb3c-f743ffa4a1af
+      - c97437fc-5678-4519-919f-88a583544bd5
       X-Powered-By:
       - Phusion Passenger 5.3.1
       Server:
@@ -625,8 +625,8 @@ http_interactions:
         `subj_id`, `obj_id`, `source_id`, `aasm_state`, `source_token`, `created_at`,
         `updated_at`, `occurred_at`, `relation_type_id`, `subj`, `obj`, `total`, `license`)
         VALUES (''054da0ad-9821-492e-877e-5c3adbfd5ccf'', ''https://metrics.test.datacite.org/reports/2018-3-Dash'',
-        ''https://doi.org/10.6071/z7wc73'', ''datacite'', ''waiting'', ''28276d12-b320-41ba-9272-bb0adc3466ff'',
-        ''2018-05-17 13:47:06'', ''2018-05-17 13:47:06'', ''2128-04-09 00:00:00'',
+        ''https://doi.org/10.6071/z7wc73'', ''datacite'', ''waiting'', ''43ba99ae-5cf0-11e8-9c2d-fa7ae01bbebc'',
+        ''2018-05-21 11:38:00'', ''2018-05-21 11:38:00'', ''2128-04-09 00:00:00'',
         ''Total-Dataset-Requests-Machine'', ''{\\\"pid\\\":\\\"https://metrics.test.datacite.org/reports/2018-3-Dash\\\",\\\"issued\\\":\\\"2128-04-09\\\"}'',
         ''{}'', 254, ''https://creativecommons.org/publicdomain/zero/1.0/'')\u003e","traces":{"Application
         Trace":[{"id":59,"trace":"app/controllers/events_controller.rb:30:in `update''"}],"Framework
@@ -868,13 +868,13 @@ http_interactions:
         `block (3 levels) in start_threads''"},{"id":118,"trace":"/usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in
         `block in create_thread_and_abort_on_exception''"}]}}'
     http_version: 
-  recorded_at: Thu, 17 May 2018 13:47:06 GMT
+  recorded_at: Mon, 21 May 2018 11:38:00 GMT
 - request:
     method: put
     uri: https://api.test.datacite.org/events/6d6fd620-2123-42da-91f3-6c02e63f3cec
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"6d6fd620-2123-42da-91f3-6c02e63f3cec","type":"events","attributes":{"uuid":"6d6fd620-2123-42da-91f3-6c02e63f3cec","message-action":"add","subj-id":"https://metrics.test.datacite.org/reports/2018-3-Dash","subj":{"pid":"https://metrics.test.datacite.org/reports/2018-3-Dash","issued":"2128-04-09"},"total":208,"obj-id":"https://doi.org/10.6071/z7wc73","relation-type-id":"Unique-Dataset-Requests-Machine","source-id":"datacite","source-token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred-at":"2128-04-09","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
+      string: '{"data":{"id":"6d6fd620-2123-42da-91f3-6c02e63f3cec","type":"events","attributes":{"uuid":"6d6fd620-2123-42da-91f3-6c02e63f3cec","message-action":"add","subj-id":"https://metrics.test.datacite.org/reports/2018-3-Dash","subj":{"pid":"https://metrics.test.datacite.org/reports/2018-3-Dash","issued":"2128-04-09"},"total":208,"obj-id":"https://doi.org/10.6071/z7wc73","relation-type-id":"Unique-Dataset-Requests-Machine","source-id":"datacite","source-token":"43ba99ae-5cf0-11e8-9c2d-fa7ae01bbebc","occurred-at":"2128-04-09","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
     headers:
       User-Agent:
       - Maremma - https://github.com/datacite/maremma
@@ -890,7 +890,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Thu, 17 May 2018 13:47:07 GMT
+      - Mon, 21 May 2018 11:38:01 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -902,9 +902,9 @@ http_interactions:
       Vary:
       - Origin
       X-Runtime:
-      - '0.093865'
+      - '0.099644'
       X-Request-Id:
-      - 75b7ad78-2462-4ca9-bc95-892c670958b1
+      - 195314a1-ebaa-4906-90fa-486e8401cc4b
       X-Powered-By:
       - Phusion Passenger 5.3.1
       Server:
@@ -917,8 +917,8 @@ http_interactions:
         `subj_id`, `obj_id`, `source_id`, `aasm_state`, `source_token`, `created_at`,
         `updated_at`, `occurred_at`, `relation_type_id`, `subj`, `obj`, `total`, `license`)
         VALUES (''6d6fd620-2123-42da-91f3-6c02e63f3cec'', ''https://metrics.test.datacite.org/reports/2018-3-Dash'',
-        ''https://doi.org/10.6071/z7wc73'', ''datacite'', ''waiting'', ''28276d12-b320-41ba-9272-bb0adc3466ff'',
-        ''2018-05-17 13:47:07'', ''2018-05-17 13:47:07'', ''2128-04-09 00:00:00'',
+        ''https://doi.org/10.6071/z7wc73'', ''datacite'', ''waiting'', ''43ba99ae-5cf0-11e8-9c2d-fa7ae01bbebc'',
+        ''2018-05-21 11:38:01'', ''2018-05-21 11:38:01'', ''2128-04-09 00:00:00'',
         ''Unique-Dataset-Requests-Machine'', ''{\\\"pid\\\":\\\"https://metrics.test.datacite.org/reports/2018-3-Dash\\\",\\\"issued\\\":\\\"2128-04-09\\\"}'',
         ''{}'', 208, ''https://creativecommons.org/publicdomain/zero/1.0/'')\u003e","traces":{"Application
         Trace":[{"id":59,"trace":"app/controllers/events_controller.rb:30:in `update''"}],"Framework
@@ -1160,5 +1160,5 @@ http_interactions:
         `block (3 levels) in start_threads''"},{"id":118,"trace":"/usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in
         `block in create_thread_and_abort_on_exception''"}]}}'
     http_version: 
-  recorded_at: Thu, 17 May 2018 13:47:07 GMT
+  recorded_at: Mon, 21 May 2018 11:38:01 GMT
 recorded_with: VCR 3.0.3
