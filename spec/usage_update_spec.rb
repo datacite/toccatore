@@ -121,12 +121,12 @@ describe Toccatore::UsageUpdate, vcr: true do
       expect(subject.push_data(result, options)).to eq(4)
     end
 
-    it "should work with DataCite Event Data 2" do
-      dd = events.map {|event| event.to_h.stringify_keys}
-      all_events = dd.map {|item| item.map{ |k, v| [k.dasherize, v] }.to_h}
-      options = { push_url: ENV['LAGOTTINO_URL'], access_token: ENV['ACCESS_TOKEN'], jsonapi: true }
-      expect(subject.push_data(all_events, options)).to eq(0)
-    end
+    # it "should work with DataCite Event Data 2" do
+    #   dd = events.map {|event| event.to_h.stringify_keys}
+    #   all_events = dd.map {|item| item.map{ |k, v| [k.dasherize, v] }.to_h}
+    #   options = { push_url: ENV['LAGOTTINO_URL'], access_token: ENV['ACCESS_TOKEN'], jsonapi: true }
+    #   expect(subject.push_data(all_events, options)).to eq(0)
+    # end
 
     it "should work with a single item" do
       body = File.read(fixture_path + 'usage_events.json')
