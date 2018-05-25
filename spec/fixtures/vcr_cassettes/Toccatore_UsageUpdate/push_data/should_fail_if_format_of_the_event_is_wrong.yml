@@ -21,7 +21,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Fri, 25 May 2018 15:22:45 GMT
+      - Fri, 25 May 2018 15:27:18 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -33,9 +33,9 @@ http_interactions:
       Vary:
       - Origin
       X-Runtime:
-      - '0.095876'
+      - '0.100168'
       X-Request-Id:
-      - fc4cf057-2d9f-4903-b41f-c240256251d7
+      - 92bdd72e-989d-4144-8ca6-6661085ca14a
       X-Powered-By:
       - Phusion Passenger 5.3.1
       Server:
@@ -46,7 +46,7 @@ http_interactions:
         Mysql2::Error: Duplicate entry ''https://metrics.test.datacite.org/reports/2018-3-Dash-https://do''
         for key ''index_events_on_multiple_columns'': UPDATE `events` SET `subj_id`
         = ''https://metrics.test.datacite.org/reports/2018-3-Dash'', `source_token`
-        = ''43ba99ae-5cf0-11e8-9c2d-fa7ae01bbebc'', `updated_at` = ''2018-05-25 15:22:44'',
+        = ''43ba99ae-5cf0-11e8-9c2d-fa7ae01bbebc'', `updated_at` = ''2018-05-25 15:27:18'',
         `subj` = ''{\\\"pid\\\":\\\"https://metrics.test.datacite.org/reports/2018-3-Dash\\\",\\\"issued\\\":\\\"2128-04-09\\\"}''
         WHERE `events`.`id` = 337\u003e","traces":{"Application Trace":[{"id":58,"trace":"app/controllers/events_controller.rb:30:in
         `update''"}],"Framework Trace":[{"id":0,"trace":"vendor/bundle/ruby/2.4.0/gems/mysql2-0.4.10/lib/mysql2/client.rb:120:in
@@ -285,7 +285,7 @@ http_interactions:
         `block (3 levels) in start_threads''"},{"id":117,"trace":"/usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in
         `block in create_thread_and_abort_on_exception''"}]}}'
     http_version: 
-  recorded_at: Fri, 25 May 2018 15:22:45 GMT
+  recorded_at: Fri, 25 May 2018 15:27:18 GMT
 - request:
     method: put
     uri: https://api.test.datacite.org/events/fc6860b8-4230-41bc-8b8e-21d60e9a7d9a
@@ -307,7 +307,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Fri, 25 May 2018 15:22:45 GMT
+      - Fri, 25 May 2018 15:27:18 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -319,9 +319,9 @@ http_interactions:
       Vary:
       - Origin
       X-Runtime:
-      - '0.099707'
+      - '0.094550'
       X-Request-Id:
-      - c6fd4205-8a93-417a-affa-da52e1976a7f
+      - '068579d2-5c8f-4a34-a3ea-4480e322f7a6'
       X-Powered-By:
       - Phusion Passenger 5.3.1
       Server:
@@ -335,7 +335,7 @@ http_interactions:
         `updated_at`, `occurred_at`, `relation_type_id`, `subj`, `obj`, `total`, `license`)
         VALUES (''fc6860b8-4230-41bc-8b8e-21d60e9a7d9a'', ''https://metrics.test.datacite.org/reports/2018-3-Dash'',
         ''https://doi.org/10.7291/d1q94r'', ''datacite'', ''waiting'', ''43ba99ae-5cf0-11e8-9c2d-fa7ae01bbebc'',
-        ''2018-05-25 15:22:45'', ''2018-05-25 15:22:45'', ''2128-04-09 00:00:00'',
+        ''2018-05-25 15:27:18'', ''2018-05-25 15:27:18'', ''2128-04-09 00:00:00'',
         ''unique-dataset-investigations-regular'', ''{\\\"pid\\\":\\\"https://metrics.test.datacite.org/reports/2018-3-Dash\\\",\\\"issued\\\":\\\"2128-04-09\\\"}'',
         ''{}'', 3, ''https://creativecommons.org/publicdomain/zero/1.0/'')\u003e","traces":{"Application
         Trace":[{"id":59,"trace":"app/controllers/events_controller.rb:30:in `update''"}],"Framework
@@ -577,7 +577,7 @@ http_interactions:
         `block (3 levels) in start_threads''"},{"id":118,"trace":"/usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in
         `block in create_thread_and_abort_on_exception''"}]}}'
     http_version: 
-  recorded_at: Fri, 25 May 2018 15:22:45 GMT
+  recorded_at: Fri, 25 May 2018 15:27:18 GMT
 - request:
     method: put
     uri: https://api.test.datacite.org/events/054da0ad-9821-492e-877e-5c3adbfd5ccf
@@ -599,7 +599,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Fri, 25 May 2018 15:22:46 GMT
+      - Fri, 25 May 2018 15:27:19 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -611,9 +611,9 @@ http_interactions:
       Vary:
       - Origin
       X-Runtime:
-      - '0.098813'
+      - '0.099568'
       X-Request-Id:
-      - 9be32fc7-3167-4209-8ead-29c9eb2b0a79
+      - 8a82ebe2-502f-4fbd-9780-fb46b7e17939
       X-Powered-By:
       - Phusion Passenger 5.3.1
       Server:
@@ -627,7 +627,7 @@ http_interactions:
         `updated_at`, `occurred_at`, `relation_type_id`, `subj`, `obj`, `total`, `license`)
         VALUES (''054da0ad-9821-492e-877e-5c3adbfd5ccf'', ''https://metrics.test.datacite.org/reports/2018-3-Dash'',
         ''https://doi.org/10.6071/z7wc73'', ''datacite'', ''waiting'', ''43ba99ae-5cf0-11e8-9c2d-fa7ae01bbebc'',
-        ''2018-05-25 15:22:46'', ''2018-05-25 15:22:46'', ''2128-04-09 00:00:00'',
+        ''2018-05-25 15:27:19'', ''2018-05-25 15:27:19'', ''2128-04-09 00:00:00'',
         ''Total-Dataset-Requests-Machine'', ''{\\\"pid\\\":\\\"https://metrics.test.datacite.org/reports/2018-3-Dash\\\",\\\"issued\\\":\\\"2128-04-09\\\"}'',
         ''{}'', 254, ''https://creativecommons.org/publicdomain/zero/1.0/'')\u003e","traces":{"Application
         Trace":[{"id":59,"trace":"app/controllers/events_controller.rb:30:in `update''"}],"Framework
@@ -869,7 +869,7 @@ http_interactions:
         `block (3 levels) in start_threads''"},{"id":118,"trace":"/usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in
         `block in create_thread_and_abort_on_exception''"}]}}'
     http_version: 
-  recorded_at: Fri, 25 May 2018 15:22:46 GMT
+  recorded_at: Fri, 25 May 2018 15:27:19 GMT
 - request:
     method: put
     uri: https://api.test.datacite.org/events/6d6fd620-2123-42da-91f3-6c02e63f3cec
@@ -891,7 +891,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Fri, 25 May 2018 15:22:46 GMT
+      - Fri, 25 May 2018 15:27:19 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -903,9 +903,9 @@ http_interactions:
       Vary:
       - Origin
       X-Runtime:
-      - '0.095531'
+      - '0.094014'
       X-Request-Id:
-      - 4efe8983-a22c-4081-810f-ea23a0206a22
+      - b7f3245a-3a1d-422b-adfe-a574f19b8e8b
       X-Powered-By:
       - Phusion Passenger 5.3.1
       Server:
@@ -919,7 +919,7 @@ http_interactions:
         `updated_at`, `occurred_at`, `relation_type_id`, `subj`, `obj`, `total`, `license`)
         VALUES (''6d6fd620-2123-42da-91f3-6c02e63f3cec'', ''https://metrics.test.datacite.org/reports/2018-3-Dash'',
         ''https://doi.org/10.6071/z7wc73'', ''datacite'', ''waiting'', ''43ba99ae-5cf0-11e8-9c2d-fa7ae01bbebc'',
-        ''2018-05-25 15:22:46'', ''2018-05-25 15:22:46'', ''2128-04-09 00:00:00'',
+        ''2018-05-25 15:27:19'', ''2018-05-25 15:27:19'', ''2128-04-09 00:00:00'',
         ''Unique-Dataset-Requests-Machine'', ''{\\\"pid\\\":\\\"https://metrics.test.datacite.org/reports/2018-3-Dash\\\",\\\"issued\\\":\\\"2128-04-09\\\"}'',
         ''{}'', 208, ''https://creativecommons.org/publicdomain/zero/1.0/'')\u003e","traces":{"Application
         Trace":[{"id":59,"trace":"app/controllers/events_controller.rb:30:in `update''"}],"Framework
@@ -1161,5 +1161,5 @@ http_interactions:
         `block (3 levels) in start_threads''"},{"id":118,"trace":"/usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in
         `block in create_thread_and_abort_on_exception''"}]}}'
     http_version: 
-  recorded_at: Fri, 25 May 2018 15:22:46 GMT
+  recorded_at: Fri, 25 May 2018 15:27:19 GMT
 recorded_with: VCR 3.0.3
