@@ -21,7 +21,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Fri, 25 May 2018 15:05:31 GMT
+      - Fri, 25 May 2018 15:22:44 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -33,9 +33,9 @@ http_interactions:
       Vary:
       - Origin
       X-Runtime:
-      - '0.098049'
+      - '0.115581'
       X-Request-Id:
-      - '008585cb-9e81-4095-9ef8-f8b6d786e9b7'
+      - b0eb497a-30bb-4cdc-883d-0f4d00ea78f3
       X-Powered-By:
       - Phusion Passenger 5.3.1
       Server:
@@ -46,7 +46,7 @@ http_interactions:
         Mysql2::Error: Duplicate entry ''https://metrics.test.datacite.org/reports/2018-3-Dash-https://do''
         for key ''index_events_on_multiple_columns'': UPDATE `events` SET `subj_id`
         = ''https://metrics.test.datacite.org/reports/2018-3-Dash'', `source_token`
-        = ''43ba99ae-5cf0-11e8-9c2d-fa7ae01bbebc'', `updated_at` = ''2018-05-25 15:05:31'',
+        = ''43ba99ae-5cf0-11e8-9c2d-fa7ae01bbebc'', `updated_at` = ''2018-05-25 15:22:44'',
         `subj` = ''{\\\"pid\\\":\\\"https://metrics.test.datacite.org/reports/2018-3-Dash\\\",\\\"issued\\\":\\\"2128-04-09\\\"}''
         WHERE `events`.`id` = 337\u003e","traces":{"Application Trace":[{"id":58,"trace":"app/controllers/events_controller.rb:30:in
         `update''"}],"Framework Trace":[{"id":0,"trace":"vendor/bundle/ruby/2.4.0/gems/mysql2-0.4.10/lib/mysql2/client.rb:120:in
@@ -285,5 +285,5 @@ http_interactions:
         `block (3 levels) in start_threads''"},{"id":117,"trace":"/usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in
         `block in create_thread_and_abort_on_exception''"}]}}'
     http_version: 
-  recorded_at: Fri, 25 May 2018 15:05:31 GMT
+  recorded_at: Fri, 25 May 2018 15:22:44 GMT
 recorded_with: VCR 3.0.3

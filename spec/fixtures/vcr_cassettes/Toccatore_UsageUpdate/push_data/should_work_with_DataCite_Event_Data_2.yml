@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: put
-    uri: https://api.test.datacite.org/events/f6f51593-6658-49bc-9323-bd84a8f9f256-21
+    uri: https://api.test.datacite.org/events/918dd5ec-b4cb-4c3e-a4c7-d3fe0fd28c81-31
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"f6f51593-6658-49bc-9323-bd84a8f9f256-21","type":"events","attributes":{"uuid":"f6f51593-6658-49bc-9323-bd84a8f9f256-21","message-action":"add","obj-id":"http://auer.io/ewald.mann21","subj-id":"http://robel.net/al21","total":"801","subj":{"pid":"fdfdfd","issued":"2018-05-23T15:13:11.000+02:00"},"relation-type-id":"unique-dataset-investigations-machine","source-id":"datacite-usage","source-token":"d508ff9e-4de2-43d7-9503-9c4eba953fe7-21","occurred-at":"2018-05-25T00:37:55.000+02:00","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
+      string: '{"data":{"id":"918dd5ec-b4cb-4c3e-a4c7-d3fe0fd28c81-31","type":"events","attributes":{"uuid":"918dd5ec-b4cb-4c3e-a4c7-d3fe0fd28c81-31","message-action":"add","obj-id":"http://dicki.biz/frank.stiedemann31","subj-id":"http://osinski.net/stephany_willms31","total":"174","subj":{"pid":"fdfdfd","issued":"2018-05-25T16:57:12.000+02:00"},"relation-type-id":"total-dataset-investigations-machine","source-id":"datacite-usage","source-token":"81afc923-d19d-4dc6-bc90-c45fd07cc13a-31","occurred-at":"2018-05-23T23:06:21.000+02:00","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
     headers:
       User-Agent:
       - Maremma - https://github.com/datacite/maremma
@@ -21,7 +21,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Fri, 25 May 2018 15:10:24 GMT
+      - Fri, 25 May 2018 15:22:46 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
       Connection:
@@ -33,461 +33,461 @@ http_interactions:
       Vary:
       - Accept-Encoding, Origin
       Etag:
-      - W/"c22ce359b1b6a83960a2faa147db2274"
-      X-Runtime:
-      - '0.016500'
-      X-Credential-Username:
-      - 0000-0001-5489-3594
-      X-Request-Id:
-      - 8cf765e7-0d80-401e-a028-99ec2870bdf6
-      X-Powered-By:
-      - Phusion Passenger 5.3.1
-      Server:
-      - nginx/1.14.0 + Phusion Passenger 5.3.1
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"f6f51593-6658-49bc-9323-bd84a8f9f256-21","type":"events","attributes":{"subj-id":"http://robel.net/al21","obj-id":"http://auer.io/ewald.mann21","message-action":"add","source-token":"d508ff9e-4de2-43d7-9503-9c4eba953fe7-21","relation-type-id":"unique-dataset-investigations-machine","source-id":"datacite-usage","total":801,"license":"https://creativecommons.org/publicdomain/zero/1.0/","occurred-at":"2018-05-24T22:37:55.000Z","timestamp":"2018-05-25T15:10:24Z","subj":{"pid":"fdfdfd","issued":"2018-05-23T15:13:11.000+02:00"},"obj":{}}}}'
-    http_version: 
-  recorded_at: Fri, 25 May 2018 15:10:24 GMT
-- request:
-    method: put
-    uri: https://api.test.datacite.org/events/6d4d3eaf-ad90-4f5f-b28c-7c7d7f30d785-22
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"6d4d3eaf-ad90-4f5f-b28c-7c7d7f30d785-22","type":"events","attributes":{"uuid":"6d4d3eaf-ad90-4f5f-b28c-7c7d7f30d785-22","message-action":"add","obj-id":"http://pouros.io/genoveva.huels22","subj-id":"http://roberts.com/dewayne_rolfson22","total":"801","subj":{"pid":"fdfdfd","issued":"2018-05-24T00:34:11.000+02:00"},"relation-type-id":"unique-dataset-investigations-machine","source-id":"datacite-usage","source-token":"b3909608-b6dd-4180-8772-57f12bc60535-22","occurred-at":"2018-05-25T00:37:55.000+02:00","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Bearer <LAGOTTO_TOKEN>
-  response:
-    status:
-      code: 201
-      message: ''
-    headers:
-      Date:
-      - Fri, 25 May 2018 15:10:24 GMT
-      Content-Type:
-      - application/vnd.api+json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 201 Created
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Vary:
-      - Accept-Encoding, Origin
-      Etag:
-      - W/"b422a72f47938eb67f468a310b25e237"
-      X-Runtime:
-      - '0.015398'
-      X-Credential-Username:
-      - 0000-0001-5489-3594
-      X-Request-Id:
-      - 9b3c0b5b-b351-413b-a106-79792486518d
-      X-Powered-By:
-      - Phusion Passenger 5.3.1
-      Server:
-      - nginx/1.14.0 + Phusion Passenger 5.3.1
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"6d4d3eaf-ad90-4f5f-b28c-7c7d7f30d785-22","type":"events","attributes":{"subj-id":"http://roberts.com/dewayne_rolfson22","obj-id":"http://pouros.io/genoveva.huels22","message-action":"add","source-token":"b3909608-b6dd-4180-8772-57f12bc60535-22","relation-type-id":"unique-dataset-investigations-machine","source-id":"datacite-usage","total":801,"license":"https://creativecommons.org/publicdomain/zero/1.0/","occurred-at":"2018-05-24T22:37:55.000Z","timestamp":"2018-05-25T15:10:24Z","subj":{"pid":"fdfdfd","issued":"2018-05-24T00:34:11.000+02:00"},"obj":{}}}}'
-    http_version: 
-  recorded_at: Fri, 25 May 2018 15:10:24 GMT
-- request:
-    method: put
-    uri: https://api.test.datacite.org/events/134ade61-8c84-42a2-9d6d-c34375c75079-23
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"134ade61-8c84-42a2-9d6d-c34375c75079-23","type":"events","attributes":{"uuid":"134ade61-8c84-42a2-9d6d-c34375c75079-23","message-action":"add","obj-id":"http://wehner.name/mekhi_heel23","subj-id":"http://hodkiewiczshields.com/janea.kuvalis23","total":"801","subj":{"pid":"fdfdfd","issued":"2018-05-23T09:21:45.000+02:00"},"relation-type-id":"unique-dataset-investigations-machine","source-id":"datacite-usage","source-token":"68dc84ef-2163-477e-94ae-9a3c644d4e79-23","occurred-at":"2018-05-25T00:37:55.000+02:00","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Bearer <LAGOTTO_TOKEN>
-  response:
-    status:
-      code: 201
-      message: ''
-    headers:
-      Date:
-      - Fri, 25 May 2018 15:10:25 GMT
-      Content-Type:
-      - application/vnd.api+json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 201 Created
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Vary:
-      - Accept-Encoding, Origin
-      Etag:
-      - W/"d1eb7c3cef87fe95bbac76bb960d7839"
-      X-Runtime:
-      - '0.024508'
-      X-Credential-Username:
-      - 0000-0001-5489-3594
-      X-Request-Id:
-      - aab292b0-9522-4aa9-b7b0-c777393eeaaa
-      X-Powered-By:
-      - Phusion Passenger 5.3.1
-      Server:
-      - nginx/1.14.0 + Phusion Passenger 5.3.1
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"134ade61-8c84-42a2-9d6d-c34375c75079-23","type":"events","attributes":{"subj-id":"http://hodkiewiczshields.com/janea.kuvalis23","obj-id":"http://wehner.name/mekhi_heel23","message-action":"add","source-token":"68dc84ef-2163-477e-94ae-9a3c644d4e79-23","relation-type-id":"unique-dataset-investigations-machine","source-id":"datacite-usage","total":801,"license":"https://creativecommons.org/publicdomain/zero/1.0/","occurred-at":"2018-05-24T22:37:55.000Z","timestamp":"2018-05-25T15:10:25Z","subj":{"pid":"fdfdfd","issued":"2018-05-23T09:21:45.000+02:00"},"obj":{}}}}'
-    http_version: 
-  recorded_at: Fri, 25 May 2018 15:10:25 GMT
-- request:
-    method: put
-    uri: https://api.test.datacite.org/events/5cabdee4-3a74-4d8d-8263-e2fa82277bf6-24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"5cabdee4-3a74-4d8d-8263-e2fa82277bf6-24","type":"events","attributes":{"uuid":"5cabdee4-3a74-4d8d-8263-e2fa82277bf6-24","message-action":"add","obj-id":"http://raynor.io/alyce_adams24","subj-id":"http://schneidernienow.info/ruthe.ortiz24","total":"801","subj":{"pid":"fdfdfd","issued":"2018-05-23T01:03:00.000+02:00"},"relation-type-id":"unique-dataset-investigations-machine","source-id":"datacite-usage","source-token":"eda18f9e-c434-41c4-a5d8-3e2c4f7fd979-24","occurred-at":"2018-05-25T00:37:55.000+02:00","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Bearer <LAGOTTO_TOKEN>
-  response:
-    status:
-      code: 201
-      message: ''
-    headers:
-      Date:
-      - Fri, 25 May 2018 15:10:25 GMT
-      Content-Type:
-      - application/vnd.api+json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 201 Created
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Vary:
-      - Accept-Encoding, Origin
-      Etag:
-      - W/"9b72d2d745c92f8337b4cf931761c0e1"
-      X-Runtime:
-      - '0.014990'
-      X-Credential-Username:
-      - 0000-0001-5489-3594
-      X-Request-Id:
-      - 71c32645-a2a3-4246-81f8-a777d108b599
-      X-Powered-By:
-      - Phusion Passenger 5.3.1
-      Server:
-      - nginx/1.14.0 + Phusion Passenger 5.3.1
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"5cabdee4-3a74-4d8d-8263-e2fa82277bf6-24","type":"events","attributes":{"subj-id":"http://schneidernienow.info/ruthe.ortiz24","obj-id":"http://raynor.io/alyce_adams24","message-action":"add","source-token":"eda18f9e-c434-41c4-a5d8-3e2c4f7fd979-24","relation-type-id":"unique-dataset-investigations-machine","source-id":"datacite-usage","total":801,"license":"https://creativecommons.org/publicdomain/zero/1.0/","occurred-at":"2018-05-24T22:37:55.000Z","timestamp":"2018-05-25T15:10:25Z","subj":{"pid":"fdfdfd","issued":"2018-05-23T01:03:00.000+02:00"},"obj":{}}}}'
-    http_version: 
-  recorded_at: Fri, 25 May 2018 15:10:25 GMT
-- request:
-    method: put
-    uri: https://api.test.datacite.org/events/701d8953-f745-4b31-b60c-539857a05981-25
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"701d8953-f745-4b31-b60c-539857a05981-25","type":"events","attributes":{"uuid":"701d8953-f745-4b31-b60c-539857a05981-25","message-action":"add","obj-id":"http://corwin.io/junius25","subj-id":"http://jerde.name/josephine.hirthe25","total":"801","subj":{"pid":"fdfdfd","issued":"2018-05-24T23:22:38.000+02:00"},"relation-type-id":"unique-dataset-investigations-machine","source-id":"datacite-usage","source-token":"4bcac8fa-6802-414c-8944-ce3917202d9c-25","occurred-at":"2018-05-25T00:37:55.000+02:00","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Bearer <LAGOTTO_TOKEN>
-  response:
-    status:
-      code: 201
-      message: ''
-    headers:
-      Date:
-      - Fri, 25 May 2018 15:10:25 GMT
-      Content-Type:
-      - application/vnd.api+json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 201 Created
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Vary:
-      - Accept-Encoding, Origin
-      Etag:
-      - W/"e20eea5ada1ca6ed6f3206cb12dc9729"
-      X-Runtime:
-      - '0.015293'
-      X-Credential-Username:
-      - 0000-0001-5489-3594
-      X-Request-Id:
-      - 06a28870-c02e-4791-a928-648cebf8db76
-      X-Powered-By:
-      - Phusion Passenger 5.3.1
-      Server:
-      - nginx/1.14.0 + Phusion Passenger 5.3.1
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"701d8953-f745-4b31-b60c-539857a05981-25","type":"events","attributes":{"subj-id":"http://jerde.name/josephine.hirthe25","obj-id":"http://corwin.io/junius25","message-action":"add","source-token":"4bcac8fa-6802-414c-8944-ce3917202d9c-25","relation-type-id":"unique-dataset-investigations-machine","source-id":"datacite-usage","total":801,"license":"https://creativecommons.org/publicdomain/zero/1.0/","occurred-at":"2018-05-24T22:37:55.000Z","timestamp":"2018-05-25T15:10:25Z","subj":{"pid":"fdfdfd","issued":"2018-05-24T23:22:38.000+02:00"},"obj":{}}}}'
-    http_version: 
-  recorded_at: Fri, 25 May 2018 15:10:25 GMT
-- request:
-    method: put
-    uri: https://api.test.datacite.org/events/975889aa-bdae-4499-a0dd-dd3f712fb198-26
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"975889aa-bdae-4499-a0dd-dd3f712fb198-26","type":"events","attributes":{"uuid":"975889aa-bdae-4499-a0dd-dd3f712fb198-26","message-action":"add","obj-id":"http://lindchamplin.com/beryl26","subj-id":"http://kiehn.com/cleo26","total":"801","subj":{"pid":"fdfdfd","issued":"2018-05-25T08:13:02.000+02:00"},"relation-type-id":"unique-dataset-investigations-machine","source-id":"datacite-usage","source-token":"5a0ea992-e9aa-47ce-8364-a258ab322c93-26","occurred-at":"2018-05-25T00:37:55.000+02:00","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Bearer <LAGOTTO_TOKEN>
-  response:
-    status:
-      code: 201
-      message: ''
-    headers:
-      Date:
-      - Fri, 25 May 2018 15:10:26 GMT
-      Content-Type:
-      - application/vnd.api+json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 201 Created
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Vary:
-      - Accept-Encoding, Origin
-      Etag:
-      - W/"b18b01a5c25ed535756f514db6297751"
-      X-Runtime:
-      - '0.016578'
-      X-Credential-Username:
-      - 0000-0001-5489-3594
-      X-Request-Id:
-      - 7052bb6c-7297-45da-9f90-52ac0b5f656d
-      X-Powered-By:
-      - Phusion Passenger 5.3.1
-      Server:
-      - nginx/1.14.0 + Phusion Passenger 5.3.1
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"975889aa-bdae-4499-a0dd-dd3f712fb198-26","type":"events","attributes":{"subj-id":"http://kiehn.com/cleo26","obj-id":"http://lindchamplin.com/beryl26","message-action":"add","source-token":"5a0ea992-e9aa-47ce-8364-a258ab322c93-26","relation-type-id":"unique-dataset-investigations-machine","source-id":"datacite-usage","total":801,"license":"https://creativecommons.org/publicdomain/zero/1.0/","occurred-at":"2018-05-24T22:37:55.000Z","timestamp":"2018-05-25T15:10:26Z","subj":{"pid":"fdfdfd","issued":"2018-05-25T08:13:02.000+02:00"},"obj":{}}}}'
-    http_version: 
-  recorded_at: Fri, 25 May 2018 15:10:26 GMT
-- request:
-    method: put
-    uri: https://api.test.datacite.org/events/99edfc85-1b8e-4b38-9478-58ba0f1993fc-27
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"99edfc85-1b8e-4b38-9478-58ba0f1993fc-27","type":"events","attributes":{"uuid":"99edfc85-1b8e-4b38-9478-58ba0f1993fc-27","message-action":"add","obj-id":"http://murazikjacobi.com/mathias27","subj-id":"http://reynolds.name/shanelle.rutherford27","total":"801","subj":{"pid":"fdfdfd","issued":"2018-05-25T07:20:46.000+02:00"},"relation-type-id":"unique-dataset-investigations-machine","source-id":"datacite-usage","source-token":"a9f868ce-66a9-4cab-b335-23c630564613-27","occurred-at":"2018-05-25T00:37:55.000+02:00","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Bearer <LAGOTTO_TOKEN>
-  response:
-    status:
-      code: 201
-      message: ''
-    headers:
-      Date:
-      - Fri, 25 May 2018 15:10:26 GMT
-      Content-Type:
-      - application/vnd.api+json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 201 Created
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Vary:
-      - Accept-Encoding, Origin
-      Etag:
-      - W/"c6439ca41112f157367b3ca2e288290c"
-      X-Runtime:
-      - '0.015163'
-      X-Credential-Username:
-      - 0000-0001-5489-3594
-      X-Request-Id:
-      - 1a6ea508-b81f-470e-9a2f-8b0cda01f386
-      X-Powered-By:
-      - Phusion Passenger 5.3.1
-      Server:
-      - nginx/1.14.0 + Phusion Passenger 5.3.1
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"99edfc85-1b8e-4b38-9478-58ba0f1993fc-27","type":"events","attributes":{"subj-id":"http://reynolds.name/shanelle.rutherford27","obj-id":"http://murazikjacobi.com/mathias27","message-action":"add","source-token":"a9f868ce-66a9-4cab-b335-23c630564613-27","relation-type-id":"unique-dataset-investigations-machine","source-id":"datacite-usage","total":801,"license":"https://creativecommons.org/publicdomain/zero/1.0/","occurred-at":"2018-05-24T22:37:55.000Z","timestamp":"2018-05-25T15:10:26Z","subj":{"pid":"fdfdfd","issued":"2018-05-25T07:20:46.000+02:00"},"obj":{}}}}'
-    http_version: 
-  recorded_at: Fri, 25 May 2018 15:10:26 GMT
-- request:
-    method: put
-    uri: https://api.test.datacite.org/events/19937495-757c-477e-a9a1-fdee49370aa3-28
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"19937495-757c-477e-a9a1-fdee49370aa3-28","type":"events","attributes":{"uuid":"19937495-757c-477e-a9a1-fdee49370aa3-28","message-action":"add","obj-id":"http://howellullrich.com/edythe.reinger28","subj-id":"http://tillman.name/haleigh28","total":"801","subj":{"pid":"fdfdfd","issued":"2018-05-25T19:40:36.000+02:00"},"relation-type-id":"unique-dataset-investigations-machine","source-id":"datacite-usage","source-token":"ef342d37-c1c5-412f-bf5f-7b4d07067649-28","occurred-at":"2018-05-25T00:37:55.000+02:00","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Bearer <LAGOTTO_TOKEN>
-  response:
-    status:
-      code: 201
-      message: ''
-    headers:
-      Date:
-      - Fri, 25 May 2018 15:10:26 GMT
-      Content-Type:
-      - application/vnd.api+json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 201 Created
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Vary:
-      - Accept-Encoding, Origin
-      Etag:
-      - W/"6e0175a16b221a5f7b230c5775c216ed"
-      X-Runtime:
-      - '0.017240'
-      X-Credential-Username:
-      - 0000-0001-5489-3594
-      X-Request-Id:
-      - ca4882a8-79da-453f-bf72-261af1d38150
-      X-Powered-By:
-      - Phusion Passenger 5.3.1
-      Server:
-      - nginx/1.14.0 + Phusion Passenger 5.3.1
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"19937495-757c-477e-a9a1-fdee49370aa3-28","type":"events","attributes":{"subj-id":"http://tillman.name/haleigh28","obj-id":"http://howellullrich.com/edythe.reinger28","message-action":"add","source-token":"ef342d37-c1c5-412f-bf5f-7b4d07067649-28","relation-type-id":"unique-dataset-investigations-machine","source-id":"datacite-usage","total":801,"license":"https://creativecommons.org/publicdomain/zero/1.0/","occurred-at":"2018-05-24T22:37:55.000Z","timestamp":"2018-05-25T15:10:26Z","subj":{"pid":"fdfdfd","issued":"2018-05-25T19:40:36.000+02:00"},"obj":{}}}}'
-    http_version: 
-  recorded_at: Fri, 25 May 2018 15:10:26 GMT
-- request:
-    method: put
-    uri: https://api.test.datacite.org/events/c2bff011-e576-4d71-9b1c-39db3f504711-29
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"c2bff011-e576-4d71-9b1c-39db3f504711-29","type":"events","attributes":{"uuid":"c2bff011-e576-4d71-9b1c-39db3f504711-29","message-action":"add","obj-id":"http://stoltenberg.co/allene.ohara29","subj-id":"http://borerlueilwitz.org/quincy_medhurst29","total":"801","subj":{"pid":"fdfdfd","issued":"2018-05-23T06:37:42.000+02:00"},"relation-type-id":"unique-dataset-investigations-machine","source-id":"datacite-usage","source-token":"88a16a28-5ab3-408e-967b-548c83ccb05b-29","occurred-at":"2018-05-25T00:37:55.000+02:00","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Bearer <LAGOTTO_TOKEN>
-  response:
-    status:
-      code: 201
-      message: ''
-    headers:
-      Date:
-      - Fri, 25 May 2018 15:10:27 GMT
-      Content-Type:
-      - application/vnd.api+json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 201 Created
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Vary:
-      - Accept-Encoding, Origin
-      Etag:
-      - W/"2b2ac5182e49678ad2b380024841539a"
-      X-Runtime:
-      - '0.016383'
-      X-Credential-Username:
-      - 0000-0001-5489-3594
-      X-Request-Id:
-      - 1cf6a5ab-5fd2-4619-b52f-3fe02a6166bb
-      X-Powered-By:
-      - Phusion Passenger 5.3.1
-      Server:
-      - nginx/1.14.0 + Phusion Passenger 5.3.1
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"c2bff011-e576-4d71-9b1c-39db3f504711-29","type":"events","attributes":{"subj-id":"http://borerlueilwitz.org/quincy_medhurst29","obj-id":"http://stoltenberg.co/allene.ohara29","message-action":"add","source-token":"88a16a28-5ab3-408e-967b-548c83ccb05b-29","relation-type-id":"unique-dataset-investigations-machine","source-id":"datacite-usage","total":801,"license":"https://creativecommons.org/publicdomain/zero/1.0/","occurred-at":"2018-05-24T22:37:55.000Z","timestamp":"2018-05-25T15:10:27Z","subj":{"pid":"fdfdfd","issued":"2018-05-23T06:37:42.000+02:00"},"obj":{}}}}'
-    http_version: 
-  recorded_at: Fri, 25 May 2018 15:10:27 GMT
-- request:
-    method: put
-    uri: https://api.test.datacite.org/events/ca492d62-c804-4e78-8863-6639b36be972-30
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"ca492d62-c804-4e78-8863-6639b36be972-30","type":"events","attributes":{"uuid":"ca492d62-c804-4e78-8863-6639b36be972-30","message-action":"add","obj-id":"http://bayer.com/charlotte.baumbach30","subj-id":"http://walkermckenzie.org/mario_swaniawski30","total":"801","subj":{"pid":"fdfdfd","issued":"2018-05-25T11:36:25.000+02:00"},"relation-type-id":"unique-dataset-investigations-machine","source-id":"datacite-usage","source-token":"c22c82ad-b3ff-46f5-a409-db83a1ed5e24-30","occurred-at":"2018-05-25T00:37:55.000+02:00","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
-    headers:
-      User-Agent:
-      - Maremma - https://github.com/datacite/maremma
-      Content-Type:
-      - application/json
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-      Authorization:
-      - Bearer <LAGOTTO_TOKEN>
-  response:
-    status:
-      code: 201
-      message: ''
-    headers:
-      Date:
-      - Fri, 25 May 2018 15:10:27 GMT
-      Content-Type:
-      - application/vnd.api+json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 201 Created
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Vary:
-      - Accept-Encoding, Origin
-      Etag:
-      - W/"0852184adb0d9f2e40c94b08bef1cc68"
+      - W/"fef8b7d3db4bb37b42b940f5d4c803a4"
       X-Runtime:
       - '0.015478'
       X-Credential-Username:
       - 0000-0001-5489-3594
       X-Request-Id:
-      - 02bd5a24-977c-46a1-b24a-7d78292a3b93
+      - b48f2182-e96c-4c23-9933-66b1f08ff3b1
       X-Powered-By:
       - Phusion Passenger 5.3.1
       Server:
       - nginx/1.14.0 + Phusion Passenger 5.3.1
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"ca492d62-c804-4e78-8863-6639b36be972-30","type":"events","attributes":{"subj-id":"http://walkermckenzie.org/mario_swaniawski30","obj-id":"http://bayer.com/charlotte.baumbach30","message-action":"add","source-token":"c22c82ad-b3ff-46f5-a409-db83a1ed5e24-30","relation-type-id":"unique-dataset-investigations-machine","source-id":"datacite-usage","total":801,"license":"https://creativecommons.org/publicdomain/zero/1.0/","occurred-at":"2018-05-24T22:37:55.000Z","timestamp":"2018-05-25T15:10:27Z","subj":{"pid":"fdfdfd","issued":"2018-05-25T11:36:25.000+02:00"},"obj":{}}}}'
+      string: '{"data":{"id":"918dd5ec-b4cb-4c3e-a4c7-d3fe0fd28c81-31","type":"events","attributes":{"subj-id":"http://osinski.net/stephany_willms31","obj-id":"http://dicki.biz/frank.stiedemann31","message-action":"add","source-token":"81afc923-d19d-4dc6-bc90-c45fd07cc13a-31","relation-type-id":"total-dataset-investigations-machine","source-id":"datacite-usage","total":174,"license":"https://creativecommons.org/publicdomain/zero/1.0/","occurred-at":"2018-05-23T21:06:21.000Z","timestamp":"2018-05-25T15:22:46Z","subj":{"pid":"fdfdfd","issued":"2018-05-25T16:57:12.000+02:00"},"obj":{}}}}'
     http_version: 
-  recorded_at: Fri, 25 May 2018 15:10:27 GMT
+  recorded_at: Fri, 25 May 2018 15:22:47 GMT
+- request:
+    method: put
+    uri: https://api.test.datacite.org/events/78d72b61-c044-410e-a548-2712e79b806c-32
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"78d72b61-c044-410e-a548-2712e79b806c-32","type":"events","attributes":{"uuid":"78d72b61-c044-410e-a548-2712e79b806c-32","message-action":"add","obj-id":"http://nienow.co/leta.treutel32","subj-id":"http://jacobson.info/agnes_breitenberg32","total":"174","subj":{"pid":"fdfdfd","issued":"2018-05-24T22:19:41.000+02:00"},"relation-type-id":"total-dataset-investigations-machine","source-id":"datacite-usage","source-token":"0ba100bc-714d-4634-ab5b-7dad640b4e1b-32","occurred-at":"2018-05-23T23:06:21.000+02:00","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <LAGOTTO_TOKEN>
+  response:
+    status:
+      code: 201
+      message: ''
+    headers:
+      Date:
+      - Fri, 25 May 2018 15:22:47 GMT
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      Etag:
+      - W/"5894cf7b4a2e6469bc62f08a36f9acc6"
+      X-Runtime:
+      - '0.016262'
+      X-Credential-Username:
+      - 0000-0001-5489-3594
+      X-Request-Id:
+      - d361c280-9f00-42fa-b346-7436230ab67b
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"78d72b61-c044-410e-a548-2712e79b806c-32","type":"events","attributes":{"subj-id":"http://jacobson.info/agnes_breitenberg32","obj-id":"http://nienow.co/leta.treutel32","message-action":"add","source-token":"0ba100bc-714d-4634-ab5b-7dad640b4e1b-32","relation-type-id":"total-dataset-investigations-machine","source-id":"datacite-usage","total":174,"license":"https://creativecommons.org/publicdomain/zero/1.0/","occurred-at":"2018-05-23T21:06:21.000Z","timestamp":"2018-05-25T15:22:47Z","subj":{"pid":"fdfdfd","issued":"2018-05-24T22:19:41.000+02:00"},"obj":{}}}}'
+    http_version: 
+  recorded_at: Fri, 25 May 2018 15:22:47 GMT
+- request:
+    method: put
+    uri: https://api.test.datacite.org/events/f51e0728-09f2-4052-a5de-cc02a297d2f5-33
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"f51e0728-09f2-4052-a5de-cc02a297d2f5-33","type":"events","attributes":{"uuid":"f51e0728-09f2-4052-a5de-cc02a297d2f5-33","message-action":"add","obj-id":"http://oconner.org/eladio_hackett33","subj-id":"http://friesenjacobson.net/beryl33","total":"174","subj":{"pid":"fdfdfd","issued":"2018-05-23T11:09:17.000+02:00"},"relation-type-id":"total-dataset-investigations-machine","source-id":"datacite-usage","source-token":"8690b725-2167-408f-8196-ede9ced2bc35-33","occurred-at":"2018-05-23T23:06:21.000+02:00","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <LAGOTTO_TOKEN>
+  response:
+    status:
+      code: 201
+      message: ''
+    headers:
+      Date:
+      - Fri, 25 May 2018 15:22:47 GMT
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      Etag:
+      - W/"a2c4456992be3147a9f877744ce218e1"
+      X-Runtime:
+      - '0.015711'
+      X-Credential-Username:
+      - 0000-0001-5489-3594
+      X-Request-Id:
+      - 303e5696-518b-46cd-8262-5484f775666a
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"f51e0728-09f2-4052-a5de-cc02a297d2f5-33","type":"events","attributes":{"subj-id":"http://friesenjacobson.net/beryl33","obj-id":"http://oconner.org/eladio_hackett33","message-action":"add","source-token":"8690b725-2167-408f-8196-ede9ced2bc35-33","relation-type-id":"total-dataset-investigations-machine","source-id":"datacite-usage","total":174,"license":"https://creativecommons.org/publicdomain/zero/1.0/","occurred-at":"2018-05-23T21:06:21.000Z","timestamp":"2018-05-25T15:22:47Z","subj":{"pid":"fdfdfd","issued":"2018-05-23T11:09:17.000+02:00"},"obj":{}}}}'
+    http_version: 
+  recorded_at: Fri, 25 May 2018 15:22:47 GMT
+- request:
+    method: put
+    uri: https://api.test.datacite.org/events/867c2caf-ad7b-490b-b6f1-5ad585b1b53a-34
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"867c2caf-ad7b-490b-b6f1-5ad585b1b53a-34","type":"events","attributes":{"uuid":"867c2caf-ad7b-490b-b6f1-5ad585b1b53a-34","message-action":"add","obj-id":"http://casper.name/verla.frami34","subj-id":"http://oconner.io/linnea.bahringer34","total":"174","subj":{"pid":"fdfdfd","issued":"2018-05-24T23:56:54.000+02:00"},"relation-type-id":"total-dataset-investigations-machine","source-id":"datacite-usage","source-token":"5cd67737-3270-4e2f-b759-47bbb97298dd-34","occurred-at":"2018-05-23T23:06:21.000+02:00","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <LAGOTTO_TOKEN>
+  response:
+    status:
+      code: 201
+      message: ''
+    headers:
+      Date:
+      - Fri, 25 May 2018 15:22:47 GMT
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      Etag:
+      - W/"3d4d80b4f54cd3d8eb1fc74bc70f0c20"
+      X-Runtime:
+      - '0.015678'
+      X-Credential-Username:
+      - 0000-0001-5489-3594
+      X-Request-Id:
+      - e237470c-3ab5-4750-acfa-4983e01e9b16
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"867c2caf-ad7b-490b-b6f1-5ad585b1b53a-34","type":"events","attributes":{"subj-id":"http://oconner.io/linnea.bahringer34","obj-id":"http://casper.name/verla.frami34","message-action":"add","source-token":"5cd67737-3270-4e2f-b759-47bbb97298dd-34","relation-type-id":"total-dataset-investigations-machine","source-id":"datacite-usage","total":174,"license":"https://creativecommons.org/publicdomain/zero/1.0/","occurred-at":"2018-05-23T21:06:21.000Z","timestamp":"2018-05-25T15:22:47Z","subj":{"pid":"fdfdfd","issued":"2018-05-24T23:56:54.000+02:00"},"obj":{}}}}'
+    http_version: 
+  recorded_at: Fri, 25 May 2018 15:22:47 GMT
+- request:
+    method: put
+    uri: https://api.test.datacite.org/events/831094af-90b9-40f6-8bfc-7aecc5e037bf-35
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"831094af-90b9-40f6-8bfc-7aecc5e037bf-35","type":"events","attributes":{"uuid":"831094af-90b9-40f6-8bfc-7aecc5e037bf-35","message-action":"add","obj-id":"http://nolanhayes.co/evelyn35","subj-id":"http://kub.io/filomena35","total":"174","subj":{"pid":"fdfdfd","issued":"2018-05-24T04:53:05.000+02:00"},"relation-type-id":"total-dataset-investigations-machine","source-id":"datacite-usage","source-token":"5e72433e-91d3-4800-9a33-fac789004658-35","occurred-at":"2018-05-23T23:06:21.000+02:00","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <LAGOTTO_TOKEN>
+  response:
+    status:
+      code: 201
+      message: ''
+    headers:
+      Date:
+      - Fri, 25 May 2018 15:22:48 GMT
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      Etag:
+      - W/"97011296af01f6214ff0769f9e9a6531"
+      X-Runtime:
+      - '0.016678'
+      X-Credential-Username:
+      - 0000-0001-5489-3594
+      X-Request-Id:
+      - beb1a4c6-d39c-4d98-8081-b5ee01e760dc
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"831094af-90b9-40f6-8bfc-7aecc5e037bf-35","type":"events","attributes":{"subj-id":"http://kub.io/filomena35","obj-id":"http://nolanhayes.co/evelyn35","message-action":"add","source-token":"5e72433e-91d3-4800-9a33-fac789004658-35","relation-type-id":"total-dataset-investigations-machine","source-id":"datacite-usage","total":174,"license":"https://creativecommons.org/publicdomain/zero/1.0/","occurred-at":"2018-05-23T21:06:21.000Z","timestamp":"2018-05-25T15:22:48Z","subj":{"pid":"fdfdfd","issued":"2018-05-24T04:53:05.000+02:00"},"obj":{}}}}'
+    http_version: 
+  recorded_at: Fri, 25 May 2018 15:22:48 GMT
+- request:
+    method: put
+    uri: https://api.test.datacite.org/events/9aa90ba6-6064-45d9-9408-f169c7223cb8-36
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"9aa90ba6-6064-45d9-9408-f169c7223cb8-36","type":"events","attributes":{"uuid":"9aa90ba6-6064-45d9-9408-f169c7223cb8-36","message-action":"add","obj-id":"http://mrazkoepp.info/rubie.monahan36","subj-id":"http://hackettgaylord.co/lucious36","total":"174","subj":{"pid":"fdfdfd","issued":"2018-05-24T14:48:41.000+02:00"},"relation-type-id":"total-dataset-investigations-machine","source-id":"datacite-usage","source-token":"25f62850-6b60-4267-ba12-807f6f660374-36","occurred-at":"2018-05-23T23:06:21.000+02:00","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <LAGOTTO_TOKEN>
+  response:
+    status:
+      code: 201
+      message: ''
+    headers:
+      Date:
+      - Fri, 25 May 2018 15:22:48 GMT
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      Etag:
+      - W/"61db69321d8c45b7e39bdf015f680ddc"
+      X-Runtime:
+      - '0.015082'
+      X-Credential-Username:
+      - 0000-0001-5489-3594
+      X-Request-Id:
+      - ce1df31b-4cad-4cef-9458-4c621e834712
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"9aa90ba6-6064-45d9-9408-f169c7223cb8-36","type":"events","attributes":{"subj-id":"http://hackettgaylord.co/lucious36","obj-id":"http://mrazkoepp.info/rubie.monahan36","message-action":"add","source-token":"25f62850-6b60-4267-ba12-807f6f660374-36","relation-type-id":"total-dataset-investigations-machine","source-id":"datacite-usage","total":174,"license":"https://creativecommons.org/publicdomain/zero/1.0/","occurred-at":"2018-05-23T21:06:21.000Z","timestamp":"2018-05-25T15:22:48Z","subj":{"pid":"fdfdfd","issued":"2018-05-24T14:48:41.000+02:00"},"obj":{}}}}'
+    http_version: 
+  recorded_at: Fri, 25 May 2018 15:22:48 GMT
+- request:
+    method: put
+    uri: https://api.test.datacite.org/events/91d4674d-b198-426b-9631-ef597a7419bc-37
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"91d4674d-b198-426b-9631-ef597a7419bc-37","type":"events","attributes":{"uuid":"91d4674d-b198-426b-9631-ef597a7419bc-37","message-action":"add","obj-id":"http://kingzulauf.com/andreanne.conroy37","subj-id":"http://dooley.biz/eulalia_kub37","total":"174","subj":{"pid":"fdfdfd","issued":"2018-05-23T16:06:17.000+02:00"},"relation-type-id":"total-dataset-investigations-machine","source-id":"datacite-usage","source-token":"ee71b08b-5c7c-4fbb-a21b-55e717e0ebd5-37","occurred-at":"2018-05-23T23:06:21.000+02:00","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <LAGOTTO_TOKEN>
+  response:
+    status:
+      code: 201
+      message: ''
+    headers:
+      Date:
+      - Fri, 25 May 2018 15:22:48 GMT
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      Etag:
+      - W/"0d424ad893b4f295f3718b14f37fac23"
+      X-Runtime:
+      - '0.015262'
+      X-Credential-Username:
+      - 0000-0001-5489-3594
+      X-Request-Id:
+      - b1a082f6-eb53-4412-9546-783ab1e3773b
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"91d4674d-b198-426b-9631-ef597a7419bc-37","type":"events","attributes":{"subj-id":"http://dooley.biz/eulalia_kub37","obj-id":"http://kingzulauf.com/andreanne.conroy37","message-action":"add","source-token":"ee71b08b-5c7c-4fbb-a21b-55e717e0ebd5-37","relation-type-id":"total-dataset-investigations-machine","source-id":"datacite-usage","total":174,"license":"https://creativecommons.org/publicdomain/zero/1.0/","occurred-at":"2018-05-23T21:06:21.000Z","timestamp":"2018-05-25T15:22:48Z","subj":{"pid":"fdfdfd","issued":"2018-05-23T16:06:17.000+02:00"},"obj":{}}}}'
+    http_version: 
+  recorded_at: Fri, 25 May 2018 15:22:49 GMT
+- request:
+    method: put
+    uri: https://api.test.datacite.org/events/2a70bad4-9896-498d-9457-49b9a375b80a-38
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"2a70bad4-9896-498d-9457-49b9a375b80a-38","type":"events","attributes":{"uuid":"2a70bad4-9896-498d-9457-49b9a375b80a-38","message-action":"add","obj-id":"http://konopelski.net/rebekah38","subj-id":"http://abbott.com/valentina_quigley38","total":"174","subj":{"pid":"fdfdfd","issued":"2018-05-23T20:24:28.000+02:00"},"relation-type-id":"total-dataset-investigations-machine","source-id":"datacite-usage","source-token":"822ec911-0398-4e9e-838a-f6f97c2eed01-38","occurred-at":"2018-05-23T23:06:21.000+02:00","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <LAGOTTO_TOKEN>
+  response:
+    status:
+      code: 201
+      message: ''
+    headers:
+      Date:
+      - Fri, 25 May 2018 15:22:49 GMT
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      Etag:
+      - W/"c2598b4c4f06fd1884297bd28774d1c4"
+      X-Runtime:
+      - '0.016084'
+      X-Credential-Username:
+      - 0000-0001-5489-3594
+      X-Request-Id:
+      - 8ca88f86-d7b3-4045-9fcb-973e6455d673
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"2a70bad4-9896-498d-9457-49b9a375b80a-38","type":"events","attributes":{"subj-id":"http://abbott.com/valentina_quigley38","obj-id":"http://konopelski.net/rebekah38","message-action":"add","source-token":"822ec911-0398-4e9e-838a-f6f97c2eed01-38","relation-type-id":"total-dataset-investigations-machine","source-id":"datacite-usage","total":174,"license":"https://creativecommons.org/publicdomain/zero/1.0/","occurred-at":"2018-05-23T21:06:21.000Z","timestamp":"2018-05-25T15:22:49Z","subj":{"pid":"fdfdfd","issued":"2018-05-23T20:24:28.000+02:00"},"obj":{}}}}'
+    http_version: 
+  recorded_at: Fri, 25 May 2018 15:22:49 GMT
+- request:
+    method: put
+    uri: https://api.test.datacite.org/events/c555c7bc-10f5-45ac-a778-f5dc90037712-39
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"c555c7bc-10f5-45ac-a778-f5dc90037712-39","type":"events","attributes":{"uuid":"c555c7bc-10f5-45ac-a778-f5dc90037712-39","message-action":"add","obj-id":"http://rice.info/samson39","subj-id":"http://bartellhoeger.biz/claudine.kuhn39","total":"174","subj":{"pid":"fdfdfd","issued":"2018-05-24T11:18:55.000+02:00"},"relation-type-id":"total-dataset-investigations-machine","source-id":"datacite-usage","source-token":"39bc3799-8216-4083-926a-a0d312ae9ec2-39","occurred-at":"2018-05-23T23:06:21.000+02:00","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <LAGOTTO_TOKEN>
+  response:
+    status:
+      code: 201
+      message: ''
+    headers:
+      Date:
+      - Fri, 25 May 2018 15:22:49 GMT
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      Etag:
+      - W/"8eb3744e0ec94f23713e5e8ada84a54e"
+      X-Runtime:
+      - '0.015184'
+      X-Credential-Username:
+      - 0000-0001-5489-3594
+      X-Request-Id:
+      - 007166cb-234c-4320-bcf7-5a8caabac425
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"c555c7bc-10f5-45ac-a778-f5dc90037712-39","type":"events","attributes":{"subj-id":"http://bartellhoeger.biz/claudine.kuhn39","obj-id":"http://rice.info/samson39","message-action":"add","source-token":"39bc3799-8216-4083-926a-a0d312ae9ec2-39","relation-type-id":"total-dataset-investigations-machine","source-id":"datacite-usage","total":174,"license":"https://creativecommons.org/publicdomain/zero/1.0/","occurred-at":"2018-05-23T21:06:21.000Z","timestamp":"2018-05-25T15:22:49Z","subj":{"pid":"fdfdfd","issued":"2018-05-24T11:18:55.000+02:00"},"obj":{}}}}'
+    http_version: 
+  recorded_at: Fri, 25 May 2018 15:22:49 GMT
+- request:
+    method: put
+    uri: https://api.test.datacite.org/events/148058f0-0778-4ebc-a80a-b014bf4f8eb8-40
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"148058f0-0778-4ebc-a80a-b014bf4f8eb8-40","type":"events","attributes":{"uuid":"148058f0-0778-4ebc-a80a-b014bf4f8eb8-40","message-action":"add","obj-id":"http://daniel.biz/elijah40","subj-id":"http://rodriguez.com/andreanne.erdman40","total":"174","subj":{"pid":"fdfdfd","issued":"2018-05-24T15:08:41.000+02:00"},"relation-type-id":"total-dataset-investigations-machine","source-id":"datacite-usage","source-token":"ab97b659-8e89-4e2c-8c4b-786579f6b93d-40","occurred-at":"2018-05-23T23:06:21.000+02:00","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <LAGOTTO_TOKEN>
+  response:
+    status:
+      code: 201
+      message: ''
+    headers:
+      Date:
+      - Fri, 25 May 2018 15:22:49 GMT
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      Etag:
+      - W/"754516d4275ee5e167386e81614a04bc"
+      X-Runtime:
+      - '0.015083'
+      X-Credential-Username:
+      - 0000-0001-5489-3594
+      X-Request-Id:
+      - db765ff3-2528-49ff-b56b-4962c1662366
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"148058f0-0778-4ebc-a80a-b014bf4f8eb8-40","type":"events","attributes":{"subj-id":"http://rodriguez.com/andreanne.erdman40","obj-id":"http://daniel.biz/elijah40","message-action":"add","source-token":"ab97b659-8e89-4e2c-8c4b-786579f6b93d-40","relation-type-id":"total-dataset-investigations-machine","source-id":"datacite-usage","total":174,"license":"https://creativecommons.org/publicdomain/zero/1.0/","occurred-at":"2018-05-23T21:06:21.000Z","timestamp":"2018-05-25T15:22:49Z","subj":{"pid":"fdfdfd","issued":"2018-05-24T15:08:41.000+02:00"},"obj":{}}}}'
+    http_version: 
+  recorded_at: Fri, 25 May 2018 15:22:49 GMT
 recorded_with: VCR 3.0.3
