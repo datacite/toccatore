@@ -4,6 +4,8 @@ module Toccatore
   module Queue
 
     def queue options={}
+      puts "Queue name has not been specified" unless ENV['ENVIRONMENT'].present?
+      puts "AWS_REGION has not been specified" unless ENV['AWS_REGION'].present?
       region = ENV['AWS_REGION'] ||= 'eu-west-1'
       Aws::SQS::Client.new(region: region.to_s, stub_responses: false)
     end

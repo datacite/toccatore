@@ -20,13 +20,15 @@ module Toccatore
       end
 
       error_total = 0
+      proccessed_messages = 0
       num_messages = total
-      while num_messages > 0
+      while num_messages != 0 
           processed = process_data(options)
           error_total += processed
-          num_messages += 1 if processed == 0
+          proccessed_messages += 1 if processed == 0
+          num_messages -= proccessed_messages
       end
-      text = "#{num_messages} works processed with #{error_total} errors for Usage Reports Queue #{queue_url}"
+      text = "#{proccessed_messages} works processed with #{error_total} errors for Usage Reports Queue #{queue_url}"
 
       puts text
       # send slack notification
@@ -35,16 +37,15 @@ module Toccatore
       send_notification_to_slack(text, options) if options[:slack_webhook_url].present?
 
       # return number of works queued
-      num_messages
+      proccessed_messages
     end
 
     def process_data(options = {})
       message = get_message
+      return [OpenStruct.new(body: { "data" => [] })] if message.empty?
       data = get_data(message)
       events = parse_data(data, options)
-
       return [OpenStruct.new(body: { "data" => [] })] if events.empty?
-
       errors = push_data(events, options)
       if errors < 1
         delete_message message
@@ -108,7 +109,7 @@ module Toccatore
 
       items = result.body.dig("data","report","report-datasets")
       header = result.body.dig("data","report","report-header")
-      report_id = metrics_url + "/" + result.body.dig("data","report","id")
+      report_id = "#{metrics_url}/#{result.body.dig("data","report","id")}"
 
       created = header.fetch("created")
       Array.wrap(items).reduce([]) do |x, item|
@@ -144,16 +145,9 @@ module Toccatore
                   "attributes" => item.except("id") }}
       response = Maremma.put(push_url, data: data.to_json,
                                         bearer: options[:access_token],
-                                        content_type: 'json',
+                                        content_type: 'application/json',
                                         host: host)
-      # else
-      #   response = Maremma.post(push_url, data: item.to_json,
-      #                                     bearer: options[:access_token],
-      #                                     content_type: 'json',
-      #                                     host: host)
-      # end
-
-      # return 0 if successful, 1 if error
+                                        
       if response.status == 201 
         puts "#{item['subj-id']} #{item['relation-type-id']} #{item['obj-id']} pushed to Event Data service."
         0
