@@ -42,8 +42,8 @@ module Toccatore
 
     def process_data(options = {})
       message = get_message
-      return [OpenStruct.new(body: { "data" => [] })] if message.empty?
       data = get_data(message)
+      return 1 if data.body.nil?
       events = parse_data(data, options)
       return [OpenStruct.new(body: { "data" => [] })] if events.empty?
       errors = push_data(events, options)
@@ -78,10 +78,6 @@ module Toccatore
       end
     end
 
-    def metrics_url
-      ENV['SASHIMI_URL']
-    end
-
     def source_id
       "usage_update"
     end
@@ -106,10 +102,10 @@ module Toccatore
 
     def parse_data(result, options={})
       return result.body.fetch("errors") if result.body.fetch("errors", nil).present?
-
+  
       items = result.body.dig("data","report","report-datasets")
       header = result.body.dig("data","report","report-header")
-      report_id = "#{metrics_url}/#{result.body.dig("data","report","id")}"
+      report_id = result.url
 
       created = header.fetch("created")
       Array.wrap(items).reduce([]) do |x, item|
@@ -135,7 +131,8 @@ module Toccatore
 
     def push_item(item, options={})
       return OpenStruct.new(body: { "errors" => [{ "title" => "Access token missing." }] }) if options[:access_token].blank?
-      return 0 if item == "Queue is empty"
+      return OpenStruct.new(body: { "errors" => [{ "title" => "Queue is empty." }] }) if item == "Queue is empty"
+      return OpenStruct.new(body: { "errors" => [{ "title" => "Report not found" }] }) if item["subj-id"].nil?
 
       host = options[:push_url].presence || "https://api.test.datacite.org"
       push_url = host + "/events/" + item["uuid"].to_s
@@ -147,7 +144,7 @@ module Toccatore
                                         bearer: options[:access_token],
                                         content_type: 'application/json',
                                         host: host)
-                                        
+                                  
       if response.status == 201 
         puts "#{item['subj-id']} #{item['relation-type-id']} #{item['obj-id']} pushed to Event Data service."
         0
