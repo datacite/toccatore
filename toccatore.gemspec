@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
 
   # Declary dependencies here, rather than in the Gemfile
   
-  s.add_dependency 'maremma', '~> 4.0'
+  s.add_dependency 'maremma', '~> 3.5'
   s.add_dependency 'activesupport', '~> 4.2', '>= 4.2.5'
   s.add_dependency 'dotenv', '~> 2.1', '>= 2.1.1'
   s.add_dependency 'namae', '~> 0.11.0'
