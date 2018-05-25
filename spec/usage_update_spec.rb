@@ -10,32 +10,6 @@ describe Toccatore::UsageUpdate, vcr: true do
 
   let(:dummy_message){sqs.receive_message(queue_url: queue_url, max_number_of_messages: 1, wait_time_seconds: 1)}
 
-  # context "queue_jobs" do
-  #   it "should report if there are no works returned by the Usage Queue" do
-  #     puts subject.queue_url
-  #     response = subject.queue_jobs
-  #     expect(response).to eq(0)
-  #   end
-  
-  #   it "should report if there are works returned by the Usage Queue" do
-  #     response = subject.queue_jobs
-  #     expect(response).to eq(3)
-  #   end
-  # end
-
-  # context "format_event" do
-  #   it "should report if there are no works returned by the Usage Queue" do
-  #     body = File.read(fixture_path + 'usage_update_nil.json')
-  #     result = OpenStruct.new(body: JSON.parse(body) )
-  #     expect(subject.format_event(result)).to eq([])
-  #   end
-  
-  #   it "should report if there are works returned by the Usage Queue" do
-  #     body = File.read(fixture_path + 'usage_update.json')
-  #     result = OpenStruct.new(body: JSON.parse(body) )
-  #     expect(subject.format_event(result).length).to eq(40)
-  #   end
-  # end
 
   describe "get_data" do
     context "when there are messages" do
@@ -132,14 +106,14 @@ describe Toccatore::UsageUpdate, vcr: true do
       body = File.read(fixture_path + 'usage_events.json')
       expect = File.read(fixture_path + 'event_data_resp_2')
       result = JSON.parse(body)
-      options = { push_url: ENV['LAGOTTINO_URL'], access_token: ENV['LAGOTTO_TOKEN'], jsonapi: true }
+      options = { push_url: ENV['LAGOTTINO_URL'], access_token: ENV['ACCESS_TOKEN'], jsonapi: true }
       expect(subject.push_data(result, options)).to eq(4)
     end
 
     it "should work with DataCite Event Data 2" do
       dd = events.map {|event| event.to_h.stringify_keys}
       all_events = dd.map {|item| item.map{ |k, v| [k.dasherize, v] }.to_h}
-      options = { push_url: ENV['LAGOTTINO_URL'], access_token: ENV['LAGOTTO_TOKEN'], jsonapi: true }
+      options = { push_url: ENV['LAGOTTINO_URL'], access_token: ENV['ACCESS_TOKEN'], jsonapi: true }
       # expect(subject.push_data(all_events, options)).to eq(0)
     end
   end
