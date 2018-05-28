@@ -71,6 +71,8 @@ module Toccatore
       else
         error_total = 0
         Array(items).each do |item|
+          puts item
+          puts "*************"
           error_total += push_item(item, options) 
         end
         error_total
@@ -104,6 +106,8 @@ module Toccatore
     end
 
     def parse_data(result, options={})
+      puts result.status
+      puts "*************"
       return result.body.fetch("errors") if result.body.fetch("errors", nil).present?
       return [{ "errors" => { "title" => "The report is blank" }}] if result.body.blank?
 
