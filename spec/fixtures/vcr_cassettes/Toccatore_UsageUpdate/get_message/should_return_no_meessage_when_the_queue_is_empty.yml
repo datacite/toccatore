@@ -14,12 +14,12 @@ http_interactions:
       User-Agent:
       - aws-sdk-ruby3/3.21.2 ruby/2.3.3 x86_64-darwin15 aws-sdk-sqs/1.3.0
       X-Amz-Date:
-      - 20180525T152239Z
+      - 20180526T082819Z
       X-Amz-Content-Sha256:
       - 5761efd13dd0ed81182207171d3660628968189941431d6044920ef8fe7b1160
       Authorization:
-      - AWS4-HMAC-SHA256 Credential=AKIAIXLDUBIDM74CC6KQ/20180525/eu-west-1/sqs/aws4_request,
-        SignedHeaders=content-type;host;x-amz-content-sha256;x-amz-date, Signature=a6edcb7489579924dcfc1f37a6f9cabc8b74403288d8ceb4da86c56c117fbec5
+      - AWS4-HMAC-SHA256 Credential=AKIAIXLDUBIDM74CC6KQ/20180526/eu-west-1/sqs/aws4_request,
+        SignedHeaders=content-type;host;x-amz-content-sha256;x-amz-date, Signature=2ab509ced23271346a50f94e2becd6dbe3fcf46ad5660e57200c4f763e6d3cdb
       Content-Length:
       - '58'
       Accept:
@@ -32,7 +32,7 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Fri, 25 May 2018 15:22:40 GMT
+      - Sat, 26 May 2018 08:28:19 GMT
       Content-Type:
       - text/xml
       Content-Length:
@@ -40,12 +40,12 @@ http_interactions:
       Connection:
       - keep-alive
       X-Amzn-Requestid:
-      - 2f378b0f-869c-5426-901e-d88daae3ef94
+      - 8464fe80-c51a-567c-9796-ad03d9f9af81
     body:
       encoding: UTF-8
-      string: <?xml version="1.0"?><GetQueueUrlResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><GetQueueUrlResult><QueueUrl>https://sqs.eu-west-1.amazonaws.com/404017989009/test_usage</QueueUrl></GetQueueUrlResult><ResponseMetadata><RequestId>2f378b0f-869c-5426-901e-d88daae3ef94</RequestId></ResponseMetadata></GetQueueUrlResponse>
+      string: <?xml version="1.0"?><GetQueueUrlResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><GetQueueUrlResult><QueueUrl>https://sqs.eu-west-1.amazonaws.com/404017989009/test_usage</QueueUrl></GetQueueUrlResult><ResponseMetadata><RequestId>8464fe80-c51a-567c-9796-ad03d9f9af81</RequestId></ResponseMetadata></GetQueueUrlResponse>
     http_version: 
-  recorded_at: Fri, 25 May 2018 15:22:40 GMT
+  recorded_at: Sat, 26 May 2018 08:28:19 GMT
 - request:
     method: post
     uri: https://sqs.eu-west-1.amazonaws.com/404017989009/test_usage
@@ -60,12 +60,12 @@ http_interactions:
       User-Agent:
       - aws-sdk-ruby3/3.21.2 ruby/2.3.3 x86_64-darwin15 aws-sdk-sqs/1.3.0
       X-Amz-Date:
-      - 20180525T152240Z
+      - 20180526T082819Z
       X-Amz-Content-Sha256:
       - b7f76556fe5b5efa85dad3a27ea532b3b8e01ad962d40f74c728489bf8a4b2f7
       Authorization:
-      - AWS4-HMAC-SHA256 Credential=AKIAIXLDUBIDM74CC6KQ/20180525/eu-west-1/sqs/aws4_request,
-        SignedHeaders=content-type;host;x-amz-content-sha256;x-amz-date, Signature=9fce997db1327949caa32c285d3115e3898ed83f0362756c3b0628903c254b09
+      - AWS4-HMAC-SHA256 Credential=AKIAIXLDUBIDM74CC6KQ/20180526/eu-west-1/sqs/aws4_request,
+        SignedHeaders=content-type;host;x-amz-content-sha256;x-amz-date, Signature=066d2e8334a849df5f2dde8e8f3b1d463540db4b2c6d6643a059f3d95358a96e
       Content-Length:
       - '159'
       Accept:
@@ -78,18 +78,18 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Fri, 25 May 2018 15:22:40 GMT
+      - Sat, 26 May 2018 08:28:19 GMT
       Content-Type:
       - text/xml
       Content-Length:
-      - '941'
+      - '965'
       Connection:
       - keep-alive
       X-Amzn-Requestid:
-      - 6ba8fb4d-755c-52fd-b60c-a8cf59dcaa55
+      - 23c3491f-383b-5099-ab15-1a9c24d8e3e4
     body:
       encoding: UTF-8
-      string: <?xml version="1.0"?><ReceiveMessageResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><ReceiveMessageResult><Message><MessageId>c9476d03-e892-4291-a612-483d220a207e</MessageId><ReceiptHandle>AQEByLu/8sGfo5/FE48jWS1qrKAwHZDpJ24aCd1oWMhxo1J6Ulzqr2og0lhulocEY9yCkmXrmzr3dZxAuOdB6TpQdSBgIQHo4aMq5J2IGUHarELiayUBrEqFg4vYjPrSJTtbKIJ9HQ/XodHz89FfvHSVWqr8VRaY0Qwvsdnnph+9pcAW3/r+QL2plBP34x6m/9JrImX5X5zzg2EtzXKzK/nbwNNywoVKa21eaHpg9ldrmQbTiVrhUvp4htH0eKGsaZS1JADc5FPTqTxXZMhbW6sAGydL9nrPSadDXAsFSHRV6gXlaxan7dDMiEU7tpL0D6+vgGduZqyGsYk84EbP99xZjEak3XIu8J/omaxpiEwxwUXtx0fw+Olj6JTCazm+eDxK</ReceiptHandle><MD5OfBody>bbac5118a088ff64cfde70bb7f0d219b</MD5OfBody><Body>{&quot;report_id&quot;:&quot;https://metrics.test.datacite.org/reports/1ff910bc-fe6b-4410-a727-c9ec39990215&quot;}</Body></Message></ReceiveMessageResult><ResponseMetadata><RequestId>6ba8fb4d-755c-52fd-b60c-a8cf59dcaa55</RequestId></ResponseMetadata></ReceiveMessageResponse>
+      string: <?xml version="1.0"?><ReceiveMessageResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><ReceiveMessageResult><Message><MessageId>c9476d03-e892-4291-a612-483d220a207e</MessageId><ReceiptHandle>AQEBMqZycZ1NEXt/x/e2WRD1uXXQtjB/NqwmEYVeoSq61IMo0gLSgRCFOS0iqM1aFQOW5fAY2k8KWEZf0QIJ3sOTQJ5s7fuBpEGHcOvDHZcEu6zwbtuv+wv3xrsq7UzsOmGZ60F4Kw9MCvNOtha7Nt36NgGpcU4Bsf4yp2z+ABbKFYliT8iWzh7NjGsg/6Q2DVxrK+AG3xOADojs6iFEqxyhYVV0zNxkxfZ7O8q/ROH2qOFwd4Bp81pKPxpLY2g3SQrPabmq3Yskh6UApQdW9Shvkr68GNHnnk6x90YIZVpWFxSRHg/Pdw+RzHrDO1YoINRc6itth87j4aKeD79hvuVVeBFSVDK+TIVu7mwUup2bCaWLSJ02iroUFrk5N/oy8qVn3ATSmMcLYF1ux9CaNHswvg==</ReceiptHandle><MD5OfBody>bbac5118a088ff64cfde70bb7f0d219b</MD5OfBody><Body>{&quot;report_id&quot;:&quot;https://metrics.test.datacite.org/reports/1ff910bc-fe6b-4410-a727-c9ec39990215&quot;}</Body></Message></ReceiveMessageResult><ResponseMetadata><RequestId>23c3491f-383b-5099-ab15-1a9c24d8e3e4</RequestId></ResponseMetadata></ReceiveMessageResponse>
     http_version: 
-  recorded_at: Fri, 25 May 2018 15:22:40 GMT
+  recorded_at: Sat, 26 May 2018 08:28:19 GMT
 recorded_with: VCR 3.0.3

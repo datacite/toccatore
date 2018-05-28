@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://api.test.datacite.org/events/fc6860b8-4230-41bc-8b8e-21d60e9a7d9a
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"fc6860b8-4230-41bc-8b8e-21d60e9a7d9a","type":"events","attributes":{"uuid":"fc6860b8-4230-41bc-8b8e-21d60e9a7d9a","message-action":"add","subj-id":"https://metrics.test.datacite.org/reports/2018-3-Dashs","subj":{"pid":"https://metrics.test.datacite.org/reports/2018-3-Dashs","issued":"2128-04-09"},"total":3,"obj-id":"https://doi.org/10.7291/d1q94r","relation-type-id":"unique-dataset-investigations-regular","source-id":"datacite","source-token":"43ba99ae-5cf0-11e8-9c2d-fa7ae01bbebc","occurred-at":"2128-04-09","license":"https://creativecommons.org/publicdomain/zero/1.0/"}}}'
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Content-Type:
+      - application/json
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Bearer <LAGOTTO_TOKEN>
+  response:
+    status:
+      code: 201
+      message: ''
+    headers:
+      Date:
+      - Sun, 27 May 2018 17:51:47 GMT
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      Etag:
+      - W/"1893292a0294f3ba4368bce947c7f67b"
+      X-Runtime:
+      - '0.016660'
+      X-Credential-Username:
+      - 0000-0001-5489-3594
+      X-Request-Id:
+      - 8018d1a4-7e0c-479e-b8aa-161abfe6b343
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"fc6860b8-4230-41bc-8b8e-21d60e9a7d9a","type":"events","attributes":{"subj-id":"https://metrics.test.datacite.org/reports/2018-3-Dashs","obj-id":"https://doi.org/10.7291/d1q94r","message-action":"add","source-token":"43ba99ae-5cf0-11e8-9c2d-fa7ae01bbebc","relation-type-id":"unique-dataset-investigations-regular","source-id":"datacite","total":3,"license":"https://creativecommons.org/publicdomain/zero/1.0/","occurred-at":"2128-04-09T00:00:00.000Z","timestamp":"2018-05-27T17:51:47Z","subj":{"pid":"https://metrics.test.datacite.org/reports/2018-3-Dashs","issued":"2128-04-09"},"obj":{}}}}'
+    http_version: 
+  recorded_at: Sun, 27 May 2018 17:51:47 GMT
+recorded_with: VCR 3.0.3

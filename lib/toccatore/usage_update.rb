@@ -41,21 +41,20 @@ module Toccatore
     end
 
     def process_data(options = {})
+      errors = 0 
       message = get_message
-      data = get_data(message)
-      return 1 if data.body.nil?
-      events = parse_data(data, options)
-      return [OpenStruct.new(body: { "data" => [] })] if events.empty?
-      errors = push_data(events, options)
-      if errors < 1
-        delete_message message
+      unless message.messages.empty?
+        data = get_data(message)
+        events = parse_data(data, options)
+        errors = push_data(events, options)
+        if errors < 1
+          delete_message message
+        end
       end
       errors
     end
 
     def get_data reponse 
-      return OpenStruct.new(body: { "errors" => "Queue is empty" }) if reponse.messages.empty?
-
       body = JSON.parse(reponse.messages[0].body)
       Maremma.get(body["report_id"])
     end
@@ -72,7 +71,7 @@ module Toccatore
       else
         error_total = 0
         Array(items).each do |item|
-          error_total += push_item(item, options)
+          error_total += push_item(item, options) 
         end
         error_total
       end
@@ -83,6 +82,10 @@ module Toccatore
     end
 
     def format_event type, data, options
+      fail "Not type given. Report #{data[:report_id]} not proccessed" if type.blank?
+      fail "Access token missing." if options[:source_token].blank?
+      fail "Report_id is missing" if data[:report_id].blank?
+
       { "uuid" => SecureRandom.uuid,
         "message-action" => "add",
         "subj-id" => data[:report_id],
@@ -102,7 +105,8 @@ module Toccatore
 
     def parse_data(result, options={})
       return result.body.fetch("errors") if result.body.fetch("errors", nil).present?
-  
+      return [{ "errors" => { "title" => "The report is blank" }}] if result.body.blank?
+
       items = result.body.dig("data","report","report-datasets")
       header = result.body.dig("data","report","report-header")
       report_id = result.url
@@ -130,9 +134,16 @@ module Toccatore
     end
 
     def push_item(item, options={})
-      return OpenStruct.new(body: { "errors" => [{ "title" => "Access token missing." }] }) if options[:access_token].blank?
-      return OpenStruct.new(body: { "errors" => [{ "title" => "Queue is empty." }] }) if item == "Queue is empty"
-      return OpenStruct.new(body: { "errors" => [{ "title" => "Report not found" }] }) if item["subj-id"].nil?
+      if item["subj-id"].blank?
+        puts OpenStruct.new(body: { "errors" => [{ "title" => "There is no Subject" }] })
+        return 1
+      elsif options[:access_token].blank?
+        puts OpenStruct.new(body: { "errors" => [{ "title" => "Access token missing." }] })
+        return 1
+      elsif item["errors"].present?
+        puts OpenStruct.new(body: { "errors" => [{ "title" => "#{item["errors"]["title"]}" }] })
+        return 1
+      end
 
       host = options[:push_url].presence || "https://api.test.datacite.org"
       push_url = host + "/events/" + item["uuid"].to_s

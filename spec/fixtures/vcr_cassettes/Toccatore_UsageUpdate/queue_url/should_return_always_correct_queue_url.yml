@@ -14,12 +14,12 @@ http_interactions:
       User-Agent:
       - aws-sdk-ruby3/3.21.2 ruby/2.3.3 x86_64-darwin15 aws-sdk-sqs/1.3.0
       X-Amz-Date:
-      - 20180525T152239Z
+      - 20180528T101149Z
       X-Amz-Content-Sha256:
       - 5761efd13dd0ed81182207171d3660628968189941431d6044920ef8fe7b1160
       Authorization:
-      - AWS4-HMAC-SHA256 Credential=AKIAIXLDUBIDM74CC6KQ/20180525/eu-west-1/sqs/aws4_request,
-        SignedHeaders=content-type;host;x-amz-content-sha256;x-amz-date, Signature=a6edcb7489579924dcfc1f37a6f9cabc8b74403288d8ceb4da86c56c117fbec5
+      - AWS4-HMAC-SHA256 Credential=AKIAIXLDUBIDM74CC6KQ/20180528/eu-west-1/sqs/aws4_request,
+        SignedHeaders=content-type;host;x-amz-content-sha256;x-amz-date, Signature=27a47caa3eef618bb34d16a20b68bbd2e687dd9dfbd0a8916de116b4018715a8
       Content-Length:
       - '58'
       Accept:
@@ -32,7 +32,7 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Fri, 25 May 2018 15:22:39 GMT
+      - Mon, 28 May 2018 10:11:49 GMT
       Content-Type:
       - text/xml
       Content-Length:
@@ -40,10 +40,10 @@ http_interactions:
       Connection:
       - keep-alive
       X-Amzn-Requestid:
-      - 84b68241-77a2-598f-a68e-d1c35bdd2f7b
+      - 9f9d4e4a-0871-5085-ae8d-1dcfd054721c
     body:
       encoding: UTF-8
-      string: <?xml version="1.0"?><GetQueueUrlResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><GetQueueUrlResult><QueueUrl>https://sqs.eu-west-1.amazonaws.com/404017989009/test_usage</QueueUrl></GetQueueUrlResult><ResponseMetadata><RequestId>84b68241-77a2-598f-a68e-d1c35bdd2f7b</RequestId></ResponseMetadata></GetQueueUrlResponse>
+      string: <?xml version="1.0"?><GetQueueUrlResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><GetQueueUrlResult><QueueUrl>https://sqs.eu-west-1.amazonaws.com/404017989009/test_usage</QueueUrl></GetQueueUrlResult><ResponseMetadata><RequestId>9f9d4e4a-0871-5085-ae8d-1dcfd054721c</RequestId></ResponseMetadata></GetQueueUrlResponse>
     http_version: 
-  recorded_at: Fri, 25 May 2018 15:22:39 GMT
+  recorded_at: Mon, 28 May 2018 10:11:49 GMT
 recorded_with: VCR 3.0.3

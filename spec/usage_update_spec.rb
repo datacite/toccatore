@@ -33,14 +33,14 @@ describe Toccatore::UsageUpdate, vcr: true do
       end
     end
 
-    context "when there are NOT messages" do
-      it "should return empty" do
-        sqs.stub_responses(:receive_message, messages: [])
-        response = sqs.receive_message({queue_url: queue_url})
-        response = subject.get_data(response)
-        expect(response.body["errors"]).to eq("Queue is empty")
-      end
-    end
+    # context "when there are NOT messages" do
+    #   it "should return empty" do
+    #     sqs.stub_responses(:receive_message, messages: [])
+    #     response = sqs.receive_message({queue_url: queue_url})
+    #     response = subject.get_data(response)
+    #     expect(response.body["errors"]).to eq("Queue is empty")
+    #   end
+    # end
   end
 
   describe "parse_data" do
@@ -119,6 +119,13 @@ describe Toccatore::UsageUpdate, vcr: true do
       result = JSON.parse(body)
       options = { push_url: ENV['LAGOTTINO_URL'], access_token: ENV['ACCESS_TOKEN'], jsonapi: true }
       expect(subject.push_data(result, options)).to eq(4)
+    end
+
+    it "should fail if format of the event is empty" do
+      body = File.read(fixture_path + 'events_empty.json')
+      result = JSON.parse(body)
+      options = { push_url: ENV['LAGOTTINO_URL'], access_token: ENV['ACCESS_TOKEN'], jsonapi: true }
+      expect(subject.push_data(result, options)).to eq(1)
     end
 
     # it "should work with DataCite Event Data 2" do
