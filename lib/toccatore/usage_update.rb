@@ -56,7 +56,13 @@ module Toccatore
 
     def get_data reponse 
       body = JSON.parse(reponse.messages[0].body)
-      Maremma.get(body["report_id"])
+      url = body["report_id"]
+      host = URI.parse(body["report_id"]).host.downcase
+      puts url
+      puts host
+      puts body
+      puts "%%%%%%%%%%"
+      Maremma.get(url, timeout: 120, host: host)
     end
 
 
