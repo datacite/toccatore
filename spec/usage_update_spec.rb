@@ -12,26 +12,26 @@ describe Toccatore::UsageUpdate, vcr: true do
 
 
   describe "get_data" do
-    context "when there are messages" do
-      it "should return the data for one message" do
-        sqs.stub_responses(:receive_message, messages: message)
-        sqs.stub_responses(:receive_message, messages: message)
-        sqs.stub_responses(:receive_message, messages: message)
-        sqs.stub_responses(:receive_message, messages: message)
-        response = sqs.receive_message({queue_url: queue_url})
-        response = subject.get_data(response)
-        expect(response.body["data"]["report"]["report-header"]["report-name"]).to eq("Dataset Master Report")
-      end
-    end
+    # context "when there are messages" do
+    #   it "should return the data for one message" do
+    #     sqs.stub_responses(:receive_message, messages: message)
+    #     sqs.stub_responses(:receive_message, messages: message)
+    #     sqs.stub_responses(:receive_message, messages: message)
+    #     sqs.stub_responses(:receive_message, messages: message)
+    #     response = sqs.receive_message({queue_url: queue_url})
+    #     response = subject.get_data(response)
+    #     expect(response.body["data"]["report"]["report-header"]["report-name"]).to eq("Dataset Master Report")
+    #   end
+    # end
 
-    context "when there is ONE message" do
-      it "should return the data for one message" do
-        sqs.stub_responses(:receive_message, messages: message)
-        response = sqs.receive_message({queue_url: queue_url})
-        response = subject.get_data(response)
-        expect(response.body["data"]["report"]["report-header"]["report-name"]).to eq("Dataset Master Report")
-      end
-    end
+    # context "when there is ONE message" do
+    #   it "should return the data for one message" do
+    #     sqs.stub_responses(:receive_message, messages: message)
+    #     response = sqs.receive_message({queue_url: queue_url})
+    #     response = subject.get_data(response)
+    #     expect(response.body["data"]["report"]["report-header"]["report-name"]).to eq("Dataset Master Report")
+    #   end
+    # end
 
     # context "when there are NOT messages" do
     #   it "should return empty" do
@@ -73,35 +73,35 @@ describe Toccatore::UsageUpdate, vcr: true do
     context "when the report was found" do
       it "should parsed it correctly" do
         body = File.read(fixture_path + 'usage_update.json')
-        result = OpenStruct.new(body: JSON.parse(body), url:"https://metrics.test.datacite.org/reports/5cac6ca0-9391-4e1d-95cf-ba2f475cbfad"  )
+        result = OpenStruct.new(body: JSON.parse(body), url:"https://api.test.datacite.org/reports/5cac6ca0-9391-4e1d-95cf-ba2f475cbfad"  )
         response = subject.parse_data(result, source_token: ENV['SOURCE_TOKEN'])
         expect(response.length).to eq(2)
-        expect(response.last.except("uuid")).to eq("subj"=>{"pid"=>"https://metrics.test.datacite.org/reports/5cac6ca0-9391-4e1d-95cf-ba2f475cbfad", "issued"=>"2128-04-09"},"total"=>3,"message-action" => "add", "subj-id"=>"https://metrics.test.datacite.org/reports/5cac6ca0-9391-4e1d-95cf-ba2f475cbfad", "obj-id"=>"https://doi.org/10.7291/d1q94r", "relation-type-id"=>"unique-dataset-investigations-regular", "source-id"=>"datacite-usage", "occurred-at"=>"2128-04-09", "license" => "https://creativecommons.org/publicdomain/zero/1.0/", "source-token" => "43ba99ae-5cf0-11e8-9c2d-fa7ae01bbebc")
+        expect(response.last.except("uuid")).to eq("subj"=>{"pid"=>"https://api.test.datacite.org/reports/5cac6ca0-9391-4e1d-95cf-ba2f475cbfad", "issued"=>"2128-04-09"},"total"=>3,"message-action" => "add", "subj-id"=>"https://api.test.datacite.org/reports/5cac6ca0-9391-4e1d-95cf-ba2f475cbfad", "obj-id"=>"https://doi.org/10.7291/d1q94r", "relation-type-id"=>"unique-dataset-investigations-regular", "source-id"=>"datacite-usage", "occurred-at"=>"2128-04-09", "license" => "https://creativecommons.org/publicdomain/zero/1.0/", "source-token" => ENV['SOURCE_TOKEN'])
       end
 
       it "should parsed it correctly when it has five metrics  and two DOIs" do
         body = File.read(fixture_path + 'usage_update_3.json')
-        result = OpenStruct.new(body: JSON.parse(body), url:"https://metrics.test.datacite.org/reports/5cac6ca0-9391-4e1d-95cf-ba2f475cbfad"  )
+        result = OpenStruct.new(body: JSON.parse(body), url:"https://api.test.datacite.org/reports/5cac6ca0-9391-4e1d-95cf-ba2f475cbfad"  )
         response = subject.parse_data(result, source_token: ENV['SOURCE_TOKEN'])
         expect(response.length).to eq(5)
-        expect(response.last.except("uuid")).to eq("message-action"=>"add", "subj-id"=>"https://metrics.test.datacite.org/reports/5cac6ca0-9391-4e1d-95cf-ba2f475cbfad", "subj"=>{"pid"=>"https://metrics.test.datacite.org/reports/5cac6ca0-9391-4e1d-95cf-ba2f475cbfad", "issued"=>"2128-04-09"}, "total"=>208, "obj-id"=>"https://doi.org/10.6071/z7wc73", "relation-type-id"=>"Unique-Dataset-Requests-Machine", "source-id"=>"datacite-usage", "source-token"=>"43ba99ae-5cf0-11e8-9c2d-fa7ae01bbebc", "occurred-at"=>"2128-04-09", "license"=>"https://creativecommons.org/publicdomain/zero/1.0/")
+        expect(response.last.except("uuid")).to eq("message-action"=>"add", "subj-id"=>"https://api.test.datacite.org/reports/5cac6ca0-9391-4e1d-95cf-ba2f475cbfad", "subj"=>{"pid"=>"https://api.test.datacite.org/reports/5cac6ca0-9391-4e1d-95cf-ba2f475cbfad", "issued"=>"2128-04-09"}, "total"=>208, "obj-id"=>"https://doi.org/10.6071/z7wc73", "relation-type-id"=>"Unique-Dataset-Requests-Machine", "source-id"=>"datacite-usage", "source-token"=>ENV['SOURCE_TOKEN'], "occurred-at"=>"2128-04-09", "license"=>"https://creativecommons.org/publicdomain/zero/1.0/")
       end
 
       it "should parsed it correctly when it has two metrics per DOI " do
         body = File.read(fixture_path + 'usage_update_2.json')
-        result = OpenStruct.new(body: JSON.parse(body), url:"https://metrics.test.datacite.org/reports/5cac6ca0-9391-4e1d-95cf-ba2f475cbfad" , url:"https://metrics.test.datacite.org/reports/5cac6ca0-9391-4e1d-95cf-ba2f475cbfad" )
+        result = OpenStruct.new(body: JSON.parse(body), url:"https://api.test.datacite.org/reports/5cac6ca0-9391-4e1d-95cf-ba2f475cbfad")
         response = subject.parse_data(result, source_token: ENV['SOURCE_TOKEN'])
         expect(response.length).to eq(4)
-        expect(response.last.except("uuid")).to eq("message-action"=>"add", "subj-id"=>"https://metrics.test.datacite.org/reports/5cac6ca0-9391-4e1d-95cf-ba2f475cbfad", "subj"=>{"pid"=>"https://metrics.test.datacite.org/reports/5cac6ca0-9391-4e1d-95cf-ba2f475cbfad", "issued"=>"2128-04-09"}, "total"=>208, "obj-id"=>"https://doi.org/10.6071/z7wc73", "relation-type-id"=>"Unique-Dataset-Requests-Machine", "source-id"=>"datacite-usage", "source-token"=>"43ba99ae-5cf0-11e8-9c2d-fa7ae01bbebc", "occurred-at"=>"2128-04-09", "license"=>"https://creativecommons.org/publicdomain/zero/1.0/")
+        expect(response.last.except("uuid")).to eq("message-action"=>"add", "subj-id"=>"https://api.test.datacite.org/reports/5cac6ca0-9391-4e1d-95cf-ba2f475cbfad", "subj"=>{"pid"=>"https://api.test.datacite.org/reports/5cac6ca0-9391-4e1d-95cf-ba2f475cbfad", "issued"=>"2128-04-09"}, "total"=>208, "obj-id"=>"https://doi.org/10.6071/z7wc73", "relation-type-id"=>"Unique-Dataset-Requests-Machine", "source-id"=>"datacite-usage", "source-token"=>ENV['SOURCE_TOKEN'], "occurred-at"=>"2128-04-09", "license"=>"https://creativecommons.org/publicdomain/zero/1.0/")
       end
 
       it "should send a warning if there are more than 4 metrics" do
         body = File.read(fixture_path + 'usage_update_1.json')
-        result = OpenStruct.new(body: JSON.parse(body), url:"https://metrics.test.datacite.org/reports/5cac6ca0-9391-4e1d-95cf-ba2f475cbfad"  )
+        result = OpenStruct.new(body: JSON.parse(body), url:"https://api.test.datacite.org/reports/5cac6ca0-9391-4e1d-95cf-ba2f475cbfad"  )
         response = subject.parse_data(result, source_token: ENV['SOURCE_TOKEN'])
         expect(response.length).to eq(1)
         expect(subject.parse_data(result)).to be_a(Array)
-        expect(response.last.body).to eq({"errors"=>"There are too many instances in 10.7291/D1Q94R for report https://metrics.test.datacite.org/reports/5cac6ca0-9391-4e1d-95cf-ba2f475cbfad. There can only be 4"})
+        expect(response.last.body).to eq({"errors"=>"There are too many instances in 10.7291/D1Q94R for report https://api.test.datacite.org/reports/5cac6ca0-9391-4e1d-95cf-ba2f475cbfad. There can only be 4"})
       end
     end
   end
@@ -117,15 +117,15 @@ describe Toccatore::UsageUpdate, vcr: true do
       body = File.read(fixture_path + 'usage_events.json')
       expect = File.read(fixture_path + 'event_data_resp_2')
       result = JSON.parse(body)
-      options = { push_url: ENV['LAGOTTINO_URL'], access_token: ENV['ACCESS_TOKEN'], jsonapi: true }
+      options = { push_url: ENV['LAGOTTINO_URL'], access_token: ENV['LAGOTTINO_TOKEN'], jsonapi: true }
       expect(subject.push_data(result, options)).to eq(4)
     end
 
     it "should fail if format of the event is empty" do
       body = File.read(fixture_path + 'events_empty.json')
       result = JSON.parse(body)
-      options = { push_url: ENV['LAGOTTINO_URL'], access_token: ENV['ACCESS_TOKEN'], jsonapi: true }
-      expect(subject.push_data(result, options)).to eq(1)
+      options = { push_url: ENV['LAGOTTINO_URL'], access_token: ENV['LAGOTTINO_TOKEN'], jsonapi: true }
+      expect(subject.push_data(result, options)).to eq(2)
     end
 
     # it "should work with DataCite Event Data 2" do
@@ -138,7 +138,7 @@ describe Toccatore::UsageUpdate, vcr: true do
     it "should work with a single item" do
       body = File.read(fixture_path + 'usage_events.json')
       result = JSON.parse(body)
-      options = { push_url: ENV['LAGOTTINO_URL'], access_token: ENV['ACCESS_TOKEN'], jsonapi: true }
+      options = { push_url: ENV['LAGOTTINO_URL'], access_token: ENV['LAGOTTINO_TOKEN'], jsonapi: true }
       expect(subject.push_item(result.first, options)).to eq(1)
     end
   end

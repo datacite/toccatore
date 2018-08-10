@@ -16,13 +16,13 @@ Gem::Specification.new do |s|
 
   # Declary dependencies here, rather than in the Gemfile
   
-  s.add_dependency 'maremma', '~> 3.5'
-  s.add_dependency 'activesupport', '~> 4.2', '>= 4.2.5'
+  s.add_dependency 'maremma', '>= 3.5.7', '< 5'
+  s.add_dependency 'activesupport', '>= 4.2.5', '< 6'
   s.add_dependency 'dotenv', '~> 2.1', '>= 2.1.1'
   s.add_dependency 'namae', '~> 0.11.0'
   s.add_dependency 'gender_detector', '~> 1.0'
   s.add_dependency 'thor', '~> 0.19'
-  s.add_dependency 'slack-notifier', '= 2.2.2'
+  s.add_dependency 'slack-notifier', '~> 2.1'
   s.add_dependency 'aws-sdk-sqs'
   s.add_dependency 'factory_bot'
 
@@ -31,9 +31,9 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rake', '~> 12.0'
   s.add_development_dependency 'rack-test', '~> 0'
   s.add_development_dependency 'vcr', '~> 3.0', '>= 3.0.3'
-  s.add_development_dependency 'webmock', '~> 1.22', '>= 1.22.3'
-  s.add_development_dependency 'codeclimate-test-reporter', '~> 1.0', '>= 1.0.0'
-  s.add_development_dependency 'simplecov', '~> 0.12.0'
+  s.add_development_dependency 'webmock', '~> 3.0', '>= 3.0.1'
+  s.add_development_dependency 'codeclimate-test-reporter', "~> 1.0"
+  s.add_development_dependency 'simplecov'
   s.add_development_dependency 'factory_bot'
   s.add_development_dependency 'faker'
 

@@ -145,8 +145,8 @@ module Toccatore
       notifier = Slack::Notifier.new options[:slack_webhook_url],
                                      username: "Event Data Agent",
                                      icon_url: ICON_URL
-      response = notifier.ping attachments: [attachment]
-      response.body
+      response = notifier.post attachments: [attachment]
+      response.first
     end
 
     def get_doi_ra(prefix)
