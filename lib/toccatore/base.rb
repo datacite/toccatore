@@ -72,7 +72,12 @@ module Toccatore
         (0...total_pages).each do |page|
           options[:offset] = page * job_batch_size
           options[:total] = total
-          error_total += process_data(options)
+          err = process_data(options)
+          if err.is_a?(Integer)
+            error_total += err
+          else
+            puts err.inspect
+          end
         end
         text = "#{total} works processed with #{error_total} errors for date range #{options[:from_date]} - #{options[:until_date]}."
       else

@@ -8,7 +8,7 @@ describe Toccatore::CLI do
 
   describe "version" do
     it 'has version' do
-      expect { subject.__print_version }.to output("0.4.13\n").to_stdout
+      expect { subject.__print_version }.to output("0.4.14\n").to_stdout
     end
   end
 

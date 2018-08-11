@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    toccatore (0.4.13)
+    toccatore (0.4.14)
       activesupport (>= 4.2.5, < 6)
       aws-sdk-sqs
       dotenv (~> 2.1, >= 2.1.1)
