@@ -82,7 +82,13 @@ module Toccatore
       puts text
 
       # send slack notification
-      options[:level] = total > 0 ? "good" : "warning"
+      if total == 0
+        options[:level] = "warning"
+      elsif error_total > 0
+        options[:level] = "danger"
+      else
+        options[:level] = "good"
+      end
       options[:title] = "Report for #{source_id}"
       send_notification_to_slack(text, options) if options[:slack_webhook_url].present?
 
