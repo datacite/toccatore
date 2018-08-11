@@ -1,6 +1,6 @@
 [{
     "id": 12332423432432,
-    "message-action": "add",
+    "message-action": "create",
     "subj": {
       "pid": "https://api.test.datacite.org/reports/2018-3-Dash",
       "issued": "2128-04-09"
