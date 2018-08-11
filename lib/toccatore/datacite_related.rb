@@ -58,7 +58,10 @@ module Toccatore
     end
 
     def push_item(item, options={})
-      return OpenStruct.new(body: { "errors" => [{ "title" => "Access token missing." }] }) if options[:access_token].blank?
+      if options[:access_token].blank?
+        puts "Access token missing."
+        return 1
+      end
 
       host = options[:push_url].presence || "https://bus.eventdata.crossref.org"
       push_url = host + "/events"
@@ -91,6 +94,9 @@ module Toccatore
       # return 0 if successful, 1 if error
       if response.status == 201
         puts "#{item['subj_id']} #{item['relation_type_id']} #{item['obj_id']} pushed to Event Data service."
+        0
+      elsif response.status == 409
+        puts "#{item['subj_id']} #{item['relation_type_id']} #{item['obj_id']} already pushed to Event Data service."
         0
       elsif response.body["errors"].present?
         puts "#{item['subj_id']} #{item['relation_type_id']} #{item['obj_id']} had an error:"
