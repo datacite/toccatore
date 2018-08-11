@@ -74,7 +74,7 @@ module Toccatore
                      "relation-type-id" => item["relation_type_id"],
                      "source-id" => "datacite-crossref",
                      "source-token" => item["source_token"],
-                     "occurred-at" => item["occured-at"],
+                     "occurred-at" => item["occurred_at"],
                      "license" => item["license"] } }}
 
         response = Maremma.post(push_url, data: data.to_json,
