@@ -45,7 +45,7 @@ module Toccatore
                         "relation_type_id" => raw_relation_type.underscore,
                         "source_id" => "datacite",
                         "source_token" => options[:source_token],
-                        "occurred_at" => item.fetch("minted"),
+                        "occurred_at" => item.fetch("updated"),
                         "license" => LICENSE }
             else
               ssum
