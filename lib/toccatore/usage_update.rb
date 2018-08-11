@@ -95,7 +95,7 @@ module Toccatore
       fail "Report_id is missing" if data[:report_id].blank?
 
       { "uuid" => SecureRandom.uuid,
-        "message-action" => "add",
+        "message-action" => "create",
         "subj-id" => data[:report_id],
         "subj"=> {
           "pid"=> data[:report_id],
