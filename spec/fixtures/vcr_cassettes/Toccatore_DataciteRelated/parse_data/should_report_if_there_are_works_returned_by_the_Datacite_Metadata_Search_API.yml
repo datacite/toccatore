@@ -8,65 +8,58 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Fri, 10 Aug 2018 17:32:58 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Sat, 11 Mar 2017 08:29:56 GMT
-      Etag:
-      - W/"ff8456784c6e0dde2efda6fdfaa69bc7"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      Via:
-      - kong/0.10.0rc3
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Kong-Proxy-Latency:
-      - '3'
-      X-Kong-Upstream-Latency:
-      - '572'
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Ratelimit-Limit-Hour:
-      - '10000'
-      X-Ratelimit-Remaining-Hour:
-      - '9993'
-      X-Request-Id:
-      - 83cdbc94-0a9d-447e-8125-dbb3a41134de
-      X-Runtime:
-      - '0.571454'
-      X-Xss-Protection:
-      - 1; mode=block
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      X-Request-Id:
+      - 20a4d1bd-05e3-40a5-82d5-77e8fca4dff2
+      Etag:
+      - W/"c385a1012db3ba38c1747efaec3cbeb1"
+      X-Runtime:
+      - '0.014324'
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10.7480","type":"prefixes","attributes":{"registration-agency":"DataCite","updated":"2016-09-21T20:27:37Z"}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"10.7480","type":"prefixes","attributes":{"registration-agency":"DataCite","created":"2012-04-20T05:30:10.000Z","updated":null},"relationships":{"clients":{"data":[{"id":"delft.tudarch","type":"clients"}]},"providers":{"data":[{"id":"delft","type":"providers"}]}}},"included":[{"id":"delft.tudarch","type":"clients","attributes":{"name":"TU
+        Delft Architecture","symbol":"DELFT.TUDARCH","year":2012,"contact-name":"Frank
+        van der Hoeven","contact-email":"F.D.vanderHoeven@tudelft.nl","domains":"*","url":null,"is-active":true,"has-password":true,"created":"2012-04-26T07:02:36Z","updated":"2018-08-10T02:35:18Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"meta":{}},"repository":{"meta":{}}}},{"id":"delft","type":"providers","attributes":{"name":"TU
+        Delft Library","symbol":"DELFT","website":"http://www.library.tudelft.nl/en","contact-name":"Madeleine
+        de Smaele","contact-email":"m.m.e.desmaele@tudelft.nl","phone":"+31 15 27
+        85678","description":"The TU Delft Library is the hub of knowledge for technical
+        and scientific information and the largest technical-scientific library in
+        the Netherlands. We support research and education at the national level and
+        are part of the Delft University of Technology. TU Delft Library is a founding
+        member of DataCite and a regional office for the Netherlands.\n\nTU Delft
+        Library has established DataCite Netherlands to serve as a central research
+        dataset registration service that will enable Dutch research organizations
+        to register research datasets and assign digital object identifiers (DOIs)
+        to them. Our aim is to support researchers by improving access to research
+        data and to increase acceptance of the research data as legitimate, citable
+        contributions to scientific record through trustworthy registration and identification
+        of datasets. The current focus of DataCite Netherlands is on promoting the
+        use of digital object identifiers for datasets.","country":"NL","logo-url":"https://assets.datacite.org/images/members/delft.png","institution-type":null,"is-active":true,"has-password":true,"joined":"2009-12-01","created":"2010-01-01T00:00:00.000Z","updated":"2018-08-10T02:25:51.000Z"},"relationships":{"clients":{"meta":{}},"prefixes":{"meta":{}}}}]}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -77,67 +70,42 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Fri, 10 Aug 2018 17:32:59 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Sat, 11 Mar 2017 08:29:57 GMT
-      Etag:
-      - W/"0f8a68f3c1e4c153cec8ed895fc58aa4"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      Via:
-      - kong/0.10.0rc3
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Kong-Proxy-Latency:
-      - '1'
-      X-Kong-Upstream-Latency:
-      - '622'
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Ratelimit-Limit-Hour:
-      - '10000'
-      X-Ratelimit-Remaining-Hour:
-      - '9992'
-      X-Request-Id:
-      - 4e1ac868-5e53-4107-9c14-f3e3bf1001cf
-      X-Runtime:
-      - '0.621040'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '124'
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      X-Request-Id:
+      - 5e114d08-03f2-4ffd-953c-d51b674a80ee
+      Etag:
+      - W/"4e82baf1ab85d101bcf95c52bbd65ca3"
+      X-Runtime:
+      - '0.018872'
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10.1594","type":"prefixes","attributes":{"registration-agency":"DataCite","updated":"2016-09-21T20:24:47Z"}}}'
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImlkIjoiMTAuMTU5NCIsInR5cGUiOiJwcmVmaXhlcyIsImF0dHJpYnV0ZXMiOnsicmVnaXN0cmF0aW9uLWFnZW5jeSI6IkRhdGFDaXRlIiwiY3JlYXRlZCI6IjIwMTAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsInVwZGF0ZWQiOm51bGx9LCJyZWxhdGlvbnNoaXBzIjp7ImNsaWVudHMiOnsiZGF0YSI6W3siaWQiOiJ0aWIud2RjYyIsInR5cGUiOiJjbGllbnRzIn0seyJpZCI6InRpYi5nZnoiLCJ0eXBlIjoiY2xpZW50cyJ9LHsiaWQiOiJ0aWIudWJmciIsInR5cGUiOiJjbGllbnRzIn0seyJpZCI6InRpYi5sZGVvIiwidHlwZSI6ImNsaWVudHMifSx7ImlkIjoidGliLmVzciIsInR5cGUiOiJjbGllbnRzIn0seyJpZCI6InRpYi5wYW5nYWVhIiwidHlwZSI6ImNsaWVudHMifSx7ImlkIjoidGliLndkY3JzYXQiLCJ0eXBlIjoiY2xpZW50cyJ9XX0sInByb3ZpZGVycyI6eyJkYXRhIjpbeyJpZCI6InRpYiIsInR5cGUiOiJwcm92aWRlcnMifV19fX0sImluY2x1ZGVkIjpbeyJpZCI6InRpYi53ZGNjIiwidHlwZSI6ImNsaWVudHMiLCJhdHRyaWJ1dGVzIjp7Im5hbWUiOiJXb3JsZCBEYXRhIENlbnRlciBmb3IgQ2xpbWF0ZSIsInN5bWJvbCI6IlRJQi5XRENDIiwieWVhciI6MjAxMSwiY29udGFjdC1uYW1lIjoiTWljaGFlbCBMYXV0ZW5zY2hsYWdlciIsImNvbnRhY3QtZW1haWwiOiJtaWNoYWVsLmxhdXRlbnNjaGxhZ2VyQHptYXcuZGUiLCJkb21haW5zIjoiZGtyei5kZSIsInVybCI6bnVsbCwiaXMtYWN0aXZlIjp0cnVlLCJoYXMtcGFzc3dvcmQiOnRydWUsImNyZWF0ZWQiOiIyMDExLTAzLTIxVDA5OjA5OjMwWiIsInVwZGF0ZWQiOiIyMDE4LTA4LTEwVDAyOjM1OjEyWiJ9LCJyZWxhdGlvbnNoaXBzIjp7InByZWZpeGVzIjp7Im1ldGEiOnt9fSwicHJvdmlkZXIiOnsibWV0YSI6e319LCJyZXBvc2l0b3J5Ijp7Im1ldGEiOnt9fX19LHsiaWQiOiJ0aWIuZ2Z6IiwidHlwZSI6ImNsaWVudHMiLCJhdHRyaWJ1dGVzIjp7Im5hbWUiOiJHZW9mb3JzY2h1bmdzemVudHJ1bSBQb3RzZGFtIiwic3ltYm9sIjoiVElCLkdGWiIsInllYXIiOjIwMTEsImNvbnRhY3QtbmFtZSI6IlJvbGFuZCBCZXJ0ZWxtYW5uIiwiY29udGFjdC1lbWFpbCI6InJhYkBnZnotcG90c2RhbS5kZSIsImRvbWFpbnMiOiJnZnotcG90c2RhbS5kZSxpY2RwLW9ubGluZS5kZSxzY2llbnRpZmljZHJpbGxpbmcub3JnLHVuaS1rb2Vsbi5kZSx3b3JsZC1zdHJlc3MtbWFwLm9yZyxzaW50ZWYubm8sc2ZiODA2LmRlLGlwb2MtbmV0d29yay5vcmciLCJ1cmwiOm51bGwsImlzLWFjdGl2ZSI6dHJ1ZSwiaGFzLXBhc3N3b3JkIjp0cnVlLCJjcmVhdGVkIjoiMjAxMS0wNS0xMVQxMjo1MjoxNVoiLCJ1cGRhdGVkIjoiMjAxOC0wOC0xMFQwMjozNToxM1oifSwicmVsYXRpb25zaGlwcyI6eyJwcmVmaXhlcyI6eyJtZXRhIjp7fX0sInByb3ZpZGVyIjp7Im1ldGEiOnt9fSwicmVwb3NpdG9yeSI6eyJtZXRhIjp7fX19fSx7ImlkIjoidGliLnViZnIiLCJ0eXBlIjoiY2xpZW50cyIsImF0dHJpYnV0ZXMiOnsibmFtZSI6IlVuaXZlcnNpdMOkdHNiaWJsaW90aGVrIEZyZWlidXJnIiwic3ltYm9sIjoiVElCLlVCRlIiLCJ5ZWFyIjoyMDExLCJjb250YWN0LW5hbWUiOiJUaG9tYXMgQXJnYXN0IiwiY29udGFjdC1lbWFpbCI6InJlcG9zaXRvcmllbkB1Yi51bmktZnJlaWJ1cmcuZGUiLCJkb21haW5zIjoidW5pLWZyZWlidXJnLmRlIiwidXJsIjpudWxsLCJpcy1hY3RpdmUiOnRydWUsImhhcy1wYXNzd29yZCI6dHJ1ZSwiY3JlYXRlZCI6IjIwMTEtMDQtMDFUMDg6MzQ6MzRaIiwidXBkYXRlZCI6IjIwMTgtMDgtMTBUMDI6MzU6MTNaIn0sInJlbGF0aW9uc2hpcHMiOnsicHJlZml4ZXMiOnsibWV0YSI6e319LCJwcm92aWRlciI6eyJtZXRhIjp7fX0sInJlcG9zaXRvcnkiOnsibWV0YSI6e319fX0seyJpZCI6InRpYi5sZGVvIiwidHlwZSI6ImNsaWVudHMiLCJhdHRyaWJ1dGVzIjp7Im5hbWUiOiJMREVPIC0gTGFtb250LURvaGVydHkgRWFydGggT2JzZXJ2YXRvcnksIENvbHVtYmlhIFVuaXZlcnNpdHkiLCJzeW1ib2wiOiJUSUIuTERFTyIsInllYXIiOjIwMTEsImNvbnRhY3QtbmFtZSI6IlJvYmVydCBBLiBBcmtvIiwiY29udGFjdC1lbWFpbCI6ImFya29AbGRlby5jb2x1bWJpYS5lZHUiLCJkb21haW5zIjoiaWVkYS1zZXJ2aWNlcy5vcmcsaWVkYWRhdGEub3JnLG9jZWFuZHJpbGxpbmcub3JnLHVzYXAtZGF0YS5vcmciLCJ1cmwiOm51bGwsImlzLWFjdGl2ZSI6dHJ1ZSwiaGFzLXBhc3N3b3JkIjp0cnVlLCJjcmVhdGVkIjoiMjAxMS0wMy0zMFQwODowMjo0MloiLCJ1cGRhdGVkIjoiMjAxOC0wOC0xMFQwMjozNToxM1oifSwicmVsYXRpb25zaGlwcyI6eyJwcmVmaXhlcyI6eyJtZXRhIjp7fX0sInByb3ZpZGVyIjp7Im1ldGEiOnt9fSwicmVwb3NpdG9yeSI6eyJtZXRhIjp7fX19fSx7ImlkIjoidGliLmVzciIsInR5cGUiOiJjbGllbnRzIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiRXVyb3BlYW4gU29jaWV0eSBvZiBSYWRpb2xvZ3kiLCJzeW1ib2wiOiJUSUIuRVNSIiwieWVhciI6MjAxMSwiY29udGFjdC1uYW1lIjoiU3RlZmFuaWUgTXV6aWsiLCJjb250YWN0LWVtYWlsIjoiZXBvc0BteWVzci5vcmciLCJkb21haW5zIjoibXllc3Iub3JnLGV1cm9yYWQub3JnIiwidXJsIjpudWxsLCJpcy1hY3RpdmUiOnRydWUsImhhcy1wYXNzd29yZCI6dHJ1ZSwiY3JlYXRlZCI6IjIwMTEtMTEtMjFUMTQ6MzQ6MzZaIiwidXBkYXRlZCI6IjIwMTgtMDgtMTBUMDI6MzU6MTVaIn0sInJlbGF0aW9uc2hpcHMiOnsicHJlZml4ZXMiOnsibWV0YSI6e319LCJwcm92aWRlciI6eyJtZXRhIjp7fX0sInJlcG9zaXRvcnkiOnsibWV0YSI6e319fX0seyJpZCI6InRpYi5wYW5nYWVhIiwidHlwZSI6ImNsaWVudHMiLCJhdHRyaWJ1dGVzIjp7Im5hbWUiOiJQQU5HQUVBIiwic3ltYm9sIjoiVElCLlBBTkdBRUEiLCJ5ZWFyIjoyMDExLCJjb250YWN0LW5hbWUiOiJVd2UgU2NoaW5kbGVyIiwiY29udGFjdC1lbWFpbCI6InVzY2hpbmRsZXJAcGFuZ2FlYS5kZSIsImRvbWFpbnMiOiJwYW5nYWVhLmRlIiwidXJsIjpudWxsLCJpcy1hY3RpdmUiOnRydWUsImhhcy1wYXNzd29yZCI6dHJ1ZSwiY3JlYXRlZCI6IjIwMTEtMDEtMTdUMDc6NDE6NTFaIiwidXBkYXRlZCI6IjIwMTgtMDgtMTBUMDI6MzU6MTJaIn0sInJlbGF0aW9uc2hpcHMiOnsicHJlZml4ZXMiOnsibWV0YSI6e319LCJwcm92aWRlciI6eyJtZXRhIjp7fX0sInJlcG9zaXRvcnkiOnsibWV0YSI6e319fX0seyJpZCI6InRpYi53ZGNyc2F0IiwidHlwZSI6ImNsaWVudHMiLCJhdHRyaWJ1dGVzIjp7Im5hbWUiOiJXb3JsZCBEYXRhIENlbnRlciBmb3IgUmVtb3RlIFNlbnNpbmcgb2YgdGhlIEF0bW9zcGhlcmUiLCJzeW1ib2wiOiJUSUIuV0RDUlNBVCIsInllYXIiOjIwMTEsImNvbnRhY3QtbmFtZSI6Ikp1bGlhbiBNZXllci1Bcm5layIsImNvbnRhY3QtZW1haWwiOiJKdWxpYW4uTWV5ZXItQXJuZWtAZGxyLmRlIiwiZG9tYWlucyI6ImRsci5kZSIsInVybCI6bnVsbCwiaXMtYWN0aXZlIjp0cnVlLCJoYXMtcGFzc3dvcmQiOnRydWUsImNyZWF0ZWQiOiIyMDExLTA3LTEzVDEwOjEzOjE3WiIsInVwZGF0ZWQiOiIyMDE4LTA4LTEwVDAyOjM1OjEzWiJ9LCJyZWxhdGlvbnNoaXBzIjp7InByZWZpeGVzIjp7Im1ldGEiOnt9fSwicHJvdmlkZXIiOnsibWV0YSI6e319LCJyZXBvc2l0b3J5Ijp7Im1ldGEiOnt9fX19LHsiaWQiOiJ0aWIiLCJ0eXBlIjoicHJvdmlkZXJzIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiR2VybWFuIE5hdGlvbmFsIExpYnJhcnkgb2YgU2NpZW5jZSBhbmQgVGVjaG5vbG9neSIsInN5bWJvbCI6IlRJQiIsIndlYnNpdGUiOiJodHRwOi8vd3d3LnRpYi5ldSIsImNvbnRhY3QtbmFtZSI6IlN0ZXBoYW5pZSBIYWdlbWFubi1XaWxob2x0IiwiY29udGFjdC1lbWFpbCI6ImRvaS1pbmZvQHRpYi5ldSIsInBob25lIjoiKzQ5IDUxMSA3NjIgMTQyMjYiLCJkZXNjcmlwdGlvbiI6IlRoZSBUSUIgaXMgdGhlIEdlcm1hbiBOYXRpb25hbCBMaWJyYXJ5IGZvciBhbGwgYXJlYXMgb2YgZW5naW5lZXJpbmcgYXMgd2VsbCBhcyBhcmNoaXRlY3R1cmUsIGNoZW1pc3RyeSwgaW5mb3JtYXRpb24gdGVjaG5vbG9neSwgbWF0aGVtYXRpY3MgYW5kIHBoeXNpY3MuIFdlIGFyZSB0aGUgd29ybGQncyBsYXJnZXN0IHNwZWNpYWxpc2VkIGxpYnJhcnkgZm9yIHNjaWVuY2UgYW5kIHRlY2hub2xvZ3kgYW5kIGFyZSBwYXJ0IG9mIHRoZSBHZXJtYW4gcmVzZWFyY2ggaW5mcmFzdHJ1Y3R1cmUuIE91ciBmdW5jdGlvbiBpcyB0aGUgY29tcHJlaGVuc2l2ZSBwcm9jdXJlbWVudCBhbmQgYXJjaGl2YWwgc3RvcmFnZSBvZiB0ZWNobmljYWwgc2NpZW50aWZpYyBsaXRlcmF0dXJlIGZyb20gYWxsIG92ZXIgdGhlIHdvcmxkLiBUSUIgd2FzIHRoZSBmaXJzdCBET0kgcmVnaXN0cmF0aW9uIGFnZW5jeSBmb3IgcHJpbWFyeSBkYXRhIHdvcmxkd2lkZS4gV2UgaGF2ZSBiZWVuIHByb3ZpZGluZyBET0kgcmVnaXN0cmF0aW9uIHNlcnZpY2VzIHNpbmNlIDIwMDUgYW5kIHdlIG5vdyB3b3JrIGRpcmVjdGx5IHdpdGggb3ZlciA0MCBkYXRhIGNlbnRyZXMuIFRJQiBpcyBvbmUgb2YgdGhlIGZvdW5kaW5nIG1lbWJlcnMgb2YgRGF0YUNpdGUgYW5kIGlzIGN1cnJlbnRseSB0aGUgQnVzaW5lc3MgT2ZmaWNlLiBXZSBwcm92aWRlIERPSSByZWdpc3RyYXRpb24gc2VydmljZXMgZm9yIGFsbCBHZXJtYW4gZGF0YSBjZW50cmVzIGluIHRoZSBmaWVsZHMgb2YgZW5naW5lZXJpbmcsIGFyY2hpdGVjdHVyZSwgY2hlbWlzdHJ5LCBpbmZvcm1hdGlvbiB0ZWNobm9sb2d5LCBtYXRoZW1hdGljcyBhbmQgcGh5c2ljcy4gT3VyIGN1cnJlbnQgZm9jdXMgaXMgb24gcHJvdmlkaW5nIERPSSBuYW1lcyBmb3IgcHJpbWFyeSBkYXRhIGFuZCBncmV5IGxpdGVyYXR1cmUuIiwiY291bnRyeSI6IkRFIiwibG9nby11cmwiOiJodHRwczovL2Fzc2V0cy5kYXRhY2l0ZS5vcmcvaW1hZ2VzL21lbWJlcnMvdGliLnBuZyIsImluc3RpdHV0aW9uLXR5cGUiOm51bGwsImlzLWFjdGl2ZSI6dHJ1ZSwiaGFzLXBhc3N3b3JkIjp0cnVlLCJqb2luZWQiOiIyMDA5LTEyLTAxIiwiY3JlYXRlZCI6IjIwMTAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsInVwZGF0ZWQiOiIyMDE4LTA4LTEwVDAyOjI1OjUxLjAwMFoifSwicmVsYXRpb25zaGlwcyI6eyJjbGllbnRzIjp7Im1ldGEiOnt9fSwicHJlZml4ZXMiOnsibWV0YSI6e319fX1dfQ==
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -148,65 +116,51 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Fri, 10 Aug 2018 17:32:59 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Sat, 11 Mar 2017 08:29:58 GMT
-      Etag:
-      - W/"a1ae47bd8d0f7897ea6c9746b1089744"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      Via:
-      - kong/0.10.0rc3
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Kong-Proxy-Latency:
-      - '2'
-      X-Kong-Upstream-Latency:
-      - '275'
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Ratelimit-Limit-Hour:
-      - '10000'
-      X-Ratelimit-Remaining-Hour:
-      - '9991'
-      X-Request-Id:
-      - 92c732d6-0c6c-4280-b1e3-8bfe8bd0e34e
-      X-Runtime:
-      - '0.274008'
-      X-Xss-Protection:
-      - 1; mode=block
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      X-Request-Id:
+      - e9ad1b03-9b0c-43be-aa41-e968ed18da83
+      Etag:
+      - W/"294306e3e4e04d0a5748859c2b69fda1"
+      X-Runtime:
+      - '0.012702'
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10.15468","type":"prefixes","attributes":{"registration-agency":"DataCite","updated":"2016-09-21T20:24:38Z"}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"10.15468","type":"prefixes","attributes":{"registration-agency":"DataCite","created":"2014-05-28T13:30:49.000Z","updated":null},"relationships":{"clients":{"data":[{"id":"dk.gbif","type":"clients"}]},"providers":{"data":[{"id":"dk","type":"providers"}]}}},"included":[{"id":"dk.gbif","type":"clients","attributes":{"name":"Global
+        Biodiversity Information Facility","symbol":"DK.GBIF","year":2014,"contact-name":"Federico
+        Mendez","contact-email":"informatics@gbif.org","domains":"www.gbif.org,gbif-uat.org,gbif-dev.org,ipt.gbif.org,ipt.ala.org.au","url":null,"is-active":true,"has-password":true,"created":"2014-05-22T10:15:18Z","updated":"2018-08-10T02:35:30Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"meta":{}},"repository":{"meta":{}}}},{"id":"dk","type":"providers","attributes":{"name":"Danish
+        e-Infrastructure Cooperation (DeIC)","symbol":"DK","website":"http://www.deic.dk/datacite","contact-name":"Diba
+        Terese Markus","contact-email":"datacite@deic.dk","phone":"+45 35 88 82 02","description":"DeiC
+        supports Denmark as an eScience nation through the delivery of e-infrastructure
+        (computing, data warehousing, network connections and auxiliary services),
+        guidance, and initiatives at national level. DeiC is a virtual unit under
+        the Danish Ministry of Higher Education and Science and the result of an agreement
+        between the eight Danish universities and the Danish Agency for Science and
+        Higher Education.","country":"DK","logo-url":"https://assets.datacite.org/images/members/dk.png","institution-type":null,"is-active":true,"has-password":true,"joined":"2009-12-01","created":"2010-01-01T00:00:00.000Z","updated":"2018-08-10T02:25:51.000Z"},"relationships":{"clients":{"meta":{}},"prefixes":{"meta":{}}}}]}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -217,65 +171,42 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Fri, 10 Aug 2018 17:32:59 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Sat, 11 Mar 2017 08:29:59 GMT
-      Etag:
-      - W/"e592c4d7bbb0a817579d5b5c0d180f3a"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      Via:
-      - kong/0.10.0rc3
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Kong-Proxy-Latency:
-      - '1'
-      X-Kong-Upstream-Latency:
-      - '954'
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Ratelimit-Limit-Hour:
-      - '10000'
-      X-Ratelimit-Remaining-Hour:
-      - '9990'
-      X-Request-Id:
-      - eff0749b-8e2b-406d-ace0-fd4f9d031942
-      X-Runtime:
-      - '0.953103'
-      X-Xss-Protection:
-      - 1; mode=block
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      X-Request-Id:
+      - c97203ad-2a37-467c-9772-6e9c361998ae
+      Etag:
+      - W/"0e8f8b03e321078787721a894e5204cc"
+      X-Runtime:
+      - '0.012962'
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10.5886","type":"prefixes","attributes":{"registration-agency":"DataCite","updated":"2016-09-21T20:27:21Z"}}}'
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImlkIjoiMTAuNTg4NiIsInR5cGUiOiJwcmVmaXhlcyIsImF0dHJpYnV0ZXMiOnsicmVnaXN0cmF0aW9uLWFnZW5jeSI6IkRhdGFDaXRlIiwiY3JlYXRlZCI6IjIwMTEtMDktMTlUMTM6MTk6MzYuMDAwWiIsInVwZGF0ZWQiOm51bGx9LCJyZWxhdGlvbnNoaXBzIjp7ImNsaWVudHMiOnsiZGF0YSI6W3siaWQiOiJjaXN0aS51ZGVtYmMiLCJ0eXBlIjoiY2xpZW50cyJ9XX0sInByb3ZpZGVycyI6eyJkYXRhIjpbeyJpZCI6ImNpc3RpIiwidHlwZSI6InByb3ZpZGVycyJ9XX19fSwiaW5jbHVkZWQiOlt7ImlkIjoiY2lzdGkudWRlbWJjIiwidHlwZSI6ImNsaWVudHMiLCJhdHRyaWJ1dGVzIjp7Im5hbWUiOiJVbml2ZXJzaXTDqSBkZSBNb250csOpYWwgQmlvZGl2ZXJzaXR5IENlbnRyZSIsInN5bWJvbCI6IkNJU1RJLlVERU1CQyIsInllYXIiOjIwMTIsImNvbnRhY3QtbmFtZSI6IkRhdmlkIFAuIFNob3J0aG91c2UiLCJjb250YWN0LWVtYWlsIjoiZGF2aWQuc2hvcnRob3VzZUB1bW9udHJlYWwuY2EiLCJkb21haW5zIjoiY2FuYWRlbnN5cy5uZXQiLCJ1cmwiOm51bGwsImlzLWFjdGl2ZSI6dHJ1ZSwiaGFzLXBhc3N3b3JkIjp0cnVlLCJjcmVhdGVkIjoiMjAxMi0xMS0zMFQxOTo1MjowNVoiLCJ1cGRhdGVkIjoiMjAxOC0wOC0xMFQwMjozNToyMFoifSwicmVsYXRpb25zaGlwcyI6eyJwcmVmaXhlcyI6eyJtZXRhIjp7fX0sInByb3ZpZGVyIjp7Im1ldGEiOnt9fSwicmVwb3NpdG9yeSI6eyJtZXRhIjp7fX19fSx7ImlkIjoiY2lzdGkiLCJ0eXBlIjoicHJvdmlkZXJzIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiTmF0aW9uYWwgUmVzZWFyY2ggQ291bmNpbCBDYW5hZGEiLCJzeW1ib2wiOiJDSVNUSSIsIndlYnNpdGUiOiJodHRwOi8vd3d3Lm5yYy1jbnJjLmdjLmNhL2VuZy9wdWJsaWNhdGlvbnMvbGlicmFyeV9zZXJ2aWNlcy9kYXRhY2l0ZS8iLCJjb250YWN0LW5hbWUiOiJNYXJjaW4gUGFsdWNoIiwiY29udGFjdC1lbWFpbCI6Im1hcmNpbi5wYWx1Y2hAbnJjLmdjLmNhIiwicGhvbmUiOiIrMSA4MDAgNjY4LTEyMjIiLCJkZXNjcmlwdGlvbiI6IlRoZSBbTmF0aW9uYWwgUmVzZWFyY2ggQ291bmNpbCAoTlJDKV0oaHR0cDovL3d3dy5ucmMtY25yYy5nYy5jYS9lbmcvKSBpcyB0aGUgR292ZXJubWVudCBvZiBDYW5hZGHigJlzIHByZW1pZXIgcmVzZWFyY2ggYW5kIHRlY2hub2xvZ3kgb3JnYW5pemF0aW9uIChSVE8pIGFuZCBob21lIHRvIHRoZSBOYXRpb25hbCBTY2llbmNlIExpYnJhcnkuXG5cblRoZSBbTmF0aW9uYWwgU2NpZW5jZSBMaWJyYXJ5XShodHRwOi8vbnNsLWJzbi5ucmMtY25yYy5nYy5jYS9lbmcvaG9tZS8pIGlzIGFuIGludGVncmFsIGNvbXBvbmVudCBpbiB0aGUgZ3Jvd3RoIG9mIENhbmFkYeKAmXMgaW5ub3ZhdGlvbiBjYXBhY2l0eS4gVGhlIGxpYnJhcnkgcHJvdmlkZXMgW05SQ10oaHR0cDovL3d3dy5ucmMtY25yYy5nYy5jYS9lbmcvKSBhbmQgQ2FuYWRh4oCZcyByZXNlYXJjaCBjb21tdW5pdHkgd2l0aCBoaWdoLXZhbHVlIGF1dGhvcml0YXRpdmUgaW5mb3JtYXRpb24gYW5kIGluZm9ybWF0aW9uIHNlcnZpY2VzIGluIHNjaWVuY2UsIHRlY2hub2xvZ3kgYW5kIGhlYWx0aCB0byBhY2NlbGVyYXRlIGlubm92YXRpb24gYW5kIGNvbW1lcmNpYWxpemF0aW9uLlxuXG5JbiBrZWVwaW5nIHdpdGggdGhpcyByb2xlLCB0aGUgbGlicmFyeSBpcyB3b3JraW5nIHRvIGVuc3VyZSB0aGF0IHRoZSB2YWx1YWJsZSBkYXRhIGdlbmVyYXRlZCBieSBDYW5hZGlhbiByZXNlYXJjaGVycyBhcmUgY29sbGVjdGVkIGFuZCByZW1haW4gZmluZGFibGUsIGNpdGFibGUgYW5kIGFjY2Vzc2libGUgZm9yIHJlcGxpY2F0aW9uIGFuZCBmdXJ0aGVyIHVzZS5cblxuTlJDIGlzIGEgZm91bmRpbmcgbWVtYmVyIG9mIERhdGFDaXRlIGFuZCBpcyBpdHMgRE9JIGFsbG9jYXRpb24gYWdlbnQgZm9yIENhbmFkYS4gTlJDIGVzdGFibGlzaGVkIFtEYXRhQ2l0ZSBDYW5hZGFdKGh0dHA6Ly93d3cubnJjLWNucmMuZ2MuY2EvZW5nL3B1YmxpY2F0aW9ucy9saWJyYXJ5X3NlcnZpY2VzL2RhdGFjaXRlLykgdG8gc2VydmUgYXMgYSBjZW50cmFsIHJlc2VhcmNoIGRhdGFzZXQgcmVnaXN0cmF0aW9uIHNlcnZpY2UgdGhhdCB3aWxsIGVuYWJsZSBDYW5hZGlhbiBkYXRhIGNlbnRyZXMgdG8gcmVnaXN0ZXIgcmVzZWFyY2ggZGF0YXNldHMgYW5kIGFzc2lnbiBkaWdpdGFsIG9iamVjdCBpZGVudGlmaWVycyAoRE9JcykgdG8gdGhlbS4iLCJjb3VudHJ5IjoiQ0EiLCJsb2dvLXVybCI6Imh0dHBzOi8vYXNzZXRzLmRhdGFjaXRlLm9yZy9pbWFnZXMvbWVtYmVycy9jaXN0aS5wbmciLCJpbnN0aXR1dGlvbi10eXBlIjpudWxsLCJpcy1hY3RpdmUiOnRydWUsImhhcy1wYXNzd29yZCI6dHJ1ZSwiam9pbmVkIjoiMjAwOS0xMi0wMSIsImNyZWF0ZWQiOiIyMDEwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJ1cGRhdGVkIjoiMjAxOC0wOC0xMFQwMjoyNTo1MS4wMDBaIn0sInJlbGF0aW9uc2hpcHMiOnsiY2xpZW50cyI6eyJtZXRhIjp7fX0sInByZWZpeGVzIjp7Im1ldGEiOnt9fX19XX0=
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -286,65 +217,42 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Fri, 10 Aug 2018 17:32:59 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Sat, 11 Mar 2017 08:30:00 GMT
-      Etag:
-      - W/"c5f210487ebd06c8650fccadff28ab57"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      Via:
-      - kong/0.10.0rc3
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Kong-Proxy-Latency:
-      - '20'
-      X-Kong-Upstream-Latency:
-      - '615'
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Ratelimit-Limit-Hour:
-      - '10000'
-      X-Ratelimit-Remaining-Hour:
-      - '9989'
-      X-Request-Id:
-      - 3c067337-bb14-4ede-98ba-bd9ad8be486c
-      X-Runtime:
-      - '0.613543'
-      X-Xss-Protection:
-      - 1; mode=block
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      X-Request-Id:
+      - 8c61e38f-e433-4faf-909a-7f5f26887f4c
+      Etag:
+      - W/"4c38006b4895def17f9a8724107fa14b"
+      X-Runtime:
+      - '0.015240'
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10.5519","type":"prefixes","attributes":{"registration-agency":"DataCite","updated":"2016-09-21T20:27:17Z"}}}'
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImlkIjoiMTAuNTUxOSIsInR5cGUiOiJwcmVmaXhlcyIsImF0dHJpYnV0ZXMiOnsicmVnaXN0cmF0aW9uLWFnZW5jeSI6IkRhdGFDaXRlIiwiY3JlYXRlZCI6IjIwMTAtMTItMjFUMDg6MjA6MjYuMDAwWiIsInVwZGF0ZWQiOm51bGx9LCJyZWxhdGlvbnNoaXBzIjp7ImNsaWVudHMiOnsiZGF0YSI6W3siaWQiOiJibC5uaG0iLCJ0eXBlIjoiY2xpZW50cyJ9XX0sInByb3ZpZGVycyI6eyJkYXRhIjpbeyJpZCI6ImJsIiwidHlwZSI6InByb3ZpZGVycyJ9XX19fSwiaW5jbHVkZWQiOlt7ImlkIjoiYmwubmhtIiwidHlwZSI6ImNsaWVudHMiLCJhdHRyaWJ1dGVzIjp7Im5hbWUiOiJOYXR1cmFsIEhpc3RvcnkgTXVzZXVtLCBMb25kb24iLCJzeW1ib2wiOiJCTC5OSE0iLCJ5ZWFyIjoyMDE0LCJjb250YWN0LW5hbWUiOiJCZW4gU2NvdHQiLCJjb250YWN0LWVtYWlsIjoiYi5zY290dEBuaG0uYWMudWsiLCJkb21haW5zIjoibmhtLmFjLnVrIiwidXJsIjpudWxsLCJpcy1hY3RpdmUiOnRydWUsImhhcy1wYXNzd29yZCI6dHJ1ZSwiY3JlYXRlZCI6IjIwMTQtMTItMDFUMTM6MzM6MzlaIiwidXBkYXRlZCI6IjIwMTgtMDgtMTBUMDI6MzU6MzRaIn0sInJlbGF0aW9uc2hpcHMiOnsicHJlZml4ZXMiOnsibWV0YSI6e319LCJwcm92aWRlciI6eyJtZXRhIjp7fX0sInJlcG9zaXRvcnkiOnsibWV0YSI6e319fX0seyJpZCI6ImJsIiwidHlwZSI6InByb3ZpZGVycyIsImF0dHJpYnV0ZXMiOnsibmFtZSI6IkJyaXRpc2ggTGlicmFyeSIsInN5bWJvbCI6IkJMIiwid2Vic2l0ZSI6Imh0dHA6Ly93d3cuYmwudWsvZGF0YXNldHMiLCJjb250YWN0LW5hbWUiOiJSYWNoYWVsIEtvdGFyc2tpIiwiY29udGFjdC1lbWFpbCI6ImRhdGFzZXRzQGJsLnVrIiwicGhvbmUiOiIrNDQgKDApIDIwNyA0MTIgNzE2NyIsImRlc2NyaXB0aW9uIjoiVGhlIEJyaXRpc2ggTGlicmFyeSBpcyB0aGUgbmF0aW9uYWwgbGlicmFyeSBvZiB0aGUgVW5pdGVkIEtpbmdkb20gYW5kIGEgZm91bmRpbmcgbWVtYmVyIG9mIERhdGFDaXRlLiBBcyBEYXRhQ2l0ZeKAmXMgb25seSBtZW1iZXIgaW4gdGhlIFVuaXRlZCBLaW5nZG9tLCB3ZSBhcmUgd29ya2luZyB3aXRoIFVLIG9yZ2FuaXNhdGlvbnMgdG8gZW5zdXJlIHRoYXQgZGF0YSBnZW5lcmF0ZWQgYnkgcmVzZWFyY2hlcnMgaXMgZmluZGFibGUgYW5kIGNpdGFibGUgc28gdGhhdCBpdHMgaW1wYWN0IG9uIHRoZSBnbG9iYWwgcmVzZWFyY2ggbGFuZHNjYXBlIGlzIHJlY29nbmlzZWQuIFdlIHdvcmsgd2l0aCBhIHJhbmdlIG9mIG9yZ2FuaXNhdGlvbnMgd2hvIG1hbmFnZSBhbmQgYXJjaGl2ZSBkYXRhLCBmcm9tIGdvdmVybm1lbnQgYm9kaWVzIHRvIGNoYXJpdGllcywgdW5pdmVyc2l0aWVzIGFuZCBwdWJsaXNoZXJzLiBJZiB5b3UgbWFuYWdlIGRhdGEgaW4gdGhlIFVLIGFuZCB3b3VsZCBsaWtlIHRvIGZpbmQgb3V0IG1vcmUgYWJvdXQgRGF0YUNpdGUsIHBsZWFzZSBjb250YWN0IHVzIGRpcmVjdGx5LiIsImNvdW50cnkiOiJHQiIsImxvZ28tdXJsIjoiaHR0cHM6Ly9hc3NldHMuZGF0YWNpdGUub3JnL2ltYWdlcy9tZW1iZXJzL2JsLnBuZyIsImluc3RpdHV0aW9uLXR5cGUiOm51bGwsImlzLWFjdGl2ZSI6dHJ1ZSwiaGFzLXBhc3N3b3JkIjp0cnVlLCJqb2luZWQiOiIyMDA5LTEyLTAxIiwiY3JlYXRlZCI6IjIwMTAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsInVwZGF0ZWQiOiIyMDE4LTA4LTEwVDAyOjI1OjUxLjAwMFoifSwicmVsYXRpb25zaGlwcyI6eyJjbGllbnRzIjp7Im1ldGEiOnt9fSwicHJlZml4ZXMiOnsibWV0YSI6e319fX1dfQ==
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -355,65 +263,41 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Fri, 10 Aug 2018 17:33:00 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Sat, 11 Mar 2017 08:30:00 GMT
-      Etag:
-      - W/"49b5369c13185e70754b8acbba4d4827"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      Via:
-      - kong/0.10.0rc3
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Kong-Proxy-Latency:
-      - '2'
-      X-Kong-Upstream-Latency:
-      - '507'
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Ratelimit-Limit-Hour:
-      - '10000'
-      X-Ratelimit-Remaining-Hour:
-      - '9988'
-      X-Request-Id:
-      - a4cca5f5-64c0-43f2-a32a-2fd4e0a0dab8
-      X-Runtime:
-      - '0.506539'
-      X-Xss-Protection:
-      - 1; mode=block
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      X-Request-Id:
+      - ac13a284-f23a-47ba-a50e-104b1dc27b16
+      Etag:
+      - W/"05d25ad83851bc0915746a8c8d434d8b"
+      X-Runtime:
+      - '0.179605'
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10.3897","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T21:02:52Z"}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"10.3897","type":"handles","attributes":{"registration-agency":"Crossref","created":null,"updated":"2016-09-21T21:02:52Z"},"relationships":{"clients":{"data":[]},"providers":{"data":[]}}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -424,65 +308,41 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Fri, 10 Aug 2018 17:33:00 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Sat, 11 Mar 2017 08:30:01 GMT
-      Etag:
-      - W/"20606c1979c57e322983f3c79ce94e6c"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      Via:
-      - kong/0.10.0rc3
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Kong-Proxy-Latency:
-      - '2'
-      X-Kong-Upstream-Latency:
-      - '585'
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Ratelimit-Limit-Hour:
-      - '10000'
-      X-Ratelimit-Remaining-Hour:
-      - '9987'
-      X-Request-Id:
-      - 2c16ecfc-3a75-42ca-b4b1-b46703ccdd9e
-      X-Runtime:
-      - '0.583912'
-      X-Xss-Protection:
-      - 1; mode=block
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      X-Request-Id:
+      - b094f83a-def8-4977-95ac-e0d88ebfd6c1
+      Etag:
+      - W/"cb4af1ee2bb154ddef99abb74d684f9c"
+      X-Runtime:
+      - '0.106470'
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10.2307","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T21:01:17Z"}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"10.2307","type":"handles","attributes":{"registration-agency":"Crossref","created":null,"updated":"2016-09-21T21:01:17Z"},"relationships":{"clients":{"data":[]},"providers":{"data":[]}}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -493,67 +353,43 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Fri, 10 Aug 2018 17:33:00 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Sat, 11 Mar 2017 08:30:02 GMT
-      Etag:
-      - W/"1eb3f4f371821b1becc6cd25a71755ce"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      Via:
-      - kong/0.10.0rc3
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Kong-Proxy-Latency:
-      - '10'
-      X-Kong-Upstream-Latency:
-      - '537'
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Ratelimit-Limit-Hour:
-      - '10000'
-      X-Ratelimit-Remaining-Hour:
-      - '9986'
-      X-Request-Id:
-      - 2ee50d3d-aa07-4275-8b2a-1cb987678031
-      X-Runtime:
-      - '0.535662'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '124'
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      X-Request-Id:
+      - aac01ac5-4f0f-41b2-8972-5b7caa3dc760
+      Etag:
+      - W/"2d33bfdf34ccb1bfea6ae7d2cd01cb9b"
+      X-Runtime:
+      - '0.012772'
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10.5061","type":"prefixes","attributes":{"registration-agency":"DataCite","updated":"2016-09-21T20:27:07Z"}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"10.5061","type":"prefixes","attributes":{"registration-agency":"DataCite","created":"2010-01-01T00:00:00.000Z","updated":null},"relationships":{"clients":{"data":[{"id":"dryad.dryad","type":"clients"}]},"providers":{"data":[{"id":"dryad","type":"providers"}]}}},"included":[{"id":"dryad.dryad","type":"clients","attributes":{"name":"DRYAD","symbol":"DRYAD.DRYAD","year":2018,"contact-name":"Dryad
+        Administrator","contact-email":"admin@datadryad.org","domains":"*","url":null,"is-active":true,"has-password":true,"created":"2018-04-24T20:59:15Z","updated":"2018-08-10T02:36:18Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"meta":{}},"repository":{"meta":{}}}},{"id":"dryad","type":"providers","attributes":{"name":"Dryad","symbol":"DRYAD","website":null,"contact-name":"Elizabeth
+        Hull","contact-email":"ehull@datadryad.org","phone":null,"description":null,"country":"US","logo-url":"https://assets.datacite.org/images/members/dryad.png","institution-type":null,"is-active":true,"has-password":true,"joined":"2017-12-30","created":"2018-02-08T23:35:26.000Z","updated":"2018-08-10T02:25:53.000Z"},"relationships":{"clients":{"meta":{}},"prefixes":{"meta":{}}}}]}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -564,65 +400,41 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Fri, 10 Aug 2018 17:33:01 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Sat, 11 Mar 2017 08:30:04 GMT
-      Etag:
-      - W/"098e53c97cd53270603fc531a82441a8"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      Via:
-      - kong/0.10.0rc3
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Kong-Proxy-Latency:
-      - '930'
-      X-Kong-Upstream-Latency:
-      - '256'
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Ratelimit-Limit-Hour:
-      - '10000'
-      X-Ratelimit-Remaining-Hour:
-      - '9985'
-      X-Request-Id:
-      - cab3e044-7353-4956-97f3-bd8e9fa6316c
-      X-Runtime:
-      - '0.254753'
-      X-Xss-Protection:
-      - 1; mode=block
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      X-Request-Id:
+      - c6057193-c6d2-4864-a3aa-e95c2d2c2a91
+      Etag:
+      - W/"189d84a86d7513841a239004bb567666"
+      X-Runtime:
+      - '0.164681'
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10.1111","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T20:45:34Z"}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"10.1111","type":"handles","attributes":{"registration-agency":"Crossref","created":null,"updated":"2016-09-21T20:45:34Z"},"relationships":{"clients":{"data":[]},"providers":{"data":[]}}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -633,65 +445,42 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Fri, 10 Aug 2018 17:33:01 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Sat, 11 Mar 2017 08:30:05 GMT
-      Etag:
-      - W/"e6a3b5cb952d909fa0a41ec4dbe91030"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      Via:
-      - kong/0.10.0rc3
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Kong-Proxy-Latency:
-      - '2'
-      X-Kong-Upstream-Latency:
-      - '795'
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Ratelimit-Limit-Hour:
-      - '10000'
-      X-Ratelimit-Remaining-Hour:
-      - '9984'
-      X-Request-Id:
-      - 97b167df-a040-483f-a0b1-b6f5a23c6be4
-      X-Runtime:
-      - '0.794727'
-      X-Xss-Protection:
-      - 1; mode=block
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      X-Request-Id:
+      - 2d44c582-6d21-447c-853f-984814de8619
+      Etag:
+      - W/"3f2ebcd92c3d02bda9284e2568800353"
+      X-Runtime:
+      - '0.013777'
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10.13140","type":"prefixes","attributes":{"registration-agency":"DataCite","updated":"2016-09-21T20:24:15Z"}}}'
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImlkIjoiMTAuMTMxNDAiLCJ0eXBlIjoicHJlZml4ZXMiLCJhdHRyaWJ1dGVzIjp7InJlZ2lzdHJhdGlvbi1hZ2VuY3kiOiJEYXRhQ2l0ZSIsImNyZWF0ZWQiOiIyMDEzLTA2LTExVDA1OjU3OjMzLjAwMFoiLCJ1cGRhdGVkIjpudWxsfSwicmVsYXRpb25zaGlwcyI6eyJjbGllbnRzIjp7ImRhdGEiOlt7ImlkIjoicmcucmciLCJ0eXBlIjoiY2xpZW50cyJ9XX0sInByb3ZpZGVycyI6eyJkYXRhIjpbeyJpZCI6InJnIiwidHlwZSI6InByb3ZpZGVycyJ9XX19fSwiaW5jbHVkZWQiOlt7ImlkIjoicmcucmciLCJ0eXBlIjoiY2xpZW50cyIsImF0dHJpYnV0ZXMiOnsibmFtZSI6IlJlc2VhcmNoR2F0ZSIsInN5bWJvbCI6IlJHLlJHIiwieWVhciI6MjAxNiwiY29udGFjdC1uYW1lIjoiRWR1YXJkbyBPamVkYSIsImNvbnRhY3QtZW1haWwiOiJlZHVhcmRvLm9qZWRhQHJlc2VhcmNoZ2F0ZS5uZXQiLCJkb21haW5zIjoicmVzZWFyY2hnYXRlLm5ldCxyZ2RvaS5uZXQiLCJ1cmwiOm51bGwsImlzLWFjdGl2ZSI6dHJ1ZSwiaGFzLXBhc3N3b3JkIjp0cnVlLCJjcmVhdGVkIjoiMjAxNi0xMC0yNFQwOTozMjoyNloiLCJ1cGRhdGVkIjoiMjAxOC0wOC0xMFQwMjozNTo1NVoifSwicmVsYXRpb25zaGlwcyI6eyJwcmVmaXhlcyI6eyJtZXRhIjp7fX0sInByb3ZpZGVyIjp7Im1ldGEiOnt9fSwicmVwb3NpdG9yeSI6eyJtZXRhIjp7fX19fSx7ImlkIjoicmciLCJ0eXBlIjoicHJvdmlkZXJzIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiUmVzZWFyY2hHYXRlIiwic3ltYm9sIjoiUkciLCJ3ZWJzaXRlIjoiaHR0cHM6Ly93d3cucmVzZWFyY2hnYXRlLm5ldCIsImNvbnRhY3QtbmFtZSI6IkVkdWFyZG8gT2plZGEiLCJjb250YWN0LWVtYWlsIjoiZWR1YXJkby5vamVkYUByZXNlYXJjaGdhdGUubmV0IiwicGhvbmUiOm51bGwsImRlc2NyaXB0aW9uIjoiUmVzZWFyY2hHYXRlIHdhcyBmb3VuZGVkIGluIDIwMDggYnkgdGhlIHBoeXNpY2lhbnMgRHIuIElqYWQgTWFkaXNjaCBhbmQgRHIuIFPDtnJlbiBIb2ZtYXllciBhbG9uZyB3aXRoIGNvbXB1dGVyIHNwZWNpYWxpc3QgSG9yc3QgRmlja2Vuc2NoZXIuIEVsZXZlbiBtaWxsaW9uIHNjaWVudGlzdHMgY29ubmVjdCBhbmQgbWFrZSB0aGVpciByZXNlYXJjaCBvcGVuIHRvIGFsbCDigJMgYW5kIDEwLDAwMCBuZXcgcmVzZWFyY2hlcnMgam9pbiB0aGUgbmV0d29yayBldmVyeSBkYXkuIFRoZXkgY29uZHVjdCByZXNlYXJjaCBhdCB1bml2ZXJzaXRpZXMsIGluIGNvbXBhbmllcywgb3IgaW5kZXBlbmRlbnRseSB3b3JsZHdpZGUuIFxuXG5PbiBSZXNlYXJjaEdhdGUsIHRoZXkgc2hhcmUgdGhlaXIgd29yayBpbiByZWFsLXRpbWUsIGluY2x1ZGluZyByYXcgZGF0YSBhbmQgbmVnYXRpdmUgcmVzdWx0cywgYW5kIHVwbG9hZCAyLjUgbWlsbGlvbiBwdWJsaWNhdGlvbnMgdG8gdGhlaXIgcHJvZmlsZXMgZXZlcnkgbW9udGguIEhlcmUgdGhleSBhbHNvIGdldCBpbW1lZGlhdGUgZmVlZGJhY2sgZnJvbSB0aGVpciBwZWVycy4gRXZlcnl0aGluZyB0aGV5IHNoYXJlIHB1YmxpY2x5IG9uIHRoZWlyIHByb2ZpbGVzIGlzIGFjY2Vzc2libGUgdG8gZXZlcnlvbmUsIHdoaWNoIG1ha2VzIHNjaWVuY2UgbW9yZSBvcGVuLCB0cmFuc3BhcmVudCBhbmQgYWNjb3VudGFibGUgdGhhbiBldmVyIGJlZm9yZS4gUmVzZWFyY2hHYXRlIGhhcyBjb21wbGV0ZWQgdGhyZWUgcm91bmRzIG9mIGZpbmFuY2luZywgYW5kIGludmVzdG9ycyBpbmNsdWRlIEJlbmNobWFyaywgRm91bmRlcnMgRnVuZCBhbmQgQmlsbCBHYXRlcy4iLCJjb3VudHJ5IjoiREUiLCJsb2dvLXVybCI6Imh0dHBzOi8vYXNzZXRzLmRhdGFjaXRlLm9yZy9pbWFnZXMvbWVtYmVycy9yZy5wbmciLCJpbnN0aXR1dGlvbi10eXBlIjpudWxsLCJpcy1hY3RpdmUiOnRydWUsImhhcy1wYXNzd29yZCI6dHJ1ZSwiam9pbmVkIjoiMjAxNi0wOS0xOSIsImNyZWF0ZWQiOiIyMDE2LTEwLTI0VDA5OjI4OjA0LjAwMFoiLCJ1cGRhdGVkIjoiMjAxOC0wOC0xMFQwMjoyNTo1Mi4wMDBaIn0sInJlbGF0aW9uc2hpcHMiOnsiY2xpZW50cyI6eyJtZXRhIjp7fX0sInByZWZpeGVzIjp7Im1ldGEiOnt9fX19XX0=
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -702,67 +491,43 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Fri, 10 Aug 2018 17:33:01 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Sat, 11 Mar 2017 08:30:05 GMT
-      Etag:
-      - W/"c2b9b7756990965987f488516c5ecb95"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      Via:
-      - kong/0.10.0rc3
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Kong-Proxy-Latency:
-      - '2'
-      X-Kong-Upstream-Latency:
-      - '551'
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Ratelimit-Limit-Hour:
-      - '10000'
-      X-Ratelimit-Remaining-Hour:
-      - '9983'
-      X-Request-Id:
-      - 5b1bfb4a-00fc-4ed1-bd45-fbe9615a9cd3
-      X-Runtime:
-      - '0.550820'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '124'
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      X-Request-Id:
+      - 9b52dfd9-a74a-4a0c-a49c-a1bbf4339574
+      Etag:
+      - W/"5b3760ac0956c889b1f4668851e66e63"
+      X-Runtime:
+      - '0.012771'
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10.6068","type":"prefixes","attributes":{"registration-agency":"DataCite","updated":"2016-09-21T20:27:23Z"}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"10.6068","type":"prefixes","attributes":{"registration-agency":"DataCite","created":"2011-12-09T07:45:56.000Z","updated":null},"relationships":{"clients":{"data":[{"id":"sage.dplanet","type":"clients"}]},"providers":{"data":[{"id":"sage","type":"providers"}]}}},"included":[{"id":"sage.dplanet","type":"clients","attributes":{"name":"Data
+        Planet","symbol":"SAGE.DPLANET","year":2018,"contact-name":"Kari Hemdal","contact-email":"Kari.Hemdal@sagepub.com","domains":"*","url":null,"is-active":true,"has-password":true,"created":"2018-06-13T15:55:03Z","updated":"2018-08-10T02:36:21Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"meta":{}},"repository":{"meta":{}}}},{"id":"sage","type":"providers","attributes":{"name":"SAGE
+        Publishing","symbol":"SAGE","website":null,"contact-name":"Tom Hibbard","contact-email":"Tom.Hibbard@sagepub.co.uk","phone":null,"description":null,"country":null,"logo-url":null,"institution-type":null,"is-active":true,"has-password":true,"joined":null,"created":"2018-06-13T15:47:04.000Z","updated":"2018-08-10T02:25:54.000Z"},"relationships":{"clients":{"meta":{}},"prefixes":{"meta":{}}}}]}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -773,65 +538,41 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Fri, 10 Aug 2018 17:33:01 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Sat, 11 Mar 2017 08:30:06 GMT
-      Etag:
-      - W/"4204d240354ea331dfe5accd8a61d79b"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      Via:
-      - kong/0.10.0rc3
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Kong-Proxy-Latency:
-      - '1'
-      X-Kong-Upstream-Latency:
-      - '234'
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Ratelimit-Limit-Hour:
-      - '10000'
-      X-Ratelimit-Remaining-Hour:
-      - '9982'
-      X-Request-Id:
-      - cd686e6d-e87c-413f-9240-473db9e28df4
-      X-Runtime:
-      - '0.233058'
-      X-Xss-Protection:
-      - 1; mode=block
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      X-Request-Id:
+      - b833618c-6a6a-464e-acb3-04a19934f69d
+      Etag:
+      - W/"7c89e2ca71ba94319e3660bb36402ec0"
+      X-Runtime:
+      - '0.065455'
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10.1128","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T20:45:47Z"}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"10.1128","type":"handles","attributes":{"registration-agency":"Crossref","created":null,"updated":"2016-09-21T20:45:47Z"},"relationships":{"clients":{"data":[]},"providers":{"data":[]}}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -842,65 +583,41 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Fri, 10 Aug 2018 17:33:02 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Sat, 11 Mar 2017 08:30:07 GMT
-      Etag:
-      - W/"fd6fb390239a49128465de9070d461d9"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      Via:
-      - kong/0.10.0rc3
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Kong-Proxy-Latency:
-      - '1'
-      X-Kong-Upstream-Latency:
-      - '989'
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Ratelimit-Limit-Hour:
-      - '10000'
-      X-Ratelimit-Remaining-Hour:
-      - '9981'
-      X-Request-Id:
-      - a305f002-42c5-4808-9093-05977d143c20
-      X-Runtime:
-      - '0.987414'
-      X-Xss-Protection:
-      - 1; mode=block
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      X-Request-Id:
+      - 44b8812d-bd0d-45f2-a13c-af7f3866b1f3
+      Etag:
+      - W/"d26f9f39f8915a16470c6691df64b631"
+      X-Runtime:
+      - '0.125124'
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10.1038","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T20:45:23Z"}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"10.1038","type":"handles","attributes":{"registration-agency":"Crossref","created":null,"updated":"2016-09-21T20:45:23Z"},"relationships":{"clients":{"data":[]},"providers":{"data":[]}}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -911,67 +628,41 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Fri, 10 Aug 2018 17:33:02 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Sat, 11 Mar 2017 08:30:08 GMT
-      Etag:
-      - W/"a078870f021fe1686525a8135b0e29b8"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      Via:
-      - kong/0.10.0rc3
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Kong-Proxy-Latency:
-      - '2'
-      X-Kong-Upstream-Latency:
-      - '700'
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Ratelimit-Limit-Hour:
-      - '10000'
-      X-Ratelimit-Remaining-Hour:
-      - '9980'
-      X-Request-Id:
-      - a998ba7f-c64b-409f-b1d2-a6ec772b9b50
-      X-Runtime:
-      - '0.699177'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '124'
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      X-Request-Id:
+      - 7804f3e9-6867-4db0-86fb-793250dfebd1
+      Etag:
+      - W/"4aadec3626c9c053f75d78db0882961b"
+      X-Runtime:
+      - '0.086363'
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10.1371","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T20:47:32Z"}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"10.1371","type":"handles","attributes":{"registration-agency":"Crossref","created":null,"updated":"2016-09-21T20:47:32Z"},"relationships":{"clients":{"data":[]},"providers":{"data":[]}}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -982,65 +673,41 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Fri, 10 Aug 2018 17:33:02 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Sat, 11 Mar 2017 08:30:09 GMT
-      Etag:
-      - W/"f53cde77e343e10a66e08694e07c9370"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      Via:
-      - kong/0.10.0rc3
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Kong-Proxy-Latency:
-      - '1'
-      X-Kong-Upstream-Latency:
-      - '488'
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Ratelimit-Limit-Hour:
-      - '10000'
-      X-Ratelimit-Remaining-Hour:
-      - '9979'
-      X-Request-Id:
-      - 542a0d56-22c3-4069-b768-c535e8f8a6f0
-      X-Runtime:
-      - '0.486712'
-      X-Xss-Protection:
-      - 1; mode=block
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      X-Request-Id:
+      - ef24149b-d18f-4c12-8d06-625ecf783324
+      Etag:
+      - W/"37a7d81cd24a954db63b7b525f99df73"
+      X-Runtime:
+      - '0.088169'
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10.1007","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T20:45:22Z"}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"10.1007","type":"handles","attributes":{"registration-agency":"Crossref","created":null,"updated":"2016-09-21T20:45:22Z"},"relationships":{"clients":{"data":[]},"providers":{"data":[]}}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1051,67 +718,41 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Fri, 10 Aug 2018 17:33:02 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Sat, 11 Mar 2017 08:30:10 GMT
-      Etag:
-      - W/"7c9a7b8f563d4b464488ed2327095f44"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      Via:
-      - kong/0.10.0rc3
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Kong-Proxy-Latency:
-      - '13'
-      X-Kong-Upstream-Latency:
-      - '940'
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Ratelimit-Limit-Hour:
-      - '10000'
-      X-Ratelimit-Remaining-Hour:
-      - '9978'
-      X-Request-Id:
-      - d503e640-95db-45a6-aafb-976453151667
-      X-Runtime:
-      - '0.939157'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '124'
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      X-Request-Id:
+      - e8e40dd8-8215-4bdc-b823-f221ef399663
+      Etag:
+      - W/"763c0e4d3cd926a31520a20a61f19275"
+      X-Runtime:
+      - '0.042027'
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10.1016","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T20:45:22Z"}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"10.1016","type":"handles","attributes":{"registration-agency":"Crossref","created":null,"updated":"2016-09-21T20:45:22Z"},"relationships":{"clients":{"data":[]},"providers":{"data":[]}}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1122,67 +763,41 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Fri, 10 Aug 2018 17:33:03 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Sat, 11 Mar 2017 08:30:11 GMT
-      Etag:
-      - W/"065bd79ee7e64d18b5ca29235b557338"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      Via:
-      - kong/0.10.0rc3
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Kong-Proxy-Latency:
-      - '1'
-      X-Kong-Upstream-Latency:
-      - '677'
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Ratelimit-Limit-Hour:
-      - '10000'
-      X-Ratelimit-Remaining-Hour:
-      - '9977'
-      X-Request-Id:
-      - 0ba544c9-138e-475b-9606-230bfb31ee6c
-      X-Runtime:
-      - '0.675634'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '124'
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      X-Request-Id:
+      - d58f1a4f-a3ee-435a-8efc-b2902b58ee73
+      Etag:
+      - W/"2ce77ac98856c63c484172cc7a2da6fe"
+      X-Runtime:
+      - '0.041095'
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10.1126","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T20:45:46Z"}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"10.1126","type":"handles","attributes":{"registration-agency":"Crossref","created":null,"updated":"2016-09-21T20:45:46Z"},"relationships":{"clients":{"data":[]},"providers":{"data":[]}}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1193,65 +808,41 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Fri, 10 Aug 2018 17:33:03 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Sat, 11 Mar 2017 08:30:11 GMT
-      Etag:
-      - W/"4e812c13ab1d725399dd22c8eb3f7891"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      Via:
-      - kong/0.10.0rc3
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Kong-Proxy-Latency:
-      - '1'
-      X-Kong-Upstream-Latency:
-      - '233'
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Ratelimit-Limit-Hour:
-      - '10000'
-      X-Ratelimit-Remaining-Hour:
-      - '9976'
-      X-Request-Id:
-      - 6976b351-740a-419b-87c9-fb507b560409
-      X-Runtime:
-      - '0.230348'
-      X-Xss-Protection:
-      - 1; mode=block
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      X-Request-Id:
+      - 0fffd216-6fcc-455c-95ec-8fd14684fd0f
+      Etag:
+      - W/"7a9b137c1446a4c6485a2b3a5a282dac"
+      X-Runtime:
+      - '0.075515'
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10.1051","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T20:45:24Z"}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"10.1051","type":"handles","attributes":{"registration-agency":"Crossref","created":null,"updated":"2016-09-21T20:45:24Z"},"relationships":{"clients":{"data":[]},"providers":{"data":[]}}}}'
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 - request:
@@ -1262,65 +853,42 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Fri, 10 Aug 2018 17:33:03 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Sat, 11 Mar 2017 08:30:12 GMT
-      Etag:
-      - W/"8eed601a0861600c8eb16bf3dcd4def7"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      Via:
-      - kong/0.10.0rc3
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Kong-Proxy-Latency:
-      - '2'
-      X-Kong-Upstream-Latency:
-      - '898'
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Ratelimit-Limit-Hour:
-      - '10000'
-      X-Ratelimit-Remaining-Hour:
-      - '9975'
-      X-Request-Id:
-      - e646abe4-f58b-4cf0-865b-60e76ab6edcf
-      X-Runtime:
-      - '0.897023'
-      X-Xss-Protection:
-      - 1; mode=block
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      X-Request-Id:
+      - e37b639e-bde6-4b6b-a7d4-17eb40f75834
+      Etag:
+      - W/"cafa50d0bcd2959cd0a9dc687a69fd4c"
+      X-Runtime:
+      - '0.012488'
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10.14283","type":"prefixes","attributes":{"registration-agency":"DataCite","updated":"2016-09-21T20:24:19Z"}}}'
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImlkIjoiMTAuMTQyODMiLCJ0eXBlIjoicHJlZml4ZXMiLCJhdHRyaWJ1dGVzIjp7InJlZ2lzdHJhdGlvbi1hZ2VuY3kiOiJEYXRhQ2l0ZSIsImNyZWF0ZWQiOiIyMDEzLTA4LTIyVDEzOjQ0OjI5LjAwMFoiLCJ1cGRhdGVkIjpudWxsfSwicmVsYXRpb25zaGlwcyI6eyJjbGllbnRzIjp7ImRhdGEiOlt7ImlkIjoiaW5pc3Quc2VyZGkiLCJ0eXBlIjoiY2xpZW50cyJ9XX0sInByb3ZpZGVycyI6eyJkYXRhIjpbeyJpZCI6ImluaXN0IiwidHlwZSI6InByb3ZpZGVycyJ9XX19fSwiaW5jbHVkZWQiOlt7ImlkIjoiaW5pc3Quc2VyZGkiLCJ0eXBlIjoiY2xpZW50cyIsImF0dHJpYnV0ZXMiOnsibmFtZSI6IlNvY2nDqXTDqSBkJ0V0dWRlLCBSw6lhbGlzYXRpb24gZXQgRGlmZnVzaW9uIEludGVybmF0aW9uYWxlIiwic3ltYm9sIjoiSU5JU1QuU0VSREkiLCJ5ZWFyIjoyMDE0LCJjb250YWN0LW5hbWUiOiJDYXJpbmUgR0lSWSIsImNvbnRhY3QtZW1haWwiOiJjYXJpbmUuZ2lyeUBzZXJkaS1wdWJsaXNoZXIuY29tIiwiZG9tYWlucyI6ImphcmNwLmNvbSxqZnJhaWx0eWFnaW5nLmNvbSxqbnVyc2luZ2hvbWVyZXNlYXJjaC5jb20sanByZXZlbnRpb25hbHpoZWltZXIuY29tLGNhcmUtd2Vla2x5LmNvbSxhZXJvYWdpbmcuY29tIiwidXJsIjpudWxsLCJpcy1hY3RpdmUiOnRydWUsImhhcy1wYXNzd29yZCI6dHJ1ZSwiY3JlYXRlZCI6IjIwMTQtMTAtMjJUMDk6MDI6NDdaIiwidXBkYXRlZCI6IjIwMTgtMDgtMTBUMDc6MjQ6NTFaIn0sInJlbGF0aW9uc2hpcHMiOnsicHJlZml4ZXMiOnsibWV0YSI6e319LCJwcm92aWRlciI6eyJtZXRhIjp7fX0sInJlcG9zaXRvcnkiOnsibWV0YSI6e319fX0seyJpZCI6ImluaXN0IiwidHlwZSI6InByb3ZpZGVycyIsImF0dHJpYnV0ZXMiOnsibmFtZSI6Ikluc3RpdHV0ZSBmb3IgU2NpZW50aWZpYyBhbmQgVGVjaG5pY2FsIEluZm9ybWF0aW9uIiwic3ltYm9sIjoiSU5JU1QiLCJ3ZWJzaXRlIjoiaHR0cDovL3d3dy5pbmlzdC5mciIsImNvbnRhY3QtbmFtZSI6Ik1vaGFtZWQgWWFoaWEiLCJjb250YWN0LWVtYWlsIjoibW9oYW1lZC55YWhpYUBpbmlzdC5mciIsInBob25lIjpudWxsLCJkZXNjcmlwdGlvbiI6IlRoZSBJTklTVCAoSW5zdGl0dXRlIGZvciBTY2llbnRpZmljIGFuZCBUZWNobmljYWwgaW5mb3JtYXRpb24pLCBhcyBhbiBpbnRlcm5hbCBzZXJ2aWNlIHVuaXQgKFVQUzc2KSBvZiB0aGUgQ05SUyAoRnJlbmNoIE5hdGlvbmFsIENlbnRyZSBOYXRpb25hbCBmb3IgU2NpZW50aWZpYyBSZXNlYXJjaCksIG1ha2VzIGEgdmVyeSB3aWRlIHJhbmdlIG9mIHNlcnZpY2VzIGF2YWlsYWJsZSB0byB0aGUgQ05SUyBhbmQgdGhlIGFyZW5hIG9mIHB1YmxpYyBoaWdoZXIgZWR1Y2F0aW9uIGFuZCByZXNlYXJjaCBvcmdhbmlzYXRpb25zLlxuXG5UaGUgSU5JU1QgMjAwIGVtcGxveWVlcyBkZXBsb3kgYW5kIGRldmVsb3AgYSBzZXJ2aWNlIG9mZmVyaW5nIHdoaWNoIHJhbmdlcyBmcm9tIGFjdGl2aXRpZXMgYXQgdGhlIGNyb3Nzcm9hZHMgb2YgdHdvIGV2ZXItY2hhbmdpbmcgZmllbGRzOiBzY2llbnRpZmljIGFuZCB0ZWNobmljYWwgaW5mb3JtYXRpb24gKFNUSSkgYW5kIGluZm9ybWF0aW9uIGFuZCBjb21tdW5pY2F0aW9uIHRlY2hub2xvZ2llcyAoSUNUcykuXG5cbklOSVNUIG1lbWJlcnMgbWFrZSB0aGVpciBza2lsbHMgYXZhaWxhYmxlIHRvIHNjaWVudGlmaWMgY29tbXVuaXRpZXMgYnkgcHJvdmlkaW5nIHByYWN0aWNhbCBhbmQgcHJhZ21hdGljIHNvbHV0aW9ucyB0byB0aGVpciBuZWVkcyBhbmQgc3VwcG9ydCByZXNlYXJjaCBpbiBlYWNoIHN0ZXAgb2YgdGhlIHNjaWVudGlmaWMgb3V0cHV0IGN5Y2xlIGFuZCBieSBmYWNpbGl0YXRpbmcgU1RJIGFjY2Vzcywgc2hhcmluZywgbWFuYWdlbWVudCwgZGlzdHJpYnV0aW9uIGFuZCBhbmFseXNpcy4gVHdvIHRpZXJzIG9mIGFzc2lzdGFuY2UgYXJlIHBvc3NpYmxlOiBwcm92aWRpbmcgcmVzb3VyY2VzLCB0b29scyBhbmQgbWV0aG9kb2xvZ2llcywgYW5kL29yIGNsb3NlbHkgYWRqdXN0aW5nIHRvIHRoZSBuZWVkcyBvZiByZXNlYXJjaGVycywgYWNhZGVtaWNzIGFuZCByZXNlYXJjaC1zdXBwb3J0aW5nIHN0YWZmIHdpdGggY3VzdG9taXNhYmxlIHNlcnZpY2VzIGFuZCBpbmRpdmlkdWFsaXNlZCBzdXBwb3J0LlxuQmFzZWQgb24gaXRzIGV4cGVyaWVuY2UgaW4gYWJzdHJhY3RpbmcsIGluZGV4aW5nIGFuZCBsaWJyYXJpYW5zaGlwLCB0aGUgSU5JU1QgcHJvdmlkZXMgc2Nob2xhcmx5IGNvbW11bml0aWVzIHdpdGggcmVzb3VyY2VzIHRvIGFjY2VzcyBzY2llbnRpZmljIG91dHB1dHMgYW5kIHRvIGVuYWJsZSB0aGVpciBhbmFseXNpcyBhbmQgZXhwbG9pdGF0aW9uOlxuXG7igKJcdEFuIG9ubGluZSBjb2xsYWJvcmF0aXZlIHRvb2wgdG8gYXNzaXN0IGluIGRyYWZ0aW5nIGRhdGEgbWFuYWdlbWVudCBwbGFucyAoRE1QcykgKGh0dHBzOi8vZG1wLm9waWRvci5mci8gKSxcbuKAolx0QSBwb3J0YWwgdG8gYWNjZXNzIHNjaWVudGlmaWMgbGl0ZXJhdHVyZSAoaHR0cHM6Ly9iaWIuY25ycy5mci8gKSxcbuKAolx0QSBkYXRhYmFzZSB0byBsb2NhdGUgbW9yZSB0aGFuIDUwIG1pbGxpb24gaW50ZXJuYXRpb25hbCBzY2llbnRpZmljIGFydGljbGVzIChodHRwOi8vd3d3LnJlZmRvYy5mci8pLFxu4oCiXHRBIHBvcnRhbCBmb3IgdGVybWlub2xvZ3kgZXhwb3N1cmUgKGh0dHA6Ly90ZXJtaW5vbG9naWVzLmluaXN0LmZyL2ZyLyksXG7igKJcdEFuIG9wZW4gYXJjaGl2ZSBvZiBtdWx0aWxpbmd1YWwgYW5kIG11bHRpZGlzY2lwbGluYXJ5IGJpYmxpb2dyYXBoaWMgcmVjb3JkcyAoaHR0cDovL3Bhc2NhbC1mcmFuY2lzLmluaXN0LmZyLylcblxuV2l0aCBleGNoYW5nZSBhbmQgc2hhcmluZyBpbiBtaW5kLCB0aGUgSU5JU1QgaW50ZW5kcyB0byBidWlsZCBzeW5lcmd5IHdpdGggZGVjaXNpdmUgbmF0aW9uYWwgYW5kIGludGVybmF0aW9uYWwgc3Rha2Vob2xkZXJzIGluIGl0cyBzcGhlcmUgb2YgYWN0aXZpdHkgYW5kIGRldmVsb3AgcHJvZHVjdGl2ZSBsaW5rcyB3aXRoIHJlc2VhcmNoIGNvbW11bml0aWVzLlxuXG5JTlNUSVRVVCBERSBMJ0lORk9STUFUSU9OIFNDSUVOVElGSVFVRSBFVCBURUNITklRVUUgXG5cbkzigJlJTklTVCAoSW5zdGl0dXQgZGUgbOKAmUluZm9ybWF0aW9uIFNjaWVudGlmaXF1ZSBldCBUZWNobmlxdWUpLCB1bml0w6kgcHJvcHJlIGRlIHNlcnZpY2UgKFVQUzc2KSBkdSBDTlJTIChDZW50cmUgTmF0aW9uYWwgZGUgbGEgUmVjaGVyY2hlIFNjaWVudGlmaXF1ZSksIHByb3Bvc2UgdW4gdHLDqHMgbGFyZ2Ugw6l2ZW50YWlsIGRlIHNlcnZpY2VzIGRlc3RpbsOpcyBhdSBDTlJTLCBhdXggZ3JhbmRzIG9yZ2FuaXNtZXMgcHVibGljcyBkZSByZWNoZXJjaGUgZXQgw6AgbOKAmWVuc2VpZ25lbWVudCBwdWJsaWMgc3Vww6lyaWV1ci5cblxuTGUgZMOpcGxvaWVtZW50IGRlIGzigJlvZmZyZSBkZSBzZXJ2aWNlIGRlIGzigJlJTklTVCBz4oCZYXBwdWllIHN1ciB1biBlbnNlbWJsZSBkZSBwbHVzIGRlIDIwMCBwcm9mZXNzaW9ubmVscyBxdWkgZMOpdmVsb3BwZW50IGRlcyBhY3Rpdml0w6lzIHPigJlpbnNjcml2YW50IMOgIGxhIGNyb2lzw6llIGRlIGRldXggZG9tYWluZXMgZW4gY29uc3RhbnRlIMOpdm9sdXRpb24gOiBs4oCZaW5mb3JtYXRpb24gc2NpZW50aWZpcXVlIGV0IHRlY2huaXF1ZSAoSVNUKSBldCBsZXMgdGVjaG5vbG9naWVzIGRlIGzigJlpbmZvcm1hdGlvbiBldCBkZSBsYSBjb21tdW5pY2F0aW9uLlxuXG5MZXMgcGVyc29ubmVscyBkZSBs4oCZSU5JU1QgbWV0dGVudCBhaW5zaSBsZXVycyBjb21ww6l0ZW5jZXMgYXUgc2VydmljZSBkZXMgY29tbXVuYXV0w6lzIHNjaWVudGlmaXF1ZXMgZXQgZW4gSVNUIGVuIGFwcG9ydGFudCBkZXMgcsOpcG9uc2VzIHByYWdtYXRpcXVlcyBldCBjb25jcsOodGVzIGF1eCBiZXNvaW5zIGV4cHJpbcOpcyBlbiB0ZXJtZXMgZOKAmWFjY29tcGFnbmVtZW50IGRlIGzigJlhY3Rpdml0w6kgZGUgcmVjaGVyY2hlIGRhbnMgY2hhY3VuZSBkZXMgw6l0YXBlcyBkdSBwcm9jZXNzdXMgZGUgcHJvZHVjdGlvbiBzY2llbnRpZmlxdWUsIGVuIGZhY2lsaXRhbnQgbOKAmWFjY8OocywgbGUgcGFydGFnZSwgbGEgZ2VzdGlvbiwgbGEgZGlmZnVzaW9uIGV0IGzigJlhbmFseXNlIGRlIGzigJlpbmZvcm1hdGlvbiBzY2llbnRpZmlxdWUgZXQgdGVjaG5pcXVlLiBEZXV4IG5pdmVhdXggZOKAmWludGVydmVudGlvbiBzb250IHByb3Bvc8OpcyA6IGTigJl1bmUgcGFydCwgbGEgbWlzZSDDoCBkaXNwb3NpdGlvbiBkZSByZXNzb3VyY2VzLCBvdXRpbHMgZXQgbcOpdGhvZG9sb2dpZXMgZXQsIGTigJlhdXRyZSBwYXJ0LCBwb3VyIHLDqXBvbmRyZSBhdSBwbHVzIHByw6hzIGF1eCBiZXNvaW5zIGRlcyBjaGVyY2hldXJzLCBlbnNlaWduYW50cy1jaGVyY2hldXJzIGV0IGluZ8OpbmlldXJzLCBkZXMgc2VydmljZXMgbW9kdWxhYmxlcyBwb3V2YW50IHNlIGTDqWNsaW5lciBlbiBwcmVzdGF0aW9ucyBvdSBhY3Rpb25zIGTigJlhY2NvbXBhZ25lbWVudCBhZGFwdMOpZXMgw6AgY2hhcXVlIHV0aWxpc2F0ZXVyLlxuRm9ydCBkZSBzb24gZXhww6lyaWVuY2UgZG9jdW1lbnRhaXJlIGV0IGJpYmxpb2dyYXBoaXF1ZSwgbOKAmUlOSVNUIG1ldCDDoCBkaXNwb3NpdGlvbiBkZXMgY29tbXVuYXV0w6lzIHF14oCZaWwgc2VydCBkZXMgcmVzc291cmNlcyBsZXVyIHBlcm1ldHRhbnQgZOKAmWFjY8OpZGVyIMOgIGxhIHByb2R1Y3Rpb24gc2NpZW50aWZpcXVlIGV0IGZhY2lsaXRhbnQgc29uIGFuYWx5c2UgZXQgc2EgdmFsb3Jpc2F0aW9uLCBwYXJtaSBsZXNxdWVsbGVzIDpcblxu4oCiXHR1biBvdXRpbCBjb2xsYWJvcmF0aWYgZW4gbGlnbmUgcG91ciBmYWNpbGl0ZXIgbGEgcsOpZGFjdGlvbiBkZSBwbGFucyBkZSBnZXN0aW9uIGRlIGRvbm7DqWVzIGRlIHJlY2hlcmNoZSAoaHR0cHM6Ly9kbXAub3BpZG9yLmZyLyApLFxu4oCiXHR1biBwb3J0YWlsIGTigJlhY2PDqHMgw6AgbGEgbGl0dMOpcmF0dXJlIHNjaWVudGlmaXF1ZSAoaHR0cHM6Ly9iaWIuY25ycy5mci8gKSxcbuKAolx0dW5lIGJhc2UgZGUgZG9ubsOpZXMgc2lnbmFsYW50IHBsdXMgZGUgNTAgbWlsbGlvbnMgZOKAmWFydGljbGVzIHNjaWVudGlmaXF1ZXMgaW50ZXJuYXRpb25hdXggKGh0dHA6Ly93d3cucmVmZG9jLmZyLyksXG7igKJcdHVuIHBvcnRhaWwgZOKAmWV4cG9zaXRpb24gZGUgcmVzc291cmNlcyB0ZXJtaW5vbG9naXF1ZXMgKGh0dHA6Ly90ZXJtaW5vbG9naWVzLmluaXN0LmZyL2ZyLyksXG7igKJcdHVuZSBhcmNoaXZlIGRlIGRvbm7DqWVzIGJpYmxpb2dyYXBoaXF1ZXMgbXVsdGlsaW5ndWUgZXQgbXVsdGlkaXNjaXBsaW5haXJlIChodHRwOi8vcGFzY2FsLWZyYW5jaXMuaW5pc3QuZnIvKVxuXG5EYW5zIHVuIHNvdWNpIGTigJnDqWNoYW5nZSBldCBkZSBwYXJ0YWdlLCBs4oCZSU5JU1QgdHJhdmFpbGxlIGVuIHN5bmVyZ2llIGF2ZWMgZGVzIG9ww6lyYXRldXJzLCBuYXRpb25hdXggZXQgaW50ZXJuYXRpb25hdXgsIHByw6lwb25kw6lyYW50cyBkYW5zIHNvbiBww6lyaW3DqHRyZSBk4oCZYWN0aW9uIGV0IGVudHJldGllbnQgZGVzIHJlbGF0aW9ucyBmcnVjdHVldXNlcyBhdmVjIGRlcyBjb21tdW5hdXTDqXMgZGUgcmVjaGVyY2hlLiIsImNvdW50cnkiOiJGUiIsImxvZ28tdXJsIjoiaHR0cHM6Ly9hc3NldHMuZGF0YWNpdGUub3JnL2ltYWdlcy9tZW1iZXJzL2luaXN0LnBuZyIsImluc3RpdHV0aW9uLXR5cGUiOm51bGwsImlzLWFjdGl2ZSI6dHJ1ZSwiaGFzLXBhc3N3b3JkIjp0cnVlLCJqb2luZWQiOiIyMDEwLTAyLTA1IiwiY3JlYXRlZCI6IjIwMTAtMDEtMDFUMDA6MDA6MDAuMDAwWiIsInVwZGF0ZWQiOiIyMDE4LTA4LTEwVDAyOjI1OjUxLjAwMFoifSwicmVsYXRpb25zaGlwcyI6eyJjbGllbnRzIjp7Im1ldGEiOnt9fSwicHJlZml4ZXMiOnsibWV0YSI6e319fX1dfQ==
     http_version: 
   recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
 recorded_with: VCR 3.0.3

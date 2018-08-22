@@ -8,7 +8,7 @@ describe Toccatore::CLI do
 
   describe "version" do
     it 'has version' do
-      expect { subject.__print_version }.to output("0.4.9\n").to_stdout
+      expect { subject.__print_version }.to output("0.4.15\n").to_stdout
     end
   end
 
@@ -77,7 +77,7 @@ describe Toccatore::CLI do
 
     it 'should succeed' do
       subject.options = cli_options
-      expect { subject.datacite_related }.to output(/https:\/\/doi.org\/10.5281\/zenodo.16396 is_supplement_to https:\/\/doi.org\/10.1007\/s11548-015-1180-7 pushed to Event Data service.\n/).to_stdout
+      expect { subject.datacite_related }.to output(/https:\/\/doi.org\/10.15468\/dl.mb4das references https:\/\/doi.org\/10.3897\/phytokeys.12.2849 pushed to Event Data service.\n/).to_stdout
     end
 
     it 'should query by DOI' do
@@ -86,7 +86,7 @@ describe Toccatore::CLI do
     end
 
     it 'should query by related_identifier' do
-      subject.options = cli_options.merge(related_identifier: "10.7554/elife.01567", from_date: "2013-01-01", until_date: "2017-12-31")
+      subject.options = cli_options.merge(related_identifier: "10.7554/elife.01567", from_date: "2013-01-01", until_date: "2018-12-31")
       expect { subject.datacite_related }.to output(/https:\/\/doi.org\/10.5061\/dryad.b835k is_referenced_by https:\/\/doi.org\/10.7554\/elife.01567 pushed to Event Data service.\n/).to_stdout
     end
 
@@ -107,36 +107,36 @@ describe Toccatore::CLI do
     end
   end
 
-    describe "usage_update", vcr: true, :order => :defined do
-      let(:push_url) { ENV['LAGOTTINO_URL'] }
-      let(:access_token) { ENV['LAGOTTO_TOKEN'] }
-      let(:source_token) { ENV['SOURCE_TOKEN'] }
-      let(:slack_webhook_url) { ENV['SLACK_WEBHOOK_URL'] }
-      let(:cli_options) { { push_url: push_url,
+  describe "usage_update", vcr: true, :order => :defined do
+    let(:push_url) { ENV['LAGOTTINO_URL'] }
+    let(:access_token) { ENV['LAGOTTINO_TOKEN'] }
+    let(:source_token) { ENV['SOURCE_TOKEN'] }
+    let(:slack_webhook_url) { ENV['SLACK_WEBHOOK_URL'] }
+    let(:cli_options) { { push_url: push_url,
+                          slack_webhook_url: slack_webhook_url,
+                          access_token: access_token,
+                          source_token: source_token } }
+
+
+    context "no reports in the queue" do 
+      it 'should succeed with no works' do
+        subject.options = { push_url: push_url,
                             slack_webhook_url: slack_webhook_url,
-                            access_token: access_token,
-                            source_token: source_token } }
-  
-
-      context "no reports in the queue" do 
-        it 'should succeed with no works' do
-          subject.options = { push_url: push_url,
-                              slack_webhook_url: slack_webhook_url,
-                              access_token: access_token}
-          expect { subject.usage_update }.to output("0 works processed with 0 errors for Usage Reports Queue https://sqs.eu-west-1.amazonaws.com/404017989009/test_usage\n").to_stdout
-        end
-      end
-
-      context "with reports in the queue" do 
-        # TO test this we need a real queue working 
-        # it 'should succeed' do
-        #   subject.options = cli_options
-        #   expect { subject.usage_update }.to output("0 works processed with 0 errors for Usage Reports Queue https://sqs.eu-west-1.amazonaws.com/404017989009/test_usage\n").to_stdout
-        # end
-        # it 'should fail' do
-        #   subject.options = cli_options.except(:access_token)
-        #   expect { subject.usage_update }.to output(/An error occured: Access token missing.\n/).to_stdout
-        # end
+                            access_token: access_token}
+        expect { subject.usage_update }.to output("0 works processed with 0 errors for Usage Reports Queue https://sqs.eu-west-1.amazonaws.com/404017989009/test_usage\n").to_stdout
       end
     end
+
+    context "with reports in the queue" do 
+      # TO test this we need a real queue working 
+      # it 'should succeed' do
+      #   subject.options = cli_options
+      #   expect { subject.usage_update }.to output("0 works processed with 0 errors for Usage Reports Queue https://sqs.eu-west-1.amazonaws.com/404017989009/test_usage\n").to_stdout
+      # end
+      # it 'should fail' do
+      #   subject.options = cli_options.except(:access_token)
+      #   expect { subject.usage_update }.to output(/An error occured: Access token missing.\n/).to_stdout
+      # end
+    end
+  end
 end

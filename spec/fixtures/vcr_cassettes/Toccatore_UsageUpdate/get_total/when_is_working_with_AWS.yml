@@ -12,14 +12,14 @@ http_interactions:
       Accept-Encoding:
       - ''
       User-Agent:
-      - aws-sdk-ruby3/3.21.2 ruby/2.3.3 x86_64-darwin15 aws-sdk-sqs/1.3.0
+      - aws-sdk-ruby3/3.24.0 ruby/2.4.2 x86_64-darwin16 aws-sdk-sqs/1.4.0
       X-Amz-Date:
-      - 20180526T082818Z
+      - 20180810T162254Z
       X-Amz-Content-Sha256:
       - 5761efd13dd0ed81182207171d3660628968189941431d6044920ef8fe7b1160
       Authorization:
-      - AWS4-HMAC-SHA256 Credential=AKIAIXLDUBIDM74CC6KQ/20180526/eu-west-1/sqs/aws4_request,
-        SignedHeaders=content-type;host;x-amz-content-sha256;x-amz-date, Signature=fb9969df4a8fe01e1205b909a4c96db4afab8b34317aa9d46aa0ca28242fbb91
+      - AWS4-HMAC-SHA256 Credential=AKIAIUG4XO77LTVIG3PA/20180810/eu-west-1/sqs/aws4_request,
+        SignedHeaders=content-type;host;x-amz-content-sha256;x-amz-date, Signature=ac222f1bc09285fb32e9d97ca94a560d1a60e34aebe2ca3bfbc704bcf8bd657b
       Content-Length:
       - '58'
       Accept:
@@ -32,7 +32,7 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Sat, 26 May 2018 08:28:18 GMT
+      - Fri, 10 Aug 2018 16:22:54 GMT
       Content-Type:
       - text/xml
       Content-Length:
@@ -40,12 +40,12 @@ http_interactions:
       Connection:
       - keep-alive
       X-Amzn-Requestid:
-      - 9c22d060-a576-5dea-a486-83e3b9941e91
+      - fc9589db-bd6a-518c-bbdd-da3c03741f7e
     body:
       encoding: UTF-8
-      string: <?xml version="1.0"?><GetQueueUrlResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><GetQueueUrlResult><QueueUrl>https://sqs.eu-west-1.amazonaws.com/404017989009/test_usage</QueueUrl></GetQueueUrlResult><ResponseMetadata><RequestId>9c22d060-a576-5dea-a486-83e3b9941e91</RequestId></ResponseMetadata></GetQueueUrlResponse>
+      string: <?xml version="1.0"?><GetQueueUrlResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><GetQueueUrlResult><QueueUrl>https://sqs.eu-west-1.amazonaws.com/404017989009/test_usage</QueueUrl></GetQueueUrlResult><ResponseMetadata><RequestId>fc9589db-bd6a-518c-bbdd-da3c03741f7e</RequestId></ResponseMetadata></GetQueueUrlResponse>
     http_version: 
-  recorded_at: Sat, 26 May 2018 08:28:18 GMT
+  recorded_at: Fri, 10 Aug 2018 16:22:54 GMT
 - request:
     method: post
     uri: https://sqs.eu-west-1.amazonaws.com/404017989009/test_usage
@@ -58,14 +58,14 @@ http_interactions:
       Accept-Encoding:
       - ''
       User-Agent:
-      - aws-sdk-ruby3/3.21.2 ruby/2.3.3 x86_64-darwin15 aws-sdk-sqs/1.3.0
+      - aws-sdk-ruby3/3.24.0 ruby/2.4.2 x86_64-darwin16 aws-sdk-sqs/1.4.0
       X-Amz-Date:
-      - 20180526T082818Z
+      - 20180810T162254Z
       X-Amz-Content-Sha256:
       - 4fa1f9790ab8d8b778fc048ef890ef00e82c1fd4658cd21964eff9eb5dc9426d
       Authorization:
-      - AWS4-HMAC-SHA256 Credential=AKIAIXLDUBIDM74CC6KQ/20180526/eu-west-1/sqs/aws4_request,
-        SignedHeaders=content-type;host;x-amz-content-sha256;x-amz-date, Signature=dbfdd84ccd65c6ef60e9ecb3a10abf61f14811689d557ec5e2df0516ab8dbd1d
+      - AWS4-HMAC-SHA256 Credential=AKIAIUG4XO77LTVIG3PA/20180810/eu-west-1/sqs/aws4_request,
+        SignedHeaders=content-type;host;x-amz-content-sha256;x-amz-date, Signature=77687e43c4a58891077db4c22e99e664fb89245586008ec9fd91ea4072ace55d
       Content-Length:
       - '221'
       Accept:
@@ -78,7 +78,7 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Sat, 26 May 2018 08:28:19 GMT
+      - Fri, 10 Aug 2018 16:22:54 GMT
       Content-Type:
       - text/xml
       Content-Length:
@@ -86,12 +86,12 @@ http_interactions:
       Connection:
       - keep-alive
       X-Amzn-Requestid:
-      - 48022634-be35-5467-8784-75b7a2d6bcc7
+      - 6f9d09a0-1895-5275-bddb-5a47a68bca9f
     body:
       encoding: UTF-8
-      string: <?xml version="1.0"?><GetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><GetQueueAttributesResult><Attribute><Name>ApproximateNumberOfMessages</Name><Value>3</Value></Attribute><Attribute><Name>ApproximateNumberOfMessagesNotVisible</Name><Value>0</Value></Attribute></GetQueueAttributesResult><ResponseMetadata><RequestId>48022634-be35-5467-8784-75b7a2d6bcc7</RequestId></ResponseMetadata></GetQueueAttributesResponse>
+      string: <?xml version="1.0"?><GetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><GetQueueAttributesResult><Attribute><Name>ApproximateNumberOfMessages</Name><Value>0</Value></Attribute><Attribute><Name>ApproximateNumberOfMessagesNotVisible</Name><Value>0</Value></Attribute></GetQueueAttributesResult><ResponseMetadata><RequestId>6f9d09a0-1895-5275-bddb-5a47a68bca9f</RequestId></ResponseMetadata></GetQueueAttributesResponse>
     http_version: 
-  recorded_at: Sat, 26 May 2018 08:28:19 GMT
+  recorded_at: Fri, 10 Aug 2018 16:22:54 GMT
 - request:
     method: post
     uri: https://sqs.eu-west-1.amazonaws.com/
@@ -104,14 +104,14 @@ http_interactions:
       Accept-Encoding:
       - ''
       User-Agent:
-      - aws-sdk-ruby3/3.21.2 ruby/2.3.3 x86_64-darwin15 aws-sdk-sqs/1.3.0
+      - aws-sdk-ruby3/3.24.0 ruby/2.4.2 x86_64-darwin16 aws-sdk-sqs/1.4.0
       X-Amz-Date:
-      - 20180526T082819Z
+      - 20180810T162254Z
       X-Amz-Content-Sha256:
       - 5761efd13dd0ed81182207171d3660628968189941431d6044920ef8fe7b1160
       Authorization:
-      - AWS4-HMAC-SHA256 Credential=AKIAIXLDUBIDM74CC6KQ/20180526/eu-west-1/sqs/aws4_request,
-        SignedHeaders=content-type;host;x-amz-content-sha256;x-amz-date, Signature=2ab509ced23271346a50f94e2becd6dbe3fcf46ad5660e57200c4f763e6d3cdb
+      - AWS4-HMAC-SHA256 Credential=AKIAIUG4XO77LTVIG3PA/20180810/eu-west-1/sqs/aws4_request,
+        SignedHeaders=content-type;host;x-amz-content-sha256;x-amz-date, Signature=ac222f1bc09285fb32e9d97ca94a560d1a60e34aebe2ca3bfbc704bcf8bd657b
       Content-Length:
       - '58'
       Accept:
@@ -124,7 +124,7 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Sat, 26 May 2018 08:28:19 GMT
+      - Fri, 10 Aug 2018 16:22:54 GMT
       Content-Type:
       - text/xml
       Content-Length:
@@ -132,12 +132,12 @@ http_interactions:
       Connection:
       - keep-alive
       X-Amzn-Requestid:
-      - 284a8374-00e3-5931-9a71-d0f71c007b30
+      - af567e69-ffd1-5146-9d52-2d8e41cfee16
     body:
       encoding: UTF-8
-      string: <?xml version="1.0"?><GetQueueUrlResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><GetQueueUrlResult><QueueUrl>https://sqs.eu-west-1.amazonaws.com/404017989009/test_usage</QueueUrl></GetQueueUrlResult><ResponseMetadata><RequestId>284a8374-00e3-5931-9a71-d0f71c007b30</RequestId></ResponseMetadata></GetQueueUrlResponse>
+      string: <?xml version="1.0"?><GetQueueUrlResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><GetQueueUrlResult><QueueUrl>https://sqs.eu-west-1.amazonaws.com/404017989009/test_usage</QueueUrl></GetQueueUrlResult><ResponseMetadata><RequestId>af567e69-ffd1-5146-9d52-2d8e41cfee16</RequestId></ResponseMetadata></GetQueueUrlResponse>
     http_version: 
-  recorded_at: Sat, 26 May 2018 08:28:19 GMT
+  recorded_at: Fri, 10 Aug 2018 16:22:55 GMT
 - request:
     method: post
     uri: https://sqs.eu-west-1.amazonaws.com/404017989009/test_usage
@@ -150,14 +150,14 @@ http_interactions:
       Accept-Encoding:
       - ''
       User-Agent:
-      - aws-sdk-ruby3/3.21.2 ruby/2.3.3 x86_64-darwin15 aws-sdk-sqs/1.3.0
+      - aws-sdk-ruby3/3.24.0 ruby/2.4.2 x86_64-darwin16 aws-sdk-sqs/1.4.0
       X-Amz-Date:
-      - 20180526T082819Z
+      - 20180810T162255Z
       X-Amz-Content-Sha256:
       - 4fa1f9790ab8d8b778fc048ef890ef00e82c1fd4658cd21964eff9eb5dc9426d
       Authorization:
-      - AWS4-HMAC-SHA256 Credential=AKIAIXLDUBIDM74CC6KQ/20180526/eu-west-1/sqs/aws4_request,
-        SignedHeaders=content-type;host;x-amz-content-sha256;x-amz-date, Signature=3db436e1ed6d3f901ff8f7481a66b7ab2bbdc6c8a08532173ec8ee9601d3c1a4
+      - AWS4-HMAC-SHA256 Credential=AKIAIUG4XO77LTVIG3PA/20180810/eu-west-1/sqs/aws4_request,
+        SignedHeaders=content-type;host;x-amz-content-sha256;x-amz-date, Signature=396f63217baca90c144eddc37328ecba77ed0a74727cb31f8f3cb1a228a9cff7
       Content-Length:
       - '221'
       Accept:
@@ -170,7 +170,7 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Sat, 26 May 2018 08:28:19 GMT
+      - Fri, 10 Aug 2018 16:22:55 GMT
       Content-Type:
       - text/xml
       Content-Length:
@@ -178,10 +178,10 @@ http_interactions:
       Connection:
       - keep-alive
       X-Amzn-Requestid:
-      - fbcc461e-f63d-5200-82d1-159deade341a
+      - 1c6782f9-9d5c-5d1c-9aab-d11e2343f239
     body:
       encoding: UTF-8
-      string: <?xml version="1.0"?><GetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><GetQueueAttributesResult><Attribute><Name>ApproximateNumberOfMessages</Name><Value>3</Value></Attribute><Attribute><Name>ApproximateNumberOfMessagesNotVisible</Name><Value>0</Value></Attribute></GetQueueAttributesResult><ResponseMetadata><RequestId>fbcc461e-f63d-5200-82d1-159deade341a</RequestId></ResponseMetadata></GetQueueAttributesResponse>
+      string: <?xml version="1.0"?><GetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><GetQueueAttributesResult><Attribute><Name>ApproximateNumberOfMessages</Name><Value>0</Value></Attribute><Attribute><Name>ApproximateNumberOfMessagesNotVisible</Name><Value>0</Value></Attribute></GetQueueAttributesResult><ResponseMetadata><RequestId>1c6782f9-9d5c-5d1c-9aab-d11e2343f239</RequestId></ResponseMetadata></GetQueueAttributesResponse>
     http_version: 
-  recorded_at: Sat, 26 May 2018 08:28:19 GMT
+  recorded_at: Fri, 10 Aug 2018 16:22:55 GMT
 recorded_with: VCR 3.0.3

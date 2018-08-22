@@ -2,51 +2,72 @@
 http_interactions:
 - request:
     method: get
-    uri: https://metrics.test.datacite.org/reports/5cac6ca0-9391-4e1d-95cf-ba2f475cbfad
+    uri: https://api.test.datacite.org/reports/5cac6ca0-9391-4e1d-95cf-ba2f475cbfad
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
-      code: 200
+      code: 404
       message: ''
     headers:
       Date:
-      - Sat, 26 May 2018 08:28:16 GMT
+      - Fri, 10 Aug 2018 13:37:20 GMT
       Content-Type:
-      - application/json; charset=utf-8
+      - text/html;charset=UTF-8
       Connection:
       - keep-alive
-      Status:
-      - 200 OK
-      X-Anonymous-Consumer:
-      - 'true'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Vary:
-      - Accept-Encoding, Origin
-      Etag:
-      - W/"a2af7c772d0e1af937e036db75f8bbb1"
-      X-Runtime:
-      - '0.005244'
-      X-Request-Id:
-      - 49b975fd-986d-4e8c-bc91-ba2f06830408
-      X-Powered-By:
-      - Phusion Passenger 5.3.1
       Server:
-      - nginx/1.14.0 + Phusion Passenger 5.3.1
+      - Apache-Coyote/1.1
+      Pragma:
+      - no-cache
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Set-Cookie:
+      - JSESSIONID=F2ED514B3A2B6657ADB6A0A377C03BFB; Path=/; HttpOnly
+      Content-Language:
+      - en-US
     body:
-      encoding: UTF-8
-      string: '{"report":{"id":"5cac6ca0-9391-4e1d-95cf-ba2f475cbfad","report-header":{"report-name":"Dataset
-        Master Report","report-id":"SDR","release":"RD1","created-by":"test9","created":"2018-05-22","reporting-period":{"end-date":"2063-02-30T00:00:00","begin-date":"2063-02-01T00:00:00"},"report-filters":[],"report-attributes":[]},"report-datasets":[{"uri":"https://search.DataONE.org/index.html#view/https://pasta.lternet.edu/package/metadata/eml/knb-lter-luq/88/559501","yop":"2010","platform":"DataONE","data-type":"dataset","publisher":"LTER
-        Network","dataset-id":[{"type":"DOI","value":"10.6073/pasta/aec48ca27decb1fd2c2f454f1c5f88e4"}],"performance":[{"period":{"end-date":"2018-03-31","begin-date":"2018-03-01"},"instance":[{"count":349,"metric-type":"total-dataset-requests","access-method":"regular","country-counts":{"au":9,"ca":4,"de":4,"dk":2,"ie":2,"ru":2,"us":9}},{"count":27,"metric-type":"unique-dataset-requests","access-method":"regular","country-counts":{"au":9,"ca":4,"de":4,"dk":2,"ie":2,"ru":2,"us":9}},{"count":8,"metric-type":"total-dataset-investigations","access-method":"regular","country-counts":{"de":4,"ie":2,"ru":2}},{"count":8,"metric-type":"unique-dataset-investigations","access-method":"regular","country-counts":{"de":4,"ie":2,"ru":2}}]}],"publisher-id":[{"type":"orcid","value":"205975.c"}],"dataset-title":"Phenologies
-        of the Tabonuco Forest trees and shrubs.","dataset-contributors":[{"type":"name","value":"Jess
-        Zimmerman"}]}]}}'
+      encoding: ASCII-8BIT
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE HTML SYSTEM \"about:legacy-compat\">\n<html><head><meta
+        content=\"text/html; charset=UTF-8\" http-equiv=\"Content-Type\"/><meta content=\"IE=8\"
+        http-equiv=\"X-UA-Compatible\"/><link href=\"/resources/dijit/themes/tundra/tundra.css;jsessionid=F2ED514B3A2B6657ADB6A0A377C03BFB\"
+        type=\"text/css\" rel=\"stylesheet\"></link><link href=\"/resources/styles/standard.css;jsessionid=F2ED514B3A2B6657ADB6A0A377C03BFB\"
+        media=\"screen\" type=\"text/css\" rel=\"stylesheet\"></link><link href=\"/resources/dojox/highlight/resources/pygments/emacs.css;jsessionid=F2ED514B3A2B6657ADB6A0A377C03BFB\"
+        rel=\"stylesheet\"></link><link href=\"/resources/images/favicon.png;jsessionid=F2ED514B3A2B6657ADB6A0A377C03BFB\"
+        type=\"image/png\" rel=\"SHORTCUT ICON\"/><script type=\"text/javascript\">var
+        djConfig=\"en_US\"; </script><script type=\"text/javascript\" src=\"/resources/dojo/dojo.js;jsessionid=F2ED514B3A2B6657ADB6A0A377C03BFB\"></script><script
+        type=\"text/javascript\" src=\"/resources/spring/Spring.js;jsessionid=F2ED514B3A2B6657ADB6A0A377C03BFB\"></script><script
+        type=\"text/javascript\" src=\"/resources/spring/Spring-Dojo.js;jsessionid=F2ED514B3A2B6657ADB6A0A377C03BFB\"></script><script
+        type=\"text/javascript\" src=\"/resources/js/jquery-1.5.1.min.js;jsessionid=F2ED514B3A2B6657ADB6A0A377C03BFB\"></script><script
+        type=\"text/javascript\" language=\"JavaScript\">dojo.require(\"dojo.parser\");</script><title>Welcome
+        to DataCite Metadata Store</title></head><body class=\"tundra spring\"><div
+        id=\"wrapper\"><div version=\"2.0\" id=\"header\"><div id=\"title\"><a title=\"Home\"
+        name=\"Home\" href=\"/;jsessionid=F2ED514B3A2B6657ADB6A0A377C03BFB\"><img
+        src=\"/resources/images/dc-logo.gif;jsessionid=F2ED514B3A2B6657ADB6A0A377C03BFB\"
+        width=\"100\"/>\n    Metadata Store    \n    </a></div><div id=\"topmenu\">You
+        are not logged in | <span><a href=\"/login;jsessionid=F2ED514B3A2B6657ADB6A0A377C03BFB\">Login</a></span></div><br
+        style=\"clear:both\"/></div><div id=\"main\"><div version=\"2.0\"><script
+        type=\"text/javascript\">dojo.require('dijit.TitlePane');</script><div id=\"_title_title_id\"><script
+        type=\"text/javascript\">Spring.addDecoration(new Spring.ElementDecoration({elementId
+        : '_title_title_id', widgetType : 'dijit.TitlePane', widgetAttrs : {title:
+        'Requested Resource Not Found', open: true}})); </script><h2>Requested Resource
+        Not Found</h2><p>Sorry, we did not find the resource you were looking for.</p></div></div><div
+        version=\"2.0\" id=\"footer\"><span><a href=\"/;jsessionid=F2ED514B3A2B6657ADB6A0A377C03BFB\">Home</a></span>
+        | <span id=\"language\">Language: <a title=\"Switch language to English\"
+        href=\"?lang=en\"><img alt=\"Switch language to English\" src=\"/resources/images/flags/en.png;jsessionid=F2ED514B3A2B6657ADB6A0A377C03BFB\"
+        class=\"flag\"/></a> <a title=\"Switch language to Deutsch\" href=\"?lang=de\"><img
+        alt=\"Switch language to Deutsch\" src=\"/resources/images/flags/de.png;jsessionid=F2ED514B3A2B6657ADB6A0A377C03BFB\"
+        class=\"flag\"/></a> <a title=\"Switch language to French\" href=\"?lang=fr\"><img
+        alt=\"Switch language to French\" src=\"/resources/images/flags/fr.png;jsessionid=F2ED514B3A2B6657ADB6A0A377C03BFB\"
+        class=\"flag\"/></a> </span> | <span><a href=\"/login;jsessionid=F2ED514B3A2B6657ADB6A0A377C03BFB\">Login</a></span></div></div></div></body></html>"
     http_version: 
-  recorded_at: Sat, 26 May 2018 08:28:16 GMT
+  recorded_at: Fri, 10 Aug 2018 13:37:20 GMT
 recorded_with: VCR 3.0.3

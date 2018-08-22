@@ -5,7 +5,7 @@ require 'securerandom'
 FactoryBot.define do
   factory :event , class: OpenStruct do
       sequence(:uuid) { |n| "#{SecureRandom.uuid}-#{n}" }
-      message_action "add"
+      message_action "create"
       sequence(:obj_id) { |n| "#{Faker::Internet.url}#{n}" }
       sequence(:subj_id) { |n| "#{Faker::Internet.url}#{n}" }
       total Faker::Number.number(3)

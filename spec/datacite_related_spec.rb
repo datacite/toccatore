@@ -29,7 +29,7 @@ describe Toccatore::DataciteRelated, vcr: true do
 
   context "get_total" do
     it "with works" do
-      expect(subject.get_total(query_options)).to eq(650)
+      expect(subject.get_total(query_options)).to eq(640)
     end
 
     it "with no works" do
@@ -57,19 +57,19 @@ describe Toccatore::DataciteRelated, vcr: true do
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
       response = subject.get_data(query_options)
-      expect(response.body["data"]["response"]["numFound"]).to eq(650)
+      expect(response.body["data"]["response"]["numFound"]).to eq(640)
       doc = response.body["data"]["response"]["docs"].first
-      expect(doc["doi"]).to eq("10.7480/KNOB.113.2014.3")
+      expect(doc["doi"]).to eq("10.7480/KNOB.113.2014.3.830")
     end
 
     it "should allow queries by related_identifier of the Datacite Metadata Search API" do
-      response = subject.get_data({ related_identifier: "10.7554/elife.01567", from_date: "2013-01-01", until_date: "2017-12-31", rows: 1000, offset: 0 })
-      expect(response.body["data"]["response"]["numFound"]).to eq(1)
+      response = subject.get_data({ related_identifier: "10.3897/phytokeys.12.2849", from_date: "2013-01-01", until_date: "2017-12-31", rows: 1000, offset: 0 })
+      expect(response.body["data"]["response"]["numFound"]).to eq(14223)
       doc = response.body["data"]["response"]["docs"].first
-      expect(doc["doi"]).to eq("10.5061/DRYAD.B835K")
+      expect(doc["doi"]).to eq("10.15468/DL.MBSMUW")
       related_identifiers = doc["relatedIdentifier"]
-      expect(related_identifiers.count).to eq(6)
-      expect(related_identifiers[4]).to eq("IsReferencedBy:DOI:10.7554/ELIFE.01567")
+      expect(related_identifiers.count).to eq(1)
+      expect(related_identifiers.first).to eq("References:DOI:10.3897/phytokeys.12.2849")
     end
 
     it "should allow queries by DOI of the Datacite Metadata Search API" do
@@ -102,7 +102,7 @@ describe Toccatore::DataciteRelated, vcr: true do
       response = subject.parse_data(result, source_token: ENV['SOURCE_TOKEN'])
 
       expect(response.length).to eq(134)
-      expect(response.last.except("id")).to eq("message_action" => "create", "subj_id"=>"https://doi.org/10.17180/obs.yzeron", "obj_id"=>"https://doi.org/10.1016/j.jhydrol.2013.09.055", "relation_type_id"=>"is_referenced_by", "source_id"=>"datacite","source_token" => "43ba99ae-5cf0-11e8-9c2d-fa7ae01bbebc", "occurred_at"=>"2015-04-07T12:22:40Z", "license" => "https://creativecommons.org/publicdomain/zero/1.0/")
+      expect(response.last.except("id")).to eq("message_action" => "create", "subj_id"=>"https://doi.org/10.17180/obs.yzeron", "obj_id"=>"https://doi.org/10.1016/j.jhydrol.2013.09.055", "relation_type_id"=>"is_referenced_by", "source_id"=>"datacite","source_token" => ENV['SOURCE_TOKEN'], "occurred_at"=>"2015-04-07T12:22:40Z", "license" => "https://creativecommons.org/publicdomain/zero/1.0/")
     end
 
     it "should report if there are works ignored because of an IsIdenticalTo relation" do
@@ -136,7 +136,7 @@ describe Toccatore::DataciteRelated, vcr: true do
       body = File.read(fixture_path + 'datacite_related.json')
       result = OpenStruct.new(body: { "data" => JSON.parse(body) })
       result = subject.parse_data(result, source_token: ENV['SOURCE_TOKEN'])
-      options = { push_url: ENV['LAGOTTO_URL'], access_token: ENV['LAGOTTO_TOKEN'], jsonapi: true }
+      options = { push_url: ENV['LAGOTTINO_URL'], access_token: ENV['LAGOTTINO_TOKEN'], jsonapi: true }
       expect { subject.push_data(result, options) }.to output(/https:\/\/doi.org\/10.15468\/dl.mb4das references https:\/\/doi.org\/10.3897\/phytokeys.12.2849 pushed to Event Data service.\n/).to_stdout
     end
   end

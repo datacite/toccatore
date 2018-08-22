@@ -8,33 +8,37 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
+      Date:
+      - Fri, 10 Aug 2018 16:23:42 GMT
       Content-Type:
       - application/json;charset=UTF-8
-      Date:
-      - Tue, 04 Jul 2017 17:51:44 GMT
-      Server:
-      - openresty/1.11.2.2
       Connection:
       - keep-alive
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
+      Access-Control-Expose-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
     body:
-      encoding: UTF-8
-      string: '{"responseHeader":{"status":0,"QTime":1},"response":{"numFound":1,"start":0,"docs":[]}}
+      encoding: ASCII-8BIT
+      string: '{"responseHeader":{"status":0,"QTime":1544},"response":{"numFound":1,"start":0,"docs":[]}}
 
 '
     http_version: 
-  recorded_at: Tue, 04 Jul 2017 17:51:44 GMT
+  recorded_at: Fri, 10 Aug 2018 16:23:42 GMT
 - request:
     method: get
     uri: https://search.datacite.org/api?fl=doi,resourceTypeGeneral,relatedIdentifier,nameIdentifier,minted,updated&fq=updated:%5B2013-01-01T00:00:00Z%20TO%202017-12-31T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=doi:10.5438/6423&rows=1000&start=0&wt=json
@@ -43,33 +47,37 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
+      Date:
+      - Fri, 10 Aug 2018 16:23:42 GMT
       Content-Type:
       - application/json;charset=UTF-8
-      Date:
-      - Tue, 04 Jul 2017 17:51:45 GMT
-      Server:
-      - openresty/1.11.2.2
       Connection:
       - keep-alive
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
+      Access-Control-Expose-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
     body:
-      encoding: UTF-8
-      string: '{"responseHeader":{"status":0,"QTime":1},"response":{"numFound":1,"start":0,"docs":[{"minted":"2016-09-24T20:26:53Z","updated":"2017-02-06T14:24:31Z","doi":"10.5438/6423","resourceTypeGeneral":"Collection","relatedIdentifier":["HasPart:DOI:10.5281/ZENODO.30799","HasPart:DOI:10.5281/ZENODO.30800","HasPart:DOI:10.5281/ZENODO.31787","HasPart:DOI:10.5281/ZENODO.31932","HasPart:DOI:10.5281/ZENODO.31933","HasPart:DOI:10.5281/ZENODO.46761","HasPart:DOI:10.5281/ZENODO.48228","HasPart:DOI:10.5281/ZENODO.48705","HasPart:DOI:10.5281/ZENODO.58971","HasPart:DOI:10.5281/ZENODO.61176","HasPart:DOI:10.5281/zenodo.154592","HasPart:DOI:10.5281/zenodo.168043","HasPart:DOI:10.5281/zenodo.168181","HasPart:DOI:10.5281/zenodo.168184","HasPart:DOI:10.5281/zenodo.168187","HasPart:DOI:10.5281/zenodo.168188","HasPart:DOI:10.5281/zenodo.168190","HasPart:DOI:10.5281/zenodo.168202","HasPart:DOI:10.5281/zenodo.168213","HasPart:DOI:10.5281/zenodo.168214","HasPart:DOI:10.5438/BC11-CQW1","HasPart:DOI:10.5438/CJT2-T6DZ","HasPart:DOI:10.5438/W029-Y6W~","HasPart:DOI:10.5438/S8GF-0CK9","HasPart:DOI:10.6084/M9.FIGSHARE.4236428"],"nameIdentifier":["ORCID:0000-0001-5331-6592","ORCID:0000-0002-4259-9774","ORCID:0000-0002-8689-4935","ORCID:0000-0002-8099-7538","ORCID:0000-0002-9300-5278","ORCID:0000-0002-6137-2348","ORCID:0000-0003-2614-6676","ORCID:0000-0002-4695-7874","ORCID:0000-0003-0902-4386","ORCID:0000-0003-3096-6829","ORCID:0000-0003-3412-7192","ORCID:0000-0003-1419-2405","ORCID:0000-0003-3484-6875","ORCID:0000-0003-0183-6910","ORCID:0000-0001-5109-3700","ORCID:0000-0001-8771-7239","ORCID:0000-0001-6843-7960","ORCID:0000-0001-9623-2225","ORCID:0000-0002-1611-6935","ORCID:0000-0003-0762-2235","ORCID:0000-0002-9829-091X","ORCID:0000-0001-5952-7630","ORCID:0000-0001-5492-3212","ORCID:0000-0002-6133-2581"]}]}}
+      encoding: ASCII-8BIT
+      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":1,"start":0,"docs":[{"minted":"2016-09-24T20:26:53Z","updated":"2017-02-06T14:24:31Z","doi":"10.5438/6423","relatedIdentifier":["HasPart:DOI:10.5281/ZENODO.30799","HasPart:DOI:10.5281/ZENODO.30800","HasPart:DOI:10.5281/ZENODO.31787","HasPart:DOI:10.5281/ZENODO.31932","HasPart:DOI:10.5281/ZENODO.31933","HasPart:DOI:10.5281/ZENODO.46761","HasPart:DOI:10.5281/ZENODO.48228","HasPart:DOI:10.5281/ZENODO.48705","HasPart:DOI:10.5281/ZENODO.58971","HasPart:DOI:10.5281/ZENODO.61176","HasPart:DOI:10.5281/zenodo.154592","HasPart:DOI:10.5281/zenodo.168043","HasPart:DOI:10.5281/zenodo.168181","HasPart:DOI:10.5281/zenodo.168184","HasPart:DOI:10.5281/zenodo.168187","HasPart:DOI:10.5281/zenodo.168188","HasPart:DOI:10.5281/zenodo.168190","HasPart:DOI:10.5281/zenodo.168202","HasPart:DOI:10.5281/zenodo.168213","HasPart:DOI:10.5281/zenodo.168214","HasPart:DOI:10.5438/BC11-CQW1","HasPart:DOI:10.5438/CJT2-T6DZ","HasPart:DOI:10.5438/W029-Y6W~","HasPart:DOI:10.5438/S8GF-0CK9","HasPart:DOI:10.6084/M9.FIGSHARE.4236428"],"resourceTypeGeneral":"Collection","nameIdentifier":["ORCID:0000-0001-5331-6592","ORCID:0000-0002-4259-9774","ORCID:0000-0002-8689-4935","ORCID:0000-0002-8099-7538","ORCID:0000-0002-9300-5278","ORCID:0000-0002-6137-2348","ORCID:0000-0003-2614-6676","ORCID:0000-0002-4695-7874","ORCID:0000-0003-0902-4386","ORCID:0000-0003-3096-6829","ORCID:0000-0003-3412-7192","ORCID:0000-0003-1419-2405","ORCID:0000-0003-3484-6875","ORCID:0000-0003-0183-6910","ORCID:0000-0001-5109-3700","ORCID:0000-0001-8771-7239","ORCID:0000-0001-6843-7960","ORCID:0000-0001-9623-2225","ORCID:0000-0002-1611-6935","ORCID:0000-0003-0762-2235","ORCID:0000-0002-9829-091X","ORCID:0000-0001-5952-7630","ORCID:0000-0001-5492-3212","ORCID:0000-0002-6133-2581"]}]}}
 
 '
     http_version: 
-  recorded_at: Tue, 04 Jul 2017 17:51:45 GMT
+  recorded_at: Fri, 10 Aug 2018 16:23:42 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -78,9 +86,9 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0001-5331-6592","doi":"10.5438/6423","source_id":"orcid_update","claim_action":"create"}}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -88,49 +96,41 @@ http_interactions:
   response:
     status:
       code: 202
-      message: ''
+      message: Accepted
     headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
+      Date:
+      - Fri, 10 Aug 2018 16:23:42 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Tue, 04 Jul 2017 17:51:45 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.5
-      X-Request-Id:
-      - e67930c6-412f-4c85-b684-3ec5632363aa
-      X-Runtime:
-      - '0.019724'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '223'
       Connection:
       - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding, Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Credential-Username:
+      - 0000-0002-8599-0773
+      X-Request-Id:
+      - 32e740e3-a594-4733-88f0-c20b84eb578f
+      X-Runtime:
+      - '0.015624'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"06bd74bb-bd4f-4e28-8a25-ace2209ce439","type":"claims","attributes":{"orcid":"0000-0001-5331-6592","doi":"10.5438/6423","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"38627a4c-111d-4239-9d49-714592f35973","type":"claims","attributes":{"orcid":"0000-0001-5331-6592","doi":"10.5438/6423","source-id":"orcid_update","state":"waiting","claim-action":"create","error-messages":null,"put-code":null,"claimed":null,"created":"2017-02-02T19:23:35Z","updated":"2018-08-10T16:23:42Z"}}}'
     http_version: 
-  recorded_at: Tue, 04 Jul 2017 17:51:45 GMT
+  recorded_at: Fri, 10 Aug 2018 16:23:42 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -139,9 +139,9 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0002-4259-9774","doi":"10.5438/6423","source_id":"orcid_update","claim_action":"create"}}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -149,49 +149,41 @@ http_interactions:
   response:
     status:
       code: 202
-      message: ''
+      message: Accepted
     headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
+      Date:
+      - Fri, 10 Aug 2018 16:23:43 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Tue, 04 Jul 2017 17:51:45 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.5
-      X-Request-Id:
-      - 1c4d8978-6cbd-450b-8420-ff2a186e2c51
-      X-Runtime:
-      - '0.012914'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '223'
       Connection:
       - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding, Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Credential-Username:
+      - 0000-0002-8599-0773
+      X-Request-Id:
+      - 1ad135ce-169c-481f-99e2-50057a11fe30
+      X-Runtime:
+      - '0.007088'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"7e971406-a81f-4de9-bd24-d43db36ed504","type":"claims","attributes":{"orcid":"0000-0002-4259-9774","doi":"10.5438/6423","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"e06ebb40-5e08-489b-8197-6752e1615464","type":"claims","attributes":{"orcid":"0000-0002-4259-9774","doi":"10.5438/6423","source-id":"orcid_update","state":"done","claim-action":"create","error-messages":null,"put-code":30033168,"claimed":"2017-02-02T19:23:36Z","created":"2017-02-02T19:23:35Z","updated":"2017-02-02T19:23:36Z"}}}'
     http_version: 
-  recorded_at: Tue, 04 Jul 2017 17:51:45 GMT
+  recorded_at: Fri, 10 Aug 2018 16:23:43 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -200,9 +192,9 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0002-8689-4935","doi":"10.5438/6423","source_id":"orcid_update","claim_action":"create"}}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -210,49 +202,41 @@ http_interactions:
   response:
     status:
       code: 202
-      message: ''
+      message: Accepted
     headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
+      Date:
+      - Fri, 10 Aug 2018 16:23:43 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Tue, 04 Jul 2017 17:51:45 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.5
-      X-Request-Id:
-      - 2384a9c1-a1cb-4c1d-9496-b3d4480ca55d
-      X-Runtime:
-      - '0.013361'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '223'
       Connection:
       - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding, Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Credential-Username:
+      - 0000-0002-8599-0773
+      X-Request-Id:
+      - 75e0344b-4bfc-4592-b11e-09d211bcc4c3
+      X-Runtime:
+      - '0.009004'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"8ebc15aa-f440-4cf4-a08d-bafc7afd9521","type":"claims","attributes":{"orcid":"0000-0002-8689-4935","doi":"10.5438/6423","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"7e9888cf-9b99-4567-9fb2-3297ddff965e","type":"claims","attributes":{"orcid":"0000-0002-8689-4935","doi":"10.5438/6423","source-id":"orcid_update","state":"done","claim-action":"create","error-messages":null,"put-code":30033169,"claimed":"2017-02-02T19:23:36Z","created":"2017-02-02T19:23:35Z","updated":"2017-02-02T19:23:36Z"}}}'
     http_version: 
-  recorded_at: Tue, 04 Jul 2017 17:51:45 GMT
+  recorded_at: Fri, 10 Aug 2018 16:23:43 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -261,9 +245,9 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0002-8099-7538","doi":"10.5438/6423","source_id":"orcid_update","claim_action":"create"}}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -271,49 +255,41 @@ http_interactions:
   response:
     status:
       code: 202
-      message: ''
+      message: Accepted
     headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
+      Date:
+      - Fri, 10 Aug 2018 16:23:43 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Tue, 04 Jul 2017 17:51:46 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.5
-      X-Request-Id:
-      - b81d7906-42c5-4641-ba58-ddbc94a769ea
-      X-Runtime:
-      - '0.014444'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '223'
       Connection:
       - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding, Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Credential-Username:
+      - 0000-0002-8599-0773
+      X-Request-Id:
+      - 06bef023-ec6b-4136-95d2-9a6ba3f37424
+      X-Runtime:
+      - '0.013940'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"7d626192-c800-49d1-be5c-293a783e8edf","type":"claims","attributes":{"orcid":"0000-0002-8099-7538","doi":"10.5438/6423","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"5f7c8d40-b035-4e69-bdbe-2803e7711679","type":"claims","attributes":{"orcid":"0000-0002-8099-7538","doi":"10.5438/6423","source-id":"orcid_update","state":"waiting","claim-action":"create","error-messages":null,"put-code":null,"claimed":null,"created":"2017-02-07T06:41:15Z","updated":"2018-08-10T16:23:43Z"}}}'
     http_version: 
-  recorded_at: Tue, 04 Jul 2017 17:51:46 GMT
+  recorded_at: Fri, 10 Aug 2018 16:23:43 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -322,9 +298,9 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0002-9300-5278","doi":"10.5438/6423","source_id":"orcid_update","claim_action":"create"}}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -332,49 +308,41 @@ http_interactions:
   response:
     status:
       code: 202
-      message: ''
+      message: Accepted
     headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
+      Date:
+      - Fri, 10 Aug 2018 16:23:43 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Tue, 04 Jul 2017 17:51:46 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.5
-      X-Request-Id:
-      - a25c27bd-6c88-401f-8efe-a0db5878f177
-      X-Runtime:
-      - '0.013346'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '223'
       Connection:
       - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding, Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Credential-Username:
+      - 0000-0002-8599-0773
+      X-Request-Id:
+      - 511a7c6a-a428-49a0-899e-8c9e5c5c6eeb
+      X-Runtime:
+      - '0.006949'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"9bc65008-421a-4a7b-aed5-d99048a63e62","type":"claims","attributes":{"orcid":"0000-0002-9300-5278","doi":"10.5438/6423","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"05c8a79a-a609-499e-a604-a29d496da654","type":"claims","attributes":{"orcid":"0000-0002-9300-5278","doi":"10.5438/6423","source-id":"orcid_update","state":"done","claim-action":"create","error-messages":null,"put-code":30033170,"claimed":"2017-02-02T19:23:37Z","created":"2017-02-02T19:23:35Z","updated":"2017-02-02T19:23:37Z"}}}'
     http_version: 
-  recorded_at: Tue, 04 Jul 2017 17:51:46 GMT
+  recorded_at: Fri, 10 Aug 2018 16:23:43 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -383,9 +351,9 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0002-6137-2348","doi":"10.5438/6423","source_id":"orcid_update","claim_action":"create"}}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -393,49 +361,41 @@ http_interactions:
   response:
     status:
       code: 202
-      message: ''
+      message: Accepted
     headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
+      Date:
+      - Fri, 10 Aug 2018 16:23:43 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Tue, 04 Jul 2017 17:51:46 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.5
-      X-Request-Id:
-      - a0b6f8a8-d6ac-4e37-919f-0508ea4f465b
-      X-Runtime:
-      - '0.012575'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '223'
       Connection:
       - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding, Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Credential-Username:
+      - 0000-0002-8599-0773
+      X-Request-Id:
+      - 4ce73c08-d23c-4860-99d4-a1752cfdd1ca
+      X-Runtime:
+      - '0.006654'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"46239857-8f62-44a4-913f-d68f52310b64","type":"claims","attributes":{"orcid":"0000-0002-6137-2348","doi":"10.5438/6423","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"ce4e520a-8f4f-4837-9e76-ac423c12eb9c","type":"claims","attributes":{"orcid":"0000-0002-6137-2348","doi":"10.5438/6423","source-id":"orcid_update","state":"done","claim-action":"create","error-messages":null,"put-code":43592943,"claimed":"2018-04-13T05:23:28Z","created":"2017-02-02T19:23:36Z","updated":"2018-04-13T05:23:28Z"}}}'
     http_version: 
-  recorded_at: Tue, 04 Jul 2017 17:51:46 GMT
+  recorded_at: Fri, 10 Aug 2018 16:23:43 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -444,9 +404,9 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0003-2614-6676","doi":"10.5438/6423","source_id":"orcid_update","claim_action":"create"}}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -454,49 +414,41 @@ http_interactions:
   response:
     status:
       code: 202
-      message: ''
+      message: Accepted
     headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
+      Date:
+      - Fri, 10 Aug 2018 16:23:43 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Tue, 04 Jul 2017 17:51:46 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.5
-      X-Request-Id:
-      - 109af183-048b-4553-a9d1-8c4701112992
-      X-Runtime:
-      - '0.012266'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '223'
       Connection:
       - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding, Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Credential-Username:
+      - 0000-0002-8599-0773
+      X-Request-Id:
+      - 2c2954fb-c6bf-4ff5-925e-d99af62039c8
+      X-Runtime:
+      - '0.006715'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"f65845ea-809a-4ad5-b70b-f914456550f3","type":"claims","attributes":{"orcid":"0000-0003-2614-6676","doi":"10.5438/6423","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"a55365a7-06e7-4c3b-83f4-0f32c4684719","type":"claims","attributes":{"orcid":"0000-0003-2614-6676","doi":"10.5438/6423","source-id":"orcid_update","state":"done","claim-action":"create","error-messages":null,"put-code":34106866,"claimed":"2017-06-20T15:06:44Z","created":"2017-02-02T19:23:36Z","updated":"2018-08-10T14:57:46Z"}}}'
     http_version: 
-  recorded_at: Tue, 04 Jul 2017 17:51:46 GMT
+  recorded_at: Fri, 10 Aug 2018 16:23:43 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -505,9 +457,9 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0002-4695-7874","doi":"10.5438/6423","source_id":"orcid_update","claim_action":"create"}}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -515,49 +467,41 @@ http_interactions:
   response:
     status:
       code: 202
-      message: ''
+      message: Accepted
     headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
+      Date:
+      - Fri, 10 Aug 2018 16:23:44 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Tue, 04 Jul 2017 17:51:47 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.5
-      X-Request-Id:
-      - 7d540957-add3-4ab7-8e95-df4674eacc2e
-      X-Runtime:
-      - '0.036839'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '223'
       Connection:
       - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding, Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Credential-Username:
+      - 0000-0002-8599-0773
+      X-Request-Id:
+      - b88ce269-ea84-44dc-b601-399ca9812e68
+      X-Runtime:
+      - '0.006786'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"991fe498-e46f-4636-996c-fb5340fc507d","type":"claims","attributes":{"orcid":"0000-0002-4695-7874","doi":"10.5438/6423","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"4c728e8f-f212-4357-9986-aea00ce0170a","type":"claims","attributes":{"orcid":"0000-0002-4695-7874","doi":"10.5438/6423","source-id":"orcid_update","state":"done","claim-action":"create","error-messages":null,"put-code":30033171,"claimed":"2017-02-02T19:23:38Z","created":"2017-02-02T19:23:36Z","updated":"2017-02-02T19:23:38Z"}}}'
     http_version: 
-  recorded_at: Tue, 04 Jul 2017 17:51:47 GMT
+  recorded_at: Fri, 10 Aug 2018 16:23:44 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -566,9 +510,9 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0003-0902-4386","doi":"10.5438/6423","source_id":"orcid_update","claim_action":"create"}}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -576,49 +520,41 @@ http_interactions:
   response:
     status:
       code: 202
-      message: ''
+      message: Accepted
     headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
+      Date:
+      - Fri, 10 Aug 2018 16:23:44 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Tue, 04 Jul 2017 17:51:47 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.5
-      X-Request-Id:
-      - 1bd8083f-59e3-4a9c-a983-4fd54a951e85
-      X-Runtime:
-      - '0.016167'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '223'
       Connection:
       - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding, Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Credential-Username:
+      - 0000-0002-8599-0773
+      X-Request-Id:
+      - eb99c53e-0706-4c25-8e59-b5cddf9cf3f6
+      X-Runtime:
+      - '0.006955'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"a9849591-d3a3-4d1c-b073-325726b86507","type":"claims","attributes":{"orcid":"0000-0003-0902-4386","doi":"10.5438/6423","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"00eec431-afdd-4f40-920c-d2a56c7351b1","type":"claims","attributes":{"orcid":"0000-0003-0902-4386","doi":"10.5438/6423","source-id":"orcid_update","state":"done","claim-action":"create","error-messages":null,"put-code":30033172,"claimed":"2017-02-02T19:23:38Z","created":"2017-02-02T19:23:37Z","updated":"2017-02-02T19:23:38Z"}}}'
     http_version: 
-  recorded_at: Tue, 04 Jul 2017 17:51:47 GMT
+  recorded_at: Fri, 10 Aug 2018 16:23:44 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -627,9 +563,9 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0003-3096-6829","doi":"10.5438/6423","source_id":"orcid_update","claim_action":"create"}}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -637,49 +573,41 @@ http_interactions:
   response:
     status:
       code: 202
-      message: ''
+      message: Accepted
     headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
+      Date:
+      - Fri, 10 Aug 2018 16:23:44 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Tue, 04 Jul 2017 17:51:47 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.5
-      X-Request-Id:
-      - 0f61068d-a54c-447f-afb6-14b3e3fbf519
-      X-Runtime:
-      - '0.012205'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '223'
       Connection:
       - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding, Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Credential-Username:
+      - 0000-0002-8599-0773
+      X-Request-Id:
+      - 1abf6554-8b4c-4662-9ddc-794d686c6415
+      X-Runtime:
+      - '0.014021'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"4b6d6e07-d5b2-4462-bda9-c182f2e5ff2b","type":"claims","attributes":{"orcid":"0000-0003-3096-6829","doi":"10.5438/6423","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"3e33f405-0938-4cdf-b058-95d0645d8af4","type":"claims","attributes":{"orcid":"0000-0003-3096-6829","doi":"10.5438/6423","source-id":"orcid_update","state":"waiting","claim-action":"create","error-messages":null,"put-code":null,"claimed":null,"created":"2017-02-02T19:23:37Z","updated":"2018-08-10T16:23:44Z"}}}'
     http_version: 
-  recorded_at: Tue, 04 Jul 2017 17:51:47 GMT
+  recorded_at: Fri, 10 Aug 2018 16:23:44 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -688,9 +616,9 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0003-3412-7192","doi":"10.5438/6423","source_id":"orcid_update","claim_action":"create"}}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -698,49 +626,41 @@ http_interactions:
   response:
     status:
       code: 202
-      message: ''
+      message: Accepted
     headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
+      Date:
+      - Fri, 10 Aug 2018 16:23:44 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Tue, 04 Jul 2017 17:51:47 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.5
-      X-Request-Id:
-      - 897f12d0-4584-4209-b175-5e165c0205a2
-      X-Runtime:
-      - '0.064589'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '223'
       Connection:
       - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding, Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Credential-Username:
+      - 0000-0002-8599-0773
+      X-Request-Id:
+      - 4a1d1564-f3fc-4a9e-8527-523188506fe6
+      X-Runtime:
+      - '0.006639'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"150f6ef2-7a9b-4b56-a587-2ff451055237","type":"claims","attributes":{"orcid":"0000-0003-3412-7192","doi":"10.5438/6423","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"ac6abc5f-e22f-4767-a37a-a4dc2aab1d81","type":"claims","attributes":{"orcid":"0000-0003-3412-7192","doi":"10.5438/6423","source-id":"orcid_update","state":"done","claim-action":"create","error-messages":null,"put-code":30212620,"claimed":"2017-02-08T12:11:17Z","created":"2017-02-02T19:23:37Z","updated":"2018-08-10T14:57:47Z"}}}'
     http_version: 
-  recorded_at: Tue, 04 Jul 2017 17:51:48 GMT
+  recorded_at: Fri, 10 Aug 2018 16:23:44 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -749,9 +669,9 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0003-1419-2405","doi":"10.5438/6423","source_id":"orcid_update","claim_action":"create"}}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -759,49 +679,41 @@ http_interactions:
   response:
     status:
       code: 202
-      message: ''
+      message: Accepted
     headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
+      Date:
+      - Fri, 10 Aug 2018 16:23:44 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Tue, 04 Jul 2017 17:51:48 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.5
-      X-Request-Id:
-      - b7a0c216-844e-43e9-80aa-018ecc0e5013
-      X-Runtime:
-      - '0.006007'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '238'
       Connection:
       - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding, Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Credential-Username:
+      - 0000-0002-8599-0773
+      X-Request-Id:
+      - 557c1e72-76a3-4dd9-a8b5-b37dbf354e1d
+      X-Runtime:
+      - '0.006714'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"4e07aae9-2094-4594-96b0-c365c89e2967","type":"claims","attributes":{"orcid":"0000-0003-1419-2405","doi":"10.5438/6423","source-id":"orcid_update","state":"done","claim-action":"create","claimed-at":"2016-09-26T07:57:36Z"}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"4e07aae9-2094-4594-96b0-c365c89e2967","type":"claims","attributes":{"orcid":"0000-0003-1419-2405","doi":"10.5438/6423","source-id":"orcid_update","state":"done","claim-action":"create","error-messages":null,"put-code":26990831,"claimed":"2016-09-26T07:57:36Z","created":"2016-09-26T07:57:34Z","updated":"2017-06-20T16:52:56Z"}}}'
     http_version: 
-  recorded_at: Tue, 04 Jul 2017 17:51:48 GMT
+  recorded_at: Fri, 10 Aug 2018 16:23:44 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -810,9 +722,9 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0003-3484-6875","doi":"10.5438/6423","source_id":"orcid_update","claim_action":"create"}}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -820,49 +732,41 @@ http_interactions:
   response:
     status:
       code: 202
-      message: ''
+      message: Accepted
     headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
+      Date:
+      - Fri, 10 Aug 2018 16:23:44 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Tue, 04 Jul 2017 17:51:48 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.5
-      X-Request-Id:
-      - 03478a63-54f1-4b33-9ee7-64619067e10f
-      X-Runtime:
-      - '0.042793'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '223'
       Connection:
       - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding, Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Credential-Username:
+      - 0000-0002-8599-0773
+      X-Request-Id:
+      - 304c4d56-5589-444b-82eb-d33b7ad45d6e
+      X-Runtime:
+      - '0.006703'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"9cb248e0-952e-4826-901a-2e71b1ce6bad","type":"claims","attributes":{"orcid":"0000-0003-3484-6875","doi":"10.5438/6423","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"d636e796-4298-4844-911c-99d6c7942ee0","type":"claims","attributes":{"orcid":"0000-0003-3484-6875","doi":"10.5438/6423","source-id":"orcid_update","state":"done","claim-action":"create","error-messages":null,"put-code":30162967,"claimed":"2017-02-07T06:41:17Z","created":"2017-02-07T06:41:16Z","updated":"2017-02-07T06:41:17Z"}}}'
     http_version: 
-  recorded_at: Tue, 04 Jul 2017 17:51:48 GMT
+  recorded_at: Fri, 10 Aug 2018 16:23:44 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -871,9 +775,9 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0003-0183-6910","doi":"10.5438/6423","source_id":"orcid_update","claim_action":"create"}}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -881,49 +785,41 @@ http_interactions:
   response:
     status:
       code: 202
-      message: ''
+      message: Accepted
     headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
+      Date:
+      - Fri, 10 Aug 2018 16:23:45 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Tue, 04 Jul 2017 17:51:48 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.5
-      X-Request-Id:
-      - 47789897-f2a3-488d-8826-c5f4aab77b63
-      X-Runtime:
-      - '0.011792'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '223'
       Connection:
       - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding, Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Credential-Username:
+      - 0000-0002-8599-0773
+      X-Request-Id:
+      - 72d26fa0-1fba-4d01-8d58-ec3978c2d152
+      X-Runtime:
+      - '0.006838'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"7d6f7282-1cce-47fd-aada-0627953f8e55","type":"claims","attributes":{"orcid":"0000-0003-0183-6910","doi":"10.5438/6423","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"ed521c9b-a7ce-4c37-9998-fc7fa800a9a3","type":"claims","attributes":{"orcid":"0000-0003-0183-6910","doi":"10.5438/6423","source-id":"orcid_update","state":"done","claim-action":"create","error-messages":null,"put-code":30033174,"claimed":"2017-02-02T19:23:39Z","created":"2017-02-02T19:23:38Z","updated":"2017-02-02T19:23:39Z"}}}'
     http_version: 
-  recorded_at: Tue, 04 Jul 2017 17:51:48 GMT
+  recorded_at: Fri, 10 Aug 2018 16:23:45 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -932,9 +828,9 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0001-5109-3700","doi":"10.5438/6423","source_id":"orcid_update","claim_action":"create"}}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -942,49 +838,41 @@ http_interactions:
   response:
     status:
       code: 202
-      message: ''
+      message: Accepted
     headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
+      Date:
+      - Fri, 10 Aug 2018 16:23:45 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Tue, 04 Jul 2017 17:51:49 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.5
-      X-Request-Id:
-      - f3a01186-3c71-476a-9282-3002cf70b692
-      X-Runtime:
-      - '0.013389'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '223'
       Connection:
       - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding, Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Credential-Username:
+      - 0000-0002-8599-0773
+      X-Request-Id:
+      - 255f8ac5-20aa-44bc-8662-68dd1b678b11
+      X-Runtime:
+      - '0.006907'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"a1f7c9b8-52d1-41d5-b4c5-c0dc495a9947","type":"claims","attributes":{"orcid":"0000-0001-5109-3700","doi":"10.5438/6423","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"7da31c9c-113d-4706-969e-70f831b84842","type":"claims","attributes":{"orcid":"0000-0001-5109-3700","doi":"10.5438/6423","source-id":"orcid_update","state":"done","claim-action":"create","error-messages":null,"put-code":30033175,"claimed":"2017-02-02T19:23:39Z","created":"2017-02-02T19:23:38Z","updated":"2017-02-02T19:23:39Z"}}}'
     http_version: 
-  recorded_at: Tue, 04 Jul 2017 17:51:49 GMT
+  recorded_at: Fri, 10 Aug 2018 16:23:45 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -993,9 +881,9 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0001-8771-7239","doi":"10.5438/6423","source_id":"orcid_update","claim_action":"create"}}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -1003,49 +891,41 @@ http_interactions:
   response:
     status:
       code: 202
-      message: ''
+      message: Accepted
     headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
+      Date:
+      - Fri, 10 Aug 2018 16:23:45 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Tue, 04 Jul 2017 17:51:49 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.5
-      X-Request-Id:
-      - b3a8a020-f93b-4fc1-8d8a-314420287bfe
-      X-Runtime:
-      - '0.040869'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '223'
       Connection:
       - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding, Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Credential-Username:
+      - 0000-0002-8599-0773
+      X-Request-Id:
+      - d5f79400-2cb1-4689-81a0-21267e2912de
+      X-Runtime:
+      - '0.006738'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1eb1e9cd-c31a-4135-8ba6-4a0e359118d1","type":"claims","attributes":{"orcid":"0000-0001-8771-7239","doi":"10.5438/6423","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"3cbb525c-bdc9-41a5-9f18-7e8dbf131099","type":"claims","attributes":{"orcid":"0000-0001-8771-7239","doi":"10.5438/6423","source-id":"orcid_update","state":"done","claim-action":"create","error-messages":null,"put-code":31354018,"claimed":"2017-03-27T00:13:20Z","created":"2017-02-02T19:23:38Z","updated":"2018-08-10T14:57:48Z"}}}'
     http_version: 
-  recorded_at: Tue, 04 Jul 2017 17:51:49 GMT
+  recorded_at: Fri, 10 Aug 2018 16:23:45 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1054,9 +934,9 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0001-6843-7960","doi":"10.5438/6423","source_id":"orcid_update","claim_action":"create"}}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -1064,49 +944,41 @@ http_interactions:
   response:
     status:
       code: 202
-      message: ''
+      message: Accepted
     headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
+      Date:
+      - Fri, 10 Aug 2018 16:23:45 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Tue, 04 Jul 2017 17:51:49 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.5
-      X-Request-Id:
-      - 51578caa-19c8-48f2-bc0d-67b970030959
-      X-Runtime:
-      - '0.012089'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '223'
       Connection:
       - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding, Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Credential-Username:
+      - 0000-0002-8599-0773
+      X-Request-Id:
+      - c9c605c6-4a34-4c17-a85d-20e116e9040a
+      X-Runtime:
+      - '0.006838'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"dc06bb3d-0f98-415f-8665-bdc8ad8a2b2c","type":"claims","attributes":{"orcid":"0000-0001-6843-7960","doi":"10.5438/6423","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"680d8596-9e4a-47f8-b92f-80a8ebe34a68","type":"claims","attributes":{"orcid":"0000-0001-6843-7960","doi":"10.5438/6423","source-id":"orcid_update","state":"done","claim-action":"create","error-messages":null,"put-code":30033176,"claimed":"2017-02-02T19:23:40Z","created":"2017-02-02T19:23:39Z","updated":"2017-02-02T19:23:40Z"}}}'
     http_version: 
-  recorded_at: Tue, 04 Jul 2017 17:51:49 GMT
+  recorded_at: Fri, 10 Aug 2018 16:23:45 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1115,9 +987,9 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0001-9623-2225","doi":"10.5438/6423","source_id":"orcid_update","claim_action":"create"}}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -1125,49 +997,41 @@ http_interactions:
   response:
     status:
       code: 202
-      message: ''
+      message: Accepted
     headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
+      Date:
+      - Fri, 10 Aug 2018 16:23:45 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Tue, 04 Jul 2017 17:51:49 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.5
-      X-Request-Id:
-      - a20b04c9-6ff8-43c5-85d2-e81c91e5f32d
-      X-Runtime:
-      - '0.011732'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '223'
       Connection:
       - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding, Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Credential-Username:
+      - 0000-0002-8599-0773
+      X-Request-Id:
+      - 28bc29da-8841-48f8-b7b1-6c919218d7ec
+      X-Runtime:
+      - '0.006729'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"276cb9da-8f56-4a20-8199-b5998f795257","type":"claims","attributes":{"orcid":"0000-0001-9623-2225","doi":"10.5438/6423","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"cb256708-f663-4619-ae8d-cfd8d381d2c8","type":"claims","attributes":{"orcid":"0000-0001-9623-2225","doi":"10.5438/6423","source-id":"orcid_update","state":"done","claim-action":"create","error-messages":null,"put-code":43593283,"claimed":"2018-04-13T05:23:44Z","created":"2017-02-02T19:23:39Z","updated":"2018-04-13T05:23:44Z"}}}'
     http_version: 
-  recorded_at: Tue, 04 Jul 2017 17:51:49 GMT
+  recorded_at: Fri, 10 Aug 2018 16:23:45 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1176,9 +1040,9 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0002-1611-6935","doi":"10.5438/6423","source_id":"orcid_update","claim_action":"create"}}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -1186,49 +1050,41 @@ http_interactions:
   response:
     status:
       code: 202
-      message: ''
+      message: Accepted
     headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
+      Date:
+      - Fri, 10 Aug 2018 16:23:45 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Tue, 04 Jul 2017 17:51:50 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.5
-      X-Request-Id:
-      - ac222648-49ff-4eed-a029-45ff5d241cda
-      X-Runtime:
-      - '0.018534'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '223'
       Connection:
       - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding, Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Credential-Username:
+      - 0000-0002-8599-0773
+      X-Request-Id:
+      - e19eb9c6-023f-47d6-bd55-8034ae9068b5
+      X-Runtime:
+      - '0.006803'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"4d6dfee8-73fc-4fdc-b9a3-5cf9a2f025fe","type":"claims","attributes":{"orcid":"0000-0002-1611-6935","doi":"10.5438/6423","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"06f2bdfe-43d9-4c4d-a8bf-274fc44ef3da","type":"claims","attributes":{"orcid":"0000-0002-1611-6935","doi":"10.5438/6423","source-id":"orcid_update","state":"done","claim-action":"create","error-messages":null,"put-code":30033177,"claimed":"2017-02-02T19:23:40Z","created":"2017-02-02T19:23:39Z","updated":"2017-02-02T19:23:40Z"}}}'
     http_version: 
-  recorded_at: Tue, 04 Jul 2017 17:51:50 GMT
+  recorded_at: Fri, 10 Aug 2018 16:23:45 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1237,9 +1093,9 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0003-0762-2235","doi":"10.5438/6423","source_id":"orcid_update","claim_action":"create"}}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -1247,49 +1103,41 @@ http_interactions:
   response:
     status:
       code: 202
-      message: ''
+      message: Accepted
     headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
+      Date:
+      - Fri, 10 Aug 2018 16:23:46 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Tue, 04 Jul 2017 17:51:50 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.5
-      X-Request-Id:
-      - d5c735ee-105e-49e6-afce-8a4a4a2fa355
-      X-Runtime:
-      - '0.012249'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '223'
       Connection:
       - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding, Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Credential-Username:
+      - 0000-0002-8599-0773
+      X-Request-Id:
+      - 1a7860c6-65dc-4f67-ac67-5f533c2f0ed1
+      X-Runtime:
+      - '0.015595'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"95a8d571-92b2-4283-b813-024bd7c35d56","type":"claims","attributes":{"orcid":"0000-0003-0762-2235","doi":"10.5438/6423","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"1c528bc0-54ed-487e-b155-7dd3f685b4d4","type":"claims","attributes":{"orcid":"0000-0003-0762-2235","doi":"10.5438/6423","source-id":"orcid_update","state":"waiting","claim-action":"create","error-messages":null,"put-code":null,"claimed":null,"created":"2017-02-02T19:23:40Z","updated":"2018-08-10T16:23:46Z"}}}'
     http_version: 
-  recorded_at: Tue, 04 Jul 2017 17:51:50 GMT
+  recorded_at: Fri, 10 Aug 2018 16:23:46 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1298,9 +1146,9 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0002-9829-091X","doi":"10.5438/6423","source_id":"orcid_update","claim_action":"create"}}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -1308,49 +1156,41 @@ http_interactions:
   response:
     status:
       code: 202
-      message: ''
+      message: Accepted
     headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
+      Date:
+      - Fri, 10 Aug 2018 16:23:46 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Tue, 04 Jul 2017 17:51:50 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.5
-      X-Request-Id:
-      - f5b565a0-7dab-453f-81e0-8134c1ea242f
-      X-Runtime:
-      - '0.012331'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '223'
       Connection:
       - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding, Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Credential-Username:
+      - 0000-0002-8599-0773
+      X-Request-Id:
+      - a9148dbc-9601-490f-a1e5-25d65c8fcf31
+      X-Runtime:
+      - '0.007016'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"96d55578-b067-4971-90ef-8ef9f829dc17","type":"claims","attributes":{"orcid":"0000-0002-9829-091X","doi":"10.5438/6423","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"e4c90b6e-1c6e-4859-8396-07512323879c","type":"claims","attributes":{"orcid":"0000-0002-9829-091X","doi":"10.5438/6423","source-id":"orcid_update","state":"done","claim-action":"create","error-messages":null,"put-code":43593401,"claimed":"2018-04-13T05:23:50Z","created":"2017-02-02T19:23:40Z","updated":"2018-04-13T05:23:50Z"}}}'
     http_version: 
-  recorded_at: Tue, 04 Jul 2017 17:51:50 GMT
+  recorded_at: Fri, 10 Aug 2018 16:23:46 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1359,9 +1199,9 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0001-5952-7630","doi":"10.5438/6423","source_id":"orcid_update","claim_action":"create"}}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -1369,49 +1209,41 @@ http_interactions:
   response:
     status:
       code: 202
-      message: ''
+      message: Accepted
     headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
+      Date:
+      - Fri, 10 Aug 2018 16:23:46 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Tue, 04 Jul 2017 17:51:50 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.5
-      X-Request-Id:
-      - 724b7d54-1171-472f-a298-b55619f8f82f
-      X-Runtime:
-      - '0.012469'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '223'
       Connection:
       - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding, Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Credential-Username:
+      - 0000-0002-8599-0773
+      X-Request-Id:
+      - 4da57d2c-50bc-4502-9d14-9dc1ba7ccef5
+      X-Runtime:
+      - '0.006813'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"9adac474-3c1a-41b1-b387-cc4f4dc09386","type":"claims","attributes":{"orcid":"0000-0001-5952-7630","doi":"10.5438/6423","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"8efc18fa-d2d9-48a0-b8b6-cc4f101bdd3f","type":"claims","attributes":{"orcid":"0000-0001-5952-7630","doi":"10.5438/6423","source-id":"orcid_update","state":"done","claim-action":"create","error-messages":null,"put-code":30033178,"claimed":"2017-02-02T19:23:41Z","created":"2017-02-02T19:23:40Z","updated":"2017-02-02T19:23:41Z"}}}'
     http_version: 
-  recorded_at: Tue, 04 Jul 2017 17:51:50 GMT
+  recorded_at: Fri, 10 Aug 2018 16:23:46 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1420,9 +1252,9 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0001-5492-3212","doi":"10.5438/6423","source_id":"orcid_update","claim_action":"create"}}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -1430,49 +1262,41 @@ http_interactions:
   response:
     status:
       code: 202
-      message: ''
+      message: Accepted
     headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
+      Date:
+      - Fri, 10 Aug 2018 16:23:46 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Tue, 04 Jul 2017 17:51:51 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.5
-      X-Request-Id:
-      - aba49d83-fc85-4f38-94fe-d684f039d56e
-      X-Runtime:
-      - '0.036143'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '223'
       Connection:
       - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding, Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Credential-Username:
+      - 0000-0002-8599-0773
+      X-Request-Id:
+      - e6b09783-b1e2-4028-959b-33ba2e6e6a01
+      X-Runtime:
+      - '0.006726'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"b9f20bf7-e252-4422-8771-ffbfb3f6a0db","type":"claims","attributes":{"orcid":"0000-0001-5492-3212","doi":"10.5438/6423","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"92df070c-403b-41fb-ae4c-c822576aaeff","type":"claims","attributes":{"orcid":"0000-0001-5492-3212","doi":"10.5438/6423","source-id":"orcid_update","state":"done","claim-action":"create","error-messages":null,"put-code":30033179,"claimed":"2017-02-02T19:23:41Z","created":"2017-02-02T19:23:40Z","updated":"2017-02-02T19:23:41Z"}}}'
     http_version: 
-  recorded_at: Tue, 04 Jul 2017 17:51:51 GMT
+  recorded_at: Fri, 10 Aug 2018 16:23:46 GMT
 - request:
     method: post
     uri: https://profiles.test.datacite.org/api/claims
@@ -1481,9 +1305,9 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0002-6133-2581","doi":"10.5438/6423","source_id":"orcid_update","claim_action":"create"}}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -1491,49 +1315,41 @@ http_interactions:
   response:
     status:
       code: 202
-      message: ''
+      message: Accepted
     headers:
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - no-cache
+      Date:
+      - Fri, 10 Aug 2018 16:23:46 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Tue, 04 Jul 2017 17:51:51 GMT
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 202 Accepted
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.5
-      X-Request-Id:
-      - 39a75f11-819f-494b-ad10-fd38201a4a65
-      X-Runtime:
-      - '0.012235'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '223'
       Connection:
       - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding, Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Credential-Username:
+      - 0000-0002-8599-0773
+      X-Request-Id:
+      - 895ebba1-597f-490c-924f-7af39c6ae3cd
+      X-Runtime:
+      - '0.006924'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"019981cc-ee7e-407d-bb4c-3c3a45e05e8b","type":"claims","attributes":{"orcid":"0000-0002-6133-2581","doi":"10.5438/6423","source-id":"orcid_update","state":"waiting","claim-action":"create","claimed-at":null}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"ad995f86-eb39-45bb-b164-4623a07aefa4","type":"claims","attributes":{"orcid":"0000-0002-6133-2581","doi":"10.5438/6423","source-id":"orcid_update","state":"done","claim-action":"create","error-messages":null,"put-code":30033180,"claimed":"2017-02-02T19:23:42Z","created":"2017-02-02T19:23:41Z","updated":"2017-02-02T19:23:42Z"}}}'
     http_version: 
-  recorded_at: Tue, 04 Jul 2017 17:51:51 GMT
+  recorded_at: Fri, 10 Aug 2018 16:23:46 GMT
 - request:
     method: post
     uri: "<SLACK_WEBHOOK_URL>"
@@ -1560,31 +1376,33 @@ http_interactions:
       - '22'
       Connection:
       - keep-alive
-      Access-Control-Allow-Origin:
-      - "*"
       Date:
-      - Tue, 04 Jul 2017 17:51:51 GMT
-      Referrer-Policy:
-      - no-referrer
+      - Fri, 10 Aug 2018 16:23:46 GMT
       Server:
       - Apache
-      Strict-Transport-Security:
-      - max-age=31536000; includeSubDomains; preload
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Slack-Backend:
       - h
+      Referrer-Policy:
+      - no-referrer
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Frame-Options:
+      - SAMEORIGIN
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Via:
+      - haproxy-www-pyeo
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 7b6339693d82ec593824b8c6ad776117.cloudfront.net (CloudFront)
+      - 1.1 a2289d8b15b881db1c42086062568883.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - 5lGKZOTxcOWLQsrQccelc8yEyl_kx_HI6CXxAwArRV8WTL-cgHZyGQ==
+      - N_WY1NqIQmajGg7LY9xEhUJEOq1fKFHyWxwrHDXRk5kH8WOFanSBmA==
     body:
       encoding: ASCII-8BIT
       string: ok
     http_version: 
-  recorded_at: Tue, 04 Jul 2017 17:51:51 GMT
+  recorded_at: Fri, 10 Aug 2018 16:23:47 GMT
 recorded_with: VCR 3.0.3

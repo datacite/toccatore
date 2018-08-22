@@ -66,7 +66,7 @@ describe Toccatore::OrcidUpdate, vcr: true do
       response = subject.get_data({ orcid: "0000-0002-3546-1048", from_date: "2013-01-01", until_date: "2016-12-31", rows: 1000, offset: 0 })
       expect(response.body["data"]["response"]["numFound"]).to eq(68)
       doc = response.body["data"]["response"]["docs"].first
-      expect(doc["doi"]).to eq("10.6084/M9.FIGSHARE.1371005.V1")
+      expect(doc["doi"]).to eq("10.6084/M9.FIGSHARE.1371006")
     end
 
     it "should allow queries by DOI of the Datacite Metadata Search API" do

@@ -95,7 +95,7 @@ module Toccatore
       fail "Report_id is missing" if data[:report_id].blank?
 
       { "uuid" => SecureRandom.uuid,
-        "message-action" => "add",
+        "message-action" => "create",
         "subj-id" => data[:report_id],
         "subj"=> {
           "pid"=> data[:report_id],
@@ -161,10 +161,11 @@ module Toccatore
                   "id" => item["uuid"],
                   "type" => "events",
                   "attributes" => item.except("id") }}
+                  
       response = Maremma.put(push_url, data: data.to_json,
-                                        bearer: options[:access_token],
-                                        content_type: 'application/json',
-                                        host: host)
+                                       bearer: options[:access_token],
+                                       content_type: 'json',
+                                       host: host)
                                   
       if response.status == 201 
         puts "#{item['subj-id']} #{item['relation-type-id']} #{item['obj-id']} pushed to Event Data service."

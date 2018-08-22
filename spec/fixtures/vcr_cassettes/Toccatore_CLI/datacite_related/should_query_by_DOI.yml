@@ -8,33 +8,37 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
+      Date:
+      - Fri, 10 Aug 2018 16:24:36 GMT
       Content-Type:
       - application/json;charset=UTF-8
-      Date:
-      - Wed, 29 Mar 2017 13:24:00 GMT
-      Server:
-      - openresty/1.11.2.2
       Connection:
       - keep-alive
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
+      Access-Control-Expose-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
     body:
-      encoding: UTF-8
-      string: '{"responseHeader":{"status":0,"QTime":1},"response":{"numFound":1,"start":0,"docs":[]}}
+      encoding: ASCII-8BIT
+      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":1,"start":0,"docs":[]}}
 
 '
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:24:00 GMT
+  recorded_at: Fri, 10 Aug 2018 16:24:36 GMT
 - request:
     method: get
     uri: https://search.datacite.org/api?fl=doi,resourceTypeGeneral,relatedIdentifier,nameIdentifier,minted,updated&fq=updated:%5B2013-01-01T00:00:00Z%20TO%202017-12-31T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=doi:10.5438/CT8B-X1CE&rows=1000&start=0&wt=json
@@ -43,33 +47,37 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
+      Date:
+      - Fri, 10 Aug 2018 16:24:36 GMT
       Content-Type:
       - application/json;charset=UTF-8
-      Date:
-      - Wed, 29 Mar 2017 13:24:01 GMT
-      Server:
-      - openresty/1.11.2.2
       Connection:
       - keep-alive
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
+      Access-Control-Expose-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
     body:
-      encoding: UTF-8
-      string: '{"responseHeader":{"status":0,"QTime":1},"response":{"numFound":1,"start":0,"docs":[{"minted":"2016-12-23T10:35:28Z","updated":"2017-01-09T13:53:10Z","doi":"10.5438/CT8B-X1CE","resourceTypeGeneral":"Text","relatedIdentifier":["References:URL:https://arxiv.org/abs/1501.04916","References:DOI:10.3398/064.075.0213","References:DOI:10.1002/2015JE004895","References:DOI:10.1371/JOURNAL.PBIO.1001687","References:DOI:10.1016/J.JAS.2015.02.009","References:URL:http://hdl.handle.net/10536/DRO/DU:30088291","References:DOI:10.1016/J.AEOLIA.2015.08.001","References:DOI:10.1007/S12209-016-2596-Z","References:DOI:10.5194/ESURFD-2-1005-2014","References:DOI:10.1371/JOURNAL.PONE.0105948","References:URL:https://www.ncbi.nlm.nih.gov/books/NBK7256","References:DOI:10.1016/J.BPJ.2015.04.023","References:DOI:10.1002/ESP.3677","References:DOI:10.1016/J.AEOLIA.2016.01.003","References:DOI:10.4172/2381-8719.1000256","References:DOI:10.1371/JOURNAL.PONE.0134826","References:DOI:10.1016/J.TREE.2010.11.006","IsPartOf:DOI:10.5438/0000-00SS"],"nameIdentifier":["ORCID:0000-0003-1419-2405"]}]}}
+      encoding: ASCII-8BIT
+      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":1,"start":0,"docs":[{"minted":"2016-12-23T10:35:28Z","updated":"2017-01-09T13:53:10Z","doi":"10.5438/CT8B-X1CE","relatedIdentifier":["References:URL:https://arxiv.org/abs/1501.04916","References:DOI:10.3398/064.075.0213","References:DOI:10.1002/2015JE004895","References:DOI:10.1371/JOURNAL.PBIO.1001687","References:DOI:10.1016/J.JAS.2015.02.009","References:URL:http://hdl.handle.net/10536/DRO/DU:30088291","References:DOI:10.1016/J.AEOLIA.2015.08.001","References:DOI:10.1007/S12209-016-2596-Z","References:DOI:10.5194/ESURFD-2-1005-2014","References:DOI:10.1371/JOURNAL.PONE.0105948","References:URL:https://www.ncbi.nlm.nih.gov/books/NBK7256","References:DOI:10.1016/J.BPJ.2015.04.023","References:DOI:10.1002/ESP.3677","References:DOI:10.1016/J.AEOLIA.2016.01.003","References:DOI:10.4172/2381-8719.1000256","References:DOI:10.1371/JOURNAL.PONE.0134826","References:DOI:10.1016/J.TREE.2010.11.006","IsPartOf:DOI:10.5438/0000-00SS"],"resourceTypeGeneral":"Text","nameIdentifier":["ORCID:0000-0003-1419-2405"]}]}}
 
 '
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:24:01 GMT
+  recorded_at: Fri, 10 Aug 2018 16:24:36 GMT
 - request:
     method: get
     uri: https://api.datacite.org/prefixes/10.3398
@@ -78,55 +86,43 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Fri, 10 Aug 2018 16:24:36 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:24:02 GMT
-      Etag:
-      - W/"7cf730cb403c033dba041619ed5a152f"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - c2b391d4-08be-4834-9a64-b7dbeb93c3d4
-      X-Runtime:
-      - '0.612701'
-      X-Xss-Protection:
-      - 1; mode=block
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      X-Request-Id:
+      - 42cf1ea8-8a98-4872-aa2a-4af4476c29eb
+      Etag:
+      - W/"bdd51fc78c95303ae663e9e21f50f399"
+      X-Runtime:
+      - '0.050947'
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10.3398","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T21:02:24Z"}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"10.3398","type":"handles","attributes":{"registration-agency":"Crossref","created":null,"updated":"2016-09-21T21:02:24Z"},"relationships":{"clients":{"data":[]},"providers":{"data":[]}}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:24:02 GMT
+  recorded_at: Fri, 10 Aug 2018 16:24:36 GMT
 - request:
     method: get
     uri: https://api.datacite.org/prefixes/10.1002
@@ -135,55 +131,43 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Fri, 10 Aug 2018 16:24:36 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:24:03 GMT
-      Etag:
-      - W/"fd60f408ac5a8f5de6aabc61fc16b7b7"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - a1f737c2-1f07-41ad-9110-7aeddb8dbac1
-      X-Runtime:
-      - '0.459592'
-      X-Xss-Protection:
-      - 1; mode=block
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      X-Request-Id:
+      - f93edace-a1df-4c8c-bcf1-bb2bfae51a5c
+      Etag:
+      - W/"011661a5b5427b905c109f69016482cc"
+      X-Runtime:
+      - '0.085556'
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10.1002","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T20:45:22Z"}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"10.1002","type":"handles","attributes":{"registration-agency":"Crossref","created":null,"updated":"2016-09-21T20:45:22Z"},"relationships":{"clients":{"data":[]},"providers":{"data":[]}}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:24:03 GMT
+  recorded_at: Fri, 10 Aug 2018 16:24:36 GMT
 - request:
     method: get
     uri: https://api.datacite.org/prefixes/10.1371
@@ -192,55 +176,43 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Fri, 10 Aug 2018 16:24:37 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:24:04 GMT
-      Etag:
-      - W/"a078870f021fe1686525a8135b0e29b8"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - 8fc9b5df-48f4-4b36-ba6e-112dbecb2b5c
-      X-Runtime:
-      - '0.628426'
-      X-Xss-Protection:
-      - 1; mode=block
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      X-Request-Id:
+      - 45cfa43f-1b8b-40cb-9415-e846bbaeb90a
+      Etag:
+      - W/"4aadec3626c9c053f75d78db0882961b"
+      X-Runtime:
+      - '0.116245'
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10.1371","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T20:47:32Z"}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"10.1371","type":"handles","attributes":{"registration-agency":"Crossref","created":null,"updated":"2016-09-21T20:47:32Z"},"relationships":{"clients":{"data":[]},"providers":{"data":[]}}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:24:04 GMT
+  recorded_at: Fri, 10 Aug 2018 16:24:37 GMT
 - request:
     method: get
     uri: https://api.datacite.org/prefixes/10.1016
@@ -249,55 +221,43 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Fri, 10 Aug 2018 16:24:37 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:24:05 GMT
-      Etag:
-      - W/"7c9a7b8f563d4b464488ed2327095f44"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - 77f240a3-650b-443e-aeeb-248d16d50dcb
-      X-Runtime:
-      - '0.525723'
-      X-Xss-Protection:
-      - 1; mode=block
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      X-Request-Id:
+      - 353ab853-e218-45c3-8b55-25bcb704d0b5
+      Etag:
+      - W/"763c0e4d3cd926a31520a20a61f19275"
+      X-Runtime:
+      - '0.049280'
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10.1016","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T20:45:22Z"}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"10.1016","type":"handles","attributes":{"registration-agency":"Crossref","created":null,"updated":"2016-09-21T20:45:22Z"},"relationships":{"clients":{"data":[]},"providers":{"data":[]}}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:24:05 GMT
+  recorded_at: Fri, 10 Aug 2018 16:24:37 GMT
 - request:
     method: get
     uri: https://api.datacite.org/prefixes/10.1007
@@ -306,55 +266,43 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Fri, 10 Aug 2018 16:24:37 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:24:06 GMT
-      Etag:
-      - W/"f53cde77e343e10a66e08694e07c9370"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - ae0e47fb-6ac0-4f36-9f65-c307ea1d3122
-      X-Runtime:
-      - '0.268021'
-      X-Xss-Protection:
-      - 1; mode=block
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      X-Request-Id:
+      - ddd75ee2-2867-4f74-9a8a-32c21d735d94
+      Etag:
+      - W/"37a7d81cd24a954db63b7b525f99df73"
+      X-Runtime:
+      - '0.047152'
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10.1007","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T20:45:22Z"}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"10.1007","type":"handles","attributes":{"registration-agency":"Crossref","created":null,"updated":"2016-09-21T20:45:22Z"},"relationships":{"clients":{"data":[]},"providers":{"data":[]}}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:24:06 GMT
+  recorded_at: Fri, 10 Aug 2018 16:24:37 GMT
 - request:
     method: get
     uri: https://api.datacite.org/prefixes/10.5194
@@ -363,55 +311,43 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Fri, 10 Aug 2018 16:24:37 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:24:08 GMT
-      Etag:
-      - W/"1f042efb010583ff94ca58ba029fb502"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - ce8a177a-b250-4bbc-a413-172c9c53e102
-      X-Runtime:
-      - '0.771816'
-      X-Xss-Protection:
-      - 1; mode=block
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      X-Request-Id:
+      - 62c30849-6f84-4172-a8fe-167f79f83617
+      Etag:
+      - W/"a05573d02be616a5a7f584b69082a62f"
+      X-Runtime:
+      - '0.147855'
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10.5194","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T21:04:33Z"}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"10.5194","type":"handles","attributes":{"registration-agency":"Crossref","created":null,"updated":"2016-09-21T21:04:33Z"},"relationships":{"clients":{"data":[]},"providers":{"data":[]}}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:24:08 GMT
+  recorded_at: Fri, 10 Aug 2018 16:24:37 GMT
 - request:
     method: get
     uri: https://api.datacite.org/prefixes/10.4172
@@ -420,55 +356,43 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Fri, 10 Aug 2018 16:24:38 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:24:09 GMT
-      Etag:
-      - W/"ab8bd9cae1af53dbd883afdd0d684d71"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - 8a0c9ec2-8568-447f-82ab-f2ea15c415ce
-      X-Runtime:
-      - '0.633629'
-      X-Xss-Protection:
-      - 1; mode=block
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      X-Request-Id:
+      - f212336d-892e-42d4-a882-ba4907a23273
+      Etag:
+      - W/"b36d07ac104eb228487d24db54d1ba3d"
+      X-Runtime:
+      - '0.167794'
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10.4172","type":"prefixes","attributes":{"registration-agency":"Crossref","updated":"2016-09-21T21:03:31Z"}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"10.4172","type":"handles","attributes":{"registration-agency":"Crossref","created":null,"updated":"2016-09-21T21:03:31Z"},"relationships":{"clients":{"data":[]},"providers":{"data":[]}}}}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:24:09 GMT
+  recorded_at: Fri, 10 Aug 2018 16:24:38 GMT
 - request:
     method: get
     uri: https://api.datacite.org/prefixes/10.5438
@@ -477,66 +401,58 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '1728000'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Fri, 10 Aug 2018 16:24:38 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Wed, 29 Mar 2017 13:24:10 GMT
-      Etag:
-      - W/"b9f2d79281c542db437c42a5bac25ac8"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      X-Request-Id:
-      - 1a951b92-59da-4093-b0a4-b86075bbf96a
-      X-Runtime:
-      - '0.679528'
-      X-Xss-Protection:
-      - 1; mode=block
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding, Origin
+      X-Request-Id:
+      - 7e80afea-6549-40b7-aeff-f8b9f73415e2
+      Etag:
+      - W/"d318b360e0165478e07632c1deb55186"
+      X-Runtime:
+      - '0.014413'
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10.5438","type":"prefixes","attributes":{"registration-agency":"DataCite","updated":"2016-09-21T20:27:15Z"}}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"10.5438","type":"prefixes","attributes":{"registration-agency":"DataCite","created":"2011-03-30T08:56:21.000Z","updated":null},"relationships":{"clients":{"data":[{"id":"datacite.datacite","type":"clients"},{"id":"demo.datacite","type":"clients"}]},"providers":{"data":[{"id":"datacite","type":"providers"},{"id":"demo","type":"providers"}]}}},"included":[{"id":"datacite.datacite","type":"clients","attributes":{"name":"DataCite","symbol":"DATACITE.DATACITE","year":2011,"contact-name":"DataCite","contact-email":"support@datacite.org","domains":"*","url":null,"is-active":true,"has-password":true,"created":"2011-12-07T13:43:39Z","updated":"2018-08-10T02:35:15Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"meta":{}},"repository":{"meta":{}}}},{"id":"demo.datacite","type":"clients","attributes":{"name":"DataCite
+        Staff Demo Client","symbol":"DEMO.DATACITE","year":2018,"contact-name":"DataCite
+        Support","contact-email":"support@datacite.org","domains":"*","url":null,"is-active":true,"has-password":true,"created":"2018-03-15T12:19:33Z","updated":"2018-08-10T02:36:15Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"meta":{}},"repository":{"meta":{}}}},{"id":"datacite","type":"providers","attributes":{"name":"DataCite","symbol":"DATACITE","website":null,"contact-name":"DataCite
+        Support","contact-email":"info@datacite.org","phone":null,"description":null,"country":"DE","logo-url":null,"institution-type":null,"is-active":true,"has-password":true,"joined":null,"created":"2011-12-07T13:41:07.000Z","updated":"2018-08-10T02:25:52.000Z"},"relationships":{"clients":{"meta":{}},"prefixes":{"meta":{}}}},{"id":"demo","type":"providers","attributes":{"name":"DataCite
+        Demo Provider","symbol":"DEMO","website":null,"contact-name":"DataCite Support","contact-email":"info@datacite.org","phone":null,"description":null,"country":"DE","logo-url":null,"institution-type":null,"is-active":true,"has-password":true,"joined":null,"created":"2010-01-01T00:00:00.000Z","updated":"2018-08-10T02:25:52.000Z"},"relationships":{"clients":{"meta":{}},"prefixes":{"meta":{}}}}]}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:24:10 GMT
+  recorded_at: Fri, 10 Aug 2018 16:24:38 GMT
 - request:
     method: post
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"463696db-192b-40da-8657-a2778074513f","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.3398/064.075.0213","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z"}'
+      string: '{"id":"b5e45e35-2ffe-48df-bf33-cf44aa1fcbb1","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.3398/064.075.0213","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z","license":"https://creativecommons.org/publicdomain/zero/1.0/"}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -544,7 +460,7 @@ http_interactions:
   response:
     status:
       code: 201
-      message: ''
+      message: Created
     headers:
       Content-Type:
       - application/json
@@ -557,23 +473,23 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Wed, 29 Mar 2017 13:24:11 GMT
+      - Fri, 10 Aug 2018 16:24:38 GMT
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       string: ''
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:24:11 GMT
+  recorded_at: Fri, 10 Aug 2018 16:24:38 GMT
 - request:
     method: post
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"8281e055-95a5-4bc8-a13e-4a9d8c616b79","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1002/2015je004895","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z"}'
+      string: '{"id":"8342ab90-ede8-4209-8373-c001c1eac48e","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1002/2015je004895","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z","license":"https://creativecommons.org/publicdomain/zero/1.0/"}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -581,7 +497,7 @@ http_interactions:
   response:
     status:
       code: 201
-      message: ''
+      message: Created
     headers:
       Content-Type:
       - application/json
@@ -594,23 +510,23 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Wed, 29 Mar 2017 13:24:13 GMT
+      - Fri, 10 Aug 2018 16:24:38 GMT
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       string: ''
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:24:13 GMT
+  recorded_at: Fri, 10 Aug 2018 16:24:38 GMT
 - request:
     method: post
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"a87f9a86-4864-4977-a770-e715c737c4d0","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1371/journal.pbio.1001687","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z"}'
+      string: '{"id":"b7168ab4-54eb-4566-9cbc-d581c2031ac9","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1371/journal.pbio.1001687","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z","license":"https://creativecommons.org/publicdomain/zero/1.0/"}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -618,7 +534,7 @@ http_interactions:
   response:
     status:
       code: 201
-      message: ''
+      message: Created
     headers:
       Content-Type:
       - application/json
@@ -631,23 +547,23 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Wed, 29 Mar 2017 13:24:14 GMT
+      - Fri, 10 Aug 2018 16:24:39 GMT
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       string: ''
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:24:14 GMT
+  recorded_at: Fri, 10 Aug 2018 16:24:39 GMT
 - request:
     method: post
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"e27d52f8-0f65-41c8-88c5-ececa053c4fd","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1016/j.jas.2015.02.009","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z"}'
+      string: '{"id":"d9393e8c-0398-4eae-a3dd-0a550df705a8","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1016/j.jas.2015.02.009","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z","license":"https://creativecommons.org/publicdomain/zero/1.0/"}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -655,7 +571,7 @@ http_interactions:
   response:
     status:
       code: 201
-      message: ''
+      message: Created
     headers:
       Content-Type:
       - application/json
@@ -668,23 +584,23 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Wed, 29 Mar 2017 13:24:14 GMT
+      - Fri, 10 Aug 2018 16:24:39 GMT
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       string: ''
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:24:14 GMT
+  recorded_at: Fri, 10 Aug 2018 16:24:39 GMT
 - request:
     method: post
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"3e29bf78-a725-4d82-8e5f-efa3ff345762","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1016/j.aeolia.2015.08.001","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z"}'
+      string: '{"id":"3b4142f0-9ad4-46f0-bc16-65a27dd0ae64","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1016/j.aeolia.2015.08.001","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z","license":"https://creativecommons.org/publicdomain/zero/1.0/"}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -692,7 +608,7 @@ http_interactions:
   response:
     status:
       code: 201
-      message: ''
+      message: Created
     headers:
       Content-Type:
       - application/json
@@ -705,23 +621,23 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Wed, 29 Mar 2017 13:24:15 GMT
+      - Fri, 10 Aug 2018 16:24:39 GMT
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       string: ''
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:24:15 GMT
+  recorded_at: Fri, 10 Aug 2018 16:24:39 GMT
 - request:
     method: post
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"7666b9b9-3c53-4546-a8b5-38d796c884f3","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1007/s12209-016-2596-z","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z"}'
+      string: '{"id":"62092550-72a6-440b-992d-0a3079da7dea","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1007/s12209-016-2596-z","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z","license":"https://creativecommons.org/publicdomain/zero/1.0/"}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -729,7 +645,7 @@ http_interactions:
   response:
     status:
       code: 201
-      message: ''
+      message: Created
     headers:
       Content-Type:
       - application/json
@@ -742,23 +658,23 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Wed, 29 Mar 2017 13:24:15 GMT
+      - Fri, 10 Aug 2018 16:24:39 GMT
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       string: ''
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:24:15 GMT
+  recorded_at: Fri, 10 Aug 2018 16:24:39 GMT
 - request:
     method: post
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"1cac5167-0248-4130-b979-416120927fa8","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.5194/esurfd-2-1005-2014","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z"}'
+      string: '{"id":"173251c9-3c1f-4d8a-8ff1-04c42baf88f4","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.5194/esurfd-2-1005-2014","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z","license":"https://creativecommons.org/publicdomain/zero/1.0/"}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -766,7 +682,7 @@ http_interactions:
   response:
     status:
       code: 201
-      message: ''
+      message: Created
     headers:
       Content-Type:
       - application/json
@@ -779,23 +695,23 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Wed, 29 Mar 2017 13:24:16 GMT
+      - Fri, 10 Aug 2018 16:24:39 GMT
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       string: ''
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:24:16 GMT
+  recorded_at: Fri, 10 Aug 2018 16:24:39 GMT
 - request:
     method: post
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"085c3a70-eb1c-48ac-a093-6693af206f20","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1371/journal.pone.0105948","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z"}'
+      string: '{"id":"d0c5351f-bdb0-483f-8ae2-417b95278687","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1371/journal.pone.0105948","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z","license":"https://creativecommons.org/publicdomain/zero/1.0/"}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -803,7 +719,7 @@ http_interactions:
   response:
     status:
       code: 201
-      message: ''
+      message: Created
     headers:
       Content-Type:
       - application/json
@@ -816,23 +732,23 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Wed, 29 Mar 2017 13:24:16 GMT
+      - Fri, 10 Aug 2018 16:24:40 GMT
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       string: ''
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:24:16 GMT
+  recorded_at: Fri, 10 Aug 2018 16:24:40 GMT
 - request:
     method: post
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"db03b100-e846-4a6e-a9dc-9a49dd923f83","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1016/j.bpj.2015.04.023","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z"}'
+      string: '{"id":"313abaac-47a1-4a0c-91e6-c0a825a510b4","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1016/j.bpj.2015.04.023","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z","license":"https://creativecommons.org/publicdomain/zero/1.0/"}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -840,7 +756,7 @@ http_interactions:
   response:
     status:
       code: 201
-      message: ''
+      message: Created
     headers:
       Content-Type:
       - application/json
@@ -853,23 +769,23 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Wed, 29 Mar 2017 13:24:17 GMT
+      - Fri, 10 Aug 2018 16:24:40 GMT
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       string: ''
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:24:17 GMT
+  recorded_at: Fri, 10 Aug 2018 16:24:40 GMT
 - request:
     method: post
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"86c2160f-811c-48dd-9772-4bd199895bc8","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1002/esp.3677","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z"}'
+      string: '{"id":"6a807244-baff-43c2-ae0c-fcd6f9fa759b","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1002/esp.3677","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z","license":"https://creativecommons.org/publicdomain/zero/1.0/"}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -877,7 +793,7 @@ http_interactions:
   response:
     status:
       code: 201
-      message: ''
+      message: Created
     headers:
       Content-Type:
       - application/json
@@ -890,23 +806,23 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Wed, 29 Mar 2017 13:24:17 GMT
+      - Fri, 10 Aug 2018 16:24:40 GMT
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       string: ''
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:24:17 GMT
+  recorded_at: Fri, 10 Aug 2018 16:24:40 GMT
 - request:
     method: post
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"095b3447-ddc5-488b-82bc-7b31b95c9468","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1016/j.aeolia.2016.01.003","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z"}'
+      string: '{"id":"99bb7616-5a89-43c1-9e36-90116676767b","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1016/j.aeolia.2016.01.003","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z","license":"https://creativecommons.org/publicdomain/zero/1.0/"}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -914,7 +830,7 @@ http_interactions:
   response:
     status:
       code: 201
-      message: ''
+      message: Created
     headers:
       Content-Type:
       - application/json
@@ -927,23 +843,23 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Wed, 29 Mar 2017 13:24:18 GMT
+      - Fri, 10 Aug 2018 16:24:41 GMT
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       string: ''
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:24:18 GMT
+  recorded_at: Fri, 10 Aug 2018 16:24:41 GMT
 - request:
     method: post
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"b1c026e1-ee2b-4c3f-87f5-60b32aa0c543","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.4172/2381-8719.1000256","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z"}'
+      string: '{"id":"56dc9638-af0a-4e1c-8437-787fe0c2b730","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.4172/2381-8719.1000256","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z","license":"https://creativecommons.org/publicdomain/zero/1.0/"}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -951,7 +867,7 @@ http_interactions:
   response:
     status:
       code: 201
-      message: ''
+      message: Created
     headers:
       Content-Type:
       - application/json
@@ -964,23 +880,23 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Wed, 29 Mar 2017 13:24:19 GMT
+      - Fri, 10 Aug 2018 16:24:41 GMT
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       string: ''
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:24:19 GMT
+  recorded_at: Fri, 10 Aug 2018 16:24:41 GMT
 - request:
     method: post
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"f5ea78c5-0bf8-4381-888b-5b3c8e53c3b6","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1371/journal.pone.0134826","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z"}'
+      string: '{"id":"1501112b-d923-4956-8198-d84a429b242c","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1371/journal.pone.0134826","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z","license":"https://creativecommons.org/publicdomain/zero/1.0/"}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -988,7 +904,7 @@ http_interactions:
   response:
     status:
       code: 201
-      message: ''
+      message: Created
     headers:
       Content-Type:
       - application/json
@@ -1001,23 +917,23 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Wed, 29 Mar 2017 13:24:21 GMT
+      - Fri, 10 Aug 2018 16:24:41 GMT
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       string: ''
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:24:21 GMT
+  recorded_at: Fri, 10 Aug 2018 16:24:41 GMT
 - request:
     method: post
     uri: https://bus-staging.eventdata.crossref.org/events
     body:
       encoding: UTF-8
-      string: '{"id":"07668fd7-bd3a-487e-91a9-faf7f4ce8d12","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1016/j.tree.2010.11.006","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z"}'
+      string: '{"id":"254ea6c9-8695-4f88-ae7a-f7d74589dfdb","message_action":"create","subj_id":"https://doi.org/10.5438/ct8b-x1ce","obj_id":"https://doi.org/10.1016/j.tree.2010.11.006","relation_type_id":"references","source_id":"datacite","source_token":"28276d12-b320-41ba-9272-bb0adc3466ff","occurred_at":"2016-12-23T10:35:28Z","license":"https://creativecommons.org/publicdomain/zero/1.0/"}'
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Content-Type:
-      - application/json
+      - application/json;charset=UTF-8
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -1025,7 +941,7 @@ http_interactions:
   response:
     status:
       code: 201
-      message: ''
+      message: Created
     headers:
       Content-Type:
       - application/json
@@ -1038,18 +954,18 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Wed, 29 Mar 2017 13:24:21 GMT
+      - Fri, 10 Aug 2018 16:24:41 GMT
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       string: ''
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:24:21 GMT
+  recorded_at: Fri, 10 Aug 2018 16:24:41 GMT
 - request:
     method: post
     uri: "<SLACK_WEBHOOK_URL>"
     body:
       encoding: US-ASCII
-      string: payload=%7B%22username%22%3A%22Event+Data+Agent%22%2C%22icon_url%22%3A%22https%3A%2F%2Fraw.githubusercontent.com%2Fdatacite%2Ftoccatore%2Fmaster%2Flib%2Ftoccatore%2Fimages%2Ftoccatore.png%22%2C%22attachments%22%3A%5B%7B%22title%22%3A%22Report+for+datacite_related%22%2C%22text%22%3A%221+works+processed+for+date+range+2013-01-01+-+2017-12-31.%22%2C%22color%22%3A%22good%22%7D%5D%7D
+      string: payload=%7B%22username%22%3A%22Event+Data+Agent%22%2C%22icon_url%22%3A%22https%3A%2F%2Fraw.githubusercontent.com%2Fdatacite%2Ftoccatore%2Fmaster%2Flib%2Ftoccatore%2Fimages%2Ftoccatore.png%22%2C%22attachments%22%3A%5B%7B%22title%22%3A%22Report+for+datacite_related%22%2C%22text%22%3A%221+works+processed+with+0+errors+for+date+range+2013-01-01+-+2017-12-31.%22%2C%22color%22%3A%22good%22%7D%5D%7D
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -1070,31 +986,33 @@ http_interactions:
       - '22'
       Connection:
       - keep-alive
-      Access-Control-Allow-Origin:
-      - "*"
       Date:
-      - Wed, 29 Mar 2017 13:24:22 GMT
-      Referrer-Policy:
-      - no-referrer
+      - Fri, 10 Aug 2018 16:24:42 GMT
       Server:
       - Apache
-      Strict-Transport-Security:
-      - max-age=31536000; includeSubDomains; preload
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Slack-Backend:
       - h
+      Referrer-Policy:
+      - no-referrer
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Frame-Options:
+      - SAMEORIGIN
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Via:
+      - haproxy-www-ej1j
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 2905d0bd25e66c3f788fb2134262d52a.cloudfront.net (CloudFront)
+      - 1.1 ae322f9f82b436687f3bcaf36433b2bb.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - rAe_FEeJovOdB-ClRicsY_k-BQbY5e7DN9he5PiQoYj-ytq-beYjjw==
+      - qLJbbAAFZjV-gEV9NOhtRHTgfd8ADktZCY5Rkx6HjO4lGEtI_fExRw==
     body:
       encoding: ASCII-8BIT
       string: ok
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:24:22 GMT
+  recorded_at: Fri, 10 Aug 2018 16:24:42 GMT
 recorded_with: VCR 3.0.3

@@ -35,7 +35,7 @@ describe Toccatore::Base, vcr: true do
     it "datacite_related" do
       text =  "12 works processed for date range 2015-04-07 - 2015-04-08."
       options = { title: "Report for datacite_related", slack_webhook_url: slack_webhook_url }
-      expect(subject.send_notification_to_slack(text, options)).to eq("ok")
+      expect(subject.send_notification_to_slack(text, options)).to be_kind_of(Net::HTTPOK)
     end
 
     it "datacite_related no works" do
@@ -43,13 +43,13 @@ describe Toccatore::Base, vcr: true do
       options = { title: "Report for datacite_related",
                   slack_webhook_url: slack_webhook_url,
                   level: "warning" }
-      expect(subject.send_notification_to_slack(text, options)).to eq("ok")
+      expect(subject.send_notification_to_slack(text, options)).to be_kind_of(Net::HTTPOK)
     end
 
     it "orcid_update" do
       text =  "12 works processed for date range 2015-04-07 - 2015-04-08."
       options = { title: "Report for orcid_update", slack_webhook_url: slack_webhook_url }
-      expect(subject.send_notification_to_slack(text, options)).to eq("ok")
+      expect(subject.send_notification_to_slack(text, options)).to be_kind_of(Net::HTTPOK)
     end
 
     it "orcid_update no works" do
@@ -57,7 +57,7 @@ describe Toccatore::Base, vcr: true do
       options = { title: "Report for orcid_update",
                   slack_webhook_url: slack_webhook_url,
                   level: "warning" }
-      expect(subject.send_notification_to_slack(text, options)).to eq("ok")
+      expect(subject.send_notification_to_slack(text, options)).to be_kind_of(Net::HTTPOK)
     end
   end
 

@@ -44,9 +44,13 @@ module Toccatore
     end
 
     def push_item(item, options={})
-      return OpenStruct.new(body: { "errors" => [{ "title" => "Access token missing." }] }) if options[:access_token].blank?
+      if options[:access_token].blank?
+        puts "Access token missing."
+        return 1
+      end
 
-      push_url = (options[:push_url].presence || "https://profiles.datacite.org/api") + "/claims"
+      host = options[:push_url].presence || "https://profiles.datacite.org/api"
+      push_url = host + "/claims"
 
       response = Maremma.post(push_url, data: { "claim" => item }.to_json,
                                         bearer: options[:access_token],

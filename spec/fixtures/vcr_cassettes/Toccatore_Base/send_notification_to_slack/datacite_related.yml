@@ -26,31 +26,33 @@ http_interactions:
       - '22'
       Connection:
       - keep-alive
-      Access-Control-Allow-Origin:
-      - "*"
       Date:
-      - Wed, 29 Mar 2017 12:22:55 GMT
-      Referrer-Policy:
-      - no-referrer
+      - Fri, 10 Aug 2018 16:22:55 GMT
       Server:
       - Apache
-      Strict-Transport-Security:
-      - max-age=31536000; includeSubDomains; preload
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Slack-Backend:
       - h
+      Referrer-Policy:
+      - no-referrer
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Frame-Options:
+      - SAMEORIGIN
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Via:
+      - haproxy-www-xom6
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 8a4d4882753d62d900bb1b7541308eca.cloudfront.net (CloudFront)
+      - 1.1 fd0b6604a702c913fca13c5d665f0604.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - NHshrt1mNkLoOKPf0Eb6EdL_WFYPdKTkLcWcuHUCLS0rn-b31QoKgw==
+      - D4QjAqyFTNMO4eqoqhWyd_DL2yVMldgPKJ570PA-3UDp86opy1mlNw==
     body:
       encoding: ASCII-8BIT
       string: ok
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 12:22:55 GMT
+  recorded_at: Fri, 10 Aug 2018 16:22:55 GMT
 recorded_with: VCR 3.0.3

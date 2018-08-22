@@ -8,33 +8,37 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
+      Date:
+      - Fri, 10 Aug 2018 16:24:42 GMT
       Content-Type:
       - application/json;charset=UTF-8
-      Date:
-      - Wed, 29 Mar 2017 13:24:31 GMT
-      Server:
-      - openresty/1.11.2.2
       Connection:
       - keep-alive
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
+      Access-Control-Expose-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
     body:
-      encoding: UTF-8
-      string: '{"responseHeader":{"status":0,"QTime":4},"response":{"numFound":0,"start":0,"docs":[]}}
+      encoding: ASCII-8BIT
+      string: '{"responseHeader":{"status":0,"QTime":1},"response":{"numFound":0,"start":0,"docs":[]}}
 
 '
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:24:31 GMT
+  recorded_at: Fri, 10 Aug 2018 16:24:42 GMT
 - request:
     method: post
     uri: "<SLACK_WEBHOOK_URL>"
@@ -61,31 +65,33 @@ http_interactions:
       - '22'
       Connection:
       - keep-alive
-      Access-Control-Allow-Origin:
-      - "*"
       Date:
-      - Wed, 29 Mar 2017 13:24:32 GMT
-      Referrer-Policy:
-      - no-referrer
+      - Fri, 10 Aug 2018 16:24:42 GMT
       Server:
       - Apache
-      Strict-Transport-Security:
-      - max-age=31536000; includeSubDomains; preload
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Slack-Backend:
       - h
+      Referrer-Policy:
+      - no-referrer
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Frame-Options:
+      - SAMEORIGIN
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Via:
+      - haproxy-www-1dak
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 9edca61f65102033971d096a9351690a.cloudfront.net (CloudFront)
+      - 1.1 63c6fe97aba90610d2a46b7713c49586.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - bMUswo1VnRmMTwBzG-UnDr2LxpHQIiDnHTZ0ZpegOgJpHQINDmkD4A==
+      - D-IsWwaceyZuBXQfVNQVt17s8nXlLdcis0oEa9CSHwJs6T-sA-8bmA==
     body:
       encoding: ASCII-8BIT
       string: ok
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 13:24:32 GMT
+  recorded_at: Fri, 10 Aug 2018 16:24:43 GMT
 recorded_with: VCR 3.0.3
