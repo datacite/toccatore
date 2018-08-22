@@ -34,7 +34,7 @@ module Toccatore
       # send slack notification
       options[:level] = total > 0 ? "good" : "warning"
       options[:title] = "Report for #{source_id}"
-      send_notification_to_slack(text, options) if options[:slack_webhook_url].present?
+      send_notification_to_slack(text, options) if options[:slack_webhook_url].present? && error_total != 0
 
       # return number of works queued
       proccessed_messages
